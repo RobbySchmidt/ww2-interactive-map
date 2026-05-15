@@ -1,0 +1,342 @@
+[
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-wjasma",
+    "name": "Wjasma",
+    "description": "Namensgebende Stadt an der Rollbahn Smolensk–Moskau und Schließpunkt des nördlichen Kessels. Am 7. Oktober 1941 vereinigten sich nordöstlich der Stadt die 7. Panzer-Division (Panzergruppe 3, Hoth) und die 10. Panzer-Division (Panzergruppe 4, Hoepner) und schlossen vier sowjetische Armeen (19., 20., 24., 32.) der Westfront ein.",
+    "coordinates": [
+      34.3,
+      55.2
+    ],
+    "category": "building",
+    "wikipediaSlug": "Wjasma",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Duitse_tanks_rukken_op_tijdens_de_Kesselschlacht_bij_Wjasma_%282155_078762b%29.jpg",
+      "source": "Wikimedia Commons / Nederlands Instituut voor Militaire Historie",
+      "license": "CC BY-SA 4.0",
+      "credit": "Fotoafdrukken Koninklijke Landmacht / Nederlands Instituut voor Militaire Historie, Oktober 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Duitse_tanks_rukken_op_tijdens_de_Kesselschlacht_bij_Wjasma_(2155_078762b).jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-brjansk",
+    "name": "Brjansk",
+    "description": "Industrie- und Eisenbahnstadt an der Desna, Hauptquartier der sowjetischen Brjansker Front (General Jerjomenko). Am 6. Oktober 1941 nach Vorstoß des XXIV. motorisierten Armeekorps eingenommen; der Verlust riss das Verteidigungssystem auf und zerschnitt die Verbindung der 3., 13. und 50. Armee.",
+    "coordinates": [
+      34.36666667,
+      53.25
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Brjansk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Bundesarchiv_Bild_183-L19885%2C_Russland%2C_Heinz_Guderian_vor_Gefechtsstand.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-L19885 / Huschke / CC-BY-SA 3.0, August 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-L19885,_Russland,_Heinz_Guderian_vor_Gefechtsstand.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-spas-demensk",
+    "name": "Spas-Demensk",
+    "description": "Kleinstadt im Korridor Roslawl–Juchnow, am 4. Oktober 1941 vom XXXXVI. Armeekorps (mot.) eingenommen. Bildete das südliche Scharnier des Wjasma-Kessels und öffnete den Vorstoß der Panzergruppe 4 in den Rücken der sowjetischen Reservefront.",
+    "coordinates": [
+      34.03333333,
+      54.41666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Spas-Demensk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Bundesarchiv_Bild_101I-213-0254-07A%2C_Russland-Nord%2C_Infanterie%2C_Sch%C3%BCtzenl%C3%B6cher.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-213-0254-07A / Gebauer / CC-BY-SA 3.0, Soldaten der 4. Panzergruppe, September/Oktober 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-213-0254-07A,_Russland-Nord,_Infanterie,_Sch%C3%BCtzenl%C3%B6cher.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-trubtschewsk",
+    "name": "Trubtschewsk",
+    "description": "Stadt an der Desna im südlichen Brjansker Kesselgebiet. Im Raum Trubtschewsk wurden die sowjetische 3. und 13. Armee eingeschlossen; die 13. Armee unternahm hier zwischen dem 12. und 14. Oktober 1941 ihren verzweifelten Ausbruchsversuch über die Nawlja.",
+    "coordinates": [
+      33.76666667,
+      52.58333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Trubtschewsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Bundesarchiv_Bild_101I-265-0024-21A%2C_Russland%2C_Gener%C3%A4le_Guderian_und_Hoth.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-265-0024-21A / Vorpahl / CC-BY-SA 3.0, Generäle Guderian und Hoth, Russland 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-265-0024-21A,_Russland,_Gener%C3%A4le_Guderian_und_Hoth.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-sytschowka",
+    "name": "Sytschowka",
+    "description": "Kleinstadt nördlich Wjasmas an der Bahnlinie Wjasma–Rschew, im Vormarschraum der 3. Panzergruppe Hoths. Über Sytschowka stießen die deutschen Panzer von Norden in den Rücken der sowjetischen Westfront vor und schlossen am 7. Oktober den Kesselring um Wjasma.",
+    "coordinates": [
+      34.28333333,
+      55.83333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Sytschowka",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Bundesarchiv_Bild_101I-268-0178-06%2C_Russland%2C_Sch%C3%BCtzenpanzer.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-268-0178-06 / Böhmer / CC-BY-SA 3.0, SdKfz 251 und Panzer II der 3. Panzergruppe auf Vormarsch Richtung Moskau, Oktober 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-268-0178-06,_Russland,_Sch%C3%BCtzenpanzer.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-juchnow",
+    "name": "Juchnow",
+    "description": "Stadt an der Ugra im Vormarschraum der Panzergruppe 4 (Hoepner). Am 5. Oktober 1941 von der 10. Panzer-Division genommen; der überraschende Vorstoß bis Juchnow alarmierte Stawka und Stalin, da der Weg nach Moskau über Medyn nun offen schien.",
+    "coordinates": [
+      35.23333333,
+      54.75
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Juchnow",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Bundesarchiv_Bild_101I-140-1212-04A%2C_Russland-Mitte%2C_Sturmgesch%C3%BCtze_III_in_Ortschaft.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-140-1212-04A / Götze / CC-BY-SA 3.0, Sturmgeschütze III der 4. Armee im Raum Wjasma, Oktober 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-140-1212-04A,_Russland-Mitte,_Sturmgesch%C3%BCtze_III_in_Ortschaft.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-sewsk",
+    "name": "Sewsk",
+    "description": "Kleinstadt im Süden des Schlachtfelds, am 1. Oktober 1941 von Guderians XXIV. motorisiertem Armeekorps durchbrochen — der Auftakt des Brjansker Kessels. Von hier stieß die 4. Panzer-Division in Richtung Orjol vor und umfasste die Brjansker Front von Süden.",
+    "coordinates": [
+      34.48333333,
+      52.15
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Sewsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Bundesarchiv_Bild_101I-007-2479-33A%2C_Russland%2C_Mitte%2C_Sch%C3%BCtzenpanzer.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-007-2479-33A / Hermann / CC-BY-SA 3.0, Schützenpanzer in Russland-Mitte, Juli 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-007-2479-33A,_Russland,_Mitte,_Sch%C3%BCtzenpanzer.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-karatschew",
+    "name": "Karatschew",
+    "description": "Eisenbahn- und Straßenknoten östlich Brjansks an der Linie Brjansk–Orjol. Am 6. Oktober 1941 vom XXXXVII. motorisierten Armeekorps eingenommen; mit Karatschew fiel der wichtigste Rückzugsweg der eingeschlossenen Brjansker Front nach Osten.",
+    "coordinates": [
+      34.98333333,
+      53.13333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Karatschew",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Bundesarchiv_Bild_101I-287-0872-25%2C_Russland_bei_Orel%2C_Hinweisschild_nach_Orel.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-287-0872-25 / Koll / CC-BY-SA 3.0, Hinweisschild nach Orel, Russland bei Orel, Dezember 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-287-0872-25,_Russland_bei_Orel,_Hinweisschild_nach_Orel.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-orjol",
+    "name": "Orjol (Orel)",
+    "description": "Großstadt und wichtiger Eisenbahnknoten südlich der Oka, am 3. Oktober 1941 von Vorausabteilungen der 4. Panzer-Division (Eberbach) im Handstreich genommen — die deutschen Panzer rollten in eine Stadt, in der noch Straßenbahnen fuhren. Eröffnete den Weg zur Schlacht um Tula.",
+    "coordinates": [
+      36.08333333,
+      52.96666667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Orjol",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Orjol_im_September_1941.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Martin Urban (1910–1964), Nachlass Frieda Gertrud Urban, Sammlung Oliver Kloss, Orjol 30. September 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orjol_im_September_1941.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-roslawl",
+    "name": "Roslawl",
+    "description": "Verkehrsknoten am Oberlauf der Desna, deutscher Aufmarschraum für die Panzergruppe 4 vor Beginn der Operation Taifun. Von Roslawl aus stieß Hoepner am 2. Oktober 1941 entlang der Autobahn nach Nordosten Richtung Juchnow und Wjasma vor.",
+    "coordinates": [
+      32.85,
+      53.95
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Roslawl",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Bundesarchiv_Bild_101I-140-1210-26A%2C_Russland-Mitte%2C_Sch%C3%BCtzenpanzer_im_Schlamm.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-140-1210-26A / Götze / CC-BY-SA 3.0, Schützenpanzer im Schlamm, Russland-Mitte, Oktober 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-140-1210-26A,_Russland-Mitte,_Sch%C3%BCtzenpanzer_im_Schlamm.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-mossalsk",
+    "name": "Mossalsk",
+    "description": "Kleinstadt in der Oblast Kaluga, am 4. Oktober 1941 von Vorausabteilungen der Panzergruppe 4 erreicht. Lag im Korridor zwischen Spas-Demensk und Juchnow, durch den die deutschen Panzer in den Rücken der sowjetischen Reservefront stießen.",
+    "coordinates": [
+      34.96666667,
+      54.5
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Mossalsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Bundesarchiv_Bild_101I-140-1220-17A%2C_Russland-Mitte%2C_PKW_im_Schlamm.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-140-1220-17A / Cusian / CC-BY-SA 3.0, PKW im Schlamm, Russland-Mitte, Oktober 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-140-1220-17A,_Russland-Mitte,_PKW_im_Schlamm.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-cholm-schirkowski",
+    "name": "Cholm-Schirkowski",
+    "description": "Dorf nordwestlich Wjasmas am oberen Dnjepr, am 3. Oktober 1941 nach Dnjepr-Übergang der 3. Panzergruppe genommen. Schauplatz sowjetischer Gegenstöße der 32. und 220. Schützen-Division zur Abriegelung des Durchbruchs — gescheitert, der nördliche Zangenarm rollte weiter auf Wjasma.",
+    "coordinates": [
+      33.2145,
+      55.5598
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Cholm-Schirkowski",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bundesarchiv_Bild_101I-268-0169-09%2C_Russland%2C_Festnahme_russischer_Panzerbesatzung.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-268-0169-09 / Böhmer / CC-BY-SA 3.0, Soldaten der 3. Panzergruppe bei der Festnahme einer sowjetischen T-34-Besatzung, Oktober 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-268-0169-09,_Russland,_Festnahme_russischer_Panzerbesatzung.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-schisdra",
+    "name": "Schisdra",
+    "description": "Kleinstadt an der gleichnamigen Schisdra südlich Kalugas, am 5. Oktober 1941 von Verbänden der deutschen 2. Armee eingenommen. Lag im Korridor zwischen Brjansker und Wjasma-Kessel und sicherte die Naht zwischen Heeresgruppe Mitte Süd- und Nordflügel.",
+    "coordinates": [
+      34.73333333,
+      53.75
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Schisdra",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Bundesarchiv_Bild_101I-287-0872-01%2C_Russland_%28bei_Orel%29%2C_Soldaten_in_Stellung.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-287-0872-01 / Koll / CC-BY-SA 3.0, Soldaten in Stellung, Russland bei Orel, Dezember 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-287-0872-01,_Russland_(bei_Orel),_Soldaten_in_Stellung.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-medyn",
+    "name": "Medyn",
+    "description": "Kleinstadt an der Straße Juchnow–Maloyaroslawez im Vorfeld der Moschaisker Verteidigungslinie. Mitte Oktober 1941 von der Panzergruppe 4 erreicht; sowjetische Kadetten der Podolsker Militärschulen verzögerten hier wochenlang den deutschen Vorstoß auf Moskau.",
+    "coordinates": [
+      35.86666667,
+      54.96666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Medyn",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Bundesarchiv_Bild_101I-268-0154-11%2C_Russland%2C_Soldaten_vor_brennendem_Geb%C3%A4ude.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-268-0154-11 / Böhmer / CC-BY-SA 3.0, Soldaten der 3. Panzergruppe vor brennendem Gebäude, Oktober 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-268-0154-11,_Russland,_Soldaten_vor_brennendem_Geb%C3%A4ude.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-beljow",
+    "name": "Beljow",
+    "description": "Stadt an der Oka im Tulaer Vorfeld, am 22./23. Oktober 1941 von Resten der ausgebrochenen sowjetischen 50. Armee (Petrow) erreicht. Hier reorganisierten sich die Trümmer der Brjansker Front zur neuen Verteidigungslinie vor Tula.",
+    "coordinates": [
+      36.13333333,
+      53.8
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Beljow",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Bundesarchiv_Bild_183-L28726%2C_Sowjetische_Kriegsgefangene_bei_Smolensk.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-L28726 / Markwardt / CC-BY-SA 3.0, sowjetische Kriegsgefangene im Durchgangslager bei Smolensk, August 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-L28726,_Sowjetische_Kriegsgefangene_bei_Smolensk.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-dorogobusch",
+    "name": "Dorogobusch",
+    "description": "Stadt am Dnjepr zwischen Smolensk und Wjasma im westlichen Hinterland des Wjasma-Kessels. Anfang Oktober 1941 zentraler Rückzugsraum sowjetischer Verbände der 20. und 24. Armee, die aus dem geschlossenen Kessel nach Westen auszubrechen versuchten.",
+    "coordinates": [
+      33.3,
+      54.91666667
+    ],
+    "category": "building",
+    "wikipediaSlug": "Dorogobusch",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Bundesarchiv_Bild_101I-140-1212-04A%2C_Russland-Mitte%2C_Sturmgesch%C3%BCtze_III_in_Ortschaft.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-140-1212-04A / Götze / CC-BY-SA 3.0, Sturmgeschütze III der 4. Armee im Raum Wjasma, Oktober 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-140-1212-04A,_Russland-Mitte,_Sturmgesch%C3%BCtze_III_in_Ortschaft.jpg"
+    }
+  },
+  {
+    "battleId": "wjasma-brjansk",
+    "id": "wjasma-brjansk-gzhatsk",
+    "name": "Gschatsk (heute Gagarin)",
+    "description": "Stadt östlich Wjasmas an der Rollbahn nach Moskau, ursprünglich als sowjetische Rückzugslinie geplant. Nach dem Zusammenbruch des Wjasma-Kessels rückten deutsche Panzergruppen Mitte Oktober 1941 über Gschatsk weiter auf die Moschaisker Linie vor.",
+    "coordinates": [
+      35.01666667,
+      55.55
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Gagarin_(Stadt)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Bundesarchiv_Bild_101I-268-0178-06%2C_Russland%2C_Sch%C3%BCtzenpanzer.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-268-0178-06 / Böhmer / CC-BY-SA 3.0, SdKfz 251 und Panzer II der 3. Panzergruppe auf Vormarsch Richtung Moskau, Oktober 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-268-0178-06,_Russland,_Sch%C3%BCtzenpanzer.jpg"
+    }
+  }
+]

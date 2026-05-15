@@ -1,0 +1,322 @@
+[
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-iasi",
+    "name": "Iași (Jassy, Nord-Durchbruch)",
+    "description": "Hauptstadt der Moldau und namensgebender Schwerpunkt der Operation. Die 2. Ukrainische Front unter Malinowski durchbrach am 20. August 1944 nördlich der Stadt die deutsch-rumänische Front; Iași fiel am 21. August an die 52. Armee.",
+    "coordinates": [
+      27.59138889,
+      47.15555556
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Ia%C8%99i",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BF%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%AF%D1%81%D1%81%D1%8B.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Фотохроника ТАСС / TASS Photo Chronicle",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BF%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%AF%D1%81%D1%81%D1%8B.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-chisinau",
+    "name": "Chișinău (Kischinjow, Bessarabien-Hauptstadt)",
+    "description": "Hauptstadt Bessarabiens und zentrales Operationsziel der 3. Ukrainischen Front unter Tolbuchin. Nach der Einkesselung großer Teile der deutschen 6. Armee südwestlich der Stadt zog die 5. Stoßarmee am 24. August 1944 in Chișinău ein.",
+    "coordinates": [
+      28.85,
+      47.01388889
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Chi%C8%99in%C4%83u",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Troops_of_the_49th_Guards_Rifle_Division_marching%2C_Moldova%2C_late_August_1944.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Mil.ru / A. Lambros (Izvestia)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Troops_of_the_49th_Guards_Rifle_Division_marching,_Moldova,_late_August_1944.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-tiraspol",
+    "name": "Tiraspol (Dnjestr-Brückenkopf)",
+    "description": "Stadt am Ostufer des Dnjestr und südlicher Ausgangs-Brückenkopf der 3. Ukrainischen Front. Aus den hier seit Frühjahr 1944 gehaltenen Vorposten startete am 20. August der Durchbruch gegen die deutsche 6. Armee.",
+    "coordinates": [
+      29.63287778,
+      46.84550278
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Tiraspol",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Troops_of_the_49th_Guards_Rifle_Division_marching%2C_Moldova%2C_late_August_1944.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Mil.ru / A. Lambros (Izvestia)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Troops_of_the_49th_Guards_Rifle_Division_marching,_Moldova,_late_August_1944.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-tighina",
+    "name": "Tighina / Bender (Dnjestr-Übergang)",
+    "description": "Brückenstadt am westlichen Dnjestr-Ufer gegenüber Tiraspol und Kernstück der deutsch-rumänischen Dnjestr-Stellung. Der hier konzentrierte Brückenkopf wurde am 21. August 1944 durchbrochen und ermöglichte die Umfassung der 6. Armee.",
+    "coordinates": [
+      29.47111111,
+      46.83055556
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Bender_(Stadt)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Bundesarchiv_Bild_101I-244-2305-13%2C_R%C3%BCckzug_von_Rum%C3%A4nien_%C3%BCber_Ungarn.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-244-2305-13 / Bauer",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-244-2305-13,_R%C3%BCckzug_von_Rum%C3%A4nien_%C3%BCber_Ungarn.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-ungheni",
+    "name": "Ungheni (Pruth-Übergang)",
+    "description": "Eisenbahn- und Straßenbrücke über den Pruth an der Hauptstrecke Chișinău-Iași. Sowjetische Verbände erreichten den Übergang am 22. August 1944 und schnitten damit den westlichen Rückzugsweg der 6. Armee ab.",
+    "coordinates": [
+      27.81666667,
+      47.21666667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Ungheni",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BF%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%AF%D1%81%D1%81%D1%8B.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Фотохроника ТАСС / TASS Photo Chronicle",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BF%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%AF%D1%81%D1%81%D1%8B.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-husi",
+    "name": "Huși (Pruth-Kessel)",
+    "description": "Kleinstadt westlich des Pruth und Schließpunkt des inneren Kessels. Hier vereinten sich am 24. August 1944 die Stoßspitzen der 2. und 3. Ukrainischen Front und schlossen den Ring um 18 deutsche Divisionen.",
+    "coordinates": [
+      28.06472222,
+      46.67305556
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Hu%C8%99i",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Troops_of_the_49th_Guards_Rifle_Division_marching%2C_Moldova%2C_late_August_1944.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Mil.ru / A. Lambros (Izvestia)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Troops_of_the_49th_Guards_Rifle_Division_marching,_Moldova,_late_August_1944.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-targu-frumos",
+    "name": "Târgu Frumos (Westflanke)",
+    "description": "Bahnknoten zwischen Iași und Roman und Schauplatz schwerer Vorgefechte schon im Frühjahr 1944. In der Augustoffensive Sprungbrett der 7. Gardearmee zum Vorstoß gegen das deutsche XVII. Armeekorps.",
+    "coordinates": [
+      27.01055556,
+      47.21138889
+    ],
+    "category": "transport",
+    "wikipediaSlug": "T%C3%A2rgu_Frumos",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BF%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%AF%D1%81%D1%81%D1%8B.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Фотохроника ТАСС / TASS Photo Chronicle",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BF%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%AF%D1%81%D1%81%D1%8B.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-roman",
+    "name": "Roman (Siret-Knoten)",
+    "description": "Eisenbahn- und Straßenknoten am Siret südwestlich von Iași. Genommen am 23. August 1944 durch die mechanisierte Kavalleriegruppe Gorschkow; öffnete die Verfolgung Richtung Karpaten und Focșani.",
+    "coordinates": [
+      26.93,
+      46.93
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Roman_(Rum%C3%A4nien)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Bundesarchiv_Bild_101I-244-2305-13%2C_R%C3%BCckzug_von_Rum%C3%A4nien_%C3%BCber_Ungarn.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-244-2305-13 / Bauer",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-244-2305-13,_R%C3%BCckzug_von_Rum%C3%A4nien_%C3%BCber_Ungarn.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-bacau",
+    "name": "Bacău (Rückzugsknoten)",
+    "description": "Bedeutender Straßen- und Bahnknoten am Bistrița-Übergang. Sowjetische Verbände der 2. Ukrainischen Front nahmen Bacău am 28. August 1944 und schnitten den Rückzug der deutsch-rumänischen Heeresgruppe Wöhler in die Karpaten ab.",
+    "coordinates": [
+      26.90361111,
+      46.5675
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Bac%C4%83u",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Bundesarchiv_Bild_101I-244-2305-13%2C_R%C3%BCckzug_von_Rum%C3%A4nien_%C3%BCber_Ungarn.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-244-2305-13 / Bauer",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-244-2305-13,_R%C3%BCckzug_von_Rum%C3%A4nien_%C3%BCber_Ungarn.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-focsani",
+    "name": "Focșani (Focșani-Tor)",
+    "description": "Stadt zwischen Karpaten und Donau-Sumpf, klassisches Engpass-Tor zur Walachei. Die 6. Garde-Panzerarmee durchstieß am 27. August 1944 das Focșani-Tor und öffnete den Weg auf Bukarest und Ploiești.",
+    "coordinates": [
+      27.18583333,
+      45.69361111
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Foc%C8%99ani",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Ej%C3%A9rcitoSovi%C3%A9ticoEnBucarest1944.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Copyrighted free use (VRTS #2012020610003003)",
+      "credit": "Arhiva Institutului de Istorie al PMR / Fototeca online a comunismului românesc",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ej%C3%A9rcitoSovi%C3%A9ticoEnBucarest1944.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-galati",
+    "name": "Galați (Donau-Hafen)",
+    "description": "Großer Donauhafen am Zusammenfluss von Pruth, Siret und Donau. Eingenommen am 27. August 1944 durch die 46. Armee; öffnete den weiteren Vormarsch nach Bulgarien und sicherte die Donau-Mündungslinie.",
+    "coordinates": [
+      28.03416667,
+      45.44194444
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Gala%C8%9Bi",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/%D0%91%D1%80%D0%BE%D0%BD%D0%B5%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B0_%D0%94%D1%83%D0%BD%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D1%84%D0%BB%D0%BE%D1%82%D0%B8%D0%BB%D0%B8%D0%B8._1944_%D0%B3.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Mil.ru (Russian MoD)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D1%80%D0%BE%D0%BD%D0%B5%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B0_%D0%94%D1%83%D0%BD%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D1%84%D0%BB%D0%BE%D1%82%D0%B8%D0%BB%D0%B8%D0%B8._1944_%D0%B3.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-braila",
+    "name": "Brăila (Donau-Hafen)",
+    "description": "Donauhafen 25 km flussaufwärts von Galați und Knoten der Schiffsverbindungen zum Schwarzen Meer. Am 28. August 1944 von Truppen der 3. Ukrainischen Front besetzt und damit Abschluss der Donau-Operation.",
+    "coordinates": [
+      27.97222222,
+      45.2725
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Br%C4%83ila",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Red_Army_greeted_in_Bucharest.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unknown Soviet photographer (1944)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Army_greeted_in_Bucharest.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-pruth",
+    "name": "Pruth (Kesselfluss)",
+    "description": "Linker Nebenfluss der Donau und natürliche Grenze zwischen Moldau und Bessarabien. Entlang des Flusslaufs schloss sich zwischen 22. und 25. August 1944 der eigentliche Kessel um die deutsche 6. Armee.",
+    "coordinates": [
+      28.2,
+      46.8
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Pruth",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Troops_of_the_49th_Guards_Rifle_Division_marching%2C_Moldova%2C_late_August_1944.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Mil.ru / A. Lambros (Izvestia)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Troops_of_the_49th_Guards_Rifle_Division_marching,_Moldova,_late_August_1944.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-dnjestr",
+    "name": "Dnjestr (Ausgangsstellung)",
+    "description": "Fluss zwischen Karpaten und Schwarzem Meer und Hauptverteidigungslinie der deutschen Heeresgruppe Südukraine. Aus den seit April 1944 gehaltenen Brückenköpfen bei Tiraspol und nördlich Chișinău entwickelte sich die Augustoffensive.",
+    "coordinates": [
+      29.2,
+      47
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Dnister",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Troops_of_the_49th_Guards_Rifle_Division_marching%2C_Moldova%2C_late_August_1944.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Mil.ru / A. Lambros (Izvestia)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Troops_of_the_49th_Guards_Rifle_Division_marching,_Moldova,_late_August_1944.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-targul-neamt",
+    "name": "Târgu Neamț (Karpaten-Vorland)",
+    "description": "Stadt am Karpaten-Ostrand auf dem nördlichen Rückzugsweg der deutsch-rumänischen Verbände. Eingenommen am 26. August 1944; mit ihrer Besetzung war auch die letzte Ausweichroute über die Ostkarpaten versperrt.",
+    "coordinates": [
+      26.36944444,
+      47.20277778
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "T%C3%A2rgu_Neam%C8%9B",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Bundesarchiv_Bild_101I-244-2305-13%2C_R%C3%BCckzug_von_Rum%C3%A4nien_%C3%BCber_Ungarn.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-244-2305-13 / Bauer",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-244-2305-13,_R%C3%BCckzug_von_Rum%C3%A4nien_%C3%BCber_Ungarn.jpg"
+    }
+  },
+  {
+    "battleId": "jassy-kishinev",
+    "id": "jassy-kishinev-vaslui",
+    "name": "Vaslui (Moldau-Knoten)",
+    "description": "Stadt an der Straße Iași-Galați und wichtiger Etappenort der deutsch-rumänischen Heeresgruppe Dumitrescu. Am 23. August 1944 von der 2. Ukrainischen Front genommen; verband den Nord- und Süd-Stoß der Operation.",
+    "coordinates": [
+      27.73333333,
+      46.64
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Vaslui",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BF%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%AF%D1%81%D1%81%D1%8B.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Фотохроника ТАСС / TASS Photo Chronicle",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5_%D0%BF%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%AF%D1%81%D1%81%D1%8B.jpg"
+    }
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "battleId": "kursk",
+    "id": "kursk-stadt",
+    "name": "Kursk (Stadt)",
+    "description": "Namensgebende Großstadt im Zentrum des sowjetisch gehaltenen Frontbogens und gemeinsames Operationsziel beider deutscher Stoßkeile. Die Zangenoperation der Heeresgruppen Mitte und Süd sollte sich östlich der Stadt schließen und mehrere sowjetische Armeen einkesseln — sie kam nie näher als rund 30 km an Kursk heran.",
+    "coordinates": [
+      36.18333333,
+      51.71666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Kursk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Bundesarchiv_Bild_101I-078-3073-23A%2C_Russland%2C_Kursk%2C_Artillerie.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-078-3073-23A / Pincornelly / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-078-3073-23A,_Russland,_Kursk,_Artillerie.jpg"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-orjol",
+    "name": "Orjol (deutscher Nord-Anker)",
+    "description": "Sitz des AOK 9 unter Generaloberst Walter Model und logistischer Knotenpunkt der nördlichen Angriffsfront. Aus dem Orjoler Bogen heraus traten am 5. Juli 1943 die deutschen Verbände gegen die Zentralfront Rokossowskis an; nach dem Scheitern Zitadelles rollte ab 12. Juli die sowjetische Gegenoffensive \"Kutusow\" auf Orjol zu, das am 5. August befreit wurde.",
+    "coordinates": [
+      36.08333333,
+      52.96666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Orjol",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Orel_T34_by_Moskovskaya_Street_1943.2.jpg/960px-Orel_T34_by_Moskovskaya_Street_1943.2.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "RGAKFD (Russisches Staatliches Archiv für Film- und Fotodokumente), 5. August 1943 — T-34 in der befreiten Stadt Orel auf der Moskowskaja-Straße",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orel_T34_by_Moskovskaya_Street_1943.2.jpg"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-belgorod",
+    "name": "Belgorod (deutscher Süd-Anker)",
+    "description": "Aufmarschraum und rückwärtige Basis der 4. Panzerarmee Hoth und der Armeeabteilung Kempf für den südlichen Angriffskeil. Die Stadt blieb während Zitadelle deutsche Etappe und fiel erst am 5. August 1943 im Verlauf der Belgorod-Charkower Operation an die Rote Armee — daher in Moskau der erste \"Siegessalut\" des Krieges.",
+    "coordinates": [
+      36.6,
+      50.6
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Belgorod",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bundesarchiv_Bild_183-J14931%2C_Bei_Belgorod%2C_Panzer_VI_%28Tiger_I%29%2C_Aufmunitionieren.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-J14931 / Rottensteiner / CC-BY-SA 3.0 — Tiger I der Waffen-SS beim Aufmunitionieren bei Belgorod, Juli 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J14931,_Bei_Belgorod,_Panzer_VI_(Tiger_I),_Aufmunitionieren.jpg"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-prochorowka",
+    "name": "Prochorowka",
+    "description": "Bahnhofsort südöstlich von Kursk, am 12. Juli 1943 Schauplatz der berühmten Begegnungsschlacht zwischen dem II. SS-Panzerkorps (Hausser) und der 5. Garde-Panzerarmee Rotmistrows. Hunderte Panzer kämpften auf engem Raum zwischen Psel und Bahndamm — die sowjetische Propaganda stilisierte das Treffen später zur \"größten Panzerschlacht der Geschichte\".",
+    "coordinates": [
+      36.73638889,
+      51.03638889
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Schlacht_bei_Prochorowka",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Soviet_troops_and_T-34_tanks_counterattacking_Kursk_Voronezh_Front_July_1943.jpg/960px-Soviet_troops_and_T-34_tanks_counterattacking_Kursk_Voronezh_Front_July_1943.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Sowjetische Infanterie greift hinter T-34 an, Woronesch-Front bei Prochorowka, 12. Juli 1943 (mil.ru / Russisches Verteidigungsministerium)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soviet_troops_and_T-34_tanks_counterattacking_Kursk_Voronezh_Front_July_1943.jpg"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-hoehe-252-2",
+    "name": "Höhe 252.2 (Prochorowka)",
+    "description": "Beherrschende Geländekuppe rund 3 km südwestlich von Prochorowka, am 11. Juli von der SS-Division \"Leibstandarte\" genommen. Am Fuß der Höhe verlief ein über 4 m tiefer Panzergraben, in den am 12. Juli die anrollenden T-34 der 18. und 29. Panzerkorps stürzten — der Graben wurde zum Massengrab der sowjetischen Vorhut.",
+    "coordinates": [
+      36.71,
+      51.015
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Bundesarchiv_Bild_101III-Zschaeckel-206-35%2C_Schlacht_um_Kursk%2C_Panzer_VI_%28Tiger_I%29.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101III-Zschaeckel-206-35 / Zschäckel, Friedrich / CC-BY-SA 3.0 — Soldaten der SS-Division \"Das Reich\" vor einem Tiger I, Schlacht um Kursk, Juni/Juli 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Zschaeckel-206-35,_Schlacht_um_Kursk,_Panzer_VI_(Tiger_I).jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-prochorowka-denkmal",
+    "name": "Glockenturm von Prochorowka",
+    "description": "59 m hoher Belfried auf dem \"Dritten Heldenfeld Russlands\" (nach Kulikowo und Borodino), 1995 zum 50. Jahrestag des Sieges eingeweiht. Die Glocke schlägt dreimal pro Stunde — für die Gefallenen von Kursk und stellt das zentrale Denkmal des Schlachtfeldes dar.",
+    "coordinates": [
+      36.6855,
+      51.0507
+    ],
+    "category": "symbolic",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Prokhorovka._Zvonnitsa_in_Prokhorovka_Battlefield_P5070219_2200.jpg/960px-Prokhorovka._Zvonnitsa_in_Prokhorovka_Battlefield_P5070219_2200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "credit": "Alexxx1979",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prokhorovka._Zvonnitsa_in_Prokhorovka_Battlefield_P5070219_2200.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-ponyri",
+    "name": "Ponyri (Riegelstellung)",
+    "description": "Eisenbahnknoten an der Linie Orjol-Kursk und Schlüsselposition der zweiten sowjetischen Verteidigungslinie im Norden. Vom 5. bis 11. Juli verbissene Häuserkämpfe zwischen Teilen des deutschen XLI. Panzerkorps (u. a. 18. Panzer-Division, schwere Panzer \"Ferdinand\" des sPzJgAbt 653/654) und der 307. Schützendivision — Ponyri wurde zum \"Stalingrad bei Kursk\".",
+    "coordinates": [
+      36.3,
+      52.31666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Ponyri",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BE%D1%80%D1%83%D0%B4%D0%B8%D1%8F_53-%D0%9A_%D0%B2_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%D0%B5_%D0%9F%D0%BE%D0%BD%D1%8B%D1%80%D0%B5%D0%B9.jpg/960px-%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BE%D1%80%D1%83%D0%B4%D0%B8%D1%8F_53-%D0%9A_%D0%B2_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%D0%B5_%D0%9F%D0%BE%D0%BD%D1%8B%D1%80%D0%B5%D0%B9.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Pawel Troschkin (1909–1944) — Sowjetische 45-mm-Pak 53-K im Raum Ponyri, Juli 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BE%D1%80%D1%83%D0%B4%D0%B8%D1%8F_53-%D0%9A_%D0%B2_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%D0%B5_%D0%9F%D0%BE%D0%BD%D1%8B%D1%80%D0%B5%D0%B9.jpg"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-olchowatka",
+    "name": "Olchowatka",
+    "description": "Höhenzug zwischen Ponyri und Teploje, Hauptangriffsziel von Models 9. Armee am 6.-10. Juli 1943. Hier zerschellte der deutsche Nordkeil an den massiven Pakfront-Stellungen der 17. Garde-Schützenkorps; nach fünf Kilometern Geländegewinn musste Model den Angriff einstellen — der entscheidende Misserfolg des nördlichen Stoßes.",
+    "coordinates": [
+      36.1252,
+      52.2566
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/RIAN_archive_4408_Armor_piercers_on_the_Kursk_Bulge.jpg",
+      "source": "Wikimedia Commons (RIA Novosti Archiv)",
+      "license": "CC BY-SA 3.0",
+      "credit": "RIA Novosti archive, image #4408 / Natalia Bode / CC-BY-SA 3.0 — Sowjetische Panzerbüchsen-Schützen am Kursker Bogen, 20. Juli 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_4408_Armor_piercers_on_the_Kursk_Bulge.jpg"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-teploje",
+    "name": "Teploje",
+    "description": "Westliches Nachbardorf von Olchowatka, am 8. Juli kurzzeitig von der 2. und 4. Panzer-Division genommen, aber im Gegenstoß sowjetischer Reserven wieder verloren. Sinnbild dafür, wie tief gestaffelt die sowjetischen Pakfronten zwischen Höhen und Schluchten verteilt waren.",
+    "coordinates": [
+      36.0062,
+      52.2738
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Destroyed_German_tanks_at_Kursk.gif/960px-Destroyed_German_tanks_at_Kursk.gif",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf — Zerstörte deutsche Panzer am Kursker Bogen, 1943 (aus: \"Druhá světová válka, stručné dějiny\", Svoboda Praha)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Destroyed_German_tanks_at_Kursk.gif"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-maloarchangelsk",
+    "name": "Maloarchangelsk",
+    "description": "Östlicher Eckpfeiler der sowjetischen Verteidigung im Norden und linker Flügelpunkt des XXIII. Armeekorps (Wehrmacht). Die Stadt blieb während der gesamten Operation Zitadelle in sowjetischer Hand und sicherte die Front der 13. Armee Puchows; ab 19. Juli Sprungbrett für Teile der \"Kutusow\"-Offensive.",
+    "coordinates": [
+      36.5,
+      52.4
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Maloarchangelsk",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-tscherkasskoje",
+    "name": "Tscherkasskoje",
+    "description": "Dorf in der ersten sowjetischen Verteidigungslinie, am 5. Juli 1943 erster großer Durchbruchspunkt des XLVIII. Panzerkorps (Großdeutschland, 11. Panzer-Division, 3. Panzer-Division). Die Eroberung kostete einen ganzen Tag und schwere Verluste — sie zeigte schon am Auftakttag, wie zäh die Pakfront-Stellungen waren.",
+    "coordinates": [
+      36.1642,
+      50.8043
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Bundesarchiv_Bild_101III-Zschaeckel-208-25%2C_Schlacht_um_Kursk%2C_Panzer_III.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101III-Zschaeckel-208-25 / Zschäckel, Friedrich / CC-BY-SA 3.0 — Besatzung eines Panzer III der SS-Division \"Das Reich\" bei einem Halt im Raum Belgorod-Orel, Juli 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Zschaeckel-208-25,_Schlacht_um_Kursk,_Panzer_III.jpg"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-tomarowka",
+    "name": "Tomarowka",
+    "description": "Bahnhof und Aufmarschort der Heeresgruppe Süd unmittelbar nordwestlich von Belgorod, Hauptversorgungspunkt für die Panzergrenadier-Division Großdeutschland und die 11. Panzer-Division. Im August 1943 brach hier die Belgorod-Charkower Operation der Roten Armee durch.",
+    "coordinates": [
+      36.232243,
+      50.683018
+    ],
+    "category": "transport",
+    "coordinatesSource": "nominatim",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Bundesarchiv_Bild_101III-Merz-014-12A%2C_Russland%2C_Beginn_Unternehmen_Zitadelle%2C_Panzer.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101III-Merz-014-12A / Merz / CC-BY-SA 3.0 — Bereitstellung zum Unternehmen Zitadelle mit Sturmgeschützen und Panzern III/IV bei Belgorod, Juli 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Merz-014-12A,_Russland,_Beginn_Unternehmen_Zitadelle,_Panzer.jpg"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-syrzewo",
+    "name": "Syrzewo (Sirzewo)",
+    "description": "Dorf an der Pena, am 7.-8. Juli umkämpft zwischen der Panzergrenadier-Division \"Großdeutschland\" und der sowjetischen 3. mechanisierten Korps Krywoschein. Hier scheiterte der Versuch, die Pena nach Westen zu überschreiten — der südliche Stoßkeil wurde dadurch in Richtung Oboyan und Prochorowka kanalisiert.",
+    "coordinates": [
+      36.2696,
+      50.9002
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Bundesarchiv_Bild_101III-Cantzler-077-24%2C_Russland%2C_Vormarsch_deutscher_Panzer.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101III-Cantzler-077-24 / Cantzler / CC-BY-SA 3.0 — Vormarsch deutscher Panzer beim Unternehmen Zitadelle, 21. Juni 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Cantzler-077-24,_Russland,_Vormarsch_deutscher_Panzer.jpg"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-werchopenje",
+    "name": "Werchopenje",
+    "description": "Größeres Dorf an der Oboyaner Rollbahn, vom 8. bis 10. Juli Schwerpunkt der Kämpfe zwischen \"Großdeutschland\" und der 3. mechanisierten Garde-Korps sowie der 6. Garde-Armee Tschistjakows. Die Verluste hier kosteten die 4. Panzerarmee den letzten Schwung Richtung Oboyan und zwangen Hoth zur Schwenkung nach Prochorowka.",
+    "coordinates": [
+      36.2893,
+      50.9509
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bundesarchiv_Bild_101I-219-0553A-30%2C_Russland%2C_bei_Pokrowka%2C_marschierende_Infanterie.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-219-0553A-30 / Koch, Lutz / CC-BY-SA 3.0 — Deutsche Infanterie auf dem Marsch bei Pokrowka während des Unternehmens Zitadelle, Juni/Juli 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-219-0553A-30,_Russland,_bei_Pokrowka,_marschierende_Infanterie.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-beresowka",
+    "name": "Beresowka",
+    "description": "Dorf westlich von Werchopenje, am 10.-11. Juli von der 3. Panzer-Division gehalten und gegen Flankenstöße der sowjetischen 1. Panzerarmee Katukows verteidigt. Markierte den westlichsten Vorstoßpunkt des südlichen Angriffskeils und damit die exponierte linke Flanke des II. SS-Panzerkorps.",
+    "coordinates": [
+      36.2088,
+      50.9055
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Bundesarchiv_Bild_183-J14778%2C_Russland%2C_Grenadiere_auf_Sturmgesch%C3%BCtz.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-J14778 / Kempe / CC-BY-SA 3.0 — Sturmgeschütze mit aufgesessenen Grenadieren der Division \"Großdeutschland\" beim Angriff, Anfang Juli 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J14778,_Russland,_Grenadiere_auf_Sturmgesch%C3%BCtz.jpg"
+    }
+  },
+  {
+    "battleId": "kursk",
+    "id": "kursk-oboyan",
+    "name": "Oboyan",
+    "description": "Stadt an der Psel, ursprüngliches Tagesziel der 4. Panzerarmee Hoth für den dritten Operationstag. Die Stadt wurde nie erreicht; die zähen Verteidigungsgefechte um den Oboyaner Korridor zwangen Hoth, den Schwerpunkt am 10. Juli nach Osten — auf Prochorowka — zu verlegen.",
+    "coordinates": [
+      36.27916667,
+      51.21305556
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Oboyan",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/%D0%9E%D0%B1%D0%BE%D1%8F%D0%BD%D1%8C_1943.jpg/960px-%D0%9E%D0%B1%D0%BE%D1%8F%D0%BD%D1%8C_1943.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Deutsche Luftwaffen-Luftbildaufklärung über Obojan, 13. April 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9E%D0%B1%D0%BE%D1%8F%D0%BD%D1%8C_1943.jpg"
+    }
+  }
+]

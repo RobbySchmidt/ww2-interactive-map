@@ -1,0 +1,265 @@
+[
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-magnuszew",
+    "name": "Brückenkopf Magnuschew",
+    "description": "Nördlicher sowjetischer Weichselbrückenkopf südlich von Warschau, von dem aus die 1. Weißrussische Front unter Schukow am 14. Januar 1945 zum Großangriff antrat. Schon im Sommer 1944 erkämpft, bildete er das Sprungbrett der gesamten Offensive.",
+    "coordinates": [
+      21.38277778,
+      51.76194444
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Magnuszew",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-pulawy",
+    "name": "Brückenkopf Puławy",
+    "description": "Mittlerer Weichselbrückenkopf der 1. Weißrussischen Front, von dem aus am 14. Januar 1945 die 69. und 33. Armee Richtung Radom und Lodz vorstießen. Wichtiger Schauplatz des sowjetischen Durchbruchs durch die deutsche Hauptkampflinie.",
+    "coordinates": [
+      21.96916667,
+      51.41638889
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Puławy",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-sandomierz",
+    "name": "Brückenkopf Baranów-Sandomierz",
+    "description": "Südlicher und größter Weichselbrückenkopf der Roten Armee. Hier eröffnete die 1. Ukrainische Front unter Konew am 12. Januar 1945 die Weichsel-Oder-Operation und durchbrach mit massivem Artillerieeinsatz die deutsche 4. Panzerarmee.",
+    "coordinates": [
+      21.75,
+      50.68333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Sandomierz",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-warschau",
+    "name": "Warschau",
+    "description": "Zerstörte polnische Hauptstadt, am 17. Januar 1945 von der sowjetischen 47. Armee und der polnischen 1. Armee nahezu kampflos eingenommen, nachdem die deutsche Besatzung sich auf Befehl Hitlers zurückgezogen hatte. Schlüsselereignis der Operation.",
+    "coordinates": [
+      21.03333333,
+      52.21666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Warschau",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Destroyed_Warsaw%2C_capital_of_Poland%2C_January_1945.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Maciej Świerczyński, in: Jankowski/Ciborowski, Warszawa 1945 i dziś (1971)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Destroyed_Warsaw,_capital_of_Poland,_January_1945.jpg"
+    }
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-radom",
+    "name": "Radom",
+    "description": "Industriestadt im Zentralpolen, am 16. Januar 1945 von der 69. Armee zusammen mit Verbänden der 1. Weißrussischen Front umfasst und erobert. Wichtiger Verkehrs- und Rüstungsstandort hinter der deutschen Front.",
+    "coordinates": [
+      21.16666667,
+      51.4
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Radom",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-kielce",
+    "name": "Kielce",
+    "description": "Stadt in Südpolen, Durchbruchsraum der 1. Ukrainischen Front gegen das deutsche XXXXII. Armeekorps. Am 15. Januar 1945 von sowjetischen Panzerverbänden befreit, markierte den raschen Vorstoß Konews aus dem Brückenkopf Sandomierz.",
+    "coordinates": [
+      20.65,
+      50.88333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Kielce",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-czestochowa",
+    "name": "Tschenstochau",
+    "description": "Bedeutender Verkehrsknoten und Wallfahrtsort in Schlesien, am 17. Januar 1945 von der sowjetischen 52. Armee unter Generaloberst Korotejew besetzt. Eröffnete den Weg in das oberschlesische Industriegebiet.",
+    "coordinates": [
+      19.11666667,
+      50.8
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Częstochowa",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-krakau",
+    "name": "Krakau",
+    "description": "Alte polnische Königsstadt und Sitz des Generalgouvernements, am 19. Januar 1945 von der 59. und 60. Armee der 1. Ukrainischen Front weitgehend unzerstört befreit. Wichtiger Etappenort und Verkehrsknoten im Vorfeld Oberschlesiens.",
+    "coordinates": [
+      19.93722222,
+      50.06166667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Krakau",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D0%B3%D0%B0%D1%83%D0%B1%D0%B8%D1%86%D1%8B_%D0%9C-30_%D0%BB%D0%B5%D0%B9%D1%82%D0%B5%D0%BD%D0%B0%D0%BD%D1%82%D0%B0_%D0%9A%D1%83%D0%B7%D0%BD%D0%B5%D1%86%D0%BE%D0%B2%D0%B0_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D1%83_%D0%B1%D0%B0%D1%88%D0%BD%D0%B8_%D0%92%D0%B0%D0%B2%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0_%D0%B2_%D0%9A%D1%80%D0%B0%D0%BA%D0%BE%D0%B2%D0%B5.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (Russia)",
+      "credit": "Max Alpert / TASS, Januar 1945",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D0%B3%D0%B0%D1%83%D0%B1%D0%B8%D1%86%D1%8B_%D0%9C-30_%D0%BB%D0%B5%D0%B9%D1%82%D0%B5%D0%BD%D0%B0%D0%BD%D1%82%D0%B0_%D0%9A%D1%83%D0%B7%D0%BD%D0%B5%D1%86%D0%BE%D0%B2%D0%B0_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D1%83_%D0%B1%D0%B0%D1%88%D0%BD%D0%B8_%D0%92%D0%B0%D0%B2%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0_%D0%B2_%D0%9A%D1%80%D0%B0%D0%BA%D0%BE%D0%B2%D0%B5.jpg"
+    }
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-piotrkow",
+    "name": "Petrikau",
+    "description": "Stadt südlich von Lodz, am 18. Januar 1945 von der 3. Garde-Panzerarmee Rybalkos im Durchbruch zur Warthe genommen. Schauplatz des sowjetischen Panzervorstoßes im operativen Tiefenraum der Heeresgruppe A.",
+    "coordinates": [
+      19.68333333,
+      51.4
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Piotrków_Trybunalski",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-lodz",
+    "name": "Lodz",
+    "description": "Polens viertgrößte Industriestadt, am 19. Januar 1945 vom 29. Garde-Schützenkorps der 8. Gardearmee Tschuikows zusammen mit dem 9. mechanischen Korps eingenommen. Wichtige Textil- und Rüstungsstadt hinter der Weichselfront.",
+    "coordinates": [
+      19.46666667,
+      51.75
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Łódź",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Lodz_liberation2.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter sowjetischer Fotograf, Januar 1945 (armor.kiev.ua)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lodz_liberation2.jpg"
+    }
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-festung-posen",
+    "name": "Festung Posen",
+    "description": "Zur Festung erklärte Stadt mit gewaltigem Fortgürtel des 19. Jahrhunderts, ab 25. Januar 1945 von der 1. Weißrussischen Front eingeschlossen. Die rund 30.000–60.000 Mann starke Besatzung unter Generalmajor Gonell kapitulierte erst am 23. Februar.",
+    "coordinates": [
+      16.93516731,
+      52.42186867
+    ],
+    "category": "building",
+    "wikipediaSlug": "Festung_Posen",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Pozna%C5%84%2C_Cytadela%2C_po%C5%BCar_1945.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Z. Szumowski, Boje o Poznań 1945 – Brand der Zitadelle, Februar 1945",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pozna%C5%84,_Cytadela,_po%C5%BCar_1945.jpg"
+    }
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-bromberg",
+    "name": "Bromberg",
+    "description": "Industriestadt und Bahnknotenpunkt an der Brahe, am 27. Januar 1945 von Verbänden der 2. Weißrussischen Front Rokossowskis eingenommen. Sicherte die nördliche Flanke der Operation gegen Pommern.",
+    "coordinates": [
+      18,
+      53.11666667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Bydgoszcz",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-thorn",
+    "name": "Thorn",
+    "description": "Alte Hansestadt an der Weichsel mit Festungsanlagen, am 1. Februar 1945 nach Einkesselung durch die 2. Weißrussische Front befreit. Etwa 30.000 deutsche Soldaten brachen aus dem Kessel nach Westen aus.",
+    "coordinates": [
+      18.60722222,
+      53.01027778
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Toruń",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-breslau",
+    "name": "Festung Breslau",
+    "description": "Schlesische Großstadt und wichtiger Verkehrsknoten, am 15. Februar 1945 von der 1. Ukrainischen Front Konews eingeschlossen. Die zur Festung erklärte Stadt hielt unter General Niehoff bis zum 6. Mai 1945 – eine der längsten Belagerungen des Krieges.",
+    "coordinates": [
+      17.03333333,
+      51.11666667
+    ],
+    "category": "building",
+    "wikipediaSlug": "Festung_Breslau",
+    "coordinatesSource": "wikidata",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Soviet_artillery_at_the_outskirts_of_Breslau.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Sowjetischer Militärfotograf, 1945 (aus: Issajew, Goroda-kreposti, Moskau 2018)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soviet_artillery_at_the_outskirts_of_Breslau.jpg"
+    }
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-kuestrin",
+    "name": "Festung Küstrin",
+    "description": "Strategisch wichtige Oderfestung östlich Berlins, am 26. Januar 1945 von Hitler zur Festung erklärt. Die Stadt wurde Anfang Februar von der 5. Stoßarmee eingeschlossen und hielt bis Ende März – Schlüsselsperre vor der Reichshauptstadt.",
+    "coordinates": [
+      14.62898,
+      52.57907
+    ],
+    "category": "building",
+    "wikipediaSlug": "Küstrin",
+    "coordinatesSource": "wikidata"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-kienitz",
+    "name": "Kienitz",
+    "description": "Kleines Dorf am westlichen Oderufer im Oderbruch, am 31. Januar 1945 erstes von sowjetischen Spitzen der 5. Stoßarmee erreichtes Ziel auf reichsdeutschem Boden. Bildete den nördlichsten Oderbrückenkopf der Operation.",
+    "coordinates": [
+      14.44111111,
+      52.67416667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Kienitz",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "vistula-oder",
+    "id": "vistula-oder-frankfurt-oder",
+    "name": "Frankfurt (Oder)",
+    "description": "Stadt am Westufer der Oder, Ende Januar 1945 zur Festung erklärt und Schlüsselposition der Oderverteidigung südlich Küstrins. Hielt bis zur Berliner Operation im April 1945 und sicherte den deutschen Verteidigungsabschnitt der 9. Armee.",
+    "coordinates": [
+      14.55166667,
+      52.34208333
+    ],
+    "category": "building",
+    "wikipediaSlug": "Frankfurt_(Oder)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Bundesarchiv_Bild_183-J28787%2C_Volkssturmbataillon_an_der_Oder.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv Bild 183-J28787 / Pincornelly, 12. Februar 1945 – Volkssturm in Frankfurt/Oder",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J28787,_Volkssturmbataillon_an_der_Oder.jpg"
+    }
+  }
+]

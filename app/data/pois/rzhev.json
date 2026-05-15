@@ -1,0 +1,311 @@
+[
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-stadt",
+    "name": "Rschew (Stadt)",
+    "description": "Namensgebende Kreisstadt an der oberen Wolga, rund 180 km nordwestlich von Moskau, und Eckpfeiler des deutschen Frontvorsprungs der Heeresgruppe Mitte. Von Januar 1942 bis zur Räumung im Rahmen des Unternehmens Büffel im März 1943 fanden hier verlustreiche Stellungs- und Häuserkämpfe statt; die Stadt wurde dabei nahezu vollständig zerstört.",
+    "coordinates": [
+      34.33333333,
+      56.25
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Rschew",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%BE%D0%B4%D0%BD%D1%83_%D0%B8%D0%B7_%D1%83%D0%BB%D0%B8%D1%86_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%A0%D0%B6%D0%B5%D0%B2%D0%B0.jpg",
+      "source": "Wikimedia Commons / ITAR-TASS",
+      "license": "Public Domain (Russia)",
+      "credit": "Leonid Velikzhanin (TASS), März 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%BE%D0%B4%D0%BD%D1%83_%D0%B8%D0%B7_%D1%83%D0%BB%D0%B8%D1%86_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%A0%D0%B6%D0%B5%D0%B2%D0%B0.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-sytschowka",
+    "name": "Sytschowka (Stabsstandort 9. Armee)",
+    "description": "Kleinstadt südlich von Rschew, in der Generaloberst Walter Model das Hauptquartier der deutschen 9. Armee unterhielt und von der aus die Verteidigung des Rschewer Bogens koordiniert wurde. Der Eisenbahnknoten Sytschowka war zentrales Ziel sowjetischer Zangenoperationen, insbesondere der Operation Mars im November/Dezember 1942.",
+    "coordinates": [
+      34.28333333,
+      55.83333333
+    ],
+    "category": "building",
+    "wikipediaSlug": "Sytschowka",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/%D0%A2%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0_%D0%BD%D0%B5%D0%BC%D1%86%D0%B5%D0%B2_%D0%BD%D0%B0_%D0%BC%D0%B0%D1%80%D1%88%D0%B5.jpg",
+      "source": "Wikimedia Commons / Mil.ru",
+      "license": "CC BY 4.0",
+      "credit": "Verteidigungsministerium der Russischen Föderation, 1942 (deutsche Kampfgruppe auf dem Marsch, Raum Rschew)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0_%D0%BD%D0%B5%D0%BC%D1%86%D0%B5%D0%B2_%D0%BD%D0%B0_%D0%BC%D0%B0%D1%80%D1%88%D0%B5.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-wjasma",
+    "name": "Wjasma (Nachschubknoten)",
+    "description": "Bedeutende Bahn- und Straßenkreuzung am Südfuß des Rschew-Wjasma-Vorsprungs und wichtigster rückwärtiger Versorgungsknoten der 9. und 4. Armee. Die sowjetischen Offensiven von Januar 1942 sowie die Operation Mars zielten darauf, von Norden bzw. Süden auf Wjasma durchzubrechen und die deutschen Kräfte im Bogen einzukesseln.",
+    "coordinates": [
+      34.3,
+      55.2
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Wjasma",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/RIAN_archive_416_A_rifle_regiment_marching.jpg",
+      "source": "Wikimedia Commons / RIA Nowosti",
+      "license": "CC BY-SA 3.0",
+      "credit": "Viktor Kinelowski (RIA Nowosti #416), 1. März 1943, nordwestlich Wjasma",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_416_A_rifle_regiment_marching.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-subzow",
+    "name": "Subzow (Wolgaknie)",
+    "description": "Kleinstadt am Zusammenfluss von Wolga und Wasusa, südöstlich von Rschew gelegen und Eckpunkt der deutschen Wolga-Verteidigungslinie. Im Zuge der ersten Rschew-Sytschowka-Operation (Juli/August 1942) wurde Subzow von der sowjetischen 31. Armee zurückerobert und blieb bis 1943 Frontstadt.",
+    "coordinates": [
+      34.58333333,
+      56.16666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Subzow",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/%D0%97%D1%83%D0%B1%D1%86%D0%BE%D0%B2_1942.jpg",
+      "source": "Wikimedia Commons / U.S. National Archives",
+      "license": "Public Domain",
+      "credit": "Deutsche Luftaufklärung über Subzow, 26. Oktober 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%97%D1%83%D0%B1%D1%86%D0%BE%D0%B2_1942.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-belyj",
+    "name": "Belyj (Durchbruchsraum)",
+    "description": "Kleinstadt am Westrand des Vorsprungs, Schwerpunkt des südlichen Angriffskeils während der Operation Mars. Hier durchbrachen Teile der sowjetischen 41. Armee mit dem 6. Stalin-Mechanisierten Korps zunächst die deutsche Front, wurden aber im Dezember 1942 von der 1. Panzerdivision und Teilen der Großdeutschland eingeschlossen.",
+    "coordinates": [
+      32.95,
+      55.83333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Bely_(Twer)",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Carri_armati_sovietici_Rzev_1942.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-anon-70-EU)",
+      "credit": "Unbekannter Fotograf, sowjetische Panzer beim Vorstoß der Operation Mars, 1942 (Quelle: D. Glantz, „Zhukov's greatest defeat\")",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carri_armati_sovietici_Rzev_1942.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-olenino",
+    "name": "Olenino (Frontknoten Nordwest)",
+    "description": "Eisenbahnstation und Etappenort westlich von Rschew an der Bahnlinie Rschew-Welikije Luki. Im Raum Olenino kämpften ab Januar 1942 die sowjetische 22., 29. und 39. Armee gegen Teile des deutschen XXIII. Armeekorps; durch das Unternehmen Seydlitz wurden die hier eingebrochenen Kräfte im Juli 1942 zerschlagen.",
+    "coordinates": [
+      33.48,
+      56.209
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Bundesarchiv_Bild_101I-269-0211-10%2C_Russland%2C_Panzer_IV_im_Schlamm.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-269-0211-10 / Böhmer / Panzer IV im Schlamm, März 1942, Raum Wjasma",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-269-0211-10,_Russland,_Panzer_IV_im_Schlamm.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-pogoreloje",
+    "name": "Pogoreloje Gorodischtsche",
+    "description": "Ortschaft östlich von Subzow, Ausgangsraum der sowjetischen 20. und 31. Armee zu Beginn der ersten Rschew-Sytschowka-Operation Anfang August 1942. Der Geländeeinbruch bei Pogoreloje Gorodischtsche brachte tagelange Panzergefechte gegen die deutsche 9. Armee und gilt als eine der blutigsten Episoden des gesamten Frontabschnitts.",
+    "coordinates": [
+      34.9352,
+      56.1394
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/%D0%9F%D0%BE%D0%B3%D0%BE%D1%80%D0%B5%D0%BB%D0%BE%D0%B5_%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D1%89%D0%B5_1943.jpg",
+      "source": "Wikimedia Commons / U.S. National Archives",
+      "license": "Public Domain",
+      "credit": "Deutsche Luftaufklärung über Pogoreloje Gorodischtsche, 17. Januar 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BE%D0%B3%D0%BE%D1%80%D0%B5%D0%BB%D0%BE%D0%B5_%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D1%89%D0%B5_1943.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-selischarowo",
+    "name": "Selischarowo (Nordflanke)",
+    "description": "Siedlung an der Wolga oberhalb von Rschew, an der Einmündung der Selischarowka. Das Gebiet bildete die Nahtstelle zwischen deutscher 9. und 16. Armee und war im Winter 1941/42 Ausgangspunkt sowjetischer Durchbrüche der Kalininer Front in Richtung Olenino.",
+    "coordinates": [
+      33.45,
+      56.85
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Selischarowo",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/%D0%9A%D0%B0%D0%B2%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D1%81%D1%82%D1%8B_%D0%B2_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8.jpg",
+      "source": "Wikimedia Commons / Mil.ru",
+      "license": "CC BY 4.0",
+      "credit": "Verteidigungsministerium der Russischen Föderation – Kavalleristen des 11. Kavalleriekorps im Angriff, 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D0%B2%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D1%81%D1%82%D1%8B_%D0%B2_%D0%BD%D0%B0%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-welikije-luki",
+    "name": "Welikije Luki (Westflanke)",
+    "description": "Bahnknotenpunkt weit westlich des Rschewer Bogens, im Rücken der deutschen 3. Panzerarmee gelegen. Während der zur Operation Mars parallel laufenden Welikije-Luki-Operation (November 1942 - Januar 1943) wurde die deutsche Garnison eingeschlossen und nach erbitterten Kämpfen aufgerieben; Welikije Luki band wichtige deutsche Reserven, die im Rschewer Bogen fehlten.",
+    "coordinates": [
+      30.51666667,
+      56.33333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Welikije_Luki",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA_%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4%D0%B8%D1%82_%D0%BF%D0%BE_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%D0%BC_%D0%B3._%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B5_%D0%9B%D1%83%D0%BA%D0%B8.jpg",
+      "source": "Wikimedia Commons / TASS",
+      "license": "Public Domain (Russia)",
+      "credit": "Dmitri Faiwilowitsch (TASS), Januar 1943 – sowjetischer Panzer in den Straßen von Welikije Luki",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA_%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B4%D0%B8%D1%82_%D0%BF%D0%BE_%D1%83%D0%BB%D0%B8%D1%86%D0%B0%D0%BC_%D0%B3._%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B5_%D0%9B%D1%83%D0%BA%D0%B8.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-cholm",
+    "name": "Cholm (Nordwest-Eckpfeiler)",
+    "description": "Kleinstadt südlich des Ilmensees, im Frühjahr 1942 Schauplatz des berühmten Kessels von Cholm, in dem rund 5.500 deutsche Soldaten unter Generalmajor Scherer 105 Tage standhielten. Cholm sicherte als nördlicher Eckpfeiler die Anschlussstellung zur Heeresgruppe Nord und entlastete indirekt die deutsche Front bei Rschew.",
+    "coordinates": [
+      31.18333333,
+      57.15
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Cholm_(Nowgorod)",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Bundesarchiv_Bild_183-B24415%2C_Russland%2C_Cholm%2C_Vorposten-Bunker.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B24415 / Kriegsberichter v. Persan / Vorposten-Bunker im Kessel von Cholm, Mai 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B24415,_Russland,_Cholm,_Vorposten-Bunker.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-demidow",
+    "name": "Demidow (Südflanke Smolensk)",
+    "description": "Kleinstadt nördlich von Smolensk im rückwärtigen deutschen Operationsraum. Im Raum Demidow operierten ab Anfang 1942 die durch sowjetische Durchbrüche entstandenen Partisanenverbände und Reste der 4. Stoßarmee, gegen die das Unternehmen Seydlitz im Juli 1942 geführt wurde.",
+    "coordinates": [
+      31.51666667,
+      55.26666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Demidow_(Stadt)",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bundesarchiv_Bild_101I-269-0214-23%2C_Russland%2C_Instandsetzung_eines_Halbkettenfahrzeuges.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-269-0214-23 / Böhmer / Instandsetzung eines Halbkettenfahrzeugs der 9. Armee im rückwärtigen Raum, März 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-269-0214-23,_Russland,_Instandsetzung_eines_Halbkettenfahrzeuges.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-wolga-bruecke",
+    "name": "Wolga-Brücke Rschew",
+    "description": "Eisenbahn- und Straßenübergang über die obere Wolga am Nordrand der Stadt Rschew, lebenswichtig für die Versorgung des deutschen Brückenkopfes nördlich des Flusses. Die Brücke war wiederholt Ziel sowjetischer Artillerie und Luftangriffe; bei der Räumung im März 1943 wurde sie von der Wehrmacht gesprengt.",
+    "coordinates": [
+      34.328,
+      56.262
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/%D0%91%D0%BE%D0%B9%D1%86%D1%8B_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D1%8B_%D0%A0%D0%9A%D0%9A%D0%90_%D0%B1%D0%B5%D1%81%D0%B5%D0%B4%D1%83%D1%8E%D1%82_%D1%81_%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B5%D0%B9_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%A0%D0%B6%D0%B5%D0%B2%D0%B0.jpg",
+      "source": "Wikimedia Commons / TASS",
+      "license": "Public Domain (Russia)",
+      "credit": "Leonid Velikzhanin (TASS), 3. April 1943, Rotarmisten im befreiten Rschew unweit der gesprengten Wolga-Brücke",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BE%D0%B9%D1%86%D1%8B_%D0%B8_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D1%8B_%D0%A0%D0%9A%D0%9A%D0%90_%D0%B1%D0%B5%D1%81%D0%B5%D0%B4%D1%83%D1%8E%D1%82_%D1%81_%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D0%B5%D0%B9_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%A0%D0%B6%D0%B5%D0%B2%D0%B0.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-wolga-fluss",
+    "name": "Obere Wolga (Frontlinie)",
+    "description": "Die obere Wolga bildete im Abschnitt zwischen Selischarowo, Rschew und Subzow über weite Strecken die natürliche Trennlinie zwischen deutschen und sowjetischen Stellungen. Eisgang, Hochwasser und Sumpfgelände entlang des Flusses prägten den Bewegungskrieg und erschwerten Angriffe und Versorgung beider Seiten gleichermaßen.",
+    "coordinates": [
+      34.4,
+      56.3
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Wolga",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Assalto_fucilieri_sovietici.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-anon-70-EU)",
+      "credit": "Unbekannter Fotograf – sowjetische Schützen im Vorstoß durch den Schnee, Winter 1942/43 (Quelle: D. Glantz, „Zhukov's greatest defeat\")",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Assalto_fucilieri_sovietici.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-wasusa",
+    "name": "Wasusa-Frontabschnitt",
+    "description": "Rechter Nebenfluss der Wolga, der sich vom Raum Sytschowka nordwärts zur Mündung bei Subzow zieht und im Sommer 1942 die Hauptkampflinie der ersten Rschew-Sytschowka-Operation bildete. Die sowjetische 20. Armee erkämpfte hier unter hohen Verlusten einen Brückenkopf, ohne den anvisierten Durchbruch nach Sytschowka zu schaffen.",
+    "coordinates": [
+      34.55,
+      56
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Bundesarchiv_Bild_183-B28557%2C_Russland%2C_Soldat%2C_Sch%C3%BCtzenloch_grabend.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B28557 / Hans Lachmann / Deutscher Infanterist hebt ein Schützenloch aus, Ostfront August 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B28557,_Russland,_Soldat,_Sch%C3%BCtzenloch_grabend.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-stellung-bueffel",
+    "name": "Büffel-Stellung (Rückzugslinie)",
+    "description": "Ausgebaute deutsche Auffangstellung östlich von Smolensk, auf die sich die 9. und 4. Armee zwischen 1. und 22. März 1943 im Rahmen des Unternehmens Büffel zurückzogen. Mit der Räumung des Rschew-Wjasma-Vorsprungs verkürzte die Wehrmacht ihre Front um rund 300 km und gab den Frontbogen endgültig auf.",
+    "coordinates": [
+      33.2,
+      55.4
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Unternehmen_Büffel",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/RIAN_archive_253_An_artillery_division_on_a_march.jpg",
+      "source": "Wikimedia Commons / RIA Nowosti",
+      "license": "CC BY-SA 3.0",
+      "credit": "Viktor Kinelowski (RIA Nowosti #253), März 1943 – sowjetische Artilleriekolonne stößt nordwestlich Wjasma nach dem deutschen Rückzug in die Büffel-Stellung nach",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_253_An_artillery_division_on_a_march.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "rzhev",
+    "id": "rzhev-ehrenmal",
+    "name": "Sowjetisches Soldaten-Ehrenmal Rschew",
+    "description": "2020 eingeweihtes monumentales Denkmal für den unbekannten sowjetischen Soldaten, etwa 10 km südwestlich von Rschew an der Fernstraße M9 gelegen. Das 25 Meter hohe Bronzedenkmal erinnert an die Hunderttausenden Gefallenen der Rschew-Schlachten und gilt als zentraler russischer Erinnerungsort an die Kämpfe von 1942/43.",
+    "coordinates": [
+      34.2626,
+      56.2185
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Rschew-Ehrenmal_des_Sowjetsoldaten",
+    "coordinatesSource": "wikipedia"
+  }
+]

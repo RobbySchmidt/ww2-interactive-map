@@ -1,0 +1,308 @@
+[
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-charkow-stadt",
+    "name": "Charkow (Stadt)",
+    "description": "Zweitgrößte Stadt der Ukrainischen SSR und namensgebendes Operationsziel. Am 16. Februar 1943 gegen Hitlers Halte-Befehl von SS-Obergruppenführer Hausser geräumt, am 14./15. März nach viertägigen Häuserkämpfen vom II. SS-Panzerkorps (Leibstandarte, Das Reich, Totenkopf) zurückerobert — der propagandistisch wichtigste deutsche Erfolg des Jahres 1943.",
+    "coordinates": [
+      36.23111111,
+      49.9925
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Charkiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bundesarchiv_Bild_101III-Zschaeckel-186-36%2C_Charkow%2C_Waffen-SS_vor_brennendem_Haus.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101III-Zschaeckel-186-36 / Zschäckel, Friedrich / Charkow, Februar 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Zschaeckel-186-36,_Charkow,_Waffen-SS_vor_brennendem_Haus.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-belgorod",
+    "name": "Belgorod",
+    "description": "Nordanker des deutschen Gegenangriffs am Oberlauf des Donez. Am 9. Februar 1943 von der sowjetischen 40. Armee genommen, am 18. März 1943 von der Division Großdeutschland im Verlauf der Operation Donez zurückerobert — die Stadt markierte fortan die Südschulter des sich bildenden Kursker Frontbogens.",
+    "coordinates": [
+      36.6,
+      50.6
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Belgorod",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Bundesarchiv_Bild_101I-732-0129-26%2C_Bei_Belgorod%2C_Infanterie_im_Gefecht.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101I-732-0129-26 / Göttert / Infanterie der Division Großdeutschland im Gefecht bei Belgorod, 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-732-0129-26,_Bei_Belgorod,_Infanterie_im_Gefecht.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-pawlograd",
+    "name": "Pawlograd",
+    "description": "Eisenbahnknoten im Donezbecken-Westrand und tiefster Punkt des sowjetischen Vorstoßes der Operation Saturn/Sprung. Am 17. Februar 1943 vom sowjetischen 4. Garde-Panzerkorps (Popows mobile Gruppe) erreicht, am 24. Februar von der Heeresgruppe Süd (SS-Wiking, 15. Infanteriedivision) zurückerobert — Wendepunkt von Mansteins Schlag aus der Nachhand.",
+    "coordinates": [
+      35.87,
+      48.52
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Pawlohrad",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Bundesarchiv_Bild_146-1995-041-23A%2C_Ostfront%2C_Adolf_Hitler%2C_Erich_v._Manstein.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 146-1995-041-23A / Heinrich Hoffmann / Hitler empfängt Generalfeldmarschall von Manstein an der Ostfront, 10. März 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1995-041-23A,_Ostfront,_Adolf_Hitler,_Erich_v._Manstein.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-krasnograd",
+    "name": "Krasnograd",
+    "description": "Bahnknotenpunkt südwestlich Charkows und Aufmarschraum der SS-Division Totenkopf für den Gegenstoß nach Norden. Von hier aus drehte das II. SS-Panzerkorps ab dem 19. Februar 1943 in die Flanke der überdehnten sowjetischen 6. Armee Charitonows und schnitt sie vom Donez ab.",
+    "coordinates": [
+      35.4494234,
+      49.3741326
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Krasnohrad",
+    "coordinatesSource": "nominatim",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Bundesarchiv_Bild_101III-Ludwig-008-35A%2C_Russland%2C_bei_Charkow%2C_Soldaten_der_Waffen-SS.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101III-Ludwig-008-35A / Ludwig / Soldaten der Waffen-SS bei Charkow, März 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Ludwig-008-35A,_Russland,_bei_Charkow,_Soldaten_der_Waffen-SS.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-losowaja",
+    "name": "Losowaja",
+    "description": "Strategischer Eisenbahnknoten an der Linie Charkow–Donbass, Drehscheibe für sowjetischen Nachschub während der Operation Sprung. Am 11. Februar 1943 vom 6. Garde-Kavalleriekorps genommen, in der zweiten Februarhälfte durch das I. SS- und XLVIII. Panzerkorps zurückerobert — Schlüssel zur Wiederherstellung der deutschen Bahnverbindungen ins Donezbecken.",
+    "coordinates": [
+      36.31611111,
+      48.88916667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Losowa",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Bundesarchiv_Bild_101III-Roth-173-01%2C_Russland%2C_Raum_Charkow%2C_Jagdpanzer.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101III-Roth-173-01 / Franz Roth / Marder III und Grenadiere der SS-Division Leibstandarte SS Adolf Hitler im Raum Charkow, Februar 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Roth-173-01,_Russland,_Raum_Charkow,_Jagdpanzer.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-mereffa",
+    "name": "Mereffa",
+    "description": "Bahnknoten und Brückenkopf am Mscha-Fluss südwestlich Charkows, am 28. Februar 1943 von der SS-Division Das Reich genommen. Mereffa wurde zum südlichen Stützpunkt der Zangenbewegung um Charkow und sicherte den Aufmarsch des SS-Panzerkorps für den Sturm auf die Stadt.",
+    "coordinates": [
+      36.06861111,
+      49.81972222
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Merefa",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Bundesarchiv_Bild_101III-Zschaeckel-189-13%2C_Russland%2C_Charkow%2C_Waffen-SS_mit_Panzer_IV.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101III-Zschaeckel-189-13 / Zschäckel, Friedrich / Waffen-SS mit Panzer IV im Raum Charkow, März 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Zschaeckel-189-13,_Russland,_Charkow,_Waffen-SS_mit_Panzer_IV.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-taranowka",
+    "name": "Taranowka",
+    "description": "Eisenbahnüberquerung südlich Charkows, vom 2.–5. März 1943 Schauplatz fünftägiger Abwehrkämpfe. Ein Zug der sowjetischen 78. Garde-Schützendivision unter Leutnant Schironin (die später so genannten 25 Schironinzy) hielt den Bahnübergang gegen Angriffe der 6. Panzerdivision Hoths und wurde in der sowjetischen Geschichtsschreibung zum Symbol des Widerstands an der Mscha.",
+    "coordinates": [
+      36.165,
+      49.61611111
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Taraniwka",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Bundesarchiv_Bild_101I-732-0131-32%2C_Russland%2C_Gesch%C3%BCtzstellung_im_Winter.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101I-732-0131-32 / Göttert / Geschützstellung der Division Großdeutschland im Winter, Russland 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-732-0131-32,_Russland,_Gesch%C3%BCtzstellung_im_Winter.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-bogoduchow",
+    "name": "Bogoduchow",
+    "description": "Kreisstadt nordwestlich Charkows, am 11. März 1943 von der Panzer-Kampfgruppe Strachwitz (Großdeutschland) eingenommen. Über Bogoduchow lief die deutsche Umfassungsbewegung nach Norden, die später im Sommer 1943 erneut Schauplatz schwerer Panzerkämpfe der Belgorod-Charkower Operation werden sollte.",
+    "coordinates": [
+      35.51638889,
+      50.16083333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Bohoduchiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Bundesarchiv_Bild_101I-732-0129-29%2C_Bei_Belgorod%2C_Infanteristen_mit_Granatwerfer.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101I-732-0129-29 / Göttert / Infanteristen der Division Großdeutschland mit Granatwerfer bei Belgorod, 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-732-0129-29,_Bei_Belgorod,_Infanteristen_mit_Granatwerfer.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-tschugujew",
+    "name": "Tschugujew (Donez-Übergang)",
+    "description": "Wichtigster Donez-Übergang ostwärts Charkows und Aufmarschraum der sowjetischen 3. Panzerarmee Rybalkos, die erst am 10. Februar 1943 das verstopfte Eis des Donez überschreiten konnte. Nach der Rückeroberung Charkows wurde Tschugujew Mitte März 1943 zur östlichen Vorpostenlinie der wiederhergestellten Donez-Front.",
+    "coordinates": [
+      36.68994444,
+      49.83719444
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Tschuhujiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bundesarchiv_Bild_101III-Zschaeckel-186-37%2C_Russland%2C_bei_Charkow%2C_Soldaten_der_Waffen-SS.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101III-Zschaeckel-186-37 / Zschäckel, Friedrich / Soldaten der Waffen-SS bei Charkow, Februar 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Zschaeckel-186-37,_Russland,_bei_Charkow,_Soldaten_der_Waffen-SS.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-ljubotin",
+    "name": "Ljubotin",
+    "description": "Bahnknoten westlich Charkows an der Strecke nach Poltawa, im Februar 1943 sowjetische Sperrstellung gegen deutsche Ausbruchsversuche aus der Stadt. Beim deutschen Gegenangriff im März wurde Ljubotin zum Stützpunkt der Umfassung Charkows von Westen her durch die SS-Division Totenkopf.",
+    "coordinates": [
+      35.93055556,
+      49.94888889
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Ljubotyn",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Bundesarchiv_Bild_101III-Neumann-111-31%2C_Russland%2C_bei_Charkow%2C_Panzer.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101III-Neumann-111-31 / Neumann / Panzer der Waffen-SS bei Charkow, März 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Neumann-111-31,_Russland,_bei_Charkow,_Panzer.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-dergatschi",
+    "name": "Dergatschi",
+    "description": "Vorort nördlich Charkows an der Rollbahn nach Belgorod, am 12. März 1943 von einer Kampfgruppe der Leibstandarte (Peiper) genommen. Mit der Sperrung der Nord-Ausfallstraße war die sowjetische Verteidigung Charkows von ihrem Hinterland getrennt — der Beginn der deutschen Einschließung der Stadt.",
+    "coordinates": [
+      36.12194444,
+      50.11138889
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Derhatschi",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Bundesarchiv_Bild_101III-King-035-37%2C_Russland%2C_Charkow%2C_Fritz_Witt.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101III-King-035-37 / King / Fritz Witt (SS-Division Leibstandarte SS Adolf Hitler) bei Charkow, März 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-King-035-37,_Russland,_Charkow,_Fritz_Witt.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-nowaja-wodolaga",
+    "name": "Nowaja Wodolaga",
+    "description": "Marktflecken südwestlich Charkows, in der zweiten Februarhälfte 1943 Hauptstoßrichtung des SS-Panzerkorps Hausser beim Aufmarsch zum Gegenangriff. Von hier aus traten Leibstandarte und Das Reich am 7. März 1943 zum Vorstoß auf die Mscha-Linie und die südlichen Vororte Charkows an.",
+    "coordinates": [
+      35.87722222,
+      49.71972222
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Nowa_Wodolaha",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Bundesarchiv_Bild_101III-Ludwig-008-29A%2C_Russland%2C_bei_Charkow%2C_Ordensverleihung.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101III-Ludwig-008-29A / Ludwig / Ordensverleihung bei der Waffen-SS im Raum Charkow, März 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Ludwig-008-29A,_Russland,_bei_Charkow,_Ordensverleihung.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-slawjansk",
+    "name": "Slawjansk",
+    "description": "Eisenbahnknoten am Nordrand des Donezbeckens, schon im Januar 1943 von der sowjetischen Mobilgruppe Popow tief überrannt. Am 2. März 1943 von der 7. Panzerdivision der Heeresgruppe Süd zurückerobert — damit war der südliche Bahnkorridor von Dnjepropetrowsk ins Donezbecken wieder frei und Mansteins rechte Flanke gesichert.",
+    "coordinates": [
+      37.60588889,
+      48.85325
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Slowjansk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Bundesarchiv_Bild_101III-Gutscher-001-03%2C_Russland%2C_SS-Division_%22Das_Reich%22%2C_Tiger-Panzer.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101III-Gutscher-001-03 / Gutscher / Tiger-Panzer der SS-Division Das Reich, Russland 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101III-Gutscher-001-03,_Russland,_SS-Division_%22Das_Reich%22,_Tiger-Panzer.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-traktorenwerk",
+    "name": "Charkiwer Traktorenwerk (KhTZ)",
+    "description": "Sowjetisches Großwerk im Nordosten Charkows, vor dem Krieg auch Produzent des Schnellpanzers BT-7 und letztes Widerstandsnest der sowjetischen 19. Schützendivision bei der Rückeroberung Charkows. Am 15. März 1943 von der SS-Division Das Reich nach Häuserkämpfen niedergekämpft — symbolischer Schlusspunkt der dritten Schlacht um die Stadt.",
+    "coordinates": [
+      36.38044444,
+      49.96091667
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Charkiwer_Traktorenwerk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Bundesarchiv_Bild_183-J22454%2C_Charkow%2C_Sch%C3%BCtzenpanzerwagen_der_SS.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 183-J22454 / Zschäckel, Friedrich / Schützenpanzerwagen der SS in den Straßen Charkows, März 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J22454,_Charkow,_Sch%C3%BCtzenpanzerwagen_der_SS.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-donez-fluss",
+    "name": "Siwerskyj Donez (Donez-Linie)",
+    "description": "Wichtigster Flusslauf zwischen Belgorod und dem Donezbecken und nach dem deutschen Gegenschlag wiederhergestellte Frontlinie zwischen Heeresgruppe Süd und Woronesch-/Südwestfront. Bis Ende März 1943 zog sich die Front entlang des vereisten Donez vom Belgoroder Raum südwärts bis Tschugujew und Isjum.",
+    "coordinates": [
+      36.7,
+      49.5
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Siwerskyj_Donez",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-mscha-fluss",
+    "name": "Mscha (Brückenkopflinie)",
+    "description": "Linker Donez-Nebenfluss südlich Charkows und Anfang März 1943 letzte natürliche Verteidigungslinie der sowjetischen 3. Panzerarmee vor der Stadt. Zwischen Mereffa und Taranowka bildeten Leibstandarte und Das Reich die entscheidenden Brückenköpfe, von denen aus der Stoß auf Charkow ausging.",
+    "coordinates": [
+      36,
+      49.75
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Mscha_(Donez)",
+    "coordinatesSource": "original"
+  }
+]

@@ -1,0 +1,348 @@
+[
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-smolensk",
+    "name": "Smolensk",
+    "description": "Namensgebende Stadt am Oberen Dnjepr und zentrales Verkehrsdrehkreuz auf der Rollbahn nach Moskau. Am 16. Juli 1941 von der deutschen 29. ID (mot.) eingenommen, wurde Smolensk zum Anker des deutschen Innenrings, der die 16., 19. und 20. sowjetische Armee einschloss.",
+    "coordinates": [
+      32.05,
+      54.78333333
+    ],
+    "category": "building",
+    "wikipediaSlug": "Smolensk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Wkroczenie_wojsk_niemieckich_do_Smole%C5%84ska_%282-930%29.jpg",
+      "source": "Wikimedia Commons / Narodowe Archiwum Cyfrowe",
+      "license": "Public Domain",
+      "credit": "Narodowe Archiwum Cyfrowe (NAC), Sign. 2-930, Juli 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wkroczenie_wojsk_niemieckich_do_Smole%C5%84ska_(2-930).jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-witebsk",
+    "name": "Witebsk (Wizebsk)",
+    "description": "Stadt an der Westlichen Düna, am 9./10. Juli 1941 nach Düna-Übergang durch die 3. Panzergruppe (Hoth) genommen. Bildete die nördliche Zange der Kesselbildung um Smolensk und öffnete den deutschen Vorstoß über die Landbrücke Witebsk–Orscha–Smolensk.",
+    "coordinates": [
+      30.16666667,
+      55.18333333
+    ],
+    "category": "building",
+    "wikipediaSlug": "Wizebsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Bundesarchiv_Bild_101I-351-1427-21A%2C_Russland%2C_Panzer_IV.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-351-1427-21A / Jakobsen / CC-BY-SA 3.0, Juli 1941: Panzer IV Ausf. E mit Fahrzeugkolonne bei Witebsk",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-351-1427-21A,_Russland,_Panzer_IV.jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-mogilew",
+    "name": "Mogilew (Mahiljou)",
+    "description": "Festungsstadt am Dnjepr, von der sowjetischen 13. Armee zäh verteidigt. Erst am 26. Juli 1941 nach mehrwöchiger Belagerung durch das deutsche VII. Armeekorps gefallen — der hartnäckigste Widerstand im südlichen Kesselrand und Vorbote der zähen sowjetischen Verteidigung.",
+    "coordinates": [
+      30.33333333,
+      53.9025
+    ],
+    "category": "building",
+    "wikipediaSlug": "Mahiljou",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Bundesarchiv_Bild_101I-138-1091-29A%2C_Russland%2C_Mogilew%2C_Ansicht.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-138-1091-29A / Rudolf Kessler / CC-BY-SA 3.0, Juli 1941: Ansicht von Mogilew",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-138-1091-29A,_Russland,_Mogilew,_Ansicht.jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-orscha",
+    "name": "Orscha",
+    "description": "Eisenbahnknoten am Dnjepr auf der Linie Minsk–Smolensk–Moskau, am 16. Juli 1941 durch die 2. Panzergruppe (Guderian) erobert. Schlüsselübergang über den Dnjepr und Ausgangspunkt für den Vorstoß auf Smolensk; hier soll erstmals die sowjetische Katjuscha-Salvenwerfer-Batterie eingesetzt worden sein.",
+    "coordinates": [
+      30.4299,
+      54.5101
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Orscha",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Vor%C5%A1a%2C_%C4%8Cyhuna%C4%8Dnaja._%D0%92%D0%BE%D1%80%D1%88%D0%B0%2C_%D0%A7%D1%8B%D0%B3%D1%83%D0%BD%D0%B0%D1%87%D0%BD%D0%B0%D1%8F_%281941%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-anon-70)",
+      "credit": "Unbekannter Fotograf, 1941: Eisenbahnstraße / Bahnhof Orscha (Vorša, Čyhunačnaja)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vor%C5%A1a,_%C4%8Cyhuna%C4%8Dnaja._%D0%92%D0%BE%D1%80%D1%88%D0%B0,_%D0%A7%D1%8B%D0%B3%D1%83%D0%BD%D0%B0%D1%87%D0%BD%D0%B0%D1%8F_(1941).jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-jelnja",
+    "name": "Jelnja",
+    "description": "Kleinstadt südöstlich von Smolensk, Kern des berüchtigten Jelnja-Vorsprungs. Anfang August 1941 als Sprungbrett Richtung Moskau gehalten, ab 30. August im sowjetischen Gegenangriff Schukows zurückerobert (6. September) — die erste größere Stadtbefreiung der Roten Armee und Geburtsort des Titels Gardedivision.",
+    "coordinates": [
+      33.16666667,
+      54.56666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Jelnja",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/%D0%96%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8B_%D0%95%D0%BB%D1%8C%D0%BD%D0%B8_%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5_%D1%81%D0%B2%D0%BE%D0%B8%D1%85_%D0%B3%D0%BE%D1%80%D1%8F%D1%89%D0%B8%D1%85_%D0%B4%D0%BE%D0%BC%D0%BE%D0%B2.jpg",
+      "source": "Wikimedia Commons / waralbum.ru",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Pawel Troschkin (1909–1944), September 1941: Bewohnerinnen von Jelnja vor ihren brennenden Häusern",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%96%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8B_%D0%95%D0%BB%D1%8C%D0%BD%D0%B8_%D0%B2%D0%BE%D0%B7%D0%BB%D0%B5_%D1%81%D0%B2%D0%BE%D0%B8%D1%85_%D0%B3%D0%BE%D1%80%D1%8F%D1%89%D0%B8%D1%85_%D0%B4%D0%BE%D0%BC%D0%BE%D0%B2.jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-jarzewo",
+    "name": "Jarzewo",
+    "description": "Ort an der Rollbahn östlich Smolensks am Wop-Fluss, Schließpunkt des deutschen äußeren Kesselrings am 27. Juli 1941. Hier führte Generalleutnant Rokossowski eine sowjetische Eingreifgruppe, die Ausbruchsversuche der eingeschlossenen Armeen abzufangen versuchte.",
+    "coordinates": [
+      32.68333333,
+      55.06666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Jarzewo",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA_%D0%A2-34%2C_%D1%81%D0%BE%D0%B2%D0%B5%D1%80%D1%88%D0%B8%D0%B2%D1%88%D0%B8%D0%B9_%D1%82%D0%B0%D1%80%D0%B0%D0%BD_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B0%D0%BD%D0%BA%D0%B0_Pz.Kpfw._II.jpg",
+      "source": "Wikimedia Commons / waralbum.ru",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Leonid Welikschanin, 25. Juli 1941: Sowjetischer T-34 nach Rammstoß gegen Pz.Kpfw. II bei Krapiwnja (Duchowschtschina-Distrikt, östlich Smolensk)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA_%D0%A2-34,_%D1%81%D0%BE%D0%B2%D0%B5%D1%80%D1%88%D0%B8%D0%B2%D1%88%D0%B8%D0%B9_%D1%82%D0%B0%D1%80%D0%B0%D0%BD_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B0%D0%BD%D0%BA%D0%B0_Pz.Kpfw._II.jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-roslawl",
+    "name": "Roslawl",
+    "description": "Verkehrsknoten am Oberlauf der Desna südöstlich Smolensks. In der Schlacht von Roslawl (1.–8. August 1941) eroberte Guderians 2. Panzergruppe die Stadt und zerschlug die sowjetische 28. Armee — Sprungbrett für den späteren Wendung nach Süden zur Kesselschlacht bei Kiew.",
+    "coordinates": [
+      32.85,
+      53.95
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Roslawl",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Bundesarchiv_Bild_183-L28726%2C_Sowjetische_Kriegsgefangene_bei_Smolensk.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-L28726 / Markwardt / CC-BY-SA 3.0, August 1941: Sowjetische Kriegsgefangene bei Smolensk (Durchgangslager nach Roslawl-Kessel)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-L28726,_Sowjetische_Kriegsgefangene_bei_Smolensk.jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-dorogobusch",
+    "name": "Dorogobusch",
+    "description": "Stadt am Dnjepr östlich Smolensks, im August/September 1941 im Rücken des deutschen Kessels gelegen. Knotenpunkt sowjetischer Entlastungsstöße aus Richtung Wjasma und späterer Sammelpunkt durchgebrochener Verbände.",
+    "coordinates": [
+      33.3,
+      54.91666667
+    ],
+    "category": "building",
+    "wikipediaSlug": "Dorogobusch",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/%D0%96%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%94%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%D0%B1%D1%83%D0%B6%D0%B0_%D0%9C._%D0%A1%D0%BE%D0%BB%D0%B4%D0%B0%D1%82%D0%BE%D0%B2_%D0%B8%D1%89%D0%B5%D1%82_%D1%83%D1%86%D0%B5%D0%BB%D0%B5%D0%B2%D1%88%D0%B8%D0%B5_%D0%B2%D0%B5%D1%89%D0%B8_%D1%81%D1%80%D0%B5%D0%B4%D0%B8_%D1%80%D0%B0%D0%B7%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B4%D0%BE%D0%BC%D0%B0.jpg",
+      "source": "Wikimedia Commons / waralbum.ru",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Pawel Troschkin (1909–1944), August 1941: Bewohner M. Soldatow von Dorogobusch sucht Habseligkeiten in zerstörtem Haus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%96%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%94%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%D0%B1%D1%83%D0%B6%D0%B0_%D0%9C._%D0%A1%D0%BE%D0%BB%D0%B4%D0%B0%D1%82%D0%BE%D0%B2_%D0%B8%D1%89%D0%B5%D1%82_%D1%83%D1%86%D0%B5%D0%BB%D0%B5%D0%B2%D1%88%D0%B8%D0%B5_%D0%B2%D0%B5%D1%89%D0%B8_%D1%81%D1%80%D0%B5%D0%B4%D0%B8_%D1%80%D0%B0%D0%B7%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B4%D0%BE%D0%BC%D0%B0.jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-demidow",
+    "name": "Demidow",
+    "description": "Kleinstadt nordwestlich Smolensks zwischen Witebsk und Welisch, Mitte Juli 1941 von der 3. Panzergruppe genommen. Lag im Korridor, durch den der nördliche Zangenarm der Heeresgruppe Mitte die Verbindung zwischen Witebsk und Smolensk schloss.",
+    "coordinates": [
+      31.51666667,
+      55.26666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Demidow",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-welikije-luki",
+    "name": "Welikije Luki",
+    "description": "Eisenbahnstadt im Nordosten an der Lowat, Nahtstelle zwischen Heeresgruppe Mitte und Nord. Am 19. Juli 1941 vom deutschen LVII. Panzerkorps genommen, kurz darauf am 21. Juli durch sowjetischen Gegenangriff der 22. Armee zurückerobert — erst Ende August dauerhaft in deutscher Hand.",
+    "coordinates": [
+      30.51666667,
+      56.33333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Welikije_Luki",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Railwaystation_velikiye_luki.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia-1996)",
+      "credit": "Unbekannter deutscher Soldat, spätestens 1941: Bahnhofsgebäude Welikije Luki (Vorkriegszustand, später 1942/43 beschädigt)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Railwaystation_velikiye_luki.jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-newel",
+    "name": "Newel",
+    "description": "Kleinstadt im äußersten Nordwesten des Schlachtfelds, am 16. Juli 1941 durch die 3. Panzergruppe eingenommen. Markierte die nördliche Begrenzung des deutschen Vorstoßes und sicherte die Flanke gegen sowjetische Verbände aus Richtung Pskow.",
+    "coordinates": [
+      29.93333333,
+      56.01666667
+    ],
+    "category": "building",
+    "wikipediaSlug": "Newel_(Pskow)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Nieviel%2C_Rynak-Jura%C5%ADskaja._%D0%9D%D0%B5%D0%B2%D0%B5%D0%BB%D1%8C%2C_%D0%A0%D1%8B%D0%BD%D0%B0%D0%BA-%D0%AE%D1%80%D0%B0%D1%9E%D1%81%D0%BA%D0%B0%D1%8F_%281941-43%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain Mark 1.0",
+      "credit": "Unbekannter Fotograf, 1941–1943: Marktplatz/Juraŭskaja-Straße in Newel während deutscher Besatzung",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nieviel,_Rynak-Jura%C5%ADskaja._%D0%9D%D0%B5%D0%B2%D0%B5%D0%BB%D1%8C,_%D0%A0%D1%8B%D0%BD%D0%B0%D0%BA-%D0%AE%D1%80%D0%B0%D1%9E%D1%81%D0%BA%D0%B0%D1%8F_(1941-43).jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-polozk",
+    "name": "Polozk (Polazk)",
+    "description": "Stadt am Zusammenfluss von Düna und Polota, Teil der vorbereiteten sowjetischen Stalin-Linie. Nach mehrtägigen Kämpfen am 16. Juli 1941 geräumt — der Verlust öffnete den deutschen Panzern den Übergang über die Düna nordwestlich Witebsks.",
+    "coordinates": [
+      28.8,
+      55.48333333
+    ],
+    "category": "building",
+    "wikipediaSlug": "Polazk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Po%C5%82acak%2C_Zad%C5%BAvi%C5%84nie%2C_Bernardynski._%D0%9F%D0%BE%D0%BB%D0%B0%D1%86%D0%B0%D0%BA%2C_%D0%97%D0%B0%D0%B4%D0%B7%D1%8C%D0%B2%D1%96%D0%BD%D1%8C%D0%BD%D0%B5%2C_%D0%91%D1%8D%D1%80%D0%BD%D0%B0%D1%80%D0%B4%D1%8B%D0%BD%D1%81%D0%BA%D1%96_%281941-44%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-anon-70)",
+      "credit": "Unbekannter Fotograf, 1941–1944: Bernhardinerkloster in Polazk (Zadźvińnie) während deutscher Besatzung",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Po%C5%82acak,_Zad%C5%BAvi%C5%84nie,_Bernardynski._%D0%9F%D0%BE%D0%BB%D0%B0%D1%86%D0%B0%D0%BA,_%D0%97%D0%B0%D0%B4%D0%B7%D1%8C%D0%B2%D1%96%D0%BD%D1%8C%D0%BD%D0%B5,_%D0%91%D1%8D%D1%80%D0%BD%D0%B0%D1%80%D0%B4%D1%8B%D0%BD%D1%81%D0%BA%D1%96_(1941-44).jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-lepel",
+    "name": "Lepel",
+    "description": "Stadt zwischen Polozk und Witebsk, am 3. Juli 1941 in deutsche Hand gefallen. Schauplatz der Panzerschlacht von Lepel (6.–10. Juli 1941), bei der sowjetische Mechanisierte Korps einen Gegenstoß führten — der ersten Großpanzerschlacht der Heeresgruppe Mitte.",
+    "coordinates": [
+      28.7,
+      54.88333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Lepel_(Stadt)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Bundesarchiv_Bild_146-1975-078-21A%2C_Russland%2C_bei_Lepel%2C_Panzer_IV.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1975-078-21A / CC-BY-SA 3.0, Juli 1941: Panzer IV bei Lepel — zweiter schwerer Panzer zieht ihn rückwärts von einer zu schmalen Brücke",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1975-078-21A,_Russland,_bei_Lepel,_Panzer_IV.jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-rudnja",
+    "name": "Rudnja",
+    "description": "Kleinstadt nordwestlich Smolensks an der Straße nach Witebsk. Mitte Juli 1941 Schauplatz heftiger Begegnungsgefechte; hier sollen am 14. Juli 1941 erstmals BM-13-Katjuscha-Raketenwerfer der Batterie Flerow eingesetzt worden sein.",
+    "coordinates": [
+      31.06666667,
+      54.95
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Rudnja_(Smolensk)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/%D0%A2%D0%B0%D0%BD%D0%BA%D0%B8_%D0%A2-26_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_105-%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B4%D0%B8%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8_%D0%B0%D1%82%D0%B0%D0%BA%D1%83%D1%8E%D1%82_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D0%B5_%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8.jpg",
+      "source": "Wikimedia Commons / waralbum.ru",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Georgi Petrussow, Juli 1941: T-26-Panzer der sowjetischen 105. Panzerdivision (Westfront, Rokossowski-Gruppe) greifen deutsche Stellungen an — Begegnungsgefechte bei Smolensk",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D0%BD%D0%BA%D0%B8_%D0%A2-26_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_105-%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B4%D0%B8%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8_%D0%B0%D1%82%D0%B0%D0%BA%D1%83%D1%8E%D1%82_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D0%B5_%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8.jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-mstislawl",
+    "name": "Mstislawl (Mszislau)",
+    "description": "Ostbelarussische Stadt zwischen Mogilew und Roslawl, Mitte Juli 1941 durch das deutsche XXIV. Panzerkorps eingenommen. Lag im südlichen Vorfeld des Kessels und wurde Durchgangsraum für Guderians Schwenk Richtung Roslawl.",
+    "coordinates": [
+      31.71666667,
+      54.01666667
+    ],
+    "category": "building",
+    "wikipediaSlug": "Mszislau",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Am%C5%9Bcis%C5%82a%C5%AD%2C_Tupi%C4%8De%C5%AD%C5%A1%C4%8Dyna._%D0%90%D0%BC%D1%81%D1%8C%D1%86%D1%96%D1%81%D0%BB%D0%B0%D1%9E%2C_%D0%A2%D1%83%D0%BF%D1%96%D1%87%D1%8D%D1%9E%D1%88%D1%87%D1%8B%D0%BD%D0%B0_%281941-44%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-anon-70)",
+      "credit": "Unbekannter Fotograf, 1941–1944: Heilig-Geist-Kloster Tupičeŭščyna in Mstislawl (Amscislau) während deutscher Besatzung",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Am%C5%9Bcis%C5%82a%C5%AD,_Tupi%C4%8De%C5%AD%C5%A1%C4%8Dyna._%D0%90%D0%BC%D1%81%D1%8C%D1%86%D1%96%D1%81%D0%BB%D0%B0%D1%9E,_%D0%A2%D1%83%D0%BF%D1%96%D1%87%D1%8D%D1%9E%D1%88%D1%87%D1%8B%D0%BD%D0%B0_(1941-44).jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-kritschew",
+    "name": "Kritschew (Krytschau)",
+    "description": "Industriestadt am Sosch südlich Mogilews, Anfang August 1941 von Guderians Panzern erobert. Sicherte den Aufmarschraum für die Schlacht bei Roslawl und bildete einen Eckpfeiler des südlichen deutschen Kesselrings.",
+    "coordinates": [
+      31.71666667,
+      53.71666667
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Krytschau",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Bundesarchiv_Bild_101I-137-1032-14A%2C_Russland%2C_brennendes_Dorf%2C_deutsche_Kavallerie.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-137-1032-14A / Rudolf Kessler / CC-BY-SA 3.0, 16. Juli 1941: Deutsche Aufklärungskavallerie in brennendem Dorf bei Mogilew/Krytschau-Raum am Dnjepr",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-137-1032-14A,_Russland,_brennendes_Dorf,_deutsche_Kavallerie.jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-welisch",
+    "name": "Welisch",
+    "description": "Stadt an der Westlichen Düna nordwestlich Smolensks, Mitte Juli 1941 nach Düna-Übergang genommen. Diente als Flankenscharnier zwischen Witebsk und Welikije Luki im nördlichen Kesselarm.",
+    "coordinates": [
+      31.2,
+      55.6
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Welisch",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Viali%C5%BE%2C_Rynak._%D0%92%D1%8F%D0%BB%D1%96%D0%B6%2C_%D0%A0%D1%8B%D0%BD%D0%B0%D0%BA_%281941%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (Life+70)",
+      "credit": "Unbekannter Fotograf, 1941: Rathaus/Marktplatz Welisch (Vialiž, Rynak) während deutscher Besatzung",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Viali%C5%BE,_Rynak._%D0%92%D1%8F%D0%BB%D1%96%D0%B6,_%D0%A0%D1%8B%D0%BD%D0%B0%D0%BA_(1941).jpg"
+    }
+  },
+  {
+    "battleId": "smolensk-1941",
+    "id": "smolensk-1941-potschinok",
+    "name": "Potschinok",
+    "description": "Kleinstadt und Bahnstation an der Strecke Smolensk–Roslawl südöstlich Smolensks. Mitte Juli 1941 von deutschen Verbänden besetzt, sicherte die rückwärtige Verbindung zwischen Smolensker Kessel und Guderians Vorstoß nach Roslawl.",
+    "coordinates": [
+      32.45,
+      54.4
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Potschinok",
+    "coordinatesSource": "wikipedia"
+  }
+]

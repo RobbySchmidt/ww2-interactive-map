@@ -1,0 +1,258 @@
+[
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-stuhlweissenburg",
+    "name": "Stuhlweißenburg (Székesfehérvár)",
+    "description": "Mittelungarische Krönungs- und Industriestadt, östlich des Bakony und nördlich des Plattensees. Vom 22. Januar bis 22. März 1945 deutsche Frontstadt zwischen Velence-See und Bakony, Ausgangspunkt der nördlichen Stoßkeile des Unternehmens Frühlingserwachen. Nach dem Scheitern der Offensive am 22. März endgültig an die 3. Ukrainische Front verloren.",
+    "coordinates": [
+      18.41666667,
+      47.2
+    ],
+    "category": "building",
+    "wikipediaSlug": "Székesfehérvár",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Bundesarchiv_Bild_146-1986-064-14%2C_Ungarn%2C_Stra%C3%9Fenk%C3%A4mpfe%2C_ungarische_Pak.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1986-064-14 / Keimling / CC-BY-SA 3.0 — Straßenkämpfe in Ungarn, ungarische Pak (November 1944)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1986-064-14,_Ungarn,_Stra%C3%9Fenk%C3%A4mpfe,_ungarische_Pak.jpg"
+    }
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-plattensee",
+    "name": "Plattensee (Balaton)",
+    "description": "Mit 594 km² größter Binnensee Mitteleuropas, namensgebend für die Offensive. Die 6. SS-Panzerarmee griff am 6. März 1945 zwischen Nordufer und Velence-See in Richtung Sárviz-Kanal an, während die 2. Panzerarmee südlich des Sees in Richtung Kaposvár vorstieß. Das schlammige Tauwetter um den See zermürbte die deutschen Panzerverbände innerhalb weniger Tage.",
+    "coordinates": [
+      17.74,
+      46.84
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Balaton",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Bundesarchiv_Bild_146-1989-105-13A%2C_Ungarn%2C_deutscher_R%C3%BCckzug.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1989-105-13A / Wilfried Woscidlo / CC-BY-SA 3.0 — Deutscher Rückzug in Ungarn am Plattensee, März 1945 (Panther-Panzer, SdKfz 250)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1989-105-13A,_Ungarn,_deutscher_R%C3%BCckzug.jpg"
+    }
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-velence-see",
+    "name": "Velence-See",
+    "description": "Flacher Steppensee zwischen Stuhlweißenburg und der Donau, etwa 26 km² groß. Bildete das nördliche Scharnier des deutschen Angriffsraums; nördlich davon ging das I. SS-Panzerkorps, südlich das II. SS-Panzerkorps in den Engpass zwischen See und Plattensee. Die schmale Landenge wurde zur Falle, als sowjetische Gegenangriffe am 16. März die Flanken einschnürten.",
+    "coordinates": [
+      18.6,
+      47.20833333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Velence-See",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-sarviz-kanal",
+    "name": "Sárviz-Kanal",
+    "description": "Schiffbarer Entwässerungskanal entlang des Sárviz-Tals zwischen Stuhlweißenburg und Simontornya. Trennte die Angriffsräume des I. und II. SS-Panzerkorps und wurde mit seinem aufgeweichten Uferland und mehreren Brückenköpfen zum entscheidenden Hindernis: schwere Panzer der Heeresgruppe Süd sackten im Schlamm ein, viele Tiger II mussten gesprengt zurückgelassen werden.",
+    "coordinates": [
+      18.5297115,
+      46.9322762
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Sárvíz_(Donau)",
+    "coordinatesSource": "nominatim",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Bundesarchiv_Bild_146-1975-102-14A%2C_Panzer_VI_%28Tiger_II%2C_K%C3%B6nigstiger%29.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1975-102-14A / Hamann / CC-BY-SA 3.0 — Panzerkampfwagen VI „Tiger II / Königstiger“ (1944) — der schwere deutsche Panzer, der bei Frühlingserwachen massenhaft im Schlamm liegen blieb",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1975-102-14A,_Panzer_VI_(Tiger_II,_K%C3%B6nigstiger).jpg"
+    }
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-sio-kanal",
+    "name": "Sió-Kanal",
+    "description": "Rund 30 m breiter Abflusskanal vom Südostufer des Plattensees zur Donau, militärisch entscheidende Wasserlinie. Am 11. März 1945 setzten Verbände des II. SS-Panzerkorps unter schweren Verlusten über den Sió, kamen aber nur wenige Kilometer voran. Die Linie markierte zugleich die südliche Begrenzung des deutschen Stoßkeils.",
+    "coordinates": [
+      18.4,
+      46.78
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Sió",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-simontornya",
+    "name": "Simontornya",
+    "description": "Kleinstadt am Zusammenfluss von Sió und Sárviz, beherrschte den südlichen Brückenkopf über den Sió-Kanal. Vom 9. März an erbittert umkämpfter Hauptübergang der 6. SS-Panzerarmee; die Burg und das Stadtzentrum wurden durch Artillerieduelle schwer beschädigt. Nach dem sowjetischen Gegenangriff am 16. März einer der ersten aufgegebenen Brückenköpfe.",
+    "coordinates": [
+      18.54305556,
+      46.75722222
+    ],
+    "category": "building",
+    "wikipediaSlug": "Simontornya",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-veszprem",
+    "name": "Veszprém",
+    "description": "Bischofssitz nördlich des Plattensees am Südrand des Bakony, deutsches Etappen- und Lazarettzentrum für den Nordabschnitt der Offensive. Wichtiger Eisenbahnknoten an der Strecke Stuhlweißenburg–Györ; nach dem Scheitern der Operation am 23. März von der 9. Gardearmee genommen und Ausgangsbasis für den Stoß auf Wien.",
+    "coordinates": [
+      17.91666667,
+      47.1
+    ],
+    "category": "building",
+    "wikipediaSlug": "Veszprém",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Bundesarchiv_Bild_146-1986-064-10%2C_Ungarn%2C_Verwundetentransport.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1986-064-10 / Wilfried Woscidlo / CC-BY-SA 3.0 — Verwundetentransport in Ungarn am Plattensee, März 1945",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1986-064-10,_Ungarn,_Verwundetentransport.jpg"
+    }
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-mor",
+    "name": "Mór",
+    "description": "Kleinstadt im Mór-Graben zwischen Bakony und Vértes-Gebirge, beherrschte den Übergang von der Donauebene ins westungarische Bergland. Während der Offensive Versorgungs- und Reservepunkt der Heeresgruppe Süd, nach dem sowjetischen Durchbruch bei Felsőgalla am 19. März Rückzugsrichtung der zurückflutenden 6. Armee.",
+    "coordinates": [
+      18.20861111,
+      47.37166667
+    ],
+    "category": "building",
+    "wikipediaSlug": "Mór",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-tatabanya",
+    "name": "Tatabánya",
+    "description": "Bergbau- und Industriestadt mit Braunkohlerevier und Aluminiumwerken, lebenswichtig für die letzten Treibstoff- und Stromreserven der Ostfront. Am 19. März 1945 nach dem Durchbruch der 4. Gardearmee bei Felsőgalla aufgegeben; die Werke fielen weitgehend unzerstört in sowjetische Hand.",
+    "coordinates": [
+      18.39472222,
+      47.58611111
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Tatabánya",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-varpalota",
+    "name": "Várpalota",
+    "description": "Kleinindustriestadt im Bakony-Vorland mit Braunkohlegruben und chemischen Werken (Pétfürdő/Pulverfabrik), wichtige deutsche Nachschubstellung hinter der Front. Am 19. März 1945 Durchbruchsrichtung der sowjetischen 9. Gardearmee; ihr Fall öffnete die Tür zum Bakony-Engpass und damit zum Rückzug nach Westungarn.",
+    "coordinates": [
+      18.13948056,
+      47.19728889
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Várpalota",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-bakony",
+    "name": "Bakony-Gebirge",
+    "description": "Bis 709 m hohes vulkanisches Mittelgebirge nördlich des Plattensees, dichter Waldgürtel mit engen Pässen. Wurde nach dem Scheitern der Offensive zum Rückzugsraum der Heeresgruppe Süd; in den schlammigen Waldwegen blieben über 300 Panzer und Sturmgeschütze stecken und mussten gesprengt werden – größter Verlust an schwerem Gerät seit Tunesien.",
+    "coordinates": [
+      17.83333333,
+      47.25
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Bakony",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-vertes",
+    "name": "Vértes-Gebirge",
+    "description": "Bewaldetes Kalksteingebirge zwischen Mór und Tatabánya, nördliche Flankendeckung der deutschen Angriffsfront. Im Mór-Graben und an den Westhängen leisteten Reste der Heeresgruppe Balck nach dem 19. März hinhaltenden Widerstand, bevor sie über die ungarisch-österreichische Grenze zurückwichen.",
+    "coordinates": [
+      18.33333333,
+      47.4
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Vértes",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-margarethenstellung",
+    "name": "Margarethenstellung",
+    "description": "Deutsche Feldbefestigungslinie zwischen Velence-See, Sárviz-Kanal und Plattensee, ausgebaut seit Januar 1945. Diente als Ausgangsstellung für Frühlingserwachen und nach dessen Scheitern als Auffanglinie – wurde aber binnen 48 Stunden von der sowjetischen Gegenoffensive (16.–18. März) durchbrochen, weil die Reserven verbraucht waren.",
+    "coordinates": [
+      18.5,
+      47.05
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Plattenseeoffensive",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Bundesarchiv_Bild_146-1986-064-15%2C_Ungarn%2C_Stra%C3%9Fenk%C3%A4mpfe%2C_ungarische_Pak.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1986-064-15 / Keimling / CC-BY-SA 3.0 — Ungarische Pak in Stellung, Ungarn (November 1944)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1986-064-15,_Ungarn,_Stra%C3%9Fenk%C3%A4mpfe,_ungarische_Pak.jpg"
+    }
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-gardony",
+    "name": "Gárdony",
+    "description": "Ort am Südufer des Velence-Sees, Vorstoßziel des III. Panzerkorps im Engpass zwischen den beiden Seen. Hier verlief am 9. März eine der weitesten deutschen Vorstoßlinien (etwa 25 km Tiefe), bevor sowjetische Pakfronten und einsetzendes Tauwetter den Angriff zum Stehen brachten.",
+    "coordinates": [
+      18.60906111,
+      47.19731111
+    ],
+    "category": "building",
+    "wikipediaSlug": "Gárdony",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-enying",
+    "name": "Enying",
+    "description": "Kleinstadt zwischen Plattensee-Südostufer und Sárviz-Kanal, ab 9. März 1945 vorderste deutsche Stellung des II. SS-Panzerkorps. Markierte gemeinsam mit Dég und Mezőkomárom die südliche Spitze des deutschen Vorstoßes – jenseits davon versank das Gelände im Sárviz-Schlamm und stoppte die Panzeroffensive endgültig.",
+    "coordinates": [
+      18.244,
+      46.92684
+    ],
+    "category": "building",
+    "wikipediaSlug": "Enying",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-felsogalla",
+    "name": "Felsőgalla",
+    "description": "Bergmannssiedlung am Südrand von Tatabánya, am 19. März 1945 Durchbruchsstelle der sowjetischen 4. Gardearmee in den deutschen Nordabschnitt. Der Durchstoß rollte die gesamte Margarethenstellung von Norden her auf und besiegelte das Scheitern der Plattenseeoffensive.",
+    "coordinates": [
+      18.39472222,
+      47.58611111
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Tatabánya",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "spring-awakening",
+    "id": "spring-awakening-tata",
+    "name": "Tata",
+    "description": "Stadt am Altenburger See zwischen Vértes und Donau, deutscher Etappenort und Eisenbahnknoten an der Strecke Budapest–Wien. Am 19. März 1945 nach dem Durchbruch bei Felsőgalla von der 4. Gardearmee genommen; ihr Fall öffnete der Roten Armee den direkten Marschweg nach Komárom und an die österreichische Grenze.",
+    "coordinates": [
+      18.32833333,
+      47.655
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Tata_(Ungarn)",
+    "coordinatesSource": "wikipedia"
+  }
+]

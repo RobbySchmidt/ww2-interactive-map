@@ -1,0 +1,309 @@
+[
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-pulkowo-hoehen",
+    "name": "Pulkowo-Höhen",
+    "description": "Höhenzug rund 20 km südlich des Stadtzentrums und südlicher Eckpfeiler des sowjetischen Verteidigungsrings. Die Wehrmacht erreichte hier im September 1941 ihre nördlichste Linie vor Leningrad; die Höhen blieben bis zur Befreiung im Januar 1944 hart umkämpft.",
+    "coordinates": [
+      30.326047,
+      59.771811
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Pulkovo_Heights",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D0%B0%D1%80%D1%82%D0%B8%D0%BB%D0%BB%D0%B5%D1%80%D0%B8%D1%81%D1%82%D1%8B_%D0%B2%D1%8B%D0%BA%D0%B0%D1%82%D1%8B%D0%B2%D0%B0%D1%8E%D1%82_45-%D0%BC%D0%BC_%D0%BF%D1%83%D1%88%D0%BA%D0%B8_7%E2%80%9333_%D0%BD%D0%B0_%D0%B1%D0%BE%D0%B5%D0%B2%D1%83%D1%8E_%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8E_%D0%B8%D0%B7_%D0%94%D0%9E%D0%A2%D0%B0_%D0%B2_%D0%9F%D1%83%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain (TASS, Russia)",
+      "credit": "Boris Losin / TASS, März 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D0%B0%D1%80%D1%82%D0%B8%D0%BB%D0%BB%D0%B5%D1%80%D0%B8%D1%81%D1%82%D1%8B_%D0%B2%D1%8B%D0%BA%D0%B0%D1%82%D1%8B%D0%B2%D0%B0%D1%8E%D1%82_45-%D0%BC%D0%BC_%D0%BF%D1%83%D1%88%D0%BA%D0%B8_7%E2%80%9333_%D0%BD%D0%B0_%D0%B1%D0%BE%D0%B5%D0%B2%D1%83%D1%8E_%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8E_%D0%B8%D0%B7_%D0%94%D0%9E%D0%A2%D0%B0_%D0%B2_%D0%9F%D1%83%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE.jpg"
+    }
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-pulkowo-sternwarte",
+    "name": "Pulkowo-Sternwarte",
+    "description": "Hauptobservatorium der sowjetischen Akademie der Wissenschaften auf den Pulkowo-Höhen, das in der Frontlinie lag und im Krieg fast vollständig zerstört wurde. Die Anlage stand exemplarisch für den Verlust des wissenschaftlichen Erbes der Stadt.",
+    "coordinates": [
+      30.32634167,
+      59.77185278
+    ],
+    "category": "building",
+    "wikipediaSlug": "Pulkowo-Observatorium",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-kolpino",
+    "name": "Kolpino (Ischora-Werk)",
+    "description": "Industrievorstadt rund 25 km südöstlich des Stadtkerns mit dem großen Ischora-Stahlwerk. Der Sektor lag direkt an der Front, wurde aber während der gesamten Blockade von der Roten Armee gehalten und produzierte unter Beschuss weiter Panzerstahl.",
+    "coordinates": [
+      30.6,
+      59.75
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Kolpino",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-newski-brueckenkopf",
+    "name": "Newski-Brückenkopf (Newski Pjatatschok)",
+    "description": "Winziger sowjetischer Brückenkopf am Ostufer der Newa bei Dubrowka, rund 50 km südöstlich Leningrads. Von September 1941 bis Mai 1943 Schauplatz extrem verlustreicher Versuche, eine Landverbindung zum belagerten Stadtgebiet zu öffnen.",
+    "coordinates": [
+      30.95333333,
+      59.84361111
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Nevsky_Pyatachok",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/RIAN_archive_58228_Leningrad_Front_Soldiers_Before_Offensive.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Vsevolod Tarasevich / RIA Novosti, 1. September 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_58228_Leningrad_Front_Soldiers_Before_Offensive.jpg"
+    }
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-strasse-des-lebens",
+    "name": "Straße des Lebens (Ladogasee-Eisstraße)",
+    "description": "Versorgungsroute über den zugefrorenen Ladogasee, ab 20. November 1941 als militärische Autostraße Nr. 101 betrieben. Über sie liefen Lebensmittel und Munition in die abgeschnittene Stadt sowie die Evakuierung von rund einer Million Zivilisten.",
+    "coordinates": [
+      31.08,
+      60.05
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Stra%C3%9Fe_des_Lebens",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/LeningradIceRoad.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain (US, Alien Property Custodian)",
+      "credit": "Luftwaffen-Luftbildaufklärung, 1941–1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LeningradIceRoad.jpg"
+    }
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-ossinowez",
+    "name": "Ossinowez (Westufer Ladogasee)",
+    "description": "Westlicher Endpunkt der Eisstraße am Leuchtturm Ossinowez, von dem aus Lkw-Konvois die kurze, von Leningrad noch erreichbare Uferzone des Ladogasees ansteuerten. Knotenpunkt für Hafen-, Bahn- und Pipeline-Anschluss in die Stadt.",
+    "coordinates": [
+      31.082,
+      60.108
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/RIAN_archive_310_Foodstuffs_for_Leningrad.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Boris Kudoyarov / RIA Novosti, 1. September 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_310_Foodstuffs_for_Leningrad.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-kobona",
+    "name": "Kobona (Ostufer Ladogasee)",
+    "description": "Östlicher Brückenkopf der Straße des Lebens am Ufer des Ladogasees, an den die Eisenbahnlinie aus dem sowjetischen Hinterland angebunden war. Hier wurden Vorräte umgeschlagen und Evakuierte aus der Stadt aufgenommen.",
+    "coordinates": [
+      31.55271,
+      60.02327
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/RIAN_archive_397_Cutters_carrying_foodstuffs_to_besieged_Leningrad_on_Ladoga_Lake.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Boris Kudoyarov / RIA Novosti, 1. September 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_397_Cutters_carrying_foodstuffs_to_besieged_Leningrad_on_Ladoga_Lake.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-schluesselburg",
+    "name": "Schlüsselburg (Festung Oreschek)",
+    "description": "Stadt am Newa-Ausfluss aus dem Ladogasee, am 8. September 1941 von der Wehrmacht eingenommen — damit war die Landverbindung nach Leningrad gekappt. Die vorgelagerte Newa-Inselfestung Oreschek blieb sowjetisch und sperrte über 500 Tage den Fluss.",
+    "coordinates": [
+      31.03444444,
+      59.94194444
+    ],
+    "category": "building",
+    "wikipediaSlug": "Schl%C3%BCsselburg",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/RIAN_archive_602484_Joining_of_Leningrad_and_Volkhov_Fronts.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Dmitriy Kozlov / RIA Novosti, 18. Januar 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_602484_Joining_of_Leningrad_and_Volkhov_Fronts.jpg"
+    }
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-mga",
+    "name": "Mga (Eisenbahnknoten)",
+    "description": "Eisenbahnknoten rund 50 km südöstlich Leningrads, dessen Verlust am 30. August 1941 die letzte Bahnverbindung in die Stadt durchtrennte. Mga war Achse des deutschen Belagerungsrings und Ziel mehrerer sowjetischer Entsatzangriffe 1942–43.",
+    "coordinates": [
+      31.06666667,
+      59.75
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Mga",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-sinjawino-hoehen",
+    "name": "Sinjawino-Höhen",
+    "description": "Bewaldete Höhenkette südlich des Ladogasees, von der Wehrmacht zum dichten Bunkerriegel ausgebaut. An ihnen scheiterten mehrere sowjetische Entsatzoffensiven 1942; erst die Operation \"Iskra\" im Januar 1943 öffnete daneben einen schmalen Landkorridor.",
+    "coordinates": [
+      31.07288,
+      59.9075
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bundesarchiv_Bild_183-B20689%2C_vor_Leningrad%2C_General_Lindemann_in_den_vordersten_Linien.jpg",
+      "source": "Wikimedia Commons (Bundesarchiv)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Schröter (Kriegsberichter) / Bundesarchiv Bild 183-B20689, Februar 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B20689,_vor_Leningrad,_General_Lindemann_in_den_vordersten_Linien.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-tichwin",
+    "name": "Tichwin",
+    "description": "Stadt rund 200 km östlich Leningrads, am 8. November 1941 von der Wehrmacht eingenommen — damit drohte die letzte Bahnzuführung zum Ladogasee abgeschnitten zu werden. Die Rückeroberung am 9. Dezember 1941 sicherte den Nachschub zur künftigen Eisstraße.",
+    "coordinates": [
+      33.5,
+      59.63333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Tichwin",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-wolchow",
+    "name": "Wolchow (Stadt und Wolchow-Front)",
+    "description": "Stadt am Unterlauf des Wolchow-Flusses und Namensgeberin der sowjetischen Wolchow-Front unter Meretzkow. Von hier aus liefen die Entsatzangriffe gegen den deutschen Belagerungsring südlich des Ladogasees.",
+    "coordinates": [
+      32.32768,
+      59.92759
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Wolchow",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/RIAN_archive_662767_Army_hospital._Volkhov_Front%2C_1943.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Anatoliy Garanin / RIA Novosti, 13. Januar 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_662767_Army_hospital._Volkhov_Front,_1943.jpg"
+    }
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-oranienbaum-brueckenkopf",
+    "name": "Oranienbaumer Brückenkopf (Lomonossow)",
+    "description": "Sowjetisch gehaltener Küstenstreifen westlich Leningrads, von der Wehrmacht zwar eingekreist, aber nie eingenommen. Über Kronstadt versorgt, diente er im Januar 1944 als westlicher Stoßkeil der Befreiungsoffensive.",
+    "coordinates": [
+      29.77939,
+      59.9017
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-kronstadt",
+    "name": "Kronstadt (Festungsinsel Kotlin)",
+    "description": "Marinefestung auf der Insel Kotlin im Finnischen Meerbusen, Heimathafen der Baltischen Flotte. Ihre schwere Schiffs- und Fortartillerie unterstützte Stadt und Oranienbaumer Brückenkopf während der gesamten Belagerung.",
+    "coordinates": [
+      29.76666667,
+      60
+    ],
+    "category": "building",
+    "wikipediaSlug": "Kronstadt_(Russland)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Kronstadt1June1942.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain (US, Alien Property Custodian)",
+      "credit": "Luftwaffen-Luftbildaufklärung, 1. Juni 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kronstadt1June1942.jpg"
+    }
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-kirow-werk",
+    "name": "Kirow-Werk",
+    "description": "Großes Rüstungswerk im Südwesten der Stadt, nur drei Kilometer von der Front entfernt. Produzierte unter ständigem Artilleriebeschuss Panzer (KW-1) und Geschütze; ein Großteil der Maschinen wurde 1941 nach Tscheljabinsk evakuiert.",
+    "coordinates": [
+      30.258429,
+      59.878655
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Kirowwerk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/RIAN_archive_604176_Workers_at_Kirovsky_Plant_walking_to_front_line.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Boris Kudoyarov / RIA Novosti, 1. November 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_604176_Workers_at_Kirovsky_Plant_walking_to_front_line.jpg"
+    }
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-smolny",
+    "name": "Smolny-Institut",
+    "description": "Sitz der Leningrader Partei- und Militärführung unter Andrei Schdanow und Sitz des Stabes der Leningrader Front. Von hier wurden Verteidigung, Rationierung und die Lebensader über den Ladogasee koordiniert.",
+    "coordinates": [
+      30.39638889,
+      59.94638889
+    ],
+    "category": "building",
+    "wikipediaSlug": "Smolny-Institut",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-eremitage",
+    "name": "Eremitage / Winterpalais",
+    "description": "Hauptbau des Staatlichen Museums an der Newa, dessen Sammlungen in den ersten Kriegswochen größtenteils nach Swerdlowsk evakuiert wurden. Das Gebäude wurde durch Artilleriebeschuss beschädigt, blieb aber Symbol der durchhaltenden Stadt.",
+    "coordinates": [
+      30.31361111,
+      59.94055556
+    ],
+    "category": "building",
+    "wikipediaSlug": "Eremitage_(Sankt_Petersburg)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/RIAN_archive_308_Defenders_of_besieged_Leningrad.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Boris Kudoyarov / RIA Novosti, 1. April 1942 (Palastbrücke am Winterpalais)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_308_Defenders_of_besieged_Leningrad.jpg"
+    }
+  },
+  {
+    "battleId": "leningrad-siege",
+    "id": "leningrad-siege-piskarjowski-friedhof",
+    "name": "Piskarjowski-Gedenkfriedhof",
+    "description": "Massenbegräbnisstätte im Nordosten der Stadt, auf der rund 470.000 Tote der Blockade und gefallene Verteidiger bestattet wurden. Seit 1960 zentrale Gedenkstätte für die Belagerung Leningrads.",
+    "coordinates": [
+      30.42136111,
+      59.99691667
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Piskarjowskoje-Gedenkfriedhof",
+    "coordinatesSource": "wikipedia"
+  }
+]

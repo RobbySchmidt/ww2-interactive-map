@@ -1,0 +1,238 @@
+[
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-lwiw",
+    "name": "Lwiw / Lemberg (Hauptangriffsziel)",
+    "description": "Galizische Metropole und namensgebendes Operationsziel der 1. Ukrainischen Front. Nach mehrtägigen Straßenkämpfen mit dem deutschen III. Panzerkorps wurde Lemberg am 27. Juli 1944 von der 3. Garde-Panzerarmee und der 4. Panzerarmee genommen und damit die Heeresgruppe Nordukraine in zwei Teile gespalten.",
+    "coordinates": [
+      24.03222222,
+      49.8425
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Lwiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Armata_Rossa_a_Leopoli_luglio_1944.jpeg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannt (Scan aus E. Bauer, Storia controversa della seconda guerra mondiale)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Armata_Rossa_a_Leopoli_luglio_1944.jpeg"
+    }
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-brody",
+    "name": "Brody (Kesselschlacht)",
+    "description": "Kleinstadt nordöstlich von Lwiw, in deren Raum die Rote Armee vom 18. bis 22. Juli 1944 das deutsche XIII. Armeekorps mit acht Divisionen einschloss. Über 30.000 Soldaten fielen, 17.000 gingen in Gefangenschaft; nur etwa 5.000 Mann gelang der Ausbruch nach Westen.",
+    "coordinates": [
+      25.15416667,
+      50.07805556
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Brody_(Ukraine)",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-sandomierz",
+    "name": "Sandomierz (Weichsel-Brückenkopf)",
+    "description": "Stadt am linken Weichselufer und Namensgeber des strategisch entscheidenden sowjetischen Brückenkopfs. Vom 29. Juli bis 1. August 1944 setzten Verbände der 1. Ukrainischen Front über den Fluss und hielten den Brückenkopf gegen schwere deutsche Gegenangriffe – Sprungbrett für die Weichsel-Oder-Operation 1945.",
+    "coordinates": [
+      21.75,
+      50.68333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Sandomierz",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-stanislau",
+    "name": "Stanislau / Iwano-Frankiwsk",
+    "description": "Hauptstadt Ostgaliziens am Ostkarpatenrand. Die 1. Gardearmee nahm Stanislau am 27. Juli 1944 ein und schnitt damit deutsche Verbände im Karpatenvorland von ihren rückwärtigen Verbindungen ab.",
+    "coordinates": [
+      24.71055556,
+      48.92277778
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Iwano-Frankiwsk",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-przemysl",
+    "name": "Przemyśl (San-Festung)",
+    "description": "Galizische Festungsstadt am San und alter k.u.k.-Brückenkopf. Die sowjetische 4. Panzerarmee erreichte Przemyśl am 27. Juli 1944 und überwand damit die letzte größere Flussbarriere vor der Weichsel.",
+    "coordinates": [
+      22.76666667,
+      49.78333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Przemy%C5%9Bl",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-tarnopol",
+    "name": "Tarnopol (Ausgangsraum)",
+    "description": "Galizische Bezirkshauptstadt und Ausgangsraum der südlichen Stoßgruppe der 1. Ukrainischen Front. Bereits im April 1944 zurückerobert, bildete Tarnopol am 13. Juli den Anlaufpunkt für den Durchbruch der 60. und 38. Armee in Richtung Lemberg.",
+    "coordinates": [
+      25.6,
+      49.56666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Ternopil",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Liberazione_di_Tarnopol.png",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, April 1944 (PD-old-70 / Anonymous-EU)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liberazione_di_Tarnopol.png"
+    }
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-rawa-ruska",
+    "name": "Rawa-Ruska (Nordstoßkeil)",
+    "description": "Polnisch-ukrainische Grenzstadt nordwestlich von Lemberg an der Bahn nach Lublin. Die 6. Garde-Schützendivision befreite Rawa-Ruska am 20. Juli 1944 und brach damit die deutsche Front im nördlichen Operationsabschnitt auf.",
+    "coordinates": [
+      23.61666667,
+      50.25
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Rawa-Ruska",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/RIAN_archive_633180_Stream_crossing.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Max Alpert / RIA Nowosti (Bild Nr. 633180), Juli 1944 – T-34 und Artillerie überqueren den Westlichen Bug in Richtung Lwiw",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_633180_Stream_crossing.jpg"
+    }
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-drohobycz",
+    "name": "Drohobycz (Erdölzentrum)",
+    "description": "Westukrainisches Zentrum der galizischen Erdölförderung und kriegswichtiger Raffineriestandort. Mit dem sowjetischen Durchbruch nach Lemberg fiel Drohobycz Anfang August 1944 in die Hand der 1. Gardearmee und entzog der Wehrmacht eine wichtige Treibstoffquelle.",
+    "coordinates": [
+      23.5,
+      49.35
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Drohobytsch",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/%D0%A0%D0%B0%D0%B4%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D1%96_%D0%B2%D0%BE%D1%8F%D0%BA%D0%B8_%D0%B2_%D0%94%D1%80%D0%BE%D0%B3%D0%BE%D0%B1%D0%B8%D1%87%D1%96%2C_1944.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC0 1.0 Public Domain Dedication",
+      "credit": "Unbekannt – Sowjetische Soldaten in Drohobytsch, 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B4%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D1%96_%D0%B2%D0%BE%D1%8F%D0%BA%D0%B8_%D0%B2_%D0%94%D1%80%D0%BE%D0%B3%D0%BE%D0%B1%D0%B8%D1%87%D1%96,_1944.jpg"
+    }
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-stryj",
+    "name": "Stryj (Karpaten-Korridor)",
+    "description": "Stadt am gleichnamigen Fluss und Knotenpunkt der Bahnstrecken nach Lemberg, Stanislau und über die Karpaten nach Ungarn. Stryj wurde Anfang August 1944 genommen und versperrte der deutschen 1. Panzerarmee den Rückzugskorridor durch die Karpatenpässe.",
+    "coordinates": [
+      23.85,
+      49.25
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Stryj",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-rzeszow",
+    "name": "Rzeszów (Vorfeld der Weichsel)",
+    "description": "Südostpolnische Wojewodschaftshauptstadt am Wisłok, eingenommen am 2. August 1944 von Verbänden der 1. Garde-Panzerarmee. Der Verkehrsknoten an der Linie Krakau-Przemyśl wurde zur Versorgungsbasis für den weiteren Stoß auf Sandomierz.",
+    "coordinates": [
+      22,
+      50.05
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Rzesz%C3%B3w",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-jaworow",
+    "name": "Jaworow (Panzerstoß)",
+    "description": "Stadt zwischen Lemberg und Przemyśl am südlichen Rand des Rostocki-Waldes. Die 3. Garde-Panzerarmee Rybalkos erreichte Jaworow am 24. Juli 1944 und umfasste damit Lemberg von Nordwesten her im Zangenangriff.",
+    "coordinates": [
+      23.39305556,
+      49.94694444
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Jaworiw",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-halitsch",
+    "name": "Halytsch (Dnister-Übergang)",
+    "description": "Historische galizische Stadt am Dnister, nordwestlich von Stanislau. Truppen der 5. Gardearmee setzten am 27. Juli 1944 über den Fluss und nahmen Halytsch ein – ein Schlüsselübergang für den Vorstoß ins Karpatenvorland.",
+    "coordinates": [
+      24.72166667,
+      49.11277778
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Halytsch",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-weichsel",
+    "name": "Weichsel (Operationsendpunkt)",
+    "description": "Größter Strom Polens und westliches Endziel der Operation. Sowjetische Spähtrupps erreichten die Weichsel Ende Juli 1944 nach einem Vormarsch von rund 440 km; die Überquerung bei Baranów Sandomierski und der Halt der Frontlinie an der Weichsel definierten die Ausgangslage für 1945.",
+    "coordinates": [
+      21.7167,
+      50.6
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Weichsel",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-san",
+    "name": "San (Verfolgungslinie)",
+    "description": "Rechter Nebenfluss der Weichsel mit Quellgebiet in den Ostkarpaten, in der Habsburgerzeit Grenzfluss Galiziens. Die 1. Ukrainische Front erreichte den San Ende Juli 1944 und überquerte ihn bei Przemyśl und Jarosław im Zuge der Verfolgung der zerschlagenen Heeresgruppe Nordukraine.",
+    "coordinates": [
+      22.5,
+      50.2
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "San_(Fluss)",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-baranow",
+    "name": "Baranów Sandomierski (Brückenkopfstelle)",
+    "description": "Kleinstadt am rechten Weichselufer gegenüber Sandomierz, Übergangsstelle der sowjetischen Verbände Ende Juli 1944. Hier erzwangen die 13. Armee und die 3. Garde-Armee den Übergang über die Weichsel und schufen die Keimzelle des Sandomierz-Brückenkopfes.",
+    "coordinates": [
+      21.55,
+      50.5
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Baran%C3%B3w_Sandomierski",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "lwow-sandomierz",
+    "id": "lwow-sandomierz-koltow",
+    "name": "Koltow-Korridor (Panzerschneise)",
+    "description": "Schmaler, lediglich 4–6 km breiter Durchbruchskorridor bei Koltiw nordöstlich von Lemberg. Durch dieses unter deutschem Artilleriefeuer liegende Nadelöhr schleusten Konews Stabsoffiziere ab 16. Juli 1944 zwei Panzerarmeen, was die Einkesselung des XIII. Armeekorps bei Brody erst ermöglichte.",
+    "coordinates": [
+      24.95,
+      49.92
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Schlacht_bei_Brody_(1944)",
+    "coordinatesSource": "original"
+  }
+]

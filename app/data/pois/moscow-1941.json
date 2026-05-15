@@ -1,0 +1,375 @@
+[
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-roter-platz",
+    "name": "Roter Platz",
+    "description": "Schauplatz der Militärparade am 7. November 1941, mitten in der akuten Bedrohungslage — die deutsche Front stand keine 70 km entfernt. Stalin sprach von der Lenin-Mausoleum-Tribüne; viele Einheiten marschierten direkt von der Parade an die Front. Größter Propagandacoup der Verteidigung Moskaus.",
+    "coordinates": [
+      37.62,
+      55.75416694
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Roter_Platz",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/RIAN_archive_669659_Soviet_troops_head_to_front_lines_after_1941_Red_Square_parade.jpg",
+      "source": "Wikimedia Commons / RIA Novosti",
+      "license": "CC BY-SA 3.0",
+      "credit": "RIA Novosti archive, image #669659 / Anatoliy Garanin / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_669659_Soviet_troops_head_to_front_lines_after_1941_Red_Square_parade.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-kreml",
+    "name": "Moskauer Kreml",
+    "description": "Sitz des sowjetischen Oberkommandos (Stawka) und Stalins Stadtquartier. Im Sommer 1941 mit Tarnanstrich versehen — Kremlmauer und Goldkuppeln wurden grau übermalt, Roter Platz mit Holzhäusern bemalt, um die Orientierung deutscher Bomber zu erschweren. Im Senatspalast tagte das Staatliche Verteidigungskomitee.",
+    "coordinates": [
+      37.61777778,
+      55.75166667
+    ],
+    "category": "building",
+    "wikipediaSlug": "Moskauer_Kreml",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/RIAN_archive_887721_Defense_of_Moscow.jpg",
+      "source": "Wikimedia Commons / RIA Novosti",
+      "license": "CC BY-SA 3.0",
+      "credit": "RIA Novosti archive, image #887721 / Oleg Knorring / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_887721_Defense_of_Moscow.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-mayakovskaya",
+    "name": "Metro Majakowskaja",
+    "description": "Eine der tiefsten Stationen der Moskauer Metro, im Krieg als Luftschutzbunker und Versammlungsort genutzt. Hier hielt Stalin am 6. November 1941 — am Vorabend der Roten-Platz-Parade — die feierliche Sitzung zum Jahrestag der Oktoberrevolution ab, während über der Stadt Luftalarm herrschte.",
+    "coordinates": [
+      37.5958,
+      55.7701
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Metrobahnhof_Majakowskaja",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/%D0%9C%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B2%2C_%D0%91%D1%83%D0%B4%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%2C_%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%2C_%D0%9C%D0%B0%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%2C_%D0%9C%D0%B8%D0%BA%D0%BE%D1%8F%D0%BD_%D0%BD%D0%B0_%D1%82%D1%80%D0%B8%D0%B1%D1%83%D0%BD%D0%B5_%D0%9C%D0%B0%D0%B2%D0%B7%D0%BE%D0%BB%D0%B5%D1%8F_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B0_%D0%B2_%D1%87%D0%B5%D1%81%D1%82%D1%8C_24-%D0%B9_%D0%B3%D0%BE%D0%B4%D0%BE%D0%B2%D1%89%D0%B8%D0%BD%D1%8B_%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C%D1%81%D0%BA%D0%BE%D0%B9_%D1%80%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D0%B8.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Mikhail Kalashnikov (1906–1944), Russian State Archives of Literature and Art",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B2,_%D0%91%D1%83%D0%B4%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9,_%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD,_%D0%9C%D0%B0%D0%BB%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2,_%D0%9C%D0%B8%D0%BA%D0%BE%D1%8F%D0%BD_%D0%BD%D0%B0_%D1%82%D1%80%D0%B8%D0%B1%D1%83%D0%BD%D0%B5_%D0%9C%D0%B0%D0%B2%D0%B7%D0%BE%D0%BB%D0%B5%D1%8F_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B0_%D0%B2_%D1%87%D0%B5%D1%81%D1%82%D1%8C_24-%D0%B9_%D0%B3%D0%BE%D0%B4%D0%BE%D0%B2%D1%89%D0%B8%D0%BD%D1%8B_%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C%D1%81%D0%BA%D0%BE%D0%B9_%D1%80%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D0%B8.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-stalin-bunker-kuntsewo",
+    "name": "Stalin-Datscha Kunzewo (\"Blischnjaja\")",
+    "description": "Stalins befestigte Datscha im Westen Moskaus mit Tiefbunker, im Herbst 1941 das wichtigste reale Arbeits- und Wohnquartier des Diktators. Während der GKO-Sitzung am 15./16. Oktober 1941 erwog er die Evakuierung — entschied sich aber, in Moskau zu bleiben, was eine massive symbolische Wirkung hatte.",
+    "coordinates": [
+      37.48583333,
+      55.72444444
+    ],
+    "category": "building",
+    "wikipediaSlug": "Kunzewer_Datscha",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-kremlmauer-nekropole",
+    "name": "Kremlmauer-Nekropole",
+    "description": "Staatsbegräbnisstätte an der Kremlmauer, in der u. a. General Iwan Panfilow (gefallen 18. November 1941 bei Gusenewo) und Generalleutnant Lew Dowator (gefallen 19. Dezember 1941 bei Rusa) beigesetzt wurden — beides Schlüsselfiguren der Moskauer Verteidigung.",
+    "coordinates": [
+      37.61972222,
+      55.75361111
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Kremlmauer-Nekropole",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Photo_of_Ivan_Panfilov.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Mikhail Kalashnikov (1906–1944), publ. Pravda 13.04.1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photo_of_Ivan_Panfilov.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-chimki",
+    "name": "Chimki — nördlichster deutscher Vorstoß",
+    "description": "Am 2. Dezember 1941 erreichte ein Spähtrupp der Wehrmacht (vermutlich 62. Pionier-Bataillon) die Brücke bei Chimki, nur etwa 8 km von der damaligen Moskauer Stadtgrenze entfernt — der weiteste deutsche Vorstoß auf die sowjetische Hauptstadt. Zwei Tage später begann die sowjetische Gegenoffensive.",
+    "coordinates": [
+      37.45,
+      55.9
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Chimki",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Wojska_niemieckie_na_froncie_moskiewskim_%282-878%29.jpg",
+      "source": "Wikimedia Commons / Narodowe Archiwum Cyfrowe",
+      "license": "Public Domain",
+      "credit": "Bohmer, Dezember 1941 — Wehrmacht-Infanterie und StuG III an der Moskauer Front",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wojska_niemieckie_na_froncie_moskiewskim_(2-878).jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-wolokolamsk",
+    "name": "Wolokolamsk — Panfilow-Sektor",
+    "description": "Stadt an der strategisch wichtigen Wolokolamsker Chaussee, etwa 120 km nordwestlich von Moskau. Schlüsselabschnitt der 16. Armee Rokossowskis mit der 316. Schützendivision (Panfilow). Vom 27. Oktober bis 20. Dezember 1941 in deutscher Hand, dann während der Gegenoffensive zurückerobert.",
+    "coordinates": [
+      35.95,
+      56.03333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Wolokolamsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/%D0%9D%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%B6%D0%B5_%D1%81%D1%82%D0%BE%D0%BB%D0%B8%D1%86%D1%8B.jpg",
+      "source": "Wikimedia Commons / Präsidentenbibliothek Russland",
+      "license": "Public Domain",
+      "credit": "Sergey Strunnikov (1907–1944), 7. November 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%B6%D0%B5_%D1%81%D1%82%D0%BE%D0%BB%D0%B8%D1%86%D1%8B.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-dubosekowo",
+    "name": "Dubosekowo — 28 Panfilow-Helden",
+    "description": "Bahnhalt an der Strecke Moskau–Riga südöstlich von Wolokolamsk. Am 16. November 1941 sollen hier 28 Soldaten der 4. Kompanie des 1075. Schützenregiments (Panfilow-Division) unter Politruk Kloschkow 18 deutsche Panzer aufgehalten haben — die spätere historische Forschung zeigt, dass die Heldengeschichte von der Sowjetpresse stark mythologisiert wurde. Heute monumentaler Gedenkkomplex.",
+    "coordinates": [
+      35.7773,
+      56.0691
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "28_Panfilow-Helden",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Soviet_soldiers_with_PTRD-41_defending_Moscow.jpg",
+      "source": "Wikimedia Commons / waralbum.ru, Staatliches Heimatkundemuseum Zelenograd",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, 1941 — sowjetisches PTRD-41-Panzerabwehrtrupp bei der Verteidigung Moskaus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soviet_soldiers_with_PTRD-41_defending_Moscow.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-moschaisk",
+    "name": "Moschaisk — Moschaisker Verteidigungslinie",
+    "description": "Stadt rund 110 km westlich von Moskau, namensgebend für die letzte vorgelagerte Verteidigungslinie (\"Moschaisker Linie\"), die ab Anfang Oktober 1941 mit Schulungsbataillonen, Kadetten und Volkssturm-Einheiten hastig besetzt wurde. Fiel am 18. Oktober an die 4. Armee — kurz vor Moskau hielt die Linie aber die Wehrmacht entscheidend auf.",
+    "coordinates": [
+      36.03333333,
+      55.5
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Moschaisk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Wojska_niemieckie_na_froncie_moskiewskim_%282-882%29.jpg",
+      "source": "Wikimedia Commons / Narodowe Archiwum Cyfrowe",
+      "license": "Public Domain",
+      "credit": "Thiede, Oktober 1941 — deutsche Panzerkolonne (PzKpfw III Ausf. G) an der Moskauer Front",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wojska_niemieckie_na_froncie_moskiewskim_(2-882).jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-borodino",
+    "name": "Borodino-Schlachtfeld 1941",
+    "description": "Historisches Schlachtfeld von 1812, im Oktober 1941 erneut Kampfschauplatz. Vom 12. bis 18. Oktober verteidigte die sowjetische 32. Schützendivision (Polosuchin) zusammen mit Kadetten der Wojkows-Schule die Stellungen gegen das XXXX. Panzerkorps (Stumme) — eine symbolisch und propagandistisch hoch aufgeladene Wiederholung der Auseinandersetzung gegen Napoleon.",
+    "coordinates": [
+      35.82111111,
+      55.50861111
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Schlacht_von_Borodino_(1941)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Bundesarchiv_Bild_146-2008-0317%2C_Russland%2C_Bergung_eines_Verwundeten.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-2008-0317 / CC-BY-SA 3.0 — November 1941, vor Moskau",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-2008-0317,_Russland,_Bergung_eines_Verwundeten.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-naro-fominsk",
+    "name": "Naro-Fominsk — Südwest-Sektor",
+    "description": "Stadt 70 km südwestlich von Moskau an der Nara, Schauplatz schwerer Kämpfe der 33. Armee (Jefremow) gegen die deutsche 4. Armee. Am 1. Dezember 1941 versuchten deutsche Verbände hier den letzten Durchbruch Richtung Moskau — er scheiterte nach drei Tagen. Am 26. Dezember 1941 von der Roten Armee zurückerobert.",
+    "coordinates": [
+      36.73333333,
+      55.38333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Naro-Fominsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/RIAN_archive_382_Soviet_soldiers_looking_for_mines_after_the_liberation_of_Naro-Fominsk.jpg",
+      "source": "Wikimedia Commons / RIA Novosti",
+      "license": "CC BY-SA 3.0",
+      "credit": "RIA Novosti archive, image #382 / Alexander Ustinov / CC-BY-SA 3.0 — 28. Dezember 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_382_Soviet_soldiers_looking_for_mines_after_the_liberation_of_Naro-Fominsk.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-kubinka",
+    "name": "Kubinka — Aufmarschraum Reserven",
+    "description": "Bahnhof und Panzerübungsplatz westlich von Moskau, im Herbst 1941 Sammelraum für aus Sibirien und dem Fernen Osten eingerollte Reserve-Divisionen (Stawka-Reserve). Über Kubinka wurden u. a. die 32. Schützendivision sowie sibirische Schützenbrigaden in die Front nach Moschaisk und Naro-Fominsk eingeschoben.",
+    "coordinates": [
+      36.7,
+      55.58333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Kubinka",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/RIAN_archive_59790_Tanks_heading_for_the_front.jpg",
+      "source": "Wikimedia Commons / RIA Novosti",
+      "license": "CC BY-SA 3.0",
+      "credit": "RIA Novosti archive, image #59790 / Sergey Strunnikov / CC-BY-SA 3.0 — 7. November 1941",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_59790_Tanks_heading_for_the_front.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-klin",
+    "name": "Klin — 3. Panzergruppe",
+    "description": "Stadt 85 km nordwestlich von Moskau, am 23. November 1941 von der 3. Panzergruppe (Reinhardt) genommen — von hier aus erfolgte der nördliche Umfassungsversuch über Solnetschnogorsk Richtung Wolga-Moskau-Kanal. Klin markiert die nördliche Spitze der deutschen Zange und wurde am 15. Dezember 1941 zurückerobert.",
+    "coordinates": [
+      36.7,
+      56.33333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Klin_(Stadt)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Battle_of_Moscow_7.jpg",
+      "source": "Wikimedia Commons / Russisches Verteidigungsministerium (mil.ru)",
+      "license": "CC BY 4.0",
+      "credit": "Ministerium für Verteidigung der Russischen Föderation — 1941, deutsche Kriegsgefangene während der sowjetischen Gegenoffensive bei Moskau",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Battle_of_Moscow_7.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-solnetschnogorsk",
+    "name": "Solnetschnogorsk — nördlicher Vorstoß",
+    "description": "Stadt an der Magistrale Moskau–Leningrad, am 23. November 1941 von Teilen der 3. Panzergruppe besetzt. Lag nur 65 km von Moskau entfernt und galt als Sprungbrett zum Wolga-Moskau-Kanal bei Jachroma, wo Anfang Dezember die nördlichste deutsche Brückenkopfbildung gelang.",
+    "coordinates": [
+      36.98333333,
+      56.18333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Solnetschnogorsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/RIAN_archive_603_A_Nazist_surrenders.jpg",
+      "source": "Wikimedia Commons / RIA Novosti",
+      "license": "CC BY-SA 3.0",
+      "credit": "RIA Novosti archive, image #603 / Samaryi Guraryi / CC-BY-SA 3.0 — Dezember 1941, Raum Solnetschnogorsk",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_603_A_Nazist_surrenders.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-kalinin-twer",
+    "name": "Kalinin (Twer) — Nordflanke",
+    "description": "Gebietshauptstadt 180 km nordwestlich von Moskau, am 14. Oktober 1941 von der 1. Panzerdivision genommen. Mit der Schaffung der eigenen Kalinin-Front (Konew) wurde die Stadt zum nördlichen Eckpfeiler der sowjetischen Verteidigung; am 16. Dezember 1941 als eine der ersten Großstädte in der Gegenoffensive zurückerobert.",
+    "coordinates": [
+      35.91666667,
+      56.86666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Twer",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/%D0%9F%D0%B0%D1%80%D0%B0%D0%B4_%D0%B0_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B9_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%B8_7_%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8F_1941_%D0%B3%D0%BE%D0%B4%D0%B0._%D0%9F%D1%83%D0%BB%D0%B5%D0%BC%D0%B5%D1%82%D1%87%D0%B8%D0%BA%D0%B8.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Mikhail Kalashnikov (1906–1944) — 7. November 1941, Maschinengewehrtrupp bei der Parade",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D1%80%D0%B0%D0%B4_%D0%B0_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B9_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%B8_7_%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8F_1941_%D0%B3%D0%BE%D0%B4%D0%B0._%D0%9F%D1%83%D0%BB%D0%B5%D0%BC%D0%B5%D1%82%D1%87%D0%B8%D0%BA%D0%B8.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-tula",
+    "name": "Tula — Südflanke gehalten",
+    "description": "Industriestadt 190 km südlich von Moskau, ab dem 24. Oktober 1941 von Guderians 2. Panzerarmee belagert, aber dank improvisierter Verteidigung durch NKWD-Einheiten, Arbeitermilizen und Tula-Rabotschi-Regiment nie eingenommen. Tula blieb der südliche Ankerpunkt der Front und vereitelte Guderians Umfassung Moskaus von Süden.",
+    "coordinates": [
+      37.61666667,
+      54.2
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Tula",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Defenders_of_Tula_ready_to_fight.jpg",
+      "source": "Wikimedia Commons (Ausstellung \"Na Tulskich Rubeschach\")",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, Oktober–November 1941 — Verteidiger Tulas an einer Straßenbarrikade",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Defenders_of_Tula_ready_to_fight.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-stalinogorsk",
+    "name": "Stalinogorsk (Nowomoskowsk)",
+    "description": "Industriestadt mit großen Chemiewerken und Steinkohlebergbau, am 22. November 1941 von Guderians 2. Panzerarmee genommen — markiert die östlichste Spitze des deutschen Südvorstoßes. Bereits am 12. Dezember 1941 von der 10. Armee (Golikow) im Rahmen der Gegenoffensive zurückerobert.",
+    "coordinates": [
+      38.21666667,
+      54.08333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Nowomoskowsk_(Tula)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Captured_Germans_in_Tula_1941.jpg",
+      "source": "Wikimedia Commons / russiainphoto.ru",
+      "license": "Public Domain",
+      "credit": "Pavel Artemyevich Troshkin, 17.–31. Dezember 1941 — gefangene deutsche Soldaten während der Tulaer Offensivoperation",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Captured_Germans_in_Tula_1941.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-kaschira",
+    "name": "Kaschira — südöstliche Sperre",
+    "description": "Stadt an der Oka, 115 km südlich von Moskau, Schauplatz der Panzerschlacht vom 25.–27. November 1941: Belows 1. Garde-Kavalleriekorps mit der 112. Panzerdivision stoppte hier den Vorstoß von Guderians 17. Panzerdivision auf das Moskauer Kraftwerk Kaschira — die deutsche Südzange war damit endgültig abgeschnitten.",
+    "coordinates": [
+      38.15,
+      54.83333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Kaschira",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Battle_of_Moscow_3.jpg",
+      "source": "Wikimedia Commons / Russisches Verteidigungsministerium (mil.ru)",
+      "license": "CC BY 4.0",
+      "credit": "Ministerium für Verteidigung der Russischen Föderation — 1941, sowjetische Kavallerie im weißen Wintertarnanstrich während der Gegenoffensive bei Moskau",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Battle_of_Moscow_3.jpg"
+    }
+  },
+  {
+    "battleId": "moscow-1941",
+    "id": "moscow-1941-wjasma",
+    "name": "Wjasma — Kesselschlacht Oktober 1941",
+    "description": "Stadt 230 km westlich von Moskau, Zentrum des nördlichen Kessels der Doppelschlacht Wjasma–Brjansk (2.–13. Oktober 1941). Mit dem Brjansker Kessel zusammen gerieten rund 650.000 Rotarmisten in deutsche Gefangenschaft — eine der größten Niederlagen der Kriegsgeschichte. Erst diese Katastrophe öffnete den Weg zur Moschaisker Linie und damit zum eigentlichen Ringen um Moskau.",
+    "coordinates": [
+      34.2912,
+      55.2107
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Kesselschlacht_bei_Wjasma_und_Brjansk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Duitse_tanks_rukken_op_tijdens_de_Kesselschlacht_bij_Wjasma_%282155_078762b%29.jpg",
+      "source": "Wikimedia Commons / Nederlands Instituut voor Militaire Historie (NIMH)",
+      "license": "CC BY-SA 4.0",
+      "credit": "Fotoafdrukken Koninklijke Landmacht, Oktober 1941 — deutsche Panzer (Pz 38(t)) im Vormarsch während der Kesselschlacht bei Wjasma",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Duitse_tanks_rukken_op_tijdens_de_Kesselschlacht_bij_Wjasma_(2155_078762b).jpg"
+    }
+  }
+]

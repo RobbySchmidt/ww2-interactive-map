@@ -1,0 +1,287 @@
+[
+  {
+    "battleId": "uman",
+    "id": "uman-uman",
+    "name": "Uman",
+    "description": "Namensgebende Stadt in der Oblast Tscherkassy, am 30. Juli 1941 durch die 1. Panzergruppe (Kleist) erreicht. Hier verlief die östliche Begrenzung des Kessels, in dem die sowjetische 6. (Muzytschenko) und 12. Armee (Ponedelin) eingeschlossen wurden — Kapitulation am 8. August 1941 nach gescheiterten Ausbruchsversuchen.",
+    "coordinates": [
+      30.21666667,
+      48.75
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Uman",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Bundesarchiv_Bild_183-L25034%2C_Russland%2C_kriegsgefangene_sowjetische_Soldaten.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-L25034 / Lachmann",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-L25034,_Russland,_kriegsgefangene_sowjetische_Soldaten.jpg"
+    }
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-perwomajsk",
+    "name": "Perwomajsk (Pjervomajsk)",
+    "description": "Stadt am Südlichen Bug am Zusammenfluss mit der Synjucha, südlicher Schließpunkt des Kessels. Anfang August 1941 vom XXXXVIII. motorisierten Korps und ungarischem Schnellkorps erreicht — die Vereinigung mit der 17. Armee von Süden besiegelte am 2. August die Einschließung der sowjetischen 6. und 12. Armee.",
+    "coordinates": [
+      30.85,
+      48.05
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Perwomajsk_(Mykolajiw)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/A_lerombolt_vas%C3%BAti_h%C3%ADd_a_D%C3%A9li-Bug_foly%C3%B3n._Pervomajszk%2C_Mikolajivi_ter%C3%BClet%2C_Ukrajna_1941._-_Fortepan_78343.jpg",
+      "source": "Wikimedia Commons / Fortepan",
+      "license": "CC BY-SA 3.0",
+      "credit": "FOTO:FORTEPAN / Berkó Pál",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_lerombolt_vas%C3%BAti_h%C3%ADd_a_D%C3%A9li-Bug_foly%C3%B3n._Pervomajszk,_Mikolajivi_ter%C3%BClet,_Ukrajna_1941._-_Fortepan_78343.jpg"
+    }
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-nowoarchanhelsk",
+    "name": "Nowoarchanhelsk",
+    "description": "Siedlung an der Synjucha östlich Umans, am 31. Juli 1941 vom XIV. motorisierten Korps der 1. Panzergruppe besetzt. Bildete zusammen mit Talne den östlichen Riegel und schnitt den Eingeschlossenen den Rückzug Richtung Dnjepr ab.",
+    "coordinates": [
+      30.81861111,
+      48.65888889
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Nowoarchanhelsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Bundesarchiv_Bild_101I-136-0883-29A%2C_Russland%2C_motorisierte_Truppen.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-136-0883-29A / Cusian, Albert",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-136-0883-29A,_Russland,_motorisierte_Truppen.jpg"
+    }
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-talne",
+    "name": "Talne",
+    "description": "Kleinstadt in der Oblast Tscherkassy nordöstlich Umans, am 31. Juli 1941 von deutschen Panzerverbänden erreicht. Bahnknoten und östlicher Eckpfeiler des deutschen Kesselrings; hier scheiterten am 6./7. August die letzten Ausbruchsversuche der 6. Armee Muzytschenkos.",
+    "coordinates": [
+      30.70270556,
+      48.88628611
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Talne",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-christynowka",
+    "name": "Christinowka (Chrystyniwka)",
+    "description": "Eisenbahnknoten nordwestlich Umans an der Strecke Winnyzja–Tscherkassy. Ende Juli 1941 vom deutschen XXXXIX. Gebirgskorps eingenommen; bildete die nordwestliche Begrenzung des Kessels und sicherte die Verbindung zwischen 17. Armee und 1. Panzergruppe.",
+    "coordinates": [
+      29.96666667,
+      48.83333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Chrystyniwka",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Bundesarchiv_Bild_146-1977-093-07%2C_Russland%2C_motorisierte_Einheit.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1977-093-07 / Cantzler",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1977-093-07,_Russland,_motorisierte_Einheit.jpg"
+    }
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-holowaniwsk",
+    "name": "Holowaniwsk (Golowanewsk)",
+    "description": "Siedlung südlich Umans in der Oblast Kirowohrad, am 31. Juli 1941 vom deutschen XXXXIX. Gebirgskorps der 17. Armee genommen. Schlüsselort beim südlichen Umfassungsmanöver, das den Eingeschlossenen den Weg an den Südlichen Bug versperrte.",
+    "coordinates": [
+      30.44722222,
+      48.38
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Holowaniwsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Pervomajszk_1941%2C_Radjanszka_utca._Fortepan_78340.jpg",
+      "source": "Wikimedia Commons / Fortepan",
+      "license": "CC BY-SA 3.0",
+      "credit": "FOTO:FORTEPAN / Berkó Pál",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pervomajszk_1941,_Radjanszka_utca._Fortepan_78340.jpg"
+    }
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-hajwoton",
+    "name": "Hajworon (Haiwoton)",
+    "description": "Stadt am Südlichen Bug südwestlich Umans in der Oblast Kirowohrad, Ende Juli 1941 von ungarischen Schnellverbänden und deutscher 17. Armee überschritten. Bug-Übergang, der die südliche Umfassung des Kessels ermöglichte und sowjetische Rückzugswege blockierte.",
+    "coordinates": [
+      29.85,
+      48.33333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Hajworon",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Pervomajszk_1941%2C_h%C3%A1tt%C3%A9rben_a_v%C3%ADzer%C5%91m%C5%B1_a_Bug_foly%C3%B3n._Fortepan_78339.jpg",
+      "source": "Wikimedia Commons / Fortepan",
+      "license": "CC BY-SA 3.0",
+      "credit": "FOTO:FORTEPAN / Berkó Pál",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pervomajszk_1941,_h%C3%A1tt%C3%A9rben_a_v%C3%ADzer%C5%91m%C5%B1_a_Bug_foly%C3%B3n._Fortepan_78339.jpg"
+    }
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-hajssyn",
+    "name": "Hajssyn",
+    "description": "Stadt in der östlichen Oblast Winnyzja, Ende Juli 1941 von der deutschen 17. Armee (Stülpnagel) erreicht. Lag im Aufmarschraum westlich des Kessels und bildete den Sprungbrett für den südlichen Zangenarm Richtung Bug-Übergänge bei Hajworon und Perwomajsk.",
+    "coordinates": [
+      29.39055556,
+      48.80944444
+    ],
+    "category": "building",
+    "wikipediaSlug": "Hajssyn",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-winnyzja",
+    "name": "Winnyzja (Winniza)",
+    "description": "Oblasthauptstadt am Südlichen Bug, am 19. Juli 1941 von der 17. Armee genommen. Diente als Aufmarschraum für den deutschen Schwenk nach Südosten und später als Sitz des Führerhauptquartiers Werwolf — Schlüsselstadt im westlichen Vorfeld der Schlacht.",
+    "coordinates": [
+      28.46722222,
+      49.23722222
+    ],
+    "category": "building",
+    "wikipediaSlug": "Winnyzja",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ukrajna%2C_Vinnicja_v%C3%A1ros%2C_Bug_foly%C3%B3m_1941._okt%C3%B3ber._-_Fortepan_13990.jpg",
+      "source": "Wikimedia Commons / Fortepan",
+      "license": "CC BY-SA 3.0",
+      "credit": "FOTO:FORTEPAN / Ungváry Krisztián",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ukrajna,_Vinnicja_v%C3%A1ros,_Bug_foly%C3%B3m_1941._okt%C3%B3ber._-_Fortepan_13990.jpg"
+    }
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-kosjatyn",
+    "name": "Kosjatyn (Kasatin)",
+    "description": "Eisenbahnknoten in der Oblast Winnyzja, am 16. Juli 1941 von der 16. Panzerdivision der 1. Panzergruppe genommen. Vorgeschobener Stützpunkt im Norden der Schlacht — von hier stieß Kleist nach Südosten Richtung Uman vor und durchtrennte die sowjetische Bahnlinie Kiew–Odessa.",
+    "coordinates": [
+      28.83333333,
+      49.71666667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Kosjatyn",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Bundesarchiv_Bild_101I-186-0164-30%2C_Ukraine%2C_bei_Skalat%2C_Sch%C3%BCtzenpanzer%2C_motorisierte_Truppen.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-186-0164-30 / Otto",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-186-0164-30,_Ukraine,_bei_Skalat,_Sch%C3%BCtzenpanzer,_motorisierte_Truppen.jpg"
+    }
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-pohrebyschtsche",
+    "name": "Pohrebyschtsche",
+    "description": "Kleinstadt im Nordosten der Oblast Winnyzja, im Juli 1941 Durchgangsraum für die 1. Panzergruppe auf ihrem Schwenk nach Süden. Hier kam es zu Gegenstößen sowjetischer mechanisierter Korps der Südwestfront, die den deutschen Vorstoß auf Uman verzögern sollten.",
+    "coordinates": [
+      29.27333333,
+      49.48694444
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Pohrebyschtsche",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-monastyryschtsche",
+    "name": "Monastyryschtsche",
+    "description": "Kleinstadt im Westen der Oblast Tscherkassy, Schauplatz der Panzerschlacht von Monastyryschtsche (22.–24. Juli 1941) zwischen der 11. Panzerdivision und Teilen des sowjetischen 2. mechanisierten Korps. Sowjetischer Gegenangriff, der den deutschen Schwenk nach Süden kurzzeitig aufhielt.",
+    "coordinates": [
+      29.80111111,
+      48.99
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Monastyryschtsche",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Bundesarchiv_B_145_Bild-F016199-09%2C_Zerst%C3%B6rter_sowjetischer_Panzer.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, B 145 Bild-F016199-09",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F016199-09,_Zerst%C3%B6rter_sowjetischer_Panzer.jpg"
+    }
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-schpola",
+    "name": "Schpola",
+    "description": "Bahnknotenpunkt in der Oblast Tscherkassy nordöstlich Umans an der Schpolka. Ende Juli 1941 äußerster östlicher Vorstoß der 1. Panzergruppe — sicherte die Flanke gegen sowjetische Entlastungsangriffe aus Richtung Tscherkassy/Dnjepr und engte den Kessel nach Osten ein.",
+    "coordinates": [
+      31.41666667,
+      49.03333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Schpola",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-smila",
+    "name": "Smila",
+    "description": "Industriestadt am Tjasmyn südwestlich Tscherkassys, Anfang August 1941 in deutsche Hand gefallen. Lag im rückwärtigen Operationsgebiet östlich des Kessels und sicherte die deutsche Flanke gegen die sowjetische 26. Armee am Dnjepr.",
+    "coordinates": [
+      31.86666667,
+      49.21666667
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Smila",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bundesarchiv_Bild_183-2005-1017-521%2C_Ostfront%2C_-Generaloberst_von_Kleist_besichtigt_ein_H%C3%BCttenwerk_in_der_Ukraine.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-2005-1017-521 / Gehrmann, Friedrich",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-2005-1017-521,_Ostfront,_-Generaloberst_von_Kleist_besichtigt_ein_H%C3%BCttenwerk_in_der_Ukraine.jpg"
+    }
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-synjucha",
+    "name": "Synjucha (Sinjucha)",
+    "description": "Linker Nebenfluss des Südlichen Bug, mündet bei Perwomajsk. Die Flusslinie Synjucha–Südlicher Bug bildete am 2. August 1941 die natürliche Sperre, an der sich der deutsche Kessel um die 6. und 12. Armee schloss — Hauptbarriere für die sowjetischen Ausbruchsversuche nach Osten.",
+    "coordinates": [
+      30.85,
+      48.5
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Synjucha",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "uman",
+    "id": "uman-suedlicher-bug",
+    "name": "Südlicher Bug (Bug-Übergänge)",
+    "description": "Zweitlängster ausschließlich in der Ukraine fließender Strom, bildete die südwestliche Begrenzung des Kessels. Übergänge bei Hajworon, Perwomajsk und Wosnessensk Ende Juli 1941 in deutsch-ungarischer Hand — der Verlust dieser Furten schnitt den Eingeschlossenen den Rückzug zum Dnjestr ab.",
+    "coordinates": [
+      30.5,
+      48.2
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Südlicher_Bug",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/A_D%C3%A9li-Bug_foly%C3%B3_1941._okt%C3%B3ber_v%C3%A9g%C3%A9n._A_pontonhidat_a_Magyar_Kir%C3%A1lyi_T%C3%B6r%C3%B6k_Ign%C3%A1c_II._ut%C3%A1szz%C3%A1szl%C3%B3alj_%C3%A9p%C3%ADtette._Fortepan_14018.jpg",
+      "source": "Wikimedia Commons / Fortepan",
+      "license": "CC BY-SA 3.0",
+      "credit": "FOTO:FORTEPAN / Ungváry Krisztián",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_D%C3%A9li-Bug_foly%C3%B3_1941._okt%C3%B3ber_v%C3%A9g%C3%A9n._A_pontonhidat_a_Magyar_Kir%C3%A1lyi_T%C3%B6r%C3%B6k_Ign%C3%A1c_II._ut%C3%A1szz%C3%A1szl%C3%B3alj_%C3%A9p%C3%ADtette._Fortepan_14018.jpg"
+    }
+  }
+]

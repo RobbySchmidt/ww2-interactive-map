@@ -1,0 +1,331 @@
+[
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-mamajew-huegel",
+    "name": "Mamajew-Hügel (Höhe 102)",
+    "description": "Beherrschende Anhöhe mitten in Stalingrad, vom September 1942 bis Januar 1943 erbittert umkämpft. Wechselte mehrfach den Besitzer und galt als Schlüsselstellung über Stadt und Wolga.",
+    "coordinates": [
+      44.53657222,
+      48.74261111
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Mamajew-Hügel",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Bundesarchiv_Bild_183-B22413%2C_Russland%2C_Kampf_um_Stalingrad%2C_Zerst%C3%B6rungen.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B22413 / Pfreundtner / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22413,_Russland,_Kampf_um_Stalingrad,_Zerst%C3%B6rungen.jpg"
+    }
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-pawlow-haus",
+    "name": "Pawlow-Haus",
+    "description": "Vierstöckiges Wohnhaus am 9.-Januar-Platz, das von einer kleinen sowjetischen Gruppe um Sergeant Jakow Pawlow fast zwei Monate gegen deutsche Angriffe gehalten wurde – Symbol des Häuserkampfes.",
+    "coordinates": [
+      44.531344,
+      48.716048
+    ],
+    "category": "building",
+    "wikipediaSlug": "Pawlow-Haus",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/RIAN_archive_137429_Stalingrad_soldiers_during_short_lull.jpg",
+      "source": "RIA Novosti",
+      "license": "CC BY-SA 3.0",
+      "credit": "RIA Novosti archive, image #137429 / Georgy Zelma / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_137429_Stalingrad_soldiers_during_short_lull.jpg"
+    }
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-gerhardt-muehle",
+    "name": "Gerhardt-Mühle",
+    "description": "Ausgebrannte Dampfmühle unmittelbar neben dem Pawlow-Haus, als Ruine erhaltene Mahnstätte für den Häuserkampf im Zentrum Stalingrads.",
+    "coordinates": [
+      44.5330657,
+      48.7155516
+    ],
+    "category": "symbolic",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/%D0%A0%D1%83%D0%B8%D0%BD%D1%8B_%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8B_%D0%93%D0%B5%D1%80%D0%B3%D0%B0%D1%80%D0%B4%D1%82%D0%B0%2C_%D0%92%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4.jpg/960px-%D0%A0%D1%83%D0%B8%D0%BD%D1%8B_%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8B_%D0%93%D0%B5%D1%80%D0%B3%D0%B0%D1%80%D0%B4%D1%82%D0%B0%2C_%D0%92%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "credit": "Яна Краснопевцева",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A0%D1%83%D0%B8%D0%BD%D1%8B_%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8B_%D0%93%D0%B5%D1%80%D0%B3%D0%B0%D1%80%D0%B4%D1%82%D0%B0,_%D0%92%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4.jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-univermag",
+    "name": "Univermag-Kaufhaus",
+    "description": "Zentrales Warenhaus, in dessen Keller das Hauptquartier der 6. Armee untergebracht war. Hier ergab sich Generalfeldmarschall Paulus am 31. Januar 1943.",
+    "coordinates": [
+      44.5165008,
+      48.7085974
+    ],
+    "category": "building",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Bundesarchiv_Bild_183-B22531%2C_Stalingrad%2C_Ruine_des_Warenhauses.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B22531 / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22531,_Stalingrad,_Ruine_des_Warenhauses.jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-bahnhof-1",
+    "name": "Hauptbahnhof Stalingrad-1",
+    "description": "Zentraler Eisenbahnknoten der Stadt. Im September 1942 wechselte er innerhalb von Tagen mehrfach den Besitzer und war einer der härtesten Brennpunkte des Stadtkampfes.",
+    "coordinates": [
+      44.5132646,
+      48.7128912
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Bundesarchiv_Bild_183-B22194%2C_Russland%2C_Kampf_um_Stalingrad%2C_Bahnanlage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Heine",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22194,_Russland,_Kampf_um_Stalingrad,_Bahnanlage.jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-traktorenwerk",
+    "name": "Traktorenwerk Dscherschinski",
+    "description": "Größte Industrieanlage im Norden Stalingrads, baute bis zuletzt T-34-Panzer. Eingenommen Mitte Oktober 1942 nach schweren Kämpfen, blieb aber Frontwerk in Reichweite der Wolga.",
+    "coordinates": [
+      44.61028611,
+      48.80019444
+    ],
+    "category": "industry",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Bundesarchiv_Bild_183-B22437%2C_Sowjetunion%2C_Luftaufnahme_Stalingrad.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B22437 / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22437,_Sowjetunion,_Luftaufnahme_Stalingrad.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-barrikady",
+    "name": "Geschützfabrik Barrikady",
+    "description": "Rüstungswerk im nördlichen Industriegürtel, ab Oktober 1942 Schauplatz schwerster Kämpfe. Der „Kommissar-Block“ in der Werkshalle gilt als Sinnbild des sowjetischen Widerstands.",
+    "coordinates": [
+      44.5829207,
+      48.7766744
+    ],
+    "category": "industry",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Bundesarchiv_Bild_146-1987-103-28A%2C_Luftbild_Stalingrad.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1987-103-28A / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1987-103-28A,_Luftbild_Stalingrad.jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-krasny-oktyabr",
+    "name": "Stahlwerk Roter Oktober",
+    "description": "Metallurgisches Kombinat zwischen Barrikady und Mamajew-Hügel. Die zerschossenen Werkshallen blieben bis zur deutschen Kapitulation umkämpft und in sowjetischer Teilhand.",
+    "coordinates": [
+      44.560311,
+      48.7515265
+    ],
+    "category": "industry",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/RIAN_archive_2383_The_ruins_of_Stalingrad.jpg",
+      "source": "RIA Novosti",
+      "license": "CC BY-SA 3.0",
+      "credit": "RIA Novosti archive, image #2383 / Georgy Zelma / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_2383_The_ruins_of_Stalingrad.jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-spartanovka-rynok",
+    "name": "Rynok / Spartanowka (Nordvorstadt)",
+    "description": "Nördlichster Stadtrand am Hochufer der Wolga. Hier erreichten Panzer der 16. Panzerdivision am 23. August 1942 erstmals die Wolga und schnitten Stalingrad von Norden ab.",
+    "coordinates": [
+      44.6302616,
+      48.82002
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Bundesarchiv_Bild_183-J20503%2C_Russland%2C_Kampf_um_Stalingrad%2C_Zerst%C3%B6rungen.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-J20503 / Ollig / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J20503,_Russland,_Kampf_um_Stalingrad,_Zerst%C3%B6rungen.jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-krasnaja-sloboda",
+    "name": "Krasnaja Sloboda (Krasnoslobodsk)",
+    "description": "Sowjetisches Brückenkopfdorf am Ostufer der Wolga gegenüber Stalingrad. Hauptausgangspunkt für Nachschub, Verstärkungen und Verwundetentransporte während der gesamten Stadtschlacht.",
+    "coordinates": [
+      44.5557953,
+      48.7039046
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_76-%D0%BC%D0%BC_%D0%BF%D0%BE%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BF%D1%83%D1%88%D0%BA%D0%B8_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D0%BF%D0%BE_%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BD%D0%B8%D0%BA%D1%83_%D0%BD%D0%B0_%D0%94%D0%BE%D0%BD%D1%83.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Yevgeny Podshivalov / TASS, 1942 (PD-Russia)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_76-%D0%BC%D0%BC_%D0%BF%D0%BE%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BF%D1%83%D1%88%D0%BA%D0%B8_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D0%BF%D0%BE_%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BD%D0%B8%D0%BA%D1%83_%D0%BD%D0%B0_%D0%94%D0%BE%D0%BD%D1%83.jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-beketowka",
+    "name": "Beketowka",
+    "description": "Südlicher Industrievorort, der im Herbst 1942 unter sowjetischer Kontrolle blieb und der 64. Armee als Brückenkopf diente. Nahegelegener Flugplatz war Anlandepunkt der Versorgung.",
+    "coordinates": [
+      44.3628733,
+      48.5631769
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Bundesarchiv_Bild_183-F0316-0204-005%2C_Russland%2C_Paulus_in_Kriegsgefangenschaft.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "unknown / probably Georgi Lipskerow (english transcription Lipskerov), 1896-1977",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-F0316-0204-005,_Russland,_Paulus_in_Kriegsgefangenschaft.jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-flugplatz-pitomnik",
+    "name": "Flugplatz Pitomnik",
+    "description": "Wichtigster Flugplatz im Kessel, Drehscheibe der deutschen Luftbrücke zur 6. Armee. Verlust am 16. Januar 1943 bedeutete faktisch das Ende der Versorgung.",
+    "coordinates": [
+      44.25,
+      48.7425
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Pitomnik",
+    "coordinatesSource": "wikidata",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Bundesarchiv_Bild_183-B29906%2C_Russland%2C_Kampf_um_Stalingrad%2C_Grenadier.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B29906 / Herber / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B29906,_Russland,_Kampf_um_Stalingrad,_Grenadier.jpg"
+    }
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-flugplatz-gumrak",
+    "name": "Flugplatz Gumrak",
+    "description": "Zweiter Kesselflugplatz westlich Stalingrads, nach dem Fall von Pitomnik letzte Versorgungs- und Verwundetenstation der 6. Armee, bis zur Einnahme am 22. Januar 1943.",
+    "coordinates": [
+      44.34666667,
+      48.78166667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Gumrak",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bundesarchiv_Bild_183-B22222%2C_Russland%2C_Kampf_um_Stalingrad%2C_Infanterie.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B22222 / Herber / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22222,_Russland,_Kampf_um_Stalingrad,_Infanterie.jpg"
+    }
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-kotluban",
+    "name": "Kotluban-Korridor",
+    "description": "Landrücken zwischen Don und Wolga nördlich Stalingrads. Schauplatz wiederholter sowjetischer Entlastungsangriffe im Herbst 1942, um die Verbindung zur Stadt zu öffnen.",
+    "coordinates": [
+      44.2305035,
+      49.0195317
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bundesarchiv_Bild_183-B22188%2C_Russland%2C_Kampf_um_Stalingrad%2C_Sturmgesch%C3%BCtz.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B22188 / Heine / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22188,_Russland,_Kampf_um_Stalingrad,_Sturmgesch%C3%BCtz.jpg"
+    }
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-kalatsch-am-don",
+    "name": "Kalatsch am Don",
+    "description": "Donübergang westlich Stalingrads, im August 1942 von der 6. Armee genommen. Am 23. November 1942 schlossen sich hier die Zangen von Operation Uranus und kesselten die 6. Armee ein.",
+    "coordinates": [
+      43.53333333,
+      48.68333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Kalatsch_am_Don",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Bundesarchiv_Bild_101I-218-0528-06%2C_Russland-S%C3%BCd_%28Don%2C_Stalingrad%29%2C_Panzer_III.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-218-0528-06 / Thiede / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-218-0528-06,_Russland-S%C3%BCd_(Don,_Stalingrad),_Panzer_III.jpg"
+    }
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-marinowka",
+    "name": "Marinowka (Westspitze des Kessels)",
+    "description": "Westlichster Punkt des Stalingrader Kessels, bis Mitte Januar 1943 von Teilen der 6. Armee gehalten. Ausgangspunkt des verworfenen Ausbruchsplans „Donnerschlag“.",
+    "coordinates": [
+      43.832142,
+      48.692368
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Bundesarchiv_Bild_183-R76619%2C_Russland%2C_Kesselschlacht_Stalingrad.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-R76619 / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-R76619,_Russland,_Kesselschlacht_Stalingrad.jpg"
+    }
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-rossoschka",
+    "name": "Rossoschka",
+    "description": "Dorf am gleichnamigen Fluss westlich Stalingrads, im Spätherbst 1942 deutsche Hauptkampflinie im Kessel. Heute deutsch-russische Kriegsgräberstätte für Gefallene beider Seiten.",
+    "coordinates": [
+      44.1647806,
+      48.8240004
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Rossoschka",
+    "coordinatesSource": "nominatim",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bundesarchiv_Bild_183-B22173%2C_Russland%2C_Kampf_um_Stalingrad%2C_Infanterist.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B22173 / Kaufmann / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22173,_Russland,_Kampf_um_Stalingrad,_Infanterist.jpg"
+    }
+  }
+]

@@ -1,0 +1,278 @@
+[
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-stadt",
+    "name": "Demjansk (Kesselzentrum)",
+    "description": "Namensgebende Kleinstadt am Fluss Jawon, etwa 100 km südöstlich des Ilmensees, ab Februar 1942 Zentrum des eingeschlossenen II. Armeekorps der 16. Armee. Rund 95.000 deutsche Soldaten wurden hier ab dem 8. Februar 1942 in einem rund 3.000 Quadratkilometer großen Kessel gehalten und ausschließlich aus der Luft versorgt.",
+    "coordinates": [
+      32.46472222,
+      57.64472222
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Demjansk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Bundesarchiv_Bild_146-1972-042-42%2C_Russland%2C_Kesselschlacht_von_Demjansk.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1972-042-42",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1972-042-42,_Russland,_Kesselschlacht_von_Demjansk.jpg"
+    }
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-staraja-russa",
+    "name": "Staraja Russa (Entsatzbasis)",
+    "description": "Stadt am Südufer des Polist-Mündungsraums, rund 35 km nordwestlich des Kessels und Sitz des deutschen X. Armeekorps. Von hier brach im März/April 1942 die Stoßgruppe Seydlitz aus, um den Landkorridor nach Demjansk freizukämpfen, und blieb für den Rest der Schlacht zentraler Versorgungs- und Frontstützpunkt.",
+    "coordinates": [
+      31.35,
+      57.98333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Staraja_Russa",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-ramuschewo",
+    "name": "Ramuschewo (Korridor-Engstelle)",
+    "description": "Dorf am Westufer des Lowat, an dem die Stoßgruppe Seydlitz am 20. April 1942 die Verbindung zum Kessel von Demjansk wiederherstellte. Der nach dem Ort benannte Ramuschewo-Schlauch war anfangs nur rund vier Kilometer breit und blieb bis zur Räumung des Kessels im Februar 1943 lebenswichtige Landverbindung.",
+    "coordinates": [
+      31.6186,
+      57.8327
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Bundesarchiv_Bild_146-1972-042-22%2C_Russland%2C_Walter_von_Seydlitz-Kurzbach.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1972-042-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1972-042-22,_Russland,_Walter_von_Seydlitz-Kurzbach.jpg"
+    }
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-cholm",
+    "name": "Cholm (südlicher Eckkessel)",
+    "description": "Kleinstadt am Fluss Lowat, etwa 90 km südwestlich von Demjansk, in der ab dem 21. Januar 1942 die Kampfgruppe Scherer mit rund 5.500 Soldaten 105 Tage lang eingeschlossen war. Cholm sicherte als zweiter Luftbrückenkessel die Nahtstelle zwischen Heeresgruppe Nord und Mitte und wurde am 5. Mai 1942 entsetzt.",
+    "coordinates": [
+      31.18333333,
+      57.15
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Cholm_(Nowgorod)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Bundesarchiv_Bild_101I-004-3633-25A%2C_Russland%2C_Cholm%2C_Soldaten_im_Schnee.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-004-3633-25A / Richard Muck",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-004-3633-25A,_Russland,_Cholm,_Soldaten_im_Schnee.jpg"
+    }
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-ilmensee",
+    "name": "Ilmensee (Nordflanke)",
+    "description": "Großer flacher See unmittelbar nördlich des Kampfraums, der die Nordflanke der deutschen 16. Armee deckte. Über das Eis des Ilmensees führten sowjetische Verbände der Nordwestfront im Januar 1942 ihre Angriffe gegen Staraja Russa und schnitten so die Verbindung zum II. Armeekorps ab.",
+    "coordinates": [
+      31.29027778,
+      58.26777778
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Ilmensee",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-lowat",
+    "name": "Lowat (Korridorfluss)",
+    "description": "Linker Nebenfluss des Ilmensees, der von Süden her zwischen Demjansk und Staraja Russa verlief und sowohl das westliche Kesselufer als auch den späteren Ramuschewo-Korridor markierte. Die Überquerung des Lowat im April 1942 durch die Stoßgruppe Seydlitz war Schlüsselereignis für die Wiederherstellung der Landverbindung.",
+    "coordinates": [
+      31.53,
+      58.14
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Lowat",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-pola",
+    "name": "Pola (Ostflanke)",
+    "description": "Rechter Nebenfluss des Lowat, der den Ostteil des Kessels durchzog und am Hauptverbandsplatz sowie am Endpunkt der deutschen Heeresfeldbahn vorbeiführte. Entlang der Pola verlief ein Teil der östlichen Kampflinie, an der mehrfach sowjetische Angriffe der Nordwestfront abgewehrt wurden.",
+    "coordinates": [
+      31.9685,
+      57.7213
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-seligersee",
+    "name": "Seligersee (Südflanke)",
+    "description": "Stark verzweigter See südlich des Kampfraums, der die Nahtstelle zwischen Heeresgruppe Nord und Mitte bildete. Am 9. Januar 1942 durchbrach die sowjetische 3. Stoßarmee südlich des Sees die deutsche Front und schuf damit die Voraussetzung für die spätere Einschließung des II. Armeekorps bei Demjansk.",
+    "coordinates": [
+      33.1,
+      57.25
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Seligersee",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-lytschkowo",
+    "name": "Lytschkowo (Ostfront)",
+    "description": "Bahnstation und Stützpunkt am Ostrand des Kessels, gehalten von Teilen der 30. Infanterie-Division. Im März 1942 lief hier der Hauptangriff des sowjetischen 1. Luftlandekorps an, das den Kessel von Osten her aufspalten sollte; die Kämpfe um Lytschkowo zählen zu den verlustreichsten innerhalb des Demjansker Raums.",
+    "coordinates": [
+      32.407,
+      57.9175
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Bundesarchiv_Bild_101I-004-3641-13%2C_Russland%2C_deutscher_Infanterist_%28Demjansk-%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-004-3641-13 / Richard Muck",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-004-3641-13,_Russland,_deutscher_Infanterist_(Demjansk-).jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-waldai",
+    "name": "Waldai (sowjetische Basis)",
+    "description": "Kreisstadt am Waldaisee, südöstlich des Kessels gelegen und wichtigster Aufmarschraum der sowjetischen Nordwestfront unter Generaloberst Kurotschkin. Von hier aus wurden die Versorgungslinien für die Operationen gegen Demjansk geführt; die Bahnstrecke Bologoje-Waldai bildete die rückwärtige Hauptachse.",
+    "coordinates": [
+      33.25,
+      57.96666667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Waldai_(Stadt)",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-waldaihoehen",
+    "name": "Waldaihöhen (Gelände)",
+    "description": "Bewaldetes Hügelland zwischen Seligersee und Ilmensee, das den Ostrand des Operationsraums bildete und die Bewegung großer Verbände stark behinderte. Sümpfe, Wälder und tiefer Schnee prägten den Kampf um Demjansk und machten den Einsatz motorisierter Truppen weitgehend unmöglich.",
+    "coordinates": [
+      33.5,
+      57.6
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Waldaihöhen",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-parfino",
+    "name": "Parfino (Nachschubknoten)",
+    "description": "Ort an der Bahnlinie Staraja Russa-Bologoje und am Lowat, zentraler rückwärtiger Versorgungsknoten der deutschen 16. Armee. Über Parfino und die anschließende Heeresfeldbahn nach Loznitsy lief nach der Eröffnung des Ramuschewo-Korridors ein Großteil des Bodenmateriels in den Kessel.",
+    "coordinates": [
+      31.71,
+      58.01
+    ],
+    "category": "transport",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-marewo",
+    "name": "Marewo (Südwestabschnitt)",
+    "description": "Siedlung südwestlich von Demjansk an der Naht zwischen II. Armeekorps und der Verbindung nach Cholm. Marewo lag im Bereich der dünn besetzten Frontlinie zwischen 290. und 30. Infanterie-Division und wurde im Februar 1942 von sowjetischen Skischützen-Brigaden mehrfach umgangen.",
+    "coordinates": [
+      32.0823,
+      57.3153
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/%D0%9C%D0%B0%D1%80%D1%91%D0%B2%D0%BE_1942.jpg/960px-%D0%9C%D0%B0%D1%80%D1%91%D0%B2%D0%BE_1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "Wikimedia Commons",
+      "license": "Public domain",
+      "credit": "U.S. National Archives and Records Administration",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D1%80%D1%91%D0%B2%D0%BE_1942.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-flugplatz",
+    "name": "Feldflugplatz Demjansk (Luftbrücke)",
+    "description": "Behelfsmäßiger Feldflugplatz am Stadtrand von Demjansk, einer von zwei Hauptlandeplätzen der deutschen Luftbrücke. Zwischen Februar und Mai 1942 brachten Ju 52 und He 111 hier täglich rund 270 Tonnen Versorgungsgüter ein und flogen Verwundete aus; die Luftbrücke gilt als erste erfolgreiche Großluftversorgung der Wehrmacht.",
+    "coordinates": [
+      32.49,
+      57.65
+    ],
+    "category": "transport",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Bundesarchiv_Bild_101I-003-3446-16%2C_Russland%2C_Festung_Demjansk%2C_Ju_52.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-003-3446-16 / Ulrich",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-003-3446-16,_Russland,_Festung_Demjansk,_Ju_52.jpg"
+    }
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-pjeski",
+    "name": "Feldflugplatz Pjeski (Luftbrücke)",
+    "description": "Zweiter behelfsmäßiger Feldflugplatz östlich von Demjansk, Ende Januar 1942 angelegt zur Entlastung des Hauptflugplatzes. Von Pjeski aus operierte ein Teil der Transportstaffeln der Luftflotte 1; der Platz blieb bis zur Räumung des Kessels Anfang 1943 in Betrieb.",
+    "coordinates": [
+      32.65,
+      57.66
+    ],
+    "category": "transport",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Bundesarchiv_Bild_101I-003-3445-33%2C_Russland%2C_Lufttransport_mit_Junkers_Ju_52.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-003-3445-33 / Ullrich",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-003-3445-33,_Russland,_Lufttransport_mit_Junkers_Ju_52.jpg"
+    }
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-feldbahn",
+    "name": "Heeresfeldbahn Tuleblja-Demjansk",
+    "description": "600-mm-Schmalspurbahn, die nach Eröffnung des Ramuschewo-Korridors von Tuleblja über Loznitsy in den Kessel verlegt wurde, um die Luftbrücke zu ergänzen. Die Strecke war Hauptziel sowjetischer Luft- und Artillerieangriffe und entscheidend für das Halten der Demjansker Position bis Februar 1943.",
+    "coordinates": [
+      31.95,
+      57.85
+    ],
+    "category": "transport",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Feldbahn_Tuleblja%E2%80%93Richtung_Demjansk%2C_September_1942._Bis_10._September_1942_fertiggestelltes_Feldbahngleis_%28Bundesarchiv_N_989_6_0002%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain",
+      "credit": "Kommandeur der Eisenbahn-Pioniere 16 / Bundesarchiv N 989 6 0002",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Feldbahn_Tuleblja%E2%80%93Richtung_Demjansk,_September_1942._Bis_10._September_1942_fertiggestelltes_Feldbahngleis_(Bundesarchiv_N_989_6_0002).jpg"
+    }
+  },
+  {
+    "battleId": "demyansk",
+    "id": "demyansk-aermelband",
+    "name": "Demjansk-Schild (Erinnerungsort)",
+    "description": "Am 25. April 1943 von Hitler gestiftetes Ärmelschild für Soldaten, die mindestens 60 Tage im Demjansker Kessel gekämpft hatten. Das Schild mit zwei gekreuzten Schwertern und Flugzeug wurde rund 100.000 Mal verliehen und entwickelte sich zum symbolischen Erinnerungsobjekt an die erste deutsche Großeinschließung an der Ostfront.",
+    "coordinates": [
+      32.46,
+      57.64
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Demjanskschild",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Deutsches_Reichsgesetzblatt_43T1_064_0369.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain",
+      "credit": "Deutsches Reichsgesetzblatt 1943, Teil I, S. 369 (Stiftung des Demjanskschildes)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Reichsgesetzblatt_43T1_064_0369.jpg"
+    }
+  }
+]

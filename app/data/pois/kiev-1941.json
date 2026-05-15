@@ -1,0 +1,245 @@
+[
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-kiew",
+    "name": "Kiew",
+    "description": "Hauptziel der deutschen Operation und Sitz der sowjetischen Südwestfront unter Generaloberst Kirponos. Stalin verbot den rechtzeitigen Rückzug — die Wehrmacht besetzte die Stadt am 19. September 1941, nachdem der Kessel um vier sowjetische Armeen geschlossen war.",
+    "coordinates": [
+      30.52361111,
+      50.45
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Kiew",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bundesarchiv_Bild_183-L20208%2C_Ukraine%2C_Kiew%2C_deutscher_Wachposten_auf_der_Zitadelle.jpg/500px-Bundesarchiv_Bild_183-L20208%2C_Ukraine%2C_Kiew%2C_deutscher_Wachposten_auf_der_Zitadelle.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-L20208 / Schmidt / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-L20208,_Ukraine,_Kiew,_deutscher_Wachposten_auf_der_Zitadelle.jpg"
+    }
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-lochwyzja",
+    "name": "Lochwyzja",
+    "description": "Hier schlossen sich am 15. September 1941 die deutschen Panzergruppen 1 (Kleist) aus dem Süden und 2 (Guderian) aus dem Norden — Schließungspunkt des größten Kessels der Kriegsgeschichte mit rund 665.000 Gefangenen.",
+    "coordinates": [
+      33.26517113,
+      50.3610461
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Lochwyzja",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-romny",
+    "name": "Romny",
+    "description": "Vorgesehener Treffpunkt der beiden Zangen; Guderians Panzergruppe 2 erreichte Romny am 10. September 1941 und stieß von hier südwärts auf Lochwyzja vor, um den Kessel zu schließen.",
+    "coordinates": [
+      33.48790812,
+      50.74281279
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Romny",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Bundesarchiv_Bild_101I-139-1112-17%2C_Russland-Mitte%2C_Heinz_Guderian.jpg/500px-Bundesarchiv_Bild_101I-139-1112-17%2C_Russland-Mitte%2C_Heinz_Guderian.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-139-1112-17 / Knobloch, Ludwig / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-139-1112-17,_Russland-Mitte,_Heinz_Guderian.jpg"
+    }
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-konotop",
+    "name": "Konotop",
+    "description": "Wichtiger Eisenbahnknoten im Sumy-Gebiet, im September 1941 zentraler Vorstoßraum von Guderians Panzergruppe 2 auf dem Weg in den Rücken der Südwestfront. Übergang über den Sejm.",
+    "coordinates": [
+      33.20833333,
+      51.2375
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Konotop",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Konotop._Helmuth_Linder_Russlandalbum._helmuth0053-5.png/500px-Konotop._Helmuth_Linder_Russlandalbum._helmuth0053-5.png",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "credit": "Helmuth Linder, Russlandalbum",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Konotop._Helmuth_Linder_Russlandalbum._helmuth0053-5.png"
+    }
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-pyrjatyn",
+    "name": "Pyrjatyn",
+    "description": "Stadt am Udaj, durch die im September 1941 die Reste des Stabes der Südwestfront beim Ausbruchsversuch aus dem Kessel zogen. In der Nähe geriet Generaloberst Kirponos in den finalen Hinterhalt.",
+    "coordinates": [
+      32.50929941,
+      50.24059547
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Pyrjatyn",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-boryspil",
+    "name": "Boryspil",
+    "description": "Stadt mit großem Flugplatz rund 30 km südöstlich Kiews. Im Sommer 1941 Stationierungsraum sowjetischer Luftlande- und Reserveeinheiten zur Verteidigung der Kiewer Befestigungszone.",
+    "coordinates": [
+      30.95,
+      50.35
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Boryspil",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-browary",
+    "name": "Browary",
+    "description": "Vorort 12 km nordöstlich Kiews, im August/September 1941 Hauptquartier der sowjetischen Südwestfront unter Generaloberst Michail Kirponos, bis die Kessel-Bildung den Stab zum Ausbruch nach Osten zwang.",
+    "coordinates": [
+      30.79,
+      50.51111111
+    ],
+    "category": "building",
+    "wikipediaSlug": "Browary",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-tscherkassy",
+    "name": "Tscherkassy",
+    "description": "Stadt am rechten Dnjepr-Ufer; deutsche Truppen sicherten hier im August 1941 einen Abschnitt der Dnjepr-Linie zwischen Tscherkassy und Kaniw als Sprungbrett für die Süd-Zange.",
+    "coordinates": [
+      32.05972222,
+      49.44444444
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Tscherkassy",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-krementschuk",
+    "name": "Krementschuk",
+    "description": "Ausgangspunkt der südlichen Zange: Ab dem 12. September 1941 stieß Kleists Panzergruppe 1 aus dem Brückenkopf Krementschuk nach Norden vor und bog Richtung Lochwyzja ein.",
+    "coordinates": [
+      33.40388889,
+      49.06305556
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Krementschuk",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-tschernihiw",
+    "name": "Tschernihiw",
+    "description": "Großstadt an der Desna nördlich Kiews, am 9. September 1941 von der deutschen 2. Armee eingenommen. Schlüsselpunkt für die Sicherung der Nordflanke der Operation.",
+    "coordinates": [
+      31.29472222,
+      51.49388889
+    ],
+    "category": "building",
+    "wikipediaSlug": "Tschernihiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Bundesarchiv_Bild_183-B10901%2C_Tschernigow%2C_Parade_vor_Generaloberst_von_Weichs.jpg/500px-Bundesarchiv_Bild_183-B10901%2C_Tschernigow%2C_Parade_vor_Generaloberst_von_Weichs.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B10901 / Lüthge / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B10901,_Tschernigow,_Parade_vor_Generaloberst_von_Weichs.jpg"
+    }
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-lubny",
+    "name": "Lubny",
+    "description": "Stadt an der Sula, im September 1941 Angriffsziel der deutschen 17. Armee aus dem Süden. Lag genau im engsten Halsstück des entstehenden Kessels und wurde Sammelpunkt zerschlagener sowjetischer Verbände.",
+    "coordinates": [
+      32.98686035,
+      50.01856413
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Lubny",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-pryluky",
+    "name": "Pryluky",
+    "description": "Stadt am Udaj im Süden der Oblast Tschernihiw; im September 1941 Hauptachse der Ausbruchsversuche der sowjetischen 21. Armee aus dem Kiewer Kessel nach Osten.",
+    "coordinates": [
+      32.4,
+      50.6
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Pryluky",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-nowhorod-siwerskyj",
+    "name": "Nowhorod-Siwerskyj",
+    "description": "Stadt an der Desna, im August 1941 entscheidender Brückenkopf von Guderians Panzergruppe 2 zum Übergang nach Süden in den Rücken der Südwestfront — eine der Schlüsselstellen für das Gelingen der Kesselbildung.",
+    "coordinates": [
+      33.26666667,
+      51.99722222
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Nowhorod-Siwerskyj",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-kaniw",
+    "name": "Kaniw",
+    "description": "Stadt am rechten Dnjepr-Ufer zwischen Tscherkassy und Kiew. Im August 1941 Teil der bitter umkämpften sowjetischen Dnjepr-Verteidigungslinie; der Kaniw-Bogen verzögerte den deutschen Übergang.",
+    "coordinates": [
+      31.45583333,
+      49.74472222
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Kaniw",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-oster",
+    "name": "Oster",
+    "description": "Kleinstadt an der Mündung des Oster in die Desna, rund 70 km nordöstlich Kiews. Wichtiger Desna-Übergang, an dem deutsche Verbände Ende August 1941 die Flussverteidigung der 5. sowjetischen Armee aufbrachen.",
+    "coordinates": [
+      30.88111111,
+      50.94861111
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Oster_(Stadt)",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kiev-1941",
+    "id": "kiev-1941-schytomyr",
+    "name": "Schytomyr",
+    "description": "Großstadt westlich Kiews, bereits am 9. Juli 1941 von der deutschen 6. Armee eingenommen. Ausgangsraum und rückwärtige Basis für den weiteren Vorstoß auf Kiew und den Dnjepr.",
+    "coordinates": [
+      28.65777778,
+      50.25444444
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Schytomyr",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Svyato-Preobrajenskiy-Sobor_cathedral_in_Zhytomyr_1941.jpg/500px-Svyato-Preobrajenskiy-Sobor_cathedral_in_Zhytomyr_1941.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Willi Ude, 1941 (private photoarchive)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Svyato-Preobrajenskiy-Sobor_cathedral_in_Zhytomyr_1941.jpg"
+    }
+  }
+]

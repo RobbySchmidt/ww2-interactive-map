@@ -1,0 +1,321 @@
+[
+  {
+    "battleId": "brest",
+    "id": "brest-festung",
+    "name": "Brester Festung (Zitadelle)",
+    "description": "Russische Grenzfestung des 19. Jahrhunderts am Zusammenfluss von Bug und Muchawez, am Morgen des 22. Juni 1941 vom XII. Armeekorps der Wehrmacht überfallen. Auf der zentralen Kerninsel hielten Reste der 6. und 42. Schützendivision tagelang in der Ringkaserne aus.",
+    "coordinates": [
+      23.65277778,
+      52.08333333
+    ],
+    "category": "building",
+    "wikipediaSlug": "Brester_Festung",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Biera%C5%9Bcie._%D0%91%D0%B5%D1%80%D0%B0%D1%81%D1%8C%D1%86%D0%B5_%281941%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Bieraście (Brest), Luftaufnahme 1941; aus dem elektronischen Archiv Ivan Chaichyts, Urheber unbekannt",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biera%C5%9Bcie._%D0%91%D0%B5%D1%80%D0%B0%D1%81%D1%8C%D1%86%D0%B5_(1941).jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-ringkaserne",
+    "name": "Ringkaserne der Zitadelle",
+    "description": "Geschlossener, rund 1,8 km langer Kasernenring mit meterdicken Backsteinmauern, der die Zentralinsel umschloss. Vom 22. Juni an unter Trommelfeuer der 45. Infanterie-Division, wurden Keller und Kasematten zum letzten Rückzugsort der Verteidiger.",
+    "coordinates": [
+      23.6594,
+      52.0822
+    ],
+    "category": "building",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/%D0%91%D1%80%D1%8D%D1%81%D1%86%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D1%8D%D0%BF%D0%B0%D1%81%D1%86%D1%8C._%D0%94%D0%B0%D1%80%D0%BE%D0%B3%D0%B0%2C_%D1%88%D1%82%D0%BE_%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%B7%D1%96%D0%BB%D0%B0_%D0%B7_%D0%A3%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8F%D0%B9_%D0%B1%D1%80%D0%B0%D0%BC%D1%8B._1941.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Brester Festung 1941, Straße aus der Osttor-Kaserne; brestcity.com, Urheber unbekannt",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D1%80%D1%8D%D1%81%D1%86%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D1%8D%D0%BF%D0%B0%D1%81%D1%86%D1%8C._%D0%94%D0%B0%D1%80%D0%BE%D0%B3%D0%B0,_%D1%88%D1%82%D0%BE_%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%B7%D1%96%D0%BB%D0%B0_%D0%B7_%D0%A3%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8F%D0%B9_%D0%B1%D1%80%D0%B0%D0%BC%D1%8B._1941.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-cholmer-tor",
+    "name": "Cholmer Tor (Holmskaja brama)",
+    "description": "Südliches Tor der Zitadelle, das über die Holm-Brücke zur Wolyn-Befestigung führte. Die zerschossene Fassade mit unzähligen Einschlägen wurde nach 1945 zum Symbolbild der Verteidigung.",
+    "coordinates": [
+      23.6564419,
+      52.0812723
+    ],
+    "category": "building",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Brest_fortress_pre-war_Holmskie_vorota.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Brester Festung, Cholmer Tor vor dem Krieg (ca. 1934); aus Smirnow 1947, Urheber unbekannt",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brest_fortress_pre-war_Holmskie_vorota.jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-terespoler-tor",
+    "name": "Terespoler Tor (Tjarespalskaja brama)",
+    "description": "Westliches Zitadellentor mit Brücke über den Bug zur Terespol-Befestigung. In den ersten Stunden des 22. Juni 1941 stießen hier deutsche Stoßtrupps des Infanterie-Regiments 135 in die Festung vor.",
+    "coordinates": [
+      23.6513,
+      52.0825
+    ],
+    "category": "building",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Bei_Brest-Litowsk._Helmuth_Linder_Russland_Album._helmuth0001-1.png",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "credit": "Bei Brest-Litowsk, 1. Juni 1941: Funkstationen der Wehrmacht beim Vormarsch; Helmuth Linder Russland-Album",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bei_Brest-Litowsk._Helmuth_Linder_Russland_Album._helmuth0001-1.png"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-kobrin-befestigung",
+    "name": "Kobriner Befestigung (Nordinsel)",
+    "description": "Größter äußerer Festungsabschnitt nördlich des Muchawez, durchzogen von Wällen, Kasernen und dem Ost- sowie Westfort. Hier konzentrierte sich nach dem Fall der Zitadelle der letzte organisierte Widerstand bis Ende Juni 1941.",
+    "coordinates": [
+      23.6547,
+      52.0871
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/%D0%91%D1%80%D1%8D%D1%81%D1%86%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D1%8D%D0%BF%D0%B0%D1%81%D1%86%D1%8C._%D0%90%D1%8D%D1%80%D0%BE%D1%84%D0%BE%D1%82%D0%BE_%D0%A3%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8F%D0%B3%D0%B0_%D1%84%D0%BE%D1%80%D1%82%D0%B0._%D0%A7%D1%8D%D1%80%D0%B2%D0%B5%D0%BD%D1%8C_1941.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Brester Festung, Luftaufnahme des Ostforts in der Kobriner Befestigung, Juni 1941; brestcity.com, Urheber unbekannt",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D1%80%D1%8D%D1%81%D1%86%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D1%8D%D0%BF%D0%B0%D1%81%D1%86%D1%8C._%D0%90%D1%8D%D1%80%D0%BE%D1%84%D0%BE%D1%82%D0%BE_%D0%A3%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8F%D0%B3%D0%B0_%D1%84%D0%BE%D1%80%D1%82%D0%B0._%D0%A7%D1%8D%D1%80%D0%B2%D0%B5%D0%BD%D1%8C_1941.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-ostfort",
+    "name": "Ostfort (Kobriner Befestigung)",
+    "description": "Hufeisenförmiges Erdwerk im Norden der Kobriner Befestigung, unter Major Pjotr Gawrilow zum letzten Stützpunkt der Verteidiger ausgebaut. Erst am 29. Juni 1941 nach Einsatz schwerer 2-Tonnen-Bomben der Luftwaffe gebrochen.",
+    "coordinates": [
+      23.6595,
+      52.0882
+    ],
+    "category": "building",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/%D0%91%D1%80%D1%8D%D1%81%D1%86%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D1%8D%D0%BF%D0%B0%D1%81%D1%86%D1%8C._%D0%A3%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8F%D1%8F_%D0%B1%D1%80%D0%B0%D0%BC%D0%B0._1941._%D0%97%D0%B0%D0%B1%D0%BB%D0%B0%D0%BA%D0%B0%D0%B2%D0%B0%D0%BD%D0%B0%D1%8F_%D0%9A%D0%B0%D0%BC%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%8C%D1%86%D0%B0%D0%BC_%D0%B1%D1%80%D0%B0%D0%BC%D0%B0_%2801%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Brester Festung, Ostfort: vom Komsomolez-Zugmaschine blockiertes Osttor nach den Kämpfen 1941; brestcity.com, Urheber unbekannt",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D1%80%D1%8D%D1%81%D1%86%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D1%8D%D0%BF%D0%B0%D1%81%D1%86%D1%8C._%D0%A3%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8F%D1%8F_%D0%B1%D1%80%D0%B0%D0%BC%D0%B0._1941._%D0%97%D0%B0%D0%B1%D0%BB%D0%B0%D0%BA%D0%B0%D0%B2%D0%B0%D0%BD%D0%B0%D1%8F_%D0%9A%D0%B0%D0%BC%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D1%8C%D1%86%D0%B0%D0%BC_%D0%B1%D1%80%D0%B0%D0%BC%D0%B0_(01).jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-wolyn-befestigung",
+    "name": "Wolyn-Befestigung (Südinsel)",
+    "description": "Südlicher Außenabschnitt jenseits des Muchawez mit Militärhospital und Lagerräumen. Die geschwächten Verteidiger wurden hier am 23. Juni 1941 nach erbitterten Häuserkämpfen überwältigt.",
+    "coordinates": [
+      23.6575,
+      52.0784
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Russische_soldaten_hebben_zich_overgegeven_in_de_vesting_Brest%2C_Bestanddeelnr_29059_018.tif/lossy-page1-960px-Russische_soldaten_hebben_zich_overgegeven_in_de_vesting_Brest%2C_Bestanddeelnr_29059_018.tif.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Brest-Litowsk, 2. Juli 1941: in der Festung gefangengenommene Rotarmisten; Aufnahme Kriegsberichter Gutjahr, Spaarnestad-Fotocollectie",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Russische_soldaten_hebben_zich_overgegeven_in_de_vesting_Brest,_Bestanddeelnr_29059_018.tif"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-terespol-befestigung",
+    "name": "Terespol-Befestigung (Westinsel)",
+    "description": "Westliche Vorbefestigung jenseits des Bug auf heute polnischer Seite, am 22. Juni 1941 als erster Festungsabschnitt überrannt. Hier hielten sich vereinzelte Grenztruppen der 9. Grenzkommandantur stundenlang gegen die 45. Infanterie-Division.",
+    "coordinates": [
+      23.6433,
+      52.0804
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Bei_Brest-Litowsk._Helmuth_Linder_Russland_Album._helmuth0001-2.png",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "credit": "Bei Brest-Litowsk, 1. Juni 1941: vorrückende Wehrmacht-Fahrzeuge im Aufmarschraum; Helmuth Linder Russland-Album",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bei_Brest-Litowsk._Helmuth_Linder_Russland_Album._helmuth0001-2.png"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-nikolai-kirche",
+    "name": "St.-Nikolai-Garnisonskirche",
+    "description": "Im 19. Jahrhundert errichtete Garnisonskirche im Zentrum der Zitadelle, 1941 als sowjetischer Soldatenklub genutzt. Das massive Gebäude wurde im Kampf um die Insel zum umkämpften Stützpunkt und mehrfach von beiden Seiten gestürmt.",
+    "coordinates": [
+      23.6550233,
+      52.0826972
+    ],
+    "category": "building",
+    "wikipediaSlug": "St.-Nikolai-Garnisonskathedrale_(Brest)",
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-weisses-palais",
+    "name": "Weißes Palais",
+    "description": "Ehemaliges Refektorium des Basilianerklosters, 1918 Ort der Unterzeichnung des Friedens von Brest-Litowsk. Im Juni 1941 als Offiziersclub in die Verteidigung einbezogen und im Häuserkampf vollständig zerstört; heute Ruine.",
+    "coordinates": [
+      23.6588,
+      52.0832
+    ],
+    "category": "symbolic",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-holm-bruecke",
+    "name": "Holm-Brücke über den Muchawez",
+    "description": "Verbindungsbrücke vom Cholmer Tor der Zitadelle zur Wolyn-Befestigung. In den ersten Tagen mehrfach umkämpft, da über sie Munition und Verwundete zwischen den Inseln transportiert werden mussten.",
+    "coordinates": [
+      23.6565,
+      52.0807
+    ],
+    "category": "transport",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-schiessstand-tir",
+    "name": "Schießstand (ehem. Pulvermagazin)",
+    "description": "Erhalten gebliebenes Pulvermagazin im Wall der Wolyn-Befestigung, das in den 1930er Jahren zum sowjetischen Schießstand der Festungsgarnison umgebaut wurde. Diente am 22. Juni als improvisierter Munitionsdepot- und Sammelpunkt.",
+    "coordinates": [
+      23.6616,
+      52.0839
+    ],
+    "category": "industry",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-mut-denkmal",
+    "name": "Denkmal Mut (Muschnasz)",
+    "description": "33 Meter hohe Skulptur eines Soldatenkopfes, errichtet 1971 in der Zitadelle als zentrales Element des Memorialkomplexes Brester Heldenfestung. Markiert den Ort des bittersten Nahkampfs im Inneren der Ringkaserne.",
+    "coordinates": [
+      23.6560814,
+      52.0821926
+    ],
+    "category": "symbolic",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Obelisk_of_the_Monument_of_Courage_in_Brest_Fortress.jpg/960px-Obelisk_of_the_Monument_of_Courage_in_Brest_Fortress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "credit": "Nakonana",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Obelisk_of_the_Monument_of_Courage_in_Brest_Fortress.jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-durst-denkmal",
+    "name": "Denkmal Durst (Smaga)",
+    "description": "Bronzefigur eines kriechenden Rotarmisten, der mit dem Helm Wasser aus dem Muchawez schöpft. Erinnert an die abgeschnittene Wasserversorgung der Verteidiger; deutsche Scharfschützen hielten die Uferzonen am Bug und Muchawez gezielt unter Feuer.",
+    "coordinates": [
+      23.66,
+      52.0829
+    ],
+    "category": "symbolic",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Brest_Fortress_Thirst_%28251534117%29.jpeg/960px-Brest_Fortress_Thirst_%28251534117%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Alexxx Malev",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brest_Fortress_Thirst_(251534117).jpeg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-bajonett-obelisk",
+    "name": "Bajonett-Obelisk",
+    "description": "104 m hoher stählerner Obelisk in Form eines aufgepflanzten Vierkantbajonetts, eingeweiht 1971. Steht im Zentrum des Memorialkomplexes und markiert weithin sichtbar das ehemalige Kampfgebiet der Zitadelle.",
+    "coordinates": [
+      23.6568,
+      52.0829
+    ],
+    "category": "symbolic",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Courage_Sculpture_with_Bayonet_Monument_-_Brest_Fortress_-_Brest_-_Belarus_%2826815314173%29.jpg/960px-Courage_Sculpture_with_Bayonet_Monument_-_Brest_Fortress_-_Brest_-_Belarus_%2826815314173%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "credit": "Adam Jones from Kelowna, BC, Canada",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Courage_Sculpture_with_Bayonet_Monument_-_Brest_Fortress_-_Brest_-_Belarus_(26815314173).jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-bahnhof",
+    "name": "Bahnhof Brest-Zentralny",
+    "description": "Großer Eisenbahnknoten am nördlichen Stadtrand, am 22. Juni 1941 in den ersten Stunden von der Wehrmacht erreicht. Eine kleine Gruppe sowjetischer Bahnpolizisten und Reisender verteidigte die Kellergewölbe noch tagelang.",
+    "coordinates": [
+      23.6804112,
+      52.1004334
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Bahnhof_Brest",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Biera%C5%9Bcie_Centralnaje._%D0%91%D0%B5%D1%80%D0%B0%D1%81%D1%8C%D1%86%D0%B5_%D0%A6%D1%8D%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D0%B5_%281941%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Bahnhof Brest-Zentralny (Bieraście Centralnaje) 1941; aus dem elektronischen Archiv Ivan Chaichyts, Urheber unbekannt",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biera%C5%9Bcie_Centralnaje._%D0%91%D0%B5%D1%80%D0%B0%D1%81%D1%8C%D1%86%D0%B5_%D0%A6%D1%8D%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D0%B5_(1941).jpg"
+    },
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-stadt",
+    "name": "Stadt Brest (Brest-Litowsk)",
+    "description": "Westliche Bezirksstadt der BSSR und Sitz der 4. Armee, am 22. Juni 1941 binnen weniger Stunden eingenommen. Während die Festung weiterkämpfte, wurde die Stadt zum rückwärtigen deutschen Aufmarschraum für den Vorstoß auf Minsk.",
+    "coordinates": [
+      23.7,
+      52.08333333
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Brest_(Belarus)",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Biera%C5%9Bcie%2C_Bulvarny-Teatralnaja._%D0%91%D0%B5%D1%80%D0%B0%D1%81%D1%8C%D1%86%D0%B5%2C_%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%D0%BD%D1%8B-%D0%A2%D1%8D%D0%B0%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%281941%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Brest-Litowsk 1941, Ecke Bulvarny–Teatralnaja-Straße; aus dem elektronischen Archiv Ivan Chaichyts, Urheber unbekannt",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biera%C5%9Bcie,_Bulvarny-Teatralnaja._%D0%91%D0%B5%D1%80%D0%B0%D1%81%D1%8C%D1%86%D0%B5,_%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%D0%BD%D1%8B-%D0%A2%D1%8D%D0%B0%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_(1941).jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "brest",
+    "id": "brest-zhabinka",
+    "name": "Schabinka (Eisenbahnknoten)",
+    "description": "Eisenbahnknotenpunkt rund 25 km östlich von Brest an der Magistrale Moskau–Warschau. Am 22. Juni 1941 in den Morgenstunden durch deutsche Luftangriffe und das vorstoßende XXIV. motorisierte Korps erreicht und der eingeschlossenen Festung damit der östliche Rückhalt entzogen.",
+    "coordinates": [
+      24.02333333,
+      52.20055556
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Schabinka",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/%C5%BDabinka._%D0%96%D0%B0%D0%B1%D1%96%D0%BD%D0%BA%D0%B0_%281930-39%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Schabinka (Žabinka), Vorkriegsaufnahme 1930er Jahre; Urheber unbekannt",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C5%BDabinka._%D0%96%D0%B0%D0%B1%D1%96%D0%BD%D0%BA%D0%B0_(1930-39).jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  }
+]

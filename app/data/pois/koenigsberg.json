@@ -1,0 +1,334 @@
+[
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-schloss",
+    "name": "Königsberger Schloss",
+    "description": "Wahrzeichen der ostpreußischen Hauptstadt und symbolisches Herz der Festung Königsberg. Bereits durch RAF-Luftangriffe im August 1944 schwer zerstört, brannte das Schloss in der Schlacht im April 1945 endgültig aus; die Ruine wurde 1968 unter Breschnew gesprengt.",
+    "coordinates": [
+      20.510788,
+      54.710218
+    ],
+    "category": "building",
+    "wikipediaSlug": "Königsberger_Schloss",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Shattered%2C_smoking_ruins_of_Konigsberg_Castle%2C_1945.png",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "credit": "Unknown wartime photographer",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shattered,_smoking_ruins_of_Konigsberg_Castle,_1945.png"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-dom",
+    "name": "Königsberger Dom",
+    "description": "Backsteingotischer Dom auf der Kneiphof-Insel im Pregel, im April 1945 ausgebrannt und nur als Ruine erhalten geblieben. An seiner Nordostecke liegt das Grab Immanuel Kants, das den Abriss in sowjetischer Zeit überdauerte.",
+    "coordinates": [
+      20.511778,
+      54.706353
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Königsberger_Dom",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Zerst%C3%B6rung_K%C3%B6nigsbergs.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain",
+      "credit": "Fritz Krauskopf (1882–1945)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zerst%C3%B6rung_K%C3%B6nigsbergs.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-lasch-bunker",
+    "name": "Lasch-Bunker (Befehlsstand)",
+    "description": "Unter dem Paradeplatz vor der Albertina errichteter Befehlsbunker, in dem General Otto Lasch vom 6. bis 9. April 1945 die Verteidigung der Festung Königsberg leitete. Am 9. April 21:00 Uhr wurde hier die Kapitulationsurkunde unterzeichnet; heute Museum.",
+    "coordinates": [
+      20.51006111,
+      54.71346111
+    ],
+    "category": "building",
+    "wikipediaSlug": "Lasch-Bunker",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bundesarchiv_Bild_183-R94432%2C_K%C3%B6nigsberg%2C_gefangene_deutsche_Offiziere.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 183-R94432 / Unknown author",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-R94432,_K%C3%B6nigsberg,_gefangene_deutsche_Offiziere.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-hauptbahnhof",
+    "name": "Königsberger Hauptbahnhof",
+    "description": "1929 eröffneter Hauptbahnhof am südlichen Stadtrand, im Frühjahr 1945 zentraler Knoten für Truppen­nachschub und Flüchtlingstransporte Richtung Pillau, solange die Bahnlinie offen war. Die Anlagen wurden im April 1945 schwer beschädigt.",
+    "coordinates": [
+      20.498333,
+      54.694444
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Bahnhof_Kaliningrad-Passaschirski",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Bundesarchiv_Bild_183-H26401%2C_K%C3%B6nigsberg%2C_Posten_auf_einer_Br%C3%BCcke.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 183-H26401 / Wilhelm Engels",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-H26401,_K%C3%B6nigsberg,_Posten_auf_einer_Br%C3%BCcke.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-koenigstor",
+    "name": "Königstor",
+    "description": "Neugotisches Stadttor an der östlichen Wallanlage, das während der Schlacht zur Verteidigungslinie der inneren Festungsfront gehörte. Hier wurden am 12. April 1945 zahlreiche deutsche Offiziere und Soldaten in Gefangenschaft genommen.",
+    "coordinates": [
+      20.5359966,
+      54.7137479
+    ],
+    "category": "building",
+    "wikipediaSlug": "Königstor_(Königsberg)",
+    "coordinatesSource": "nominatim",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Bundesarchiv_Bild_183-R98401%2C_K%C3%B6nigsberg%2C_Volkssturm.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 183-R98401 / Unknown author",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-R98401,_K%C3%B6nigsberg,_Volkssturm.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-fort-iii-quednau",
+    "name": "Fort III Friedrich Wilhelm I. (Quednau)",
+    "description": "Größtes und nördlichstes Werk des äußeren Festungsgürtels. Während der Schlacht von der 367. Infanteriedivision verteidigt und erst am 7. April 1945 von der sowjetischen 43. Armee überrannt; zuvor lagerten dort Teile der Prussia-Sammlung als sicherster Bunker des Rings.",
+    "coordinates": [
+      20.54583333,
+      54.76111111
+    ],
+    "category": "building",
+    "wikipediaSlug": "Quednau",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/%D0%91%D0%BE%D0%B9%D1%86%D1%8B_3-%D0%B3%D0%BE_%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%84%D1%80%D0%BE%D0%BD%D1%82%D0%B0_%D0%BD%D0%B0_%D1%82%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D1%84%D0%BE%D1%80%D1%82%D0%B0_%E2%84%964_%C2%AB%D0%93%D0%BD%D0%B5%D0%B9%D0%B7%D0%B5%D0%BD%D0%B0%D1%83%C2%BB_%D0%B2_%D0%9A%D0%B5%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3%D0%B5.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain (PD-Russia)",
+      "credit": "Emmanuil Yevzerikhin / TASS",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BE%D0%B9%D1%86%D1%8B_3-%D0%B3%D0%BE_%D0%91%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%84%D1%80%D0%BE%D0%BD%D1%82%D0%B0_%D0%BD%D0%B0_%D1%82%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D1%84%D0%BE%D1%80%D1%82%D0%B0_%E2%84%964_%C2%AB%D0%93%D0%BD%D0%B5%D0%B9%D0%B7%D0%B5%D0%BD%D0%B0%D1%83%C2%BB_%D0%B2_%D0%9A%D0%B5%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3%D0%B5.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-fort-v-friedrich-wilhelm-iii",
+    "name": "Fort V „König Friedrich Wilhelm III.“",
+    "description": "Werk des nordwestlichen Festungsgürtels, am 6. April 1945 von sowjetischen Sturmtruppen eingeschlossen. Die rund 200-köpfige Besatzung kapitulierte nach 16 Stunden Kampf am 8. April; 15 Rotarmisten erhielten dafür den Titel „Held der Sowjetunion“.",
+    "coordinates": [
+      20.4275,
+      54.7391
+    ],
+    "category": "building",
+    "wikipediaSlug": "Fortifikationsbauten_Königsberg",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/%D0%A0%D0%B0%D0%B7%D0%B1%D0%B8%D1%82%D0%B0%D1%8F_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D1%8F_105-%D0%BC%D0%BC_%D0%BF%D0%BE%D0%BB%D0%B5%D0%B2%D1%8B%D1%85_%D0%B3%D0%B0%D1%83%D0%B1%D0%B8%D1%86_%D0%B2_%D0%9A%D0%B5%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3%D0%B5.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain (PD-Russia)",
+      "credit": "Mark Markov-Grinberg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B7%D0%B1%D0%B8%D1%82%D0%B0%D1%8F_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D1%8F_105-%D0%BC%D0%BC_%D0%BF%D0%BE%D0%BB%D0%B5%D0%B2%D1%8B%D1%85_%D0%B3%D0%B0%D1%83%D0%B1%D0%B8%D1%86_%D0%B2_%D0%9A%D0%B5%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3%D0%B5.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-fort-friedrichsburg",
+    "name": "Festung Groß Friedrichsburg",
+    "description": "Alte Zitadelle am Pregel südwestlich der Altstadt, Teil der inneren Befestigung. Im April 1945 von der sowjetischen 11. Gardearmee überrannt, die von Süden über den Pregel ins Stadtzentrum vorstieß. Das erhaltene Roßgärter Tor beherbergt heute ein Museum.",
+    "coordinates": [
+      20.49381944,
+      54.70454722
+    ],
+    "category": "building",
+    "wikipediaSlug": "Festung_Groß_Friedrichsburg",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B5%D1%85%D0%BE%D1%82%D0%B0_%D0%BF%D1%80%D0%B8_%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B5_%D0%A1%D0%A3-76_%D0%B0%D1%82%D0%B0%D0%BA%D1%83%D0%B5%D1%82_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D0%B5_%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8_%D0%B2_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%D0%B5_%D0%9A%D0%B5%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3%D0%B0.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain (PD-Russia)",
+      "credit": "Dmitry Chernov / TASS",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%B5%D1%85%D0%BE%D1%82%D0%B0_%D0%BF%D1%80%D0%B8_%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B5_%D0%A1%D0%A3-76_%D0%B0%D1%82%D0%B0%D0%BA%D1%83%D0%B5%D1%82_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D0%B5_%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8_%D0%B2_%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%D0%B5_%D0%9A%D0%B5%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3%D0%B0.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-ponarth",
+    "name": "Ponarth (Südstadt)",
+    "description": "Südlicher Stadtteil mit Brauerei und Eisenbahnanlagen, Ausgangsraum des sowjetischen Hauptstoßes der 11. Gardearmee am 6. April 1945. Von hier brach der Angriff über den Pregel ins Stadtzentrum durch.",
+    "coordinates": [
+      20.4972,
+      54.6822
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/%D0%A3%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%B1%D0%BE%D0%B9_%D0%B2_%D0%9A%D0%B5%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3%D0%B5.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain (PD-Russia)",
+      "credit": "Dmitry Chernov / TASS",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A3%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%B1%D0%BE%D0%B9_%D0%B2_%D0%9A%D0%B5%D0%BD%D0%B8%D0%B3%D1%81%D0%B1%D0%B5%D1%80%D0%B3%D0%B5.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-pillau-hafen",
+    "name": "Pillau (Baltijsk) – Marinehafen",
+    "description": "Wichtigster Ostseehafen Ostpreußens und Drehscheibe der größten Seenotrettungsaktion der Geschichte: Von Januar bis April 1945 wurden über die Mole und Reede von Pillau hunderttausende Flüchtlinge und Verwundete evakuiert. Stadt und Hafen fielen am 25. April 1945.",
+    "coordinates": [
+      19.91666667,
+      54.65
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Baltijsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Bundesarchiv_Bild_146-1989-033-33%2C_Pillau%2C_Hafen%2C_Fl%C3%BCchtlinge.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 146-1989-033-33 / H. Budahn",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1989-033-33,_Pillau,_Hafen,_Fl%C3%BCchtlinge.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-frisches-haff",
+    "name": "Frisches Haff",
+    "description": "Flaches Strandgewässer zwischen Königsberg und der Frischen Nehrung. Über die zugefrorene Eisfläche flohen ab Ende Januar 1945 Hunderttausende Zivilisten Richtung Nehrung und Pillau – unter ständigem sowjetischen Artillerie- und Tiefflieger-Beschuss.",
+    "coordinates": [
+      19.76777778,
+      54.47638889
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Frisches_Haff",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Bundesarchiv_Bild_146-1989-033-35%2C_Pillau%2C_Hafen%2C_Marinesoldaten%2C_Fl%C3%BCchtlinge.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 146-1989-033-35 / H. Budahn",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1989-033-35,_Pillau,_Hafen,_Marinesoldaten,_Fl%C3%BCchtlinge.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-heiligenbeil",
+    "name": "Heiligenbeil (Mamonowo) – Kessel",
+    "description": "Kleinstadt südwestlich von Königsberg, Namensgeber des „Heiligenbeiler Kessels“: Hier wurden in der Braunsberger Operation (13. März – 29. März 1945) Teile der 4. deutschen Armee mit bis zu 30 Divisionen am Frischen Haff eingeschlossen und zerschlagen.",
+    "coordinates": [
+      19.93333333,
+      54.46666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Mamonowo",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bundesarchiv_Bild_146-1976-072-09%2C_Ostpreu%C3%9Fen%2C_Fl%C3%BCchtlingtreck.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 146-1976-072-09 / Unknown author",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1976-072-09,_Ostpreu%C3%9Fen,_Fl%C3%BCchtlingtreck.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-brandenburg-haff",
+    "name": "Brandenburg am Frischen Haff (Uschakowo)",
+    "description": "Hafen- und Ordensburgort an der Mündung des Frisching ins Frische Haff, im Frühjahr 1945 wichtiger Anlandeort für Flüchtlingsboote aus dem Heiligenbeiler Kessel und Zwischenstation auf der Eisflucht Richtung Pillau.",
+    "coordinates": [
+      20.24944444,
+      54.6125
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Uschakowo_(Kaliningrad,_Gurjewsk,_Nowomoskowskoje)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Bundesarchiv_Bild_146-1972-093-51%2C_Pillau%2C_Einschiffung_von_Fl%C3%BCchtlingen.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 146-1972-093-51 / Unknown author",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1972-093-51,_Pillau,_Einschiffung_von_Fl%C3%BCchtlingen.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-braunsberg",
+    "name": "Braunsberg (Braniewo)",
+    "description": "Kreisstadt im südlichen Heiligenbeil-Kessel, Namensgeberin der sowjetischen Braunsberger Angriffsoperation. Nach wochenlangen Kämpfen am 20. März 1945 von der 48. Armee erobert, wodurch sich der Kessel am Haff entscheidend verengte.",
+    "coordinates": [
+      19.81671389,
+      54.38354167
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Braniewo",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Bundesarchiv_Bild_196-01684%2C_Braunsberg_%28West%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 196-01684 / Unknown author (Luftbildkarte des Deutschen Reiches, 1944)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_196-01684,_Braunsberg_(West).jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-insterburg",
+    "name": "Insterburg (Tschernjachowsk)",
+    "description": "Wichtiger Verkehrs- und Garnisonsknoten östlich von Königsberg, Hauptziel der sowjetischen 3. Weißrussischen Front in der Anfangsphase der Ostpreußischen Operation. Die Stadt fiel am 21./22. Januar 1945 und öffnete den Weg auf Königsberg.",
+    "coordinates": [
+      21.81666667,
+      54.63333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Tschernjachowsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D0%B0%D0%BF%D0%B5%D1%80%D1%8B_%D0%B8%D0%B4%D1%83%D1%82_%D0%BF%D0%BE_%D1%83%D0%BB%D0%B8%D1%86%D0%B5_%D0%B3%D0%BE%D1%80%D1%8F%D1%89%D0%B5%D0%B3%D0%BE_%D0%98%D0%BD%D1%81%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B0_%D0%B2_%D0%92%D0%BE%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B9_%D0%9F%D1%80%D1%83%D1%81%D1%81%D0%B8%D0%B8.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain (PD-Russia)",
+      "credit": "Leonid Velikzhanin / TASS",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D0%B0%D0%BF%D0%B5%D1%80%D1%8B_%D0%B8%D0%B4%D1%83%D1%82_%D0%BF%D0%BE_%D1%83%D0%BB%D0%B8%D1%86%D0%B5_%D0%B3%D0%BE%D1%80%D1%8F%D1%89%D0%B5%D0%B3%D0%BE_%D0%98%D0%BD%D1%81%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%D0%B0_%D0%B2_%D0%92%D0%BE%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B9_%D0%9F%D1%80%D1%83%D1%81%D1%81%D0%B8%D0%B8.jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-tilsit",
+    "name": "Tilsit (Sowetsk)",
+    "description": "Stadt an der Memel im Norden Ostpreußens, am 20. Januar 1945 von der sowjetischen 43. Armee genommen. Damit brach die nördliche Verteidigung entlang der Memel zusammen und Heeresgruppe Mitte verlor die Verbindung zur Kurland-Front.",
+    "coordinates": [
+      21.88333333,
+      55.08333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Sowetsk_(Kaliningrad)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Tilsit_%28Januar_1945%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain",
+      "credit": "Unknown author (Stadtgemeinschaft Tilsit)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tilsit_(Januar_1945).jpg"
+    }
+  },
+  {
+    "battleId": "koenigsberg",
+    "id": "koenigsberg-allenstein",
+    "name": "Allenstein (Olsztyn)",
+    "description": "Verkehrsknoten in Süd-Ostpreußen. Am 22. Januar 1945 von der 2. Weißrussischen Front Rokossowskis erreicht – hier schwenkten die sowjetischen Panzer nach Nordwesten Richtung Frisches Haff und schnitten Ostpreußen vom Reich ab.",
+    "coordinates": [
+      20.48333333,
+      53.78333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Olsztyn",
+    "coordinatesSource": "wikipedia"
+  }
+]

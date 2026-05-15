@@ -1,0 +1,292 @@
+[
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-charkow-stadt",
+    "name": "Charkow (Stadt)",
+    "description": "Zweitgrößte Stadt der Ukrainischen SSR, seit Oktober 1941 deutsch besetzt und Hauptquartier des AOK 6 (Paulus). Operationsziel der sowjetischen Mai-Offensive 1942: Zwei Stoßkeile aus dem Isjumer Brückenkopf im Süden und aus dem Wolchansker Raum im Norden sollten die Stadt in einer Zangenoperation einkesseln — beide blieben rund 20 km vor den Vororten liegen.",
+    "coordinates": [
+      36.23111111,
+      49.9925
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Charkiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Charkov_1942.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Berliner Verlag / Archiv, 30. Mai 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charkov_1942.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-isjum",
+    "name": "Isjum (Brückenkopf)",
+    "description": "Stadt am Sewerski Donez und namensgebend für den \"Isjumer Brückenkopf\", den die Rote Armee im Januar 1942 westlich des Flusses gebildet hatte. Aus diesem rund 100 km tiefen Vorsprung trat am 12. Mai 1942 die südliche Stoßgruppe der Südwestfront (6. Armee Gorodnjanski, Armeegruppe Bobkin) gegen Charkow an — und wurde nach zehn Tagen im Kessel von Barwenkowo eingeschlossen.",
+    "coordinates": [
+      37.280278,
+      49.195833
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Isjum",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/NachderSchlachtbeiCharkow.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Heinrich Frey, 31. Mai 1942 — Unteroffiziere des Infanterieregiments 546 nach der Schlacht bei Charkow und Isjum",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NachderSchlachtbeiCharkow.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-barwenkowo",
+    "name": "Barwenkowo (Kesselort)",
+    "description": "Eisenbahnknoten im Zentrum des sowjetischen Frontbogens; namensgebend für die deutsche Gegenoperation \"Fridericus\" (17.–28. Mai 1942). Hier schlossen sich am 23. Mai die Panzerverbände der Armeegruppe Kleist (von Süden) und des AOK 6 (von Norden) zum Kessel zusammen, in dem rund 240 000 Rotarmisten in Gefangenschaft gingen.",
+    "coordinates": [
+      37.01305556,
+      48.90666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Barwinkowe",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Bundesarchiv_Bild_183-B26082%2C_Kriegsgefangene_auf_dem_Marsch_durch_Charkow.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B26082 / Schneider, Mai 1942 — sowjetische Kriegsgefangene aus der Frühjahrsschlacht um Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B26082,_Kriegsgefangene_auf_dem_Marsch_durch_Charkow.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-krasnograd",
+    "name": "Krasnograd",
+    "description": "Stützpunkt der deutschen 6. Armee am Nordwestrand des sowjetischen Vorsprungs. Die Armeegruppe Bobkin (6. Kavalleriekorps und 6. Garde-Schützendivision) erreichte am 16. Mai die Außenbezirke, konnte die Stadt aber nicht nehmen — ihr Verharren vor Krasnograd kostete die Sowjets die kritischen Stunden, in denen Kleist von Süden ausbrach.",
+    "coordinates": [
+      35.4494234,
+      49.3741326
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Krasnohrad",
+    "coordinatesSource": "nominatim",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Bundesarchiv_Bild_101I-078-3076-16A%2C_Russland%2C_Kolonne_von_Motorrad-Gespannen.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-078-3076-16A / Fischer, Juni 1942 — Kolonne deutscher Motorrad-Gespanne in Russland",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-078-3076-16A,_Russland,_Kolonne_von_Motorrad-Gespannen.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-losowaja",
+    "name": "Losowaja (Eisenbahnknoten)",
+    "description": "Wichtiger Eisenbahnknoten an der Strecke Charkow–Donbass und logistische Drehscheibe der sowjetischen 57. Armee im Süden des Vorsprungs. Mit dem Vorstoß der Armeegruppe Kleist am 17. Mai aus dem Raum Slawjansk wurde Losowaja zum ersten Ziel — sein Verlust durchtrennte die Nachschublinie der eingeschlossenen Roten Armee.",
+    "coordinates": [
+      36.31611111,
+      48.88916667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Losowa",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Bundesarchiv_Bild_101I-078-3074-30%2C_Russland%2C_Nebelwerfer.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-078-3074-30 / Nieberle, Sommer 1942 — 15 cm Nebelwerfer in Russland",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-078-3074-30,_Russland,_Nebelwerfer.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-tschuhujew",
+    "name": "Tschuhujew",
+    "description": "Stadt am Sewerski Donez rund 35 km südöstlich von Charkow, deutscher Stützpunkt des LI. Armeekorps. Hier verlief die Hauptverteidigungslinie gegen den nördlichen sowjetischen Stoßkeil der 28. Armee Rjabyschew aus dem Wolchansker Raum; die Stadt blieb während der gesamten Operation in deutscher Hand.",
+    "coordinates": [
+      36.68994444,
+      49.83719444
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Tschuhujiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Italians_repairing_a_road_during_the_battle.jpg",
+      "source": "Wikimedia Commons (Archivio Centrale dello Stato)",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, 22. Mai 1942 — italienische Soldaten reparieren eine Straße während der 2. Schlacht um Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Italians_repairing_a_road_during_the_battle.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-bogoduchow",
+    "name": "Bogoduchow",
+    "description": "Stadt rund 50 km nordwestlich von Charkow, rückwärtiger Versorgungsraum und Verkehrsknoten der deutschen 6. Armee. Über Bogoduchow lief während der Schlacht der Nachschub für den westlichen Charkower Frontabschnitt; nach dem Scheitern der sowjetischen Offensive blieb die Stadt unverändert deutsch besetzt.",
+    "coordinates": [
+      35.51638889,
+      50.16083333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Bohoduchiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Bundesarchiv_Bild_169-0337%2C_Charkow%2C_Motorrad_mit_Beiwagen.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 169-0337, 1942 — deutsche Soldaten mit Motorrad und Beiwagen in Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_169-0337,_Charkow,_Motorrad_mit_Beiwagen.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-stary-saltow",
+    "name": "Stary Saltow (Nord-Brückenkopf)",
+    "description": "Ortschaft am Sewerski Donez rund 40 km nordöstlich von Charkow; hier hatte die Rote Armee im Frühjahr 1942 einen Brückenkopf am Westufer gehalten. Aus diesem Raum stieß am 12. Mai die nördliche Stoßgruppe (28. Armee, 38. Armee) gegen die deutsche 79. Infanteriedivision an — der Angriff brach nach kurzen Anfangserfolgen bei Murom und Wesseloje stecken.",
+    "coordinates": [
+      36.79333333,
+      50.07777778
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Staryj_Saltiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/%D0%9F%D0%B5%D1%85%D0%BE%D1%82%D0%B0_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B9_%D0%90%D1%80%D0%BC%D0%B8%D0%B8_%D0%B1%D0%B5%D0%B6%D0%B8%D1%82_%D0%BF%D0%BE_%D0%BF%D0%BE%D0%BB%D1%8E_%D0%B2_%D0%B0%D1%82%D0%B0%D0%BA%D1%83_%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9_%D1%84%D1%80%D0%BE%D0%BD%D1%82%2C_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8C_1942_%D0%B3.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Max Alpert, April 1942 — Infanterie der Roten Armee im Angriff über offenes Feld, Südfront",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D1%85%D0%BE%D1%82%D0%B0_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B9_%D0%90%D1%80%D0%BC%D0%B8%D0%B8_%D0%B1%D0%B5%D0%B6%D0%B8%D1%82_%D0%BF%D0%BE_%D0%BF%D0%BE%D0%BB%D1%8E_%D0%B2_%D0%B0%D1%82%D0%B0%D0%BA%D1%83_%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9_%D1%84%D1%80%D0%BE%D0%BD%D1%82,_%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8C_1942_%D0%B3.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-balakleja",
+    "name": "Balakleja (Donez-Übergang)",
+    "description": "Stadt am Sewerski Donez am Nordostrand des Isjumer Vorsprungs. Hier hielt das deutsche VIII. Armeekorps die Schulter der Front gegen den südlichen Stoßkeil; nach der Wende vom 17. Mai wurde Balakleja zum Sprungbrett für den Vorstoß des AOK 6 in den Rücken der sowjetischen 6. und 57. Armee.",
+    "coordinates": [
+      36.83888889,
+      49.45638889
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Balaklija",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Bundesarchiv_Bild_169-0423%2C_Charkow%2C_russischer_Panzer_M3_mit_Gesch%C3%BCtz.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 169-0423, Mai 1942 — erbeuteter sowjetischer M3-Panzer im Raum Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_169-0423,_Charkow,_russischer_Panzer_M3_mit_Gesch%C3%BCtz.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-petschenegi",
+    "name": "Petschenegi (Donez-Stellung)",
+    "description": "Ort am Sewerski Donez nördlich Tschuhujews; Teil der deutschen Donez-Verteidigungslinie des LI. Armeekorps. Im Mai 1942 Brennpunkt der Abwehrkämpfe gegen die sowjetische 38. Armee, die hier vergeblich versuchte, einen zweiten Brückenkopf zur Entlastung des Isjumer Vorsprungs zu schlagen.",
+    "coordinates": [
+      36.93638889,
+      49.86472222
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Petschenihy",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-wolchansk",
+    "name": "Wolchansk",
+    "description": "Stadt rund 70 km nordöstlich von Charkow, im Mai 1942 sowjetisch und Aufmarschraum der 28. Armee Rjabyschew. Aus dem Wolchansker Raum trat der nördliche Stoßkeil der Südwestfront an; das deutsche VIII. Armeekorps hielt die gegenüberliegende Donezlinie und schlug die sowjetischen Spitzen nach knapp 25 km Geländegewinn auf.",
+    "coordinates": [
+      36.94611111,
+      50.28805556
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Wowtschansk",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-merefa",
+    "name": "Merefa (Bahnknoten)",
+    "description": "Eisenbahn- und Industrievorstadt rund 25 km südlich von Charkow am Mschha-Fluss. Schlüsselposition für die Verteidigung der Stadt gegen den südlichen sowjetischen Stoßkeil; durch Merefa führte die Hauptnachschublinie für das deutsche LI. Armeekorps in Charkow.",
+    "coordinates": [
+      36.06861111,
+      49.81972222
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Merefa",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-smijew",
+    "name": "Smijew (Donez-Übergang)",
+    "description": "Stadt am Zusammenfluss von Mscha und Sewerski Donez, rund 40 km südöstlich von Charkow. Während der sowjetischen Offensive Vorposten der deutschen 3. Panzerdivision; der Donez-Übergang bei Smijew bildete eine der wichtigsten Querverbindungen zwischen den deutschen Verbänden vor Charkow und dem südlichen Frontabschnitt.",
+    "coordinates": [
+      36.35583333,
+      49.68777778
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Smijiw",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-donez-fluss",
+    "name": "Sewerski Donez (Frontlinie)",
+    "description": "Linker Nebenfluss des Don und natürliche Trennlinie zwischen deutscher und sowjetischer Front nördlich und östlich von Charkow. Sein gewundener Lauf bildete im Mai 1942 sowohl die deutschen Verteidigungsstellungen (Tschuhujew–Petschenegi–Balakleja) als auch die rückwärtige Grenze des sowjetischen Isjumer Brückenkopfs — und wurde zur Falle, als Kleist den Vorsprung von Süden abschnitt.",
+    "coordinates": [
+      37.1,
+      49.55
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Siwerskyj_Donez",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-traktorenwerk",
+    "name": "Charkower Traktorenwerk (KhTZ)",
+    "description": "Industriegigant im Osten Charkows, vor dem Krieg größter Traktorenproduzent der UdSSR und ab 1940 Fertigungsstätte für T-34-Panzer. Bei der Räumung im Oktober 1941 wurde die Hauptproduktion nach Tscheljabinsk und Nischni Tagil verlagert; im Mai 1942 nutzte die Wehrmacht die verbliebenen Hallen als Reparaturwerkstätten und Versorgungsbasis für das AOK 6.",
+    "coordinates": [
+      36.38044444,
+      49.96091667
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Charkiwer_Traktorenwerk",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-hbf-charkow",
+    "name": "Hauptbahnhof Charkow",
+    "description": "Zentraler Eisenbahnknoten der Ukraine an der Strecke Moskau–Sewastopol; logistisches Herz der deutschen 6. Armee. Über den Hauptbahnhof rollte der gesamte Nachschub für die Verteidigung gegen die Mai-Offensive und unmittelbar danach für den Aufmarsch zur Sommeroffensive \"Fall Blau\" Richtung Stalingrad und Kaukasus.",
+    "coordinates": [
+      36.2044643,
+      49.9892591
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Bahnhof_Charkiw-Passaschyrskyj",
+    "coordinatesSource": "nominatim",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kharkov_air_overview_%281941%29.jpg",
+      "source": "Wikimedia Commons (Deutsche Fotochronik)",
+      "license": "Public Domain",
+      "credit": "Deutsche Luftaufklärung, Oktober 1941 — Luftbild über Charkow mit Lopan-Brücken und Stadtzentrum",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kharkov_air_overview_(1941).jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-denkmal-isjum",
+    "name": "Mahnmal Barwenkower Kessel",
+    "description": "Gedenkstätte bei Lozowenka südwestlich von Isjum, errichtet zur Erinnerung an die rund 270 000 Rotarmisten, die im Mai 1942 im Kessel von Barwenkowo–Losowaja gefallen oder in Gefangenschaft geraten sind. Sie markiert den Ort, an dem am 26. Mai der Ausbruchsversuch der 6. und 57. Armee unter Generalleutnant Gorodnjanski endgültig scheiterte.",
+    "coordinates": [
+      36.95,
+      49.05
+    ],
+    "category": "symbolic",
+    "coordinatesSource": "original"
+  }
+]

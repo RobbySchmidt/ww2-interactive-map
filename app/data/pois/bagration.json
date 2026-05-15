@@ -1,0 +1,307 @@
+[
+  {
+    "battleId": "bagration",
+    "id": "bagration-minsk",
+    "name": "Minsk (Hauptstadt-Kessel)",
+    "description": "Hauptstadt Weißrusslands und zentrales Operationsziel der sowjetischen Sommeroffensive. Östlich der Stadt schloss sich am 3. Juli 1944 der Kessel um Reste der 4. Armee mit über 100.000 deutschen Soldaten.",
+    "coordinates": [
+      27.55,
+      53.9
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Minsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/%D0%9D%D0%B0_%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%B8_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%B0.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Russisches Verteidigungsministerium (mil.ru), unbekannter Fotograf, Juli 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0_%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9_%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%B8_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%B0.jpg"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-witebsk",
+    "name": "Witebsk (Nord-Kessel)",
+    "description": "Als \"Fester Platz\" deklarierter Eckpfeiler der deutschen Front am Nordflügel der Heeresgruppe Mitte. Vom 23. bis 27. Juni 1944 wurde das LIII. Armeekorps mit fünf Divisionen eingeschlossen und vernichtet.",
+    "coordinates": [
+      30.16666667,
+      55.18333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Wizebsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/1944_kapitulation_witebsk_vasilevsky_chernyakovski_gallwitzer_hitter_3.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, Russisches Staatsarchiv, 28. Juni 1944 (Kapitulation Witebsk: Wassilewski und Tschernjachowski mit den gefangenen Generalen Gollwitzer und Hitter)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1944_kapitulation_witebsk_vasilevsky_chernyakovski_gallwitzer_hitter_3.jpg"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-mogilew",
+    "name": "Mogilew (Fester Platz am Dnepr)",
+    "description": "Als \"Fester Platz\" befohlene Dnepr-Stellung der deutschen 4. Armee. Die Stadt fiel am 28. Juni 1944 nach kurzem Kampf an die 2. Weißrussische Front; das XII. Armeekorps wurde zerschlagen.",
+    "coordinates": [
+      30.33333333,
+      53.9025
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Mahiljou",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/49th_Army_troops_storming_Mogilev_June_1944.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Ju. A. Alexejew, Russisches Verteidigungsministerium (mil.ru), 28. Juni 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:49th_Army_troops_storming_Mogilev_June_1944.jpg"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-bobruisk",
+    "name": "Bobruisk (Süd-Kessel)",
+    "description": "An der Bjeresina gelegener \"Fester Platz\" und Angelpunkt der 9. Armee. Die 1. Weißrussische Front kesselte hier vom 27. bis 29. Juni 1944 das XXXV. und XXXXI. Panzerkorps mit rund 40.000 Mann ein.",
+    "coordinates": [
+      29.21666667,
+      53.15
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Babrujsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/19440628_destroyed_panzer_iv_20._panzer_division_bobruisk.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, waralbum.ru, 28. Juni 1944 (zerstörte Panzer IV der 20. Panzer-Division im Kessel von Bobruisk)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:19440628_destroyed_panzer_iv_20._panzer_division_bobruisk.jpg"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-wilna",
+    "name": "Wilna (Nordwest-Kessel)",
+    "description": "Als \"Fester Platz\" verteidigte litauische Hauptstadt am Übergang nach Ostpreußen. Vom 7. bis 13. Juli 1944 schlossen Truppen der 3. Weißrussischen Front den Kessel und bezwangen die Stadt nach erbittertem Häuserkampf.",
+    "coordinates": [
+      25.28789444,
+      54.685125
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Vilnius",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/19440712_soviet_and_ak_soldiers_vilnius.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, Polnisches Nationalarchiv (Sign. 37-1385), 13. Juli 1944 (sowjetische und Armia-Krajowa-Soldaten in Wilna)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:19440712_soviet_and_ak_soldiers_vilnius.jpg"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-borissow",
+    "name": "Borissow (Bjeresina-Übergang)",
+    "description": "Wichtigster Straßen- und Bahnübergang über die Bjeresina an der Rollbahn Minsk-Moskau. Die Stadt wurde am 1. Juli 1944 vom 2. Garde-Panzerkorps genommen und öffnete den sowjetischen Verbänden den Weg nach Minsk.",
+    "coordinates": [
+      28.51243,
+      54.22402
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Baryssau",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/19440701_general_rotmistrow_beresina.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, aus „La rue de l'armee rouge“ (Lannoy), 1. Juli 1944 (Marschall Rotmistrow gibt Befehle bei Borissow an der Bjeresina)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:19440701_general_rotmistrow_beresina.jpg"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-bjeresina",
+    "name": "Bjeresina (Verteidigungslinie)",
+    "description": "Rechter Nebenfluss des Dnepr und zweite operative Verteidigungslinie der Heeresgruppe Mitte. Beim hastigen Rückzug Ende Juni 1944 erlitten deutsche Verbände an den Brücken bei Borissow schwere Verluste – die Reminiszenz an Napoleons Katastrophe von 1812 war zeitgenössisch präsent.",
+    "coordinates": [
+      28.5,
+      54
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Bjaresina",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/194407_abandoned_german_vehicles_belarus.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, Zentralarchiv des russischen Verteidigungsministeriums (F. 233), 28.–30. Juni 1944 (zerstörte Fahrzeuge der deutschen 9. Armee an einer Straße bei Titowka/Bobruisk im Bjeresina-Raum)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:194407_abandoned_german_vehicles_belarus.jpg"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-orscha",
+    "name": "Orscha (Rollbahn-Knoten)",
+    "description": "Eisenbahnknoten an der Strecke Moskau-Minsk und Bindeglied zwischen 3. Panzerarmee und 4. Armee. Die 3. Weißrussische Front durchstieß hier ab 23. Juni 1944 die deutsche Front; Orscha fiel am 27. Juni.",
+    "coordinates": [
+      30.4299,
+      54.5101
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Orscha",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/158th_Rifle_Division_Vitebsk_June_1944.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Russisches Verteidigungsministerium (mil.ru), unbekannter Fotograf, Juni 1944 (Truppen der 158. Schützendivision im Raum Witebsk-Orscha)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:158th_Rifle_Division_Vitebsk_June_1944.jpg"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-polozk",
+    "name": "Polozk (Düna-Stützpunkt)",
+    "description": "Nördlichster \"Fester Platz\" der Heeresgruppe Mitte an der Düna und Scharnier zur Heeresgruppe Nord. Die 1. Baltische Front nahm die Stadt am 4. Juli 1944 ein und riss damit die Naht zwischen den Heeresgruppen auf.",
+    "coordinates": [
+      28.8,
+      55.48333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Polazk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Soviet_soldiers_in_Polozk_%28Belarus%29%2C_passing_by_propaganda_poster_celebrating_the_reconquest_of_the_city_and_urging_the_liberation_of_the_Baltic_from_Nazi_German_occupation._July_4%2C_1944.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, 4. Juli 1944 (sowjetische Soldaten in Polozk vor einem Propagandaplakat zur Befreiung des Baltikums)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soviet_soldiers_in_Polozk_(Belarus),_passing_by_propaganda_poster_celebrating_the_reconquest_of_the_city_and_urging_the_liberation_of_the_Baltic_from_Nazi_German_occupation._July_4,_1944.jpg"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-molodetschno",
+    "name": "Molodetschno (Eisenbahnknoten)",
+    "description": "Knotenpunkt der Strecken Minsk-Wilna und Minsk-Polozk, rund 70 km nordwestlich von Minsk. Die Stadt wurde am 5. Juli 1944 von der 3. Weißrussischen Front genommen und schnitt die Rückzugswege Richtung Wilna ab.",
+    "coordinates": [
+      26.85166667,
+      54.31361111
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Maladsetschna",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Cernjakovskij_a_Vilnius_1944.webp",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, 1944 (General Tschernjachowski mit Stab – Oberbefehlshaber der 3. Weißrussischen Front, die Molodetschno befreite)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cernjakovskij_a_Vilnius_1944.webp"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-lida",
+    "name": "Lida (Westbelarus)",
+    "description": "Bahnknoten zwischen Wilna und Baranowitschi auf dem Weg nach Ostpreußen. Die Stadt fiel am 8. Juli 1944 an die 3. Weißrussische Front und markierte das Erreichen der Memel-Region.",
+    "coordinates": [
+      25.30277778,
+      53.88722222
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Lida",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/19440708_Lida_Belarus_German_retreat.png",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, 8. Juli 1944 (Kolonne der Kampfgruppe „Weidling“ auf dem Rückzug durch Lida)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:19440708_Lida_Belarus_German_retreat.png"
+    }
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-baranowitschi",
+    "name": "Baranowitschi (Ost-West-Achse)",
+    "description": "Wichtiger Bahn- und Straßenknoten an der Hauptachse Brest-Minsk. Die 1. Weißrussische Front nahm die Stadt am 8. Juli 1944 und schuf damit die Basis für den Vorstoß auf Brest und die Weichsel.",
+    "coordinates": [
+      26.01666667,
+      53.13333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Baranawitschy",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-sluzk",
+    "name": "Sluzk (Südflanke)",
+    "description": "Stadt am Slutsch südwestlich von Minsk und Etappenort der 9. Armee. Truppen Rokossowskis befreiten Sluzk am 30. Juni 1944 und stießen weiter Richtung Baranowitschi vor.",
+    "coordinates": [
+      27.55,
+      53.01666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Sluzk",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-grodno",
+    "name": "Grodno (Memel-Übergang)",
+    "description": "Stadt an der Memel/Njemen nahe der ostpreußischen Grenze. Sowjetische Verbände erreichten Grodno am 16. Juli 1944 und schufen einen Brückenkopf über den Fluss – die letzte natürliche Sperre vor Ostpreußen.",
+    "coordinates": [
+      23.8361,
+      53.6842
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Hrodna",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-pinsk",
+    "name": "Pinsk (Pripjet-Sümpfe)",
+    "description": "Hafenstadt im südlichen Sumpfgebiet an der Naht zur 1. Ukrainischen Front. Eingenommen am 14. Juli 1944 durch die 61. Armee mit Unterstützung der Dnepr-Flottille; Schlüsselpunkt zur Säuberung der Pripjet-Region.",
+    "coordinates": [
+      26.1,
+      52.11666667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Pinsk",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-brest",
+    "name": "Brest (Endpunkt der Offensive)",
+    "description": "Grenzstadt am Bug und letzte Etappe der Operation Bagration. Die 1. Weißrussische Front befreite Brest am 28. Juli 1944 und stand damit am Vorfeld der Weichsel; die Offensive lief in den folgenden Wochen aus.",
+    "coordinates": [
+      23.7,
+      52.08333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Brest_(Belarus)",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "bagration",
+    "id": "bagration-festung-brest",
+    "name": "Festung Brest-Litowsk",
+    "description": "Zaristisches Festungswerk am Zusammenfluss von Muchawez und Bug am Westrand von Brest. 1944 bei der Rückeroberung durch die Rote Armee nur kurz umkämpft; heute zentrales sowjetisches Kriegsdenkmal Weißrusslands.",
+    "coordinates": [
+      23.658,
+      52.082
+    ],
+    "category": "building",
+    "wikipediaSlug": "Festung_Brest-Litowsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Biera%C5%9Bcie._%D0%91%D0%B5%D1%80%D0%B0%D1%81%D1%8C%D1%86%D0%B5_%281941%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf, 1941 (Luftaufnahme von Brest/Brześć während der Kämpfe um die Festung im Juni 1941)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biera%C5%9Bcie._%D0%91%D0%B5%D1%80%D0%B0%D1%81%D1%8C%D1%86%D0%B5_(1941).jpg"
+    }
+  }
+]

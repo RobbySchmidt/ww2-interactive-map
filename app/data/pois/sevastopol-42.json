@@ -1,0 +1,274 @@
+[
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-hafen",
+    "name": "Hafen Sewastopol",
+    "description": "Marinehauptstützpunkt der sowjetischen Schwarzmeerflotte und Versorgungs-Lebensader der Festung. Über die Bucht liefen unter ständigem Beschuss Truppen, Munition und Verwundete — bis der Hafen Ende Juni 1942 zur Falle wurde.",
+    "coordinates": [
+      33.52165,
+      44.59495
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Sewastopol",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Bundesarchiv_N_1603_Bild-115%2C_Russland%2C_Sewastopol%2C_zerst%C3%B6rter_Hafen.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, N 1603 Bild-115 / Horst Grund",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_N_1603_Bild-115,_Russland,_Sewastopol,_zerst%C3%B6rter_Hafen.jpg"
+    }
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-bahnhof",
+    "name": "Bahnhof Sewastopol",
+    "description": "Endpunkt der Krim-Eisenbahn und wichtiger Umschlagplatz für Versorgung und Evakuierung während der Belagerung. Lag im Mündungsbereich der Sewernaja-Bucht und wurde durch deutsche Artillerie schwer beschädigt.",
+    "coordinates": [
+      33.5288,
+      44.5952
+    ],
+    "category": "transport",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-maxim-gorki-1",
+    "name": "Fort Maxim Gorki I (30. Küstenbatterie)",
+    "description": "Schwer gepanzerte sowjetische Küstenbatterie mit vier 30,5-cm-Geschützen in zwei Doppeltürmen, errichtet in den 1930er-Jahren bei Ljubimowka nördlich der Belbek-Mündung. Wurde am 17. Juni 1942 nach tagelangem Beschuss durch deutsche schwere Artillerie eingenommen.",
+    "coordinates": [
+      33.5502,
+      44.6693
+    ],
+    "category": "building",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Bundesarchiv_N_1603_Bild-118%2C_Russland%2C_Sewastopol%2C_zerst%C3%B6rte_Festung_Maxim_Gorki.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, N 1603 Bild-118 / Horst Grund",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_N_1603_Bild-118,_Russland,_Sewastopol,_zerst%C3%B6rte_Festung_Maxim_Gorki.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-maxim-gorki-2",
+    "name": "Fort Maxim Gorki II (35. Küstenbatterie)",
+    "description": "Zweite große Panzerturmbatterie der Festung mit vier 30,5-cm-Geschützen am Kap Chersones im Südwesten. Diente bis zum 4. Juli 1942 als letzte Kommandostelle und Sammelpunkt zehntausender sowjetischer Verteidiger, die hier in Gefangenschaft gerieten.",
+    "coordinates": [
+      33.4903,
+      44.6108
+    ],
+    "category": "building",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Marsza%C5%82ek_Erich_von_Manstein_w_ruinach_Sewastopolu_%282-679%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain",
+      "credit": "Horter / Narodowe Archiwum Cyfrowe",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marsza%C5%82ek_Erich_von_Manstein_w_ruinach_Sewastopolu_(2-679).jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-sapun-hoehe",
+    "name": "Sapun-Höhe",
+    "description": "Schlüsselposition des inneren Verteidigungsrings im Südosten Sewastopols — ein steil abfallender Höhenzug, der die Stadt deckte. Ziel des deutschen Hilfangriffs, erobert am 18. Juni 1942; heute Standort eines Diorama-Museums.",
+    "coordinates": [
+      33.5872,
+      44.5799
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Bundesarchiv_B_145_Bild-F016215-0020A%2C_Krim%2C_Flugzeug_%C3%BCber_den_Sapun-H%C3%B6hen.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, B 145 Bild-F016215-0020A",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F016215-0020A,_Krim,_Flugzeug_%C3%BCber_den_Sapun-H%C3%B6hen.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-malachow-kurgan",
+    "name": "Malachow-Kurgan",
+    "description": "Historische Anhöhe am östlichen Stadtrand, bereits aus dem Krimkrieg 1854/55 als Verteidigungsbastion bekannt. 1942 als Stützpunkt erneut umkämpft und am 30. Juni von der Wehrmacht eingenommen.",
+    "coordinates": [
+      33.545,
+      44.609
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/11._Armee_Sevastopol.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain",
+      "credit": "unbekannt",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:11._Armee_Sevastopol.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-inkerman",
+    "name": "Inkerman",
+    "description": "Kleinstadt am Ostende der Sewernaja-Bucht mit ausgedehnten Felsstollen, die als Lazarette, Munitionsdepots und Zufluchtsstätten dienten. Mittlerer deutscher Angriffsabschnitt; die Stollen wurden am 29. Juni 1942 durch sowjetische Pioniere gesprengt.",
+    "coordinates": [
+      33.6,
+      44.6
+    ],
+    "category": "building",
+    "wikipediaSlug": "Inkerman",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Bundesarchiv_N_1603_Bild-126%2C_Russland%2C_bei_Sewastopol%2C_Zerst%C3%B6rungen.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, N 1603 Bild-126 / Horst Grund",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_N_1603_Bild-126,_Russland,_bei_Sewastopol,_Zerst%C3%B6rungen.jpg"
+    }
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-mekenzia-berge",
+    "name": "Mekenzia-Berge",
+    "description": "Bewaldeter Höhenrücken nordöstlich Sewastopols, der den nördlichen Verteidigungsring bildete. Schauplatz monatelanger Stellungskämpfe und Ausgangspunkt für den deutschen Vorstoß auf die Nordbucht im Juni 1942.",
+    "coordinates": [
+      33.5864,
+      44.6583
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Piechota_niemiecka_w_g%C3%B3rach_Jaj%C5%82a_pod_Sewastopolem_%282-924%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain",
+      "credit": "Narodowe Archiwum Cyfrowe",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piechota_niemiecka_w_g%C3%B3rach_Jaj%C5%82a_pod_Sewastopolem_(2-924).jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-balaklawa",
+    "name": "Balaklawa",
+    "description": "Felsumschlossener Naturhafen am südöstlichen Rand des Belagerungsrings, vom deutschen XXX. Armeekorps angegriffen. Bildete die südliche Flankenstellung der Verteidigung; bekannt schon aus dem Krimkrieg 1854/55.",
+    "coordinates": [
+      33.59666667,
+      44.51
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Balaklawa",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-chersones",
+    "name": "Kap Chersones",
+    "description": "Südwestliche Spitze der Halbinsel mit antiken Ruinen und der 35. Küstenbatterie. Letzte Auffangstellung der Sewastopol-Verteidiger; am 4. Juli 1942 nach der Endkapitulation eingenommen.",
+    "coordinates": [
+      33.4903,
+      44.6108
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Bundesarchiv_Bild_101I-230-0699-07%2C_Russland%2C_Transport_eines_Verwundeten.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, Bild 101I-230-0699-07 / Kurschat",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-230-0699-07,_Russland,_Transport_eines_Verwundeten.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-sewernaja-bucht",
+    "name": "Sewernaja-Bucht (Nordbucht)",
+    "description": "Tiefe Meeresbucht, die Sewastopol in Nord- und Südstadt teilt. Hauptangriffsziel der deutschen 11. Armee unter Manstein; mit Sturmbooten am 28./29. Juni 1942 von Norden her überwunden.",
+    "coordinates": [
+      33.5794,
+      44.6265
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bundesarchiv_N_1603_Bild-262%2C_Sewastopol%2C_Hafen%2C_versenkter_Zerst%C3%B6rer.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 de",
+      "credit": "Bundesarchiv, N 1603 Bild-262 / Horst Grund",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_N_1603_Bild-262,_Sewastopol,_Hafen,_versenkter_Zerst%C3%B6rer.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-tschernaja-tal",
+    "name": "Tschernaja-Tal",
+    "description": "Flusstal östlich Sewastopols, entlang dessen rumänische Verbände einen Hilfangriff in Richtung Inkerman führten. Verband Mekenzia-Höhen und Balaklawa-Sektor zu einem einheitlichen Belagerungsring.",
+    "coordinates": [
+      33.7265,
+      44.528
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-tschorgun",
+    "name": "Tschorgun (Tschernoretschje)",
+    "description": "Dorf im Tschernaja-Tal, Ausgangsposition rumänischer Truppen für den Vorstoß gegen den südöstlichen Verteidigungsring. Knotenpunkt zwischen Sapun-Höhe und den Mekenzia-Bergen.",
+    "coordinates": [
+      33.679,
+      44.5458
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-belbek-muendung",
+    "name": "Belbek-Mündung (Ljubimowka)",
+    "description": "Mündungsgebiet des Belbek-Flusses an der Schwarzmeerküste, direkt neben Fort Maxim Gorki I. Das breite Tal bildete einen natürlichen Korridor für den deutschen Hauptangriff von Norden im Juni 1942.",
+    "coordinates": [
+      33.5502,
+      44.6693
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/800_mm_gun_Gustav_firing_in_1941.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public domain",
+      "credit": "unbekannt (Wehrmacht-Bildberichter)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:800_mm_gun_Gustav_firing_in_1941.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-katscha",
+    "name": "Flugplatz Katscha",
+    "description": "Sowjetischer Marineflugplatz nördlich Sewastopols, im November 1941 von deutschen Truppen erobert und anschließend für die Luftunterstützung der Belagerung genutzt. Wichtiger Stützpunkt am nördlichen Krim-Küstenstreifen.",
+    "coordinates": [
+      33.5437,
+      44.7755
+    ],
+    "category": "transport",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "sevastopol-42",
+    "id": "sevastopol-42-panorama-museum",
+    "name": "Panorama der Verteidigung Sewastopols",
+    "description": "Monumentales Rundgemälde von 1905 zur Verteidigung 1854/55, im Juni 1942 durch deutsche Artillerie schwer zerstört. Stadtteile rund um den Bau gehörten zum innersten Festungsring und fielen erst Anfang Juli 1942.",
+    "coordinates": [
+      33.5233,
+      44.5955
+    ],
+    "category": "symbolic",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Siege_of_Sevastopol_fragment_2012_G01.jpg/960px-Siege_of_Sevastopol_fragment_2012_G01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "photo by George Chernilevsky",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Siege_of_Sevastopol_fragment_2012_G01.jpg"
+    },
+    "coordinatesSource": "original"
+  }
+]

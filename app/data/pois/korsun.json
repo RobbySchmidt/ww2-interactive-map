@@ -1,0 +1,260 @@
+[
+  {
+    "battleId": "korsun",
+    "id": "korsun-stadt",
+    "name": "Korsun-Schewtschenkiwski (Kesselmitte)",
+    "description": "Namensgebende Kleinstadt am Ros und Zentrum des deutschen Kessels. Hier hatte Generalleutnant Wilhelm Stemmermann den Stab der \"Gruppe Stemmermann\" (XI. und XLII. Armeekorps der 8. und 1. Panzerarmee) zusammengefasst. Nach der Schließung des Kessels am 28. Januar 1944 wurden hier rund 56.000 deutsche Soldaten zusammengedrängt; der nahegelegene Flugplatz Korsun bildete bis zum Verlust am 12.-14. Februar die einzige Luftbrücke nach außen.",
+    "coordinates": [
+      31.25617,
+      49.41591
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Korsun-Schewtschenkiwski",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Bundesarchiv_Bild_141-1280%2C_Russland%2C_Kessel_Tscherkassy.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 141-1280 / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_141-1280,_Russland,_Kessel_Tscherkassy.jpg"
+    }
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-tscherkassy",
+    "name": "Tscherkassy (sowjetischer Ausgangsraum)",
+    "description": "Bezirkshauptstadt am rechten Dneprufer, am 14. Dezember 1943 vom sowjetischen 73. Schützenkorps befreit. Der hier gewonnene Brückenkopf bildete die operative Basis der 2. Ukrainischen Front Konews für die südliche Zange der Korsun-Operation. Namensgeber der deutschen Bezeichnung \"Kesselschlacht von Tscherkassy\", obwohl der eigentliche Kessel rund 80 km westlich entstand.",
+    "coordinates": [
+      32.05972222,
+      49.44444444
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Tscherkassy",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Ivan_Konev%2C_Pavel_Rotmistrov.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "credit": "Ю. А. Алексеев / Mil.ru",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ivan_Konev,_Pavel_Rotmistrov.jpg"
+    }
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-swenyhorodka",
+    "name": "Swenyhorodka (Vereinigungspunkt der Zangen)",
+    "description": "Kleinstadt am Hnylyj Tikytsch, am 28. Januar 1944 strategischer Treffpunkt der sowjetischen Zangenarme: Nördlich der Stadt verband sich die 233. Panzerbrigade des 5. Garde-Mechanisierten Korps (2. Ukr. Front) mit Spitzen des 20. Panzerkorps der 6. Panzerarmee (1. Ukr. Front). Damit war der Kessel geschlossen und die Gruppe Stemmermann von der deutschen Hauptkampflinie abgeschnitten.",
+    "coordinates": [
+      30.96666667,
+      49.08333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Swenyhorodka",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/RIAN_archive_606710_Tank_assault_force_in_Korsun-Shevchenkovski_region.jpg",
+      "source": "Wikimedia Commons / RIA Novosti",
+      "license": "CC BY-SA 3.0",
+      "credit": "RIA Novosti archive, image #606710 / I. Ozerskij",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_606710_Tank_assault_force_in_Korsun-Shevchenkovski_region.jpg"
+    }
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-lyssjanka",
+    "name": "Lyssjanka (Spitze des Entsatzangriffs)",
+    "description": "Dorf südwestlich des Kessels, Endpunkt des deutschen Entsatzangriffs durch das III. Panzerkorps (General Breith) mit der 1. Panzerdivision, 16. und 17. Panzerdivision sowie der schweren Panzerabteilung Bäke. Am 16. Februar 1944 erreichten Vorausabteilungen den Westrand von Lyssjanka — hier endete die Front, auf die in der Nacht 16./17. Februar die ausbrechenden Eingeschlossenen über den Hnylyj Tikytsch zustürmten.",
+    "coordinates": [
+      30.82066667,
+      49.25416667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Lyssjanka",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bundesarchiv_Bild_101I-277-0846-13%2C_Russland%2C_Panzer_VI_%28Tiger_I%29.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-277-0846-13 / Jacob / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-277-0846-13,_Russland,_Panzer_VI_(Tiger_I).jpg"
+    }
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-schenderowka",
+    "name": "Schenderiwka (Ausbruchsbasis)",
+    "description": "Dorf am südwestlichen Kesselrand, in der Nacht vom 11./12. Februar 1944 von der SS-Division \"Wiking\" und Teilen der 72. Infanteriedivision zurückerobert. Schenderiwka wurde zur letzten Bereitstellungsbasis für den Ausbruchsversuch am 16./17. Februar: Von hier traten drei Keile in Richtung Lyssjanka an. Die Häuser des Ortes waren bis zum letzten Tag mit Verwundeten überfüllt.",
+    "coordinates": [
+      31.028333333333,
+      49.336666666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Schenderiwka",
+    "coordinatesSource": "wikidata",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/%D0%A0%D0%B0%D0%B7%D0%B1%D0%B8%D1%82%D0%B0%D1%8F_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B0%D1%8F_%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0_%D0%B8_%D0%BE%D0%B1%D0%BE%D0%B7%D1%8B_%D1%83_%D1%81%D0%B5%D0%BB%D0%B0_%D0%A8%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%9A%D0%BE%D1%80%D1%81%D1%83%D0%BD%D1%8C_%E2%80%94_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Israel Ozersky (TASS), 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B7%D0%B1%D0%B8%D1%82%D0%B0%D1%8F_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B0%D1%8F_%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0_%D0%B8_%D0%BE%D0%B1%D0%BE%D0%B7%D1%8B_%D1%83_%D1%81%D0%B5%D0%BB%D0%B0_%D0%A8%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%9A%D0%BE%D1%80%D1%81%D1%83%D0%BD%D1%8C_%E2%80%94_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8.jpg"
+    }
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-steblew",
+    "name": "Stebliw (nordwestlicher Kesselrand)",
+    "description": "Marktflecken am Ros, im Verlauf der sowjetischen Offensive entlang der Linie Kwitki-Steblew-Deschki Schwerpunkt der Abwehrkämpfe der 27. Armee (Trofimenko). Die Halterung dieser Linie sollte verhindern, dass die Eingeschlossenen nach Westen Richtung Lyssjanka durchbrachen. Steblew fiel kurz vor der finalen Ausbruchsbewegung und engte den Kessel weiter ein.",
+    "coordinates": [
+      31.0975,
+      49.39972222
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Stebliw",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-schpola",
+    "name": "Schpola (südliche Durchbruchsstelle)",
+    "description": "Eisenbahnknoten an der Strecke Tscherkassy-Smela-Schpola-Swenyhorodka, am 27. Januar 1944 von der 5. Garde-Panzerarmee Rotmistrows genommen. Mit dem Fall Schpolas wurde die Bahnverbindung im Rücken der deutschen 8. Armee zerschnitten und der Weg für die südliche Zange nach Swenyhorodka frei.",
+    "coordinates": [
+      31.41666667,
+      49.03333333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Schpola",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-smela",
+    "name": "Smila (Bahnknoten)",
+    "description": "Wichtiger Eisenbahnknotenpunkt südwestlich von Tscherkassy, im Vorfeld der Operation deutsches Versorgungs- und Etappenzentrum für das XI. Armeekorps. Mit dem sowjetischen Durchbruch Ende Januar 1944 ging Smila verloren und damit die rückwärtige Bahnanbindung der später eingekesselten Verbände.",
+    "coordinates": [
+      31.86666667,
+      49.21666667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Smila",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-bila-zerkwa",
+    "name": "Bila Zerkwa (Aufmarschraum Nordwest)",
+    "description": "Größere Stadt nordwestlich des Kessels, Bereitstellungsraum der 1. Ukrainischen Front Watutins für den nördlichen Zangenarm. Aus dem Raum Bila Zerkwa traten am 26. Januar 1944 die 6. Panzerarmee Kratschenko und Teile der 40. Armee gegen die deutsche VII. Armeekorps an. Auch die 1. Tschechoslowakische Brigade Svobodas wurde vor dem Angriff aus diesem Raum verlegt.",
+    "coordinates": [
+      30.11666667,
+      49.79555556
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Bila_Zerkwa",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-olschana",
+    "name": "Olschana (Schließung im Norden)",
+    "description": "Großes Dorf nördlich von Korsun, am 31. Januar 1944 von Spitzen der 2. Ukrainischen Front zusammen mit Burty besetzt. Hier verband sich der innere Einschließungsring der 2. mit den Verbänden der 1. Ukrainischen Front — der Kessel war nun nicht nur abgeschnitten, sondern doppelt umfasst.",
+    "coordinates": [
+      31.4794,
+      49.1611
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Olschana_(Tscherkassy)",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-komarowka",
+    "name": "Komariwka (Ausbruchssammelpunkt)",
+    "description": "Dorf knapp westlich von Schenderiwka, in der Nacht 16./17. Februar 1944 Antreteraum für die drei ausbrechenden Keile (72. ID, SS-Wiking, Korpsabteilung B). Aus den umliegenden Senken stießen die Reste der Gruppe Stemmermann durch ein nur 4,5 km breites Loch nach Südwesten in Richtung Hnylyj Tikytsch und Lyssjanka durch.",
+    "coordinates": [
+      31.05,
+      49.305
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bundesarchiv_Bild_101I-711-0438-05A%2C_Russland-S%C3%BCd%2C_Marsch_auf_unbefestigter_Stra%C3%9Fe.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-711-0438-05A / Menzendorf / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-711-0438-05A,_Russland-S%C3%BCd,_Marsch_auf_unbefestigter_Stra%C3%9Fe.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-dschurschenzy",
+    "name": "Dschurschenzy (Stemmermanns Todesort)",
+    "description": "Dorf am südwestlichen Kesselrand. Am Morgen des 18. Februar 1944 fiel hier General der Artillerie Wilhelm Stemmermann, Befehlshaber der Gruppe Stemmermann, im Feuer sowjetischer Panzer — er hatte die Nachhut persönlich befehligt. Sein Leichnam wurde später von sowjetischen Soldaten geborgen und mit militärischen Ehren beigesetzt.",
+    "coordinates": [
+      31.095,
+      49.32
+    ],
+    "category": "symbolic",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-hnylyj-tikytsch",
+    "name": "Hnylyj Tikytsch (Fluchtbarriere)",
+    "description": "Schmaler, aber tief eingeschnittener Fluss südwestlich des Kessels — im Februar 1944 eiskalt und teilweise eisbedeckt. Beim Ausbruch am 17. Februar fanden die abrückenden deutschen Verbände keine intakten Brücken; Tausende versuchten den Fluss schwimmend, auf Eisschollen oder über improvisierte Pferdebrücken zu queren. Der Hnylyj Tikytsch wurde zum Symbol der Katastrophe: Pferde, Fahrzeuge und schwere Waffen blieben am Steilufer zurück.",
+    "coordinates": [
+      30.7061,
+      49.2474
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Hnylyj_Tikytsch",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-ros",
+    "name": "Ros (Verteidigungslinie)",
+    "description": "Rechter Nebenfluss des Dnepr, der mit seinem sumpfigen, südseitig steil ansteigenden Bett quer durch den Kesselraum Korsun-Stebliw verläuft. Das südliche Ufer galt als verteidigungsgünstig und bildete einen der inneren Riegel der Gruppe Stemmermann gegen die nachdrückenden sowjetischen Schützendivisionen.",
+    "coordinates": [
+      31.23,
+      49.45
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Ros_(Fluss)",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-kapitaniwka",
+    "name": "Kapitaniwka (südliche Durchbruchszone)",
+    "description": "Dorf nahe der Bahnlinie Schpola-Nowomyrhorod, am 26./27. Januar 1944 Schauplatz des entscheidenden Panzervorstoßes des sowjetischen 20. Panzerkorps. Mit dem Durchbruch bei Kapitaniwka und Tischkowka öffnete sich die südliche Zange in Richtung Swenyhorodka und besiegelte die Einschließung von rund 56.000 deutschen Soldaten.",
+    "coordinates": [
+      31.7096,
+      48.9139
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-medwyn",
+    "name": "Medwyn (Westflanke der nördlichen Zange)",
+    "description": "Großes Dorf südlich von Bohuslaw, im Vorstoßstreifen der sowjetischen 40. und 27. Armee gelegen. Über Medwyn rollte ab dem 26. Januar 1944 der westliche Angriffskeil der 1. Ukrainischen Front gegen die rückwärtigen Verbindungen des deutschen VII. Armeekorps und trennte den späteren Kessel von Bila Zerkwa.",
+    "coordinates": [
+      30.85,
+      49.5
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "korsun",
+    "id": "korsun-potschapynzi",
+    "name": "Potschapynzi (Ausbruchskorridor)",
+    "description": "Dorf im engen Ausbruchskorridor zwischen Schenderiwka und Lyssjanka. Über Potschapynzi und die benachbarten Höhen führte der mittlere der drei deutschen Keile am 17. Februar 1944; hier kam es zu Nahkämpfen mit sowjetischen Kavallerie- und Panzerabteilungen, die den Korridor zu schließen versuchten.",
+    "coordinates": [
+      30.927,
+      49.2722
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original"
+  }
+]

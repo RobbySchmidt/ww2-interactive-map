@@ -1,0 +1,341 @@
+[
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-maikop",
+    "name": "Maikop (Ölzentrum)",
+    "description": "Erstes großes Ölfördergebiet des Kaukasus und Hauptpreis des ersten Abschnitts der Operation Edelweiß. Am 9. August 1942 von der 13. Panzer-Division und dem Sonderverband Brandenburg eingenommen — die Sowjets hatten die Bohrtürme und Pumpen jedoch weitgehend zerstört, so dass deutsche Förderversuche nur Bruchteile der Vorkriegsmenge ergaben. Im Januar 1943 zurückerobert.",
+    "coordinates": [
+      40.08333333,
+      44.6
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Maikop",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Niemieckie_jednostki_pancerne_na_terenach_naftowych_w_okolicy_miasta_Majkop_%282-818%29.jpg",
+      "source": "Wikimedia Commons / Narodowe Archiwum Cyfrowe",
+      "license": "Public Domain",
+      "credit": "Foto: Pisterius, August 1942 — Panzer III auf den Ölfeldern bei Maikop",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Niemieckie_jednostki_pancerne_na_terenach_naftowych_w_okolicy_miasta_Majkop_(2-818).jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-grosny",
+    "name": "Grosny (Erdölfelder)",
+    "description": "Zweites strategisches Öl-Operationsziel der Heeresgruppe A nach Maikop. Die Raffinerien und Bohrfelder am Sundscha-Fluss sollten im Spätsommer 1942 vom XL. Panzerkorps über Mosdok erreicht werden — der deutsche Vorstoß blieb jedoch östlich der Stadt am Terek liegen. Grosny blieb sowjetisch und stellte 1942/43 weiter Treibstoff für die Rote Armee.",
+    "coordinates": [
+      45.7,
+      43.31666667
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Grosny",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Bundesarchiv_Bild_183-J18468%2C_Russland%2C_bei_Terek._Soldat_mit_Feldpost.jpg",
+      "source": "Bundesarchiv via Wikimedia Commons",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-J18468 / Schütze / CC-BY-SA 3.0 — Soldat im Kampfabschnitt südlich des Terek, Oktober 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J18468,_Russland,_bei_Terek._Soldat_mit_Feldpost.jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-mosdok",
+    "name": "Mosdok (Terek-Brückenkopf)",
+    "description": "Schlüsselort am Nordufer des Terek, von der 1. Panzerarmee Kleist am 25. August 1942 eingenommen und zum Sprungbrett des Stoßes auf Grosny und Wladikawkas ausgebaut. Über die Eisenbahnbrücke führte ein deutscher Brückenkopf nach Süden, wo sich im September/Oktober erbitterte Terek-Kämpfe entspannen. Am 3. Januar 1943 von der sowjetischen 58. Armee befreit.",
+    "coordinates": [
+      44.65,
+      43.75
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Mosdok",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%D0%92%D0%B7%D0%BE%D1%80%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B8_%D1%81%D0%BE%D0%B6%D0%B6%D1%91%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BD%D0%B5%D0%BC%D1%86%D0%B0%D0%BC%D0%B8_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%9C%D0%BE%D0%B7%D0%B4%D0%BE%D0%BA%D0%B0.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (Russland)",
+      "credit": "Foto: Wladimir N. Iwanow (TASS), Januar 1943 — der von den Deutschen gesprengte und niedergebrannte Bahnhof von Mosdok",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B7%D0%BE%D1%80%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B8_%D1%81%D0%BE%D0%B6%D0%B6%D1%91%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BD%D0%B5%D0%BC%D1%86%D0%B0%D0%BC%D0%B8_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D0%9C%D0%BE%D0%B7%D0%B4%D0%BE%D0%BA%D0%B0.jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-naltschik",
+    "name": "Naltschik",
+    "description": "Hauptstadt Kabardino-Balkariens und letzter größerer deutscher Geländegewinn der Operation Edelweiß. Am 28. Oktober 1942 vom rumänischen Gebirgskorps und der deutschen 2. rumänischen Gebirgsdivision sowie der 13. Panzer-Division eingenommen — Ausgangspunkt für den letzten Vorstoß auf Ordschonikidze. Am 4. Januar 1943 durch die 2. Garde-Schützendivision befreit.",
+    "coordinates": [
+      43.61666667,
+      43.48333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Naltschik",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Niemiecki_patrol_pancerny_witany_przez_ludno%C5%9B%C4%87_kabardy%C5%84sk%C4%85._%282-1954%29.jpg",
+      "source": "Wikimedia Commons / Narodowe Archiwum Cyfrowe",
+      "license": "Public Domain",
+      "credit": "Foto: Kaiser, 1942 — deutscher Panzerspähtrupp wird von kabardinischer Bevölkerung in einem Bergdorf empfangen",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Niemiecki_patrol_pancerny_witany_przez_ludno%C5%9B%C4%87_kabardy%C5%84sk%C4%85._(2-1954).jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-wladikawkas",
+    "name": "Wladikawkas (Ordschonikidze)",
+    "description": "Hauptstadt Nordossetiens und Eingangspforte zur Grusinischen Heerstraße über den Hauptkamm. Östlichster Vorstoßpunkt der Wehrmacht im gesamten Krieg: Am 5. November 1942 stand die 13. Panzer-Division etwa 6 km vor der Stadt, ehe ein sowjetischer Gegenstoß die deutschen Verbände bei Gisel einkesselte. Die Schlacht um Ordschonikidze gilt als Wendepunkt der Kaukasus-Operation.",
+    "coordinates": [
+      44.68333333,
+      43.01666667
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Wladikawkas",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D1%87%D0%B8%D0%BA%D0%B8_%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BF%D0%B5%D1%85%D0%BE%D1%82%D1%8B_%D0%B2%D0%B5%D0%B4%D1%83%D1%82_%D0%B1%D0%BE%D0%B9.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (Russland)",
+      "credit": "Foto: Wladimir N. Iwanow (TASS), November 1942 — Maschinenpistolen-Schützen der sowjetischen Marineinfanterie im Kampf bei Ordschonikidze (Wladikawkas)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D1%87%D0%B8%D0%BA%D0%B8_%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%BF%D0%B5%D1%85%D0%BE%D1%82%D1%8B_%D0%B2%D0%B5%D0%B4%D1%83%D1%82_%D0%B1%D0%BE%D0%B9.jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-tuapse",
+    "name": "Tuapse (Schwarzmeer-Hafen)",
+    "description": "Wichtigster Schwarzmeer-Hafen zwischen Noworossijsk und Suchumi sowie Endpunkt der Erdöl-Pipeline von Baku. Hauptziel des deutschen XXXXIV. Jägerkorps in der Tuapse-Operation (September–Dezember 1942): Über die Pässe der Westkaukasus-Bergketten sollte die Stadt erreicht werden, um die sowjetische Schwarzmeerflotte abzuschneiden. Der Vorstoß blieb wenige Kilometer vor der Küste stecken.",
+    "coordinates": [
+      39.08333333,
+      44.1
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Tuapse",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bundesarchiv_Bild_146-1970-033-04%2C_Russland%2C_Kaukasus%2C_Gebirgsj%C3%A4ger.jpg",
+      "source": "Bundesarchiv via Wikimedia Commons",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1970-033-04, Russland, Kaukasus, Gebirgsjäger / CC-BY-SA 3.0 — Gebirgsjäger der 1. Gebirgs-Division im Westkaukasus, September 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1970-033-04,_Russland,_Kaukasus,_Gebirgsj%C3%A4ger.jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-noworossijsk",
+    "name": "Noworossijsk",
+    "description": "Größter sowjetischer Schwarzmeer-Marinestützpunkt nach Sewastopol. Am 6. September 1942 von der deutschen 17. Armee zum großen Teil eingenommen, doch der Hafen blieb im Feuer sowjetischer Marine-Infanterie auf der Halbinsel Mychako (\"Kleines Land\"). Im September 1943 nach amphibischer Landeoperation der 18. Armee endgültig befreit — Auftakt der Befreiung des Kuban-Brückenkopfes.",
+    "coordinates": [
+      37.76666667,
+      44.71666667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Noworossijsk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (Russland)",
+      "credit": "Foto: Wladimir N. Iwanow (TASS), September 1943 — Noworossijsk nach der Befreiung",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F.jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-mychako",
+    "name": "Mychako (\"Malaja Semlja\")",
+    "description": "Vorgebirge südlich von Noworossijsk, in der Nacht zum 4. Februar 1943 von einer sowjetischen Landungstruppe unter Major Zesar Kunikow als Brückenkopf gehalten. Sieben Monate lang verteidigten Marinesoldaten und Schützen die nur 30 km² große \"Malaja Semlja\" (Kleines Land) gegen permanente deutsche Angriffe — wurde zum Sinnbild sowjetischer Beharrlichkeit am Kaukasus.",
+    "coordinates": [
+      37.797,
+      44.689
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Malaja_Semlja",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B0%D1%80%D0%BC%D0%B5%D0%B9%D1%86%D1%8B_%D0%B2_%D0%B1%D0%BE%D1%8F%D1%85_%D0%B7%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BF%D1%83%D0%BD%D0%BA%D1%82_%D0%BD%D0%B0_%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%BC_%D0%9A%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7%D0%B5_1.jpg",
+      "source": "Wikimedia Commons / Verteidigungsministerium der Russischen Föderation",
+      "license": "CC BY 4.0",
+      "credit": "Foto: Sergej Loskutow, November/Dezember 1942 — Rotarmisten verteidigen einen Stützpunkt im Nordkaukasus mit Panzerbüchse PTRS-41 (Krasnaja Swesda, 17. Dezember 1942)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B0%D1%80%D0%BC%D0%B5%D0%B9%D1%86%D1%8B_%D0%B2_%D0%B1%D0%BE%D1%8F%D1%85_%D0%B7%D0%B0_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BF%D1%83%D0%BD%D0%BA%D1%82_%D0%BD%D0%B0_%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%BC_%D0%9A%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7%D0%B5_1.jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-krasnodar",
+    "name": "Krasnodar (Kuban-Hauptstadt)",
+    "description": "Verwaltungszentrum der Region Kuban und wichtiger Verkehrsknoten am Unterlauf des Kuban-Flusses. Am 12. August 1942 von der 17. Armee eingenommen und während des deutschen Rückzugs im Februar 1943 zur Drehscheibe für die Räumung in den Kuban-Brückenkopf (\"Gotenkopf\"). Am 12. Februar 1943 von der sowjetischen 46. Armee befreit.",
+    "coordinates": [
+      38.98333333,
+      45.03333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Krasnodar",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Niemieckie_jednostki_transportowe_w_rejonie_Kubania_%282-851%29.jpg",
+      "source": "Wikimedia Commons / Narodowe Archiwum Cyfrowe",
+      "license": "Public Domain",
+      "credit": "Foto: Maier, April 1943 — deutsche Transporteinheit mit Packkamel im Kuban-Gebiet",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Niemieckie_jednostki_transportowe_w_rejonie_Kubania_(2-851).jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-pjatigorsk",
+    "name": "Pjatigorsk",
+    "description": "Bekannte Kurstadt am Fuß des Maschuk und Eisenbahn-Drehkreuz der Mineralwasser-Region. Am 9. August 1942 von der 3. Panzer-Division Hermann Breiths kampflos eingenommen; Sitz eines deutschen Etappenstabs der 1. Panzerarmee. Am 11. Januar 1943 durch die sowjetische 37. Armee befreit.",
+    "coordinates": [
+      43.05,
+      44.03333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Pjatigorsk",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-mineralnyje-wody",
+    "name": "Mineralnyje Wody",
+    "description": "Eisenbahn- und Straßenknotenpunkt der Kaukasischen Mineralwasser-Region und logistischer Stützpunkt der vorrückenden deutschen Panzerarmee. Am 10. August 1942 von der 1. Panzerarmee genommen, Flugfeld der Luftflotte 4. Am 12. Januar 1943 von der sowjetischen 44. Armee zurückerobert — Sprungbrett der nachstoßenden Verbände nach Westen Richtung Stawropol.",
+    "coordinates": [
+      43.13333333,
+      44.21666667
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Mineralnyje_Wody",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Niemieckie_jednostki_transportowe_na_Kaukazie_%282-822%29.jpg",
+      "source": "Wikimedia Commons / Narodowe Archiwum Cyfrowe",
+      "license": "Public Domain",
+      "credit": "Foto unbekannt, Oktober 1942 — deutsche Versorgungsabteilung mit Packmaultieren auf einer Bergstraße im Kaukasus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Niemieckie_jednostki_transportowe_na_Kaukazie_(2-822).jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-stawropol",
+    "name": "Stawropol (Woroschilowsk)",
+    "description": "Damals als Woroschilowsk benannte Hauptstadt der Stawropoler Region, am 3. August 1942 von der deutschen 1. Panzerarmee Kleist im Vorstoß \"Edelweiß\" eingenommen. Wichtiger Versorgungs- und Lazarettstützpunkt der Heeresgruppe A. Während des deutschen Rückzugs im Januar 1943 ohne nennenswerte Kämpfe an die Rote Armee zurückgegeben.",
+    "coordinates": [
+      41.98333333,
+      45.05
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Stawropol",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-armawir",
+    "name": "Armawir",
+    "description": "Eisenbahnknotenpunkt am Kuban auf der Linie Rostow–Baku, am 6. August 1942 von der 13. Panzer-Division eingenommen. Diente während der Vorstoß-Phase als Aufmarsch- und Tankstützpunkt der 1. Panzerarmee, während des Rückzugs im Januar 1943 Drehscheibe für die Verlegung über Tichorezk in den Kuban-Brückenkopf.",
+    "coordinates": [
+      41.11666667,
+      45
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Armawir",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-tichorezk",
+    "name": "Tichorezk",
+    "description": "Eisenbahnknotenpunkt nördlich des Kuban an den Linien Rostow–Baku und Krasnodar–Stalingrad. Am 4. August 1942 von der 1. Panzerarmee Kleist eingenommen — entscheidende Etappe des Vorstoßes nach Süden. Am 30. Januar 1943 von der sowjetischen Süd-Front zurückerobert; war für den deutschen Rückzug bereits zu spät gefallen.",
+    "coordinates": [
+      40.11666667,
+      45.85
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Tichorezk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Tichoreck._Ruiny_miasta_%282-1783%29.jpg",
+      "source": "Wikimedia Commons / Narodowe Archiwum Cyfrowe",
+      "license": "Public Domain",
+      "credit": "Foto: Lohrer, September 1942 — zerstörte Bahnanlagen, Stellwerk und Brücke in Tichorezk nach deutscher Einnahme",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tichoreck._Ruiny_miasta_(2-1783).jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-elbrus",
+    "name": "Elbrus-Gipfel (Fahnenhissung)",
+    "description": "Mit 5642 m höchster Berg Europas. Am 21. August 1942 hisste eine Seilschaft der 1. Gebirgs-Division unter Hauptmann Heinz Groth die Reichskriegsflagge auf dem Westgipfel — propagandistisch gefeiert, militärisch wertlos. Hitler soll über die Aktion erbost gewesen sein, weil sie Kräfte vom eigentlichen Operationsziel band. Im Februar 1943 entfernten sowjetische Bergsteiger die Flagge.",
+    "coordinates": [
+      42.437875,
+      43.35254
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Elbrus",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/%D0%9D%D0%B5%D0%BC%D1%86%D1%8B_%D0%BD%D0%B0_%D0%BF%D1%80%D0%B8%D1%8E%D1%82%D0%B5_11.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Foto unbekannt, 1942 — deutsche Gebirgsjäger am Schutzhaus \"Prijut 11\" am Südhang des Elbrus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B5%D0%BC%D1%86%D1%8B_%D0%BD%D0%B0_%D0%BF%D1%80%D0%B8%D1%8E%D1%82%D0%B5_11.jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-marucha-pass",
+    "name": "Marucha-Pass",
+    "description": "2746 m hoher Pass des Hauptkamms zwischen Karatschai-Tscherkessien und Abchasien. Im August/September 1942 von Teilen der 4. Gebirgs-Division (Generalleutnant Eglseer) überschritten — südlichster Vorstoß der Wehrmacht in Richtung Schwarzes Meer. Die deutschen Jäger gelangten bis zum Südhang, wurden aber an der Wasserscheide von sowjetischen NKWD-Verbänden gestoppt.",
+    "coordinates": [
+      41.38388889,
+      43.36611111
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Marucha-Pass",
+    "coordinatesSource": "wikidata",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/%D0%97%D0%B0%D0%BC%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D1%80%D1%83%D0%BA%D0%B0_%D0%90.%D0%92._%D0%9F%D0%B0%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%B4%D0%B8%D1%88%D0%B2%D0%B8%D0%BB%D0%B8_%D0%BD%D0%B0_%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8_%D0%B2_%D0%B3%D0%BE%D1%80%D0%B0%D1%85_%D0%9A%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7%D0%B0.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (Russland)",
+      "credit": "Foto: Max Alpert, 1942 — Politruk-Stellvertreter A.W. Palawandischwili auf einer Stellung des 104. Gebirgsschützen-Bataillons (351. Schützen-Division) im Hauptkamm des Kaukasus",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B0%D0%BC%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D1%80%D1%83%D0%BA%D0%B0_%D0%90.%D0%92._%D0%9F%D0%B0%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%B4%D0%B8%D1%88%D0%B2%D0%B8%D0%BB%D0%B8_%D0%BD%D0%B0_%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8_%D0%B2_%D0%B3%D0%BE%D1%80%D0%B0%D1%85_%D0%9A%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7%D0%B0.jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-klukhor-pass",
+    "name": "Kluchor-Pass",
+    "description": "2782 m hoher Pass auf der Suchumi-Heerstraße zwischen Teberda und dem Kodori-Tal. Mitte August 1942 von der 1. Gebirgs-Division (Generalleutnant Lanz) überschritten — die deutschen Jäger erreichten den südlichen Talkessel, ehe sowjetische Verstärkungen über Suchumi den Vorstoß stoppten. Symbol für die Tiefe, aber strategische Erfolglosigkeit des Edelweiß-Gebirgskrieges.",
+    "coordinates": [
+      41.86722222,
+      43.24388889
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Kluchorpass",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Bundesarchiv_Bild_183-B22462%2C_Gebirgsj%C3%A4ger%2C_Seilbahn_im_Kaukasus.jpg",
+      "source": "Bundesarchiv via Wikimedia Commons",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B22462 / Kintscher / CC-BY-SA 3.0 — Gebirgsjäger mit transportabler Seilbahn im Hauptkamm des Kaukasus, Oktober 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22462,_Gebirgsj%C3%A4ger,_Seilbahn_im_Kaukasus.jpg"
+    }
+  },
+  {
+    "battleId": "caucasus",
+    "id": "caucasus-kuban-brueckenkopf",
+    "name": "Kuban-Brückenkopf (\"Gotenkopf\")",
+    "description": "Befestigte Frontstellung der 17. Armee auf der Taman-Halbinsel zwischen Asowschem und Schwarzem Meer, ab Februar 1943 als Sprungbrett für eine erneute Offensive über die Straße von Kertsch gehalten. Erst nach Kursk räumte die Wehrmacht im September/Oktober 1943 den Brückenkopf über die Straße von Kertsch auf die Krim — Abschluss der Schlacht um den Kaukasus.",
+    "coordinates": [
+      37.7,
+      45.2
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Kuban-Br%C3%BCckenkopf",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/%D0%9F%D0%B5%D1%85%D0%BE%D1%82%D0%B0_%D0%B8_%D1%82%D0%B0%D0%BD%D0%BA%D0%B8_5-%D0%B9_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B5%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B1%D1%80%D0%B8%D0%B3%D0%B0%D0%B4%D1%8B_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE-%D0%A2%D0%B0%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (Russland)",
+      "credit": "Foto: Max Alpert, September 1943 — Infanterie und T-34 der 5. Garde-Panzer-Brigade während der Noworossijsk-Tamaner Operation (Räumung des Kuban-Brückenkopfes)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D1%85%D0%BE%D1%82%D0%B0_%D0%B8_%D1%82%D0%B0%D0%BD%D0%BA%D0%B8_5-%D0%B9_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B5%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B1%D1%80%D0%B8%D0%B3%D0%B0%D0%B4%D1%8B_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D0%9D%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE-%D0%A2%D0%B0%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8.jpg"
+    }
+  }
+]

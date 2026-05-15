@@ -1,0 +1,368 @@
+[
+  {
+    "battleId": "berlin",
+    "id": "berlin-reichstag",
+    "name": "Reichstagsgebäude",
+    "description": "Symbolisches Hauptziel der sowjetischen Offensive und letzter großer Verteidigungsabschnitt im Spreebogen. Am 30. April 1945 hissten Soldaten der 150. Schützendivision das berühmte Siegesbanner auf dem Dach – das Bild wurde zum Symbol des Endes des Dritten Reiches.",
+    "coordinates": [
+      13.37611111,
+      52.51861111
+    ],
+    "category": "building",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Raising_a_flag_over_the_Reichstag_-_Restoration.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Jewgeni Chaldej, 2. Mai 1945 (Restauration: Adam Cuerden)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raising_a_flag_over_the_Reichstag_-_Restoration.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-fuehrerbunker",
+    "name": "Führerbunker",
+    "description": "Tief unter der Neuen Reichskanzlei gelegener Bunkerkomplex, in dem Adolf Hitler die letzten Wochen verbrachte und am 30. April 1945 Suizid beging. Befehlszentrale der Verteidigung Berlins bis zur Kapitulation am 2. Mai.",
+    "coordinates": [
+      13.38108056,
+      52.51246667
+    ],
+    "category": "building",
+    "wikipediaSlug": "Führerbunker",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Adolf_Hitler%2C_20._april_1945.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Hitler bei seiner letzten öffentlichen Erscheinung im Garten der Reichskanzlei, 20. April 1945 / unbekannter Fotograf",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adolf_Hitler,_20._april_1945.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-neue-reichskanzlei",
+    "name": "Neue Reichskanzlei",
+    "description": "Repräsentativer Regierungsbau Albert Speers, der das politische Zentrum des NS-Regimes beherbergte und im Zentrum der innersten Verteidigungszone lag. Wurde Ende April 1945 von der Roten Armee erstürmt und nach dem Krieg abgetragen.",
+    "coordinates": [
+      13.38013889,
+      52.51125
+    ],
+    "category": "building",
+    "wikipediaSlug": "Neue_Reichskanzlei",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/British_and_Russian_soldiers_on_the_balcony_of_the_ruined_Chancellery_in_Berlin%2C_5_July_1945._BU8635.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Britische und sowjetische Soldaten auf dem Balkon der zerstörten Reichskanzlei, 5. Juli 1945 / Captain E. G. Malindine, No. 5 AFPU (IWM BU 8635)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:British_and_Russian_soldiers_on_the_balcony_of_the_ruined_Chancellery_in_Berlin,_5_July_1945._BU8635.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-brandenburger-tor",
+    "name": "Brandenburger Tor",
+    "description": "Wahrzeichen Berlins am westlichen Ende der Verteidigungszone Z (Zitadelle). Im Bereich Pariser Platz / Tiergarten kam es Ende April 1945 zu heftigen Kämpfen zwischen Wehrmacht/SS und Truppen der 3. Stoßarmee.",
+    "coordinates": [
+      13.37777778,
+      52.51638889
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Brandenburger_Tor",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Bundesarchiv_Bild_183-M1015-331%2C_Berlin%2C_zerst%C3%B6rtes_Brandenburger_Tor_und_Reichstagsgeb%C3%A4ude.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-M1015-331 / Otto Donath, 1945 – Zerstörtes Brandenburger Tor und Reichstagsgebäude",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-M1015-331,_Berlin,_zerst%C3%B6rtes_Brandenburger_Tor_und_Reichstagsgeb%C3%A4ude.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-moltkebruecke",
+    "name": "Moltkebrücke",
+    "description": "Spree-Brücke direkt nördlich des Reichstags und letzter großer Übergang für den sowjetischen Sturmangriff auf das Regierungsviertel. Am 29. April 1945 unter schwerem Beschuss von der 150. und 171. Schützendivision genommen – Ausgangspunkt der Reichstagserstürmung.",
+    "coordinates": [
+      13.36888889,
+      52.52194444
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Moltkebrücke",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-weidendammer-bruecke",
+    "name": "Weidendammer Brücke",
+    "description": "Spree-Brücke an der Friedrichstraße, an der in der Nacht zum 2. Mai 1945 deutsche Verbände einen verzweifelten Ausbruchsversuch nach Norden unternahmen. Die meisten Ausbrechenden wurden im sowjetischen Sperrfeuer aufgerieben.",
+    "coordinates": [
+      13.38805556,
+      52.52222222
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Weidendammer_Brücke",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-potsdamer-bruecke",
+    "name": "Potsdamer Brücke",
+    "description": "Brücke über den Landwehrkanal, Schauplatz schwerer Kämpfe um den Vorstoß zum Regierungsviertel. In der Nähe wurde am 1. Mai 1945 die deutsche Kapitulationsverhandlung zwischen General Krebs und General Tschuikow eingeleitet.",
+    "coordinates": [
+      13.368358,
+      52.506051
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Potsdamer_Brücke",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-anhalter-bahnhof",
+    "name": "Anhalter Bahnhof",
+    "description": "Großer Fernbahnhof südlich des Regierungsviertels, dessen Trümmer und der angrenzende Hochbunker zu einer schwer umkämpften Verteidigungsposition wurden. Sowjetische Stoßtruppen drangen Ende April 1945 vom Landwehrkanal her vor.",
+    "coordinates": [
+      13.38194444,
+      52.50305556
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Berlin_Anhalter_Bahnhof",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Photo_-_Luftaufnahme_-_Berlin_-_Anhalter_Bahnhof_-_1945.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Luftaufnahme des zerstörten Anhalter Bahnhofs, 1945 / unbekannter Fotograf (US Government)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photo_-_Luftaufnahme_-_Berlin_-_Anhalter_Bahnhof_-_1945.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-anhalter-hochbunker",
+    "name": "Anhalter Hochbunker",
+    "description": "Massiver oberirdischer Luftschutzbunker neben dem Anhalter Bahnhof, in dem in den letzten Kriegstagen Tausende Zivilisten Zuflucht suchten. Diente zugleich der Wehrmacht als Stützpunkt im südlichen Verteidigungsring der Innenstadt.",
+    "coordinates": [
+      13.38027778,
+      52.50277778
+    ],
+    "category": "building",
+    "wikipediaSlug": "Anhalter_Hochbunker_Berlin",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-flughafen-tempelhof",
+    "name": "Flughafen Tempelhof",
+    "description": "Zentraler Berliner Flughafen und Versorgungs-Landeplatz der Verteidiger; am 25.–28. April 1945 erbittert umkämpft, da er bis zuletzt theoretisch noch Einflüge ermöglichte. Mit seinem Fall war der Festungsring um die Innenstadt nahezu geschlossen.",
+    "coordinates": [
+      13.40158333,
+      52.47358611
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Flughafen_Berlin-Tempelhof",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-flugplatz-gatow",
+    "name": "Flugplatz Gatow",
+    "description": "Westlich der Stadt gelegener Militärflugplatz und letzte funktionstüchtige Landebahn der Verteidiger nach dem Verlust Tempelhofs. Am 25. April 1945 von Truppen der 1. Belorussischen Front erobert und damit die Luftbrücke zur \"Festung Berlin\" gekappt.",
+    "coordinates": [
+      13.13805556,
+      52.47444444
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Flugplatz_Gatow",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-flakturm-humboldthain",
+    "name": "Flakturm Humboldthain",
+    "description": "Einer der drei großen Berliner Flaktürme im Norden der Stadt mit schwerer 12,8-cm-Flak und Luftschutzräumen für Zivilisten. Verzögerte den sowjetischen Vorstoß aus Richtung Wedding und Pankow und kapitulierte erst am 2. Mai 1945.",
+    "coordinates": [
+      13.3847273,
+      52.5473485
+    ],
+    "category": "building",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bundesarchiv_Bild_146-1985-092-29%2C_vor_Berlin%2C_Volkssturm_mit_Panzerabwehrwaffe.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1985-092-29 / Wilfried Woscidlo, April 1945 – Volkssturmmann mit Panzerschreck vor Berlin",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1985-092-29,_vor_Berlin,_Volkssturm_mit_Panzerabwehrwaffe.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-olympiastadion",
+    "name": "Olympiastadion / Reichssportfeld",
+    "description": "Repräsentativer Bau der NS-Zeit, der im April 1945 in den Verteidigungsbereich Charlottenburg/Westend einbezogen wurde. Schauplatz von Kämpfen zwischen Volkssturm/SS und sowjetischen Verbänden auf dem Vormarsch nach Spandau.",
+    "coordinates": [
+      13.239624,
+      52.514628
+    ],
+    "category": "building",
+    "wikipediaSlug": "Olympiastadion_Berlin",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-zitadelle-spandau",
+    "name": "Zitadelle Spandau",
+    "description": "Renaissance-Festung an der Havelmündung und westlicher Eckpfeiler des äußeren Verteidigungsringes von Berlin. Wurde am 1. Mai 1945 nach Verhandlungen kampflos an die Rote Armee übergeben.",
+    "coordinates": [
+      13.21277778,
+      52.54111111
+    ],
+    "category": "building",
+    "wikipediaSlug": "Zitadelle_Spandau",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-landwehrkanal",
+    "name": "Landwehrkanal",
+    "description": "Künstlicher Wasserlauf südlich der Innenstadt, der Ende April 1945 als letzte zusammenhängende Verteidigungslinie vor dem Regierungsviertel diente. Sprengungen von Brücken und – nach Augenzeugen – die Flutung des S-Bahn-Tunnels lähmten die Kämpfe in seiner Umgebung.",
+    "coordinates": [
+      13.3925,
+      52.49777778
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Landwehrkanal",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-teltowkanal",
+    "name": "Teltowkanal",
+    "description": "Wasserstraße am Südrand Berlins, an der die 1. Ukrainische Front unter Marschall Konew vom 22.–24. April 1945 unter massivem Artillerieeinsatz Brückenköpfe bildete. Mit dem Durchbruch wurde der südliche Festungsgürtel aufgebrochen.",
+    "coordinates": [
+      13.47055556,
+      52.44638889
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Teltowkanal",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-westhafen",
+    "name": "Westhafen",
+    "description": "Großer Binnenhafen am Berlin-Spandauer Schifffahrtskanal, der zur Industrie- und Versorgungsverteidigung Moabits gehörte. Wurde Ende April 1945 von Verbänden der 3. Stoßarmee in den Häuserkampf um Moabit einbezogen.",
+    "coordinates": [
+      13.33472222,
+      52.54
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Westhafen_(Berlin)",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-karlshorst-kapitulation",
+    "name": "Museum Berlin-Karlshorst (Kapitulationsort)",
+    "description": "Ehemalige Pionierschule der Wehrmacht in Karlshorst, in der in der Nacht zum 9. Mai 1945 die bedingungslose Gesamtkapitulation der Wehrmacht gegenüber den Alliierten ratifiziert wurde. Heute Gedenk- und Museumsstandort.",
+    "coordinates": [
+      13.53972222,
+      52.48611111
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Museum_Berlin-Karlshorst",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Field_Marshall_Keitel_signs_German_surrender_terms_in_Berlin_8_May_1945_-_Restoration.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Generalfeldmarschall Keitel unterzeichnet die bedingungslose Kapitulation in Berlin-Karlshorst, 8. Mai 1945 / Lt. Moore (US Army), Restauration: Adam Cuerden",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Field_Marshall_Keitel_signs_German_surrender_terms_in_Berlin_8_May_1945_-_Restoration.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-treptow-ehrenmal",
+    "name": "Sowjetisches Ehrenmal Treptower Park",
+    "description": "Nach dem Krieg errichtete zentrale sowjetische Gedenkstätte für die in der Schlacht um Berlin gefallenen Rotarmisten und zugleich Soldatenfriedhof für rund 7.000 Gefallene. Eingeweiht 1949, gilt als bedeutendstes Berliner Erinnerungsmonument an die Schlacht.",
+    "coordinates": [
+      13.46833333,
+      52.4875
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Sowjetisches_Ehrenmal_(Treptower_Park)",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Berlin_-_Sowjetisches_Ehrenmal_im_Treptower_Park.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "credit": "Sowjetisches Ehrenmal im Treptower Park / Marek Śliwecki",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berlin_-_Sowjetisches_Ehrenmal_im_Treptower_Park.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-seelower-hoehen",
+    "name": "Seelower Höhen",
+    "description": "Höhenzug östlich von Berlin am Westrand des Oderbruchs und Schauplatz der Schlacht vom 16.–19. April 1945. Die letzte deutsche Verteidigungsstellung vor der Reichshauptstadt wurde von der 1. Belorussischen Front unter Marschall Schukow nach blutigen Verlusten durchbrochen.",
+    "coordinates": [
+      14.39586,
+      52.53474
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Schlacht_um_die_Seelower_Höhen",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-oderbruch",
+    "name": "Oderbruch",
+    "description": "Tiefebene östlich der Seelower Höhen, in der die 1. Belorussische Front ab dem 16. April 1945 ihre Brückenköpfe über die Oder ausbaute und den Durchbruch nach Westen erzwang. Ausgangsraum der gesamten Berliner Operation.",
+    "coordinates": [
+      14.25,
+      52.7
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Oderbruch",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Bundesarchiv_Bild_183-N0816-313%2C_Podelzig_-_Oderbruch.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-N0816-313 / Otto Donath, 1945 – Ruinen des im Oderbruch zerstörten Dorfes Podelzig",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-N0816-313,_Podelzig_-_Oderbruch.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-muencheberg",
+    "name": "Müncheberg",
+    "description": "Kleinstadt zwischen Seelower Höhen und Berlin, die nach dem Durchbruch am 19. April 1945 ein Schwerpunkt des sowjetischen Vorstoßes auf die Reichshauptstadt war. Hier wurde die deutsche zweite Verteidigungslinie aufgerieben.",
+    "coordinates": [
+      14.13972222,
+      52.50361111
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Müncheberg",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "berlin",
+    "id": "berlin-halbe-kessel",
+    "name": "Kessel von Halbe",
+    "description": "Waldgebiet südöstlich von Berlin, in dem die deutsche 9. Armee unter General Busse zwischen dem 24. April und 1. Mai 1945 eingeschlossen und zerschlagen wurde. Verzweifelte Ausbruchsversuche nach Westen kosteten Zehntausende Soldaten und Zivilisten das Leben.",
+    "coordinates": [
+      13.70083333,
+      52.10666667
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bundesarchiv_Bild_146-1971-033-33%2C_Lagebesprechung_im_Hauptquartier_der_Heeresgruppe_Weichsel.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1971-033-33, März 1945 – Hitler bei der Lagebesprechung mit General Busse (9. Armee) im HQ der Heeresgruppe Weichsel",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1971-033-33,_Lagebesprechung_im_Hauptquartier_der_Heeresgruppe_Weichsel.jpg"
+    },
+    "coordinatesSource": "wikipedia"
+  }
+]

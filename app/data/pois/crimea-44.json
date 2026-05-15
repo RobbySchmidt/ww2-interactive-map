@@ -1,0 +1,324 @@
+[
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-perekop",
+    "name": "Landenge von Perekop (Türkenwall)",
+    "description": "Schmale, nur wenige Kilometer breite Landbrücke zwischen Festland und Krim — Schlüsselposition der deutschen Nordverteidigung mit dem historischen Türkenwall als Hauptstellung. Am 8. April 1944 von der 2. Gardearmee (4. Ukrainische Front) angegriffen und am 9. April durchbrochen.",
+    "coordinates": [
+      33.7,
+      46
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Landenge_von_Perekop",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-sywasch",
+    "name": "Sywasch (Faules Meer)",
+    "description": "Flaches, salziges Lagunensystem zwischen Krim und Festland — etwa 3 km breit und morastig. Die 51. Armee hielt seit November 1943 einen Brückenkopf am Südufer und stieß am 8. April 1944 über einen Unterwasserdamm zur Ischun-Stellung vor.",
+    "coordinates": [
+      34.4,
+      45.85
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Sivash.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "V. Ivanov, Dezember 1943",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sivash.jpg"
+    },
+    "wikipediaSlug": "Sywasch",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-armjansk",
+    "name": "Armjansk",
+    "description": "Kleinstadt unmittelbar südlich der Perekop-Landenge, Knotenpunkt der Ischun-Stellung mit ihren Seenengen. Nach Durchbruch des Türkenwalls am 10.–11. April 1944 von der 2. Gardearmee genommen — Tor zur freien Krim-Steppe.",
+    "coordinates": [
+      33.69083333,
+      46.11055556
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Armjansk",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-dschankoi",
+    "name": "Dschankoi",
+    "description": "Wichtigster Eisenbahnknotenpunkt im Norden der Krim, Verbindung Perekop–Simferopol–Kertsch. Am 11. April 1944 vom sowjetischen 19. Panzerkorps eingenommen, was den deutschen Rückzug nach Süden beschleunigte.",
+    "coordinates": [
+      34.38861111,
+      45.70777778
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Dschankoj",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-kertsch-brueckenkopf",
+    "name": "Brückenkopf Kertsch (Eltigen / Iwan-Bagerowo)",
+    "description": "Sowjetischer Brückenkopf auf der Halbinsel Kertsch, seit November 1943 von der Separaten Küstenarmee gehalten. Am 11. April 1944 brach die Armee aus dem Brückenkopf bei Iwan-Bagerowo aus und nahm die Stadt Kertsch.",
+    "coordinates": [
+      36.4,
+      45.3
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/%D0%97%D0%B0%D0%B2%D0%BE%D0%B4_%D0%92%D0%BE%D0%B9%D0%BA%D0%BE%D0%B2%D0%B0_%D0%B2_%D0%9A%D0%B5%D1%80%D1%87%D0%B8_%D1%81%D0%BD%D0%BE%D0%B2%D0%B0_%D0%BD%D0%B0%D1%88.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Jewgeni Chaldej / Fotochronik TASS, 10. April 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B0%D0%B2%D0%BE%D0%B4_%D0%92%D0%BE%D0%B9%D0%BA%D0%BE%D0%B2%D0%B0_%D0%B2_%D0%9A%D0%B5%D1%80%D1%87%D0%B8_%D1%81%D0%BD%D0%BE%D0%B2%D0%B0_%D0%BD%D0%B0%D1%88.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-kertsch",
+    "name": "Kertsch",
+    "description": "Hafenstadt an der gleichnamigen Meerenge, östliches Tor zur Krim. Am 11. April 1944 vom 16. Schützenkorps der Küstenarmee befreit; mehrfach zwischen 1941 und 1944 Schauplatz schwerer Kämpfe.",
+    "coordinates": [
+      36.48,
+      45.36
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/%D0%91%D0%BE%D0%B9%D1%86%D1%8B_2-%D0%B9_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B5%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%A2%D0%B0%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%B4%D0%B8%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8_%D1%81%D1%80%D1%8B%D0%B2%D0%B0%D1%8E%D1%82_%D1%84%D0%B0%D1%88%D0%B8%D1%81%D1%82%D1%81%D0%BA%D1%83%D1%8E_%D0%B2%D1%8B%D0%B2%D0%B5%D1%81%D0%BA%D1%83_%D1%81_%D0%BA%D0%BB%D1%83%D0%B1%D0%B0_%D0%B8%D0%BC._%D0%AD%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%B0_%D0%B2_%D0%9A%D0%B5%D1%80%D1%87%D0%B8.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Jewgeni Chaldej / Fotochronik TASS, 10. April 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BE%D0%B9%D1%86%D1%8B_2-%D0%B9_%D0%B3%D0%B2%D0%B0%D1%80%D0%B4%D0%B5%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%A2%D0%B0%D0%BC%D0%B0%D0%BD%D1%81%D0%BA%D0%BE%D0%B9_%D0%B4%D0%B8%D0%B2%D0%B8%D0%B7%D0%B8%D0%B8_%D1%81%D1%80%D1%8B%D0%B2%D0%B0%D1%8E%D1%82_%D1%84%D0%B0%D1%88%D0%B8%D1%81%D1%82%D1%81%D0%BA%D1%83%D1%8E_%D0%B2%D1%8B%D0%B2%D0%B5%D1%81%D0%BA%D1%83_%D1%81_%D0%BA%D0%BB%D1%83%D0%B1%D0%B0_%D0%B8%D0%BC._%D0%AD%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%B0_%D0%B2_%D0%9A%D0%B5%D1%80%D1%87%D0%B8.jpg"
+    },
+    "wikipediaSlug": "Kertsch",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-feodossija",
+    "name": "Feodossija",
+    "description": "Antike Hafenstadt an der Ostküste der Krim — Etappe der Küstenarmee auf dem Vormarsch von Kertsch nach Sewastopol. Am 13. April 1944 befreit, gleichzeitig mit Sudak und Simferopol.",
+    "coordinates": [
+      35.38333333,
+      45.03333333
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Teodozja._Ruiny_miasta_%282-1780%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain Mark 1.0",
+      "credit": "Horster / Narodowe Archiwum Cyfrowe, Februar 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teodozja._Ruiny_miasta_(2-1780).jpg"
+    },
+    "wikipediaSlug": "Feodossija",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-sudak",
+    "name": "Sudak",
+    "description": "Küstenstadt zwischen Feodossija und Aluschta mit genuesischer Festung. Im April 1944 von der Küstenarmee auf dem Marsch entlang der Südküste der Krim befreit.",
+    "coordinates": [
+      34.9725,
+      44.85138889
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Sudak",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-simferopol",
+    "name": "Simferopol",
+    "description": "Hauptstadt der Krim und Verwaltungszentrum — am 13. April 1944 vom 19. Panzerkorps und Teilen der 51. Armee genommen. Knotenpunkt der Straßen nach Sewastopol, Jalta und Feodossija.",
+    "coordinates": [
+      34.1,
+      44.94972222
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/%D0%A2%D0%BE%D1%80%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B1%D0%BE%D0%B9%D1%86%D0%BE%D0%B2_%D0%BE%D1%82%D1%80%D1%8F%D0%B4%D0%B0_%C2%AB%D0%A1%D0%BC%D0%B5%D1%80%D1%82%D1%8C_%D1%84%D0%B0%D1%88%D0%B8%D1%81%D1%82%D0%B0%D0%BC%C2%BB_%D0%B2_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC_%D0%A1%D0%B8%D0%BC%D1%84%D0%B5%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B5.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Jewgeni Chaldej / Fotochronik TASS, 13. April 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%BE%D1%80%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B1%D0%BE%D0%B9%D1%86%D0%BE%D0%B2_%D0%BE%D1%82%D1%80%D1%8F%D0%B4%D0%B0_%C2%AB%D0%A1%D0%BC%D0%B5%D1%80%D1%82%D1%8C_%D1%84%D0%B0%D1%88%D0%B8%D1%81%D1%82%D0%B0%D0%BC%C2%BB_%D0%B2_%D0%BE%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC_%D0%A1%D0%B8%D0%BC%D1%84%D0%B5%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B5.jpg"
+    },
+    "wikipediaSlug": "Simferopol",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-jewpatorija",
+    "name": "Jewpatorija",
+    "description": "Hafenstadt an der Westküste der Krim, Zielrichtung der 2. Gardearmee nach dem Durchbruch bei Perekop. Am 13. April 1944 befreit und damit die Karkinit-Bucht für sowjetische Schifffahrt geöffnet.",
+    "coordinates": [
+      33.36,
+      45.2
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Zaj%C4%99cie_przez_wojska_niemieckie_miasta_Eupatoria_na_Krymie_%282-761%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain Mark 1.0",
+      "credit": "Enz / Narodowe Archiwum Cyfrowe, April 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zaj%C4%99cie_przez_wojska_niemieckie_miasta_Eupatoria_na_Krymie_(2-761).jpg"
+    },
+    "wikipediaSlug": "Jewpatorija",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-bachtschyssaraj",
+    "name": "Bachtschyssaraj",
+    "description": "Ehemalige Hauptstadt des Krim-Khanats im Bergvorland zwischen Simferopol und Sewastopol. Am 14. April 1944 befreit — letzter Knotenpunkt vor dem äußeren Verteidigungsring um Sewastopol.",
+    "coordinates": [
+      33.8525,
+      44.76055556
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/%D0%A4%D0%BE%D1%82%D0%BE_%22%D0%9A%D1%80%D1%8B%D0%BC%D1%81%D0%BA%D0%B8%D0%B5_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B7%D0%B0%D0%BD%D1%8B%22_%28183433_4%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia-1996)",
+      "credit": "Jewgeni Chaldej, April 1944 (Bachtschyssaraj)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A4%D0%BE%D1%82%D0%BE_%22%D0%9A%D1%80%D1%8B%D0%BC%D1%81%D0%BA%D0%B8%D0%B5_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B7%D0%B0%D0%BD%D1%8B%22_(183433_4).jpg"
+    },
+    "wikipediaSlug": "Bachtschyssaraj",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-jalta",
+    "name": "Jalta",
+    "description": "Südküstenstadt am Fuße des Jaila-Gebirges, von der Küstenarmee am 16. April 1944 befreit. Vorletzte Etappe vor dem Vorstoß nach Sewastopol über die Bergstraßen der Südküste.",
+    "coordinates": [
+      34.17305556,
+      44.4975
+    ],
+    "category": "transport",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Bundesarchiv_N_1603_Bild-084%2C_Jailagebirge%2C_Jalta%2C_Promenade%2C_Hafen.jpg",
+      "source": "Wikimedia Commons / Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, N 1603 Bild-084 / Horst Grund, 1942",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_N_1603_Bild-084,_Jailagebirge,_Jalta,_Promenade,_Hafen.jpg"
+    },
+    "wikipediaSlug": "Jalta",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-jaila-gebirge",
+    "name": "Jaila-Gebirge (Krimgebirge)",
+    "description": "Bergmassiv entlang der Südküste mit Höhen bis 1.500 m, das die Südküste von der Krim-Steppe trennt. Rückzugsraum und Operationsgebiet sowjetischer Partisanen, die im April 1944 Nachschublinien der 17. Armee störten.",
+    "coordinates": [
+      34.24181,
+      44.609718
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/%D0%97%D0%B0%D1%85%D0%B2%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D0%B5_%D0%BE%D1%80%D1%83%D0%B4%D0%B8%D1%8F_%D0%B8_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B_%D0%BD%D0%B0_%D1%88%D0%BE%D1%81%D1%81%D0%B5_%D0%90%D0%BB%D1%83%D1%88%D1%82%D0%B0_-_%D0%93%D1%83%D1%80%D0%B7%D1%83%D1%84_Komsomolskaya-Pravda-77-1944-04-20-all_%28page_2_crop%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Pawel Troschkin / Komsomolskaja Prawda, 20. April 1944 (Erbeutetes dt. Gerät auf der Südküstenstraße Aluschta–Gursuf)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B0%D1%85%D0%B2%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D0%B5_%D0%BE%D1%80%D1%83%D0%B4%D0%B8%D1%8F_%D0%B8_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D1%8B_%D0%BD%D0%B0_%D1%88%D0%BE%D1%81%D1%81%D0%B5_%D0%90%D0%BB%D1%83%D1%88%D1%82%D0%B0_-_%D0%93%D1%83%D1%80%D0%B7%D1%83%D1%84_Komsomolskaya-Pravda-77-1944-04-20-all_(page_2_crop).jpg"
+    },
+    "wikipediaSlug": "Krimgebirge",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-mekenzia",
+    "name": "Mekenzia-Berge",
+    "description": "Bewaldeter Höhenrücken nordöstlich Sewastopols, Teil des äußeren deutschen Verteidigungsrings. Vom 18. April bis 7. Mai 1944 hartnäckig verteidigt, dann von der 2. Gardearmee überrannt.",
+    "coordinates": [
+      33.65,
+      44.67
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/%D0%94%D0%B0%D0%B5%D1%88%D1%8C_%D0%9A%D1%80%D1%8B%D0%BC.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Jewgeni Chaldej, 1944 (T-34 bei der Befreiung Sewastopols)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%B0%D0%B5%D1%88%D1%8C_%D0%9A%D1%80%D1%8B%D0%BC.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-sapun",
+    "name": "Sapun-Höhen",
+    "description": "Steil abfallender Höhenzug südöstlich Sewastopols und Schlüsselstellung des inneren deutschen Verteidigungsrings. Im Generalangriff am 7. Mai 1944 nach neunstündigem Sturm durch die Primorje-Armee erobert — entscheidende Wendung der Schlacht.",
+    "coordinates": [
+      33.583403,
+      44.552879
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Soldati_sul_Sapun_Gora_1944.png",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-old-70 / Anonymous-EU)",
+      "credit": "Unbekannter sowjetischer Fotograf, Mai 1944 (Sturm der Sapun-Höhen)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soldati_sul_Sapun_Gora_1944.png"
+    },
+    "wikipediaSlug": "Sapun-Berg",
+    "coordinatesSource": "wikidata"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-sewastopol",
+    "name": "Sewastopol",
+    "description": "Schwarzmeer-Hauptstützpunkt und letztes deutsches Bollwerk auf der Krim, von Hitler zur 'Festung' erklärt. Sowjetischer Hauptangriff ab 5. Mai 1944; am 9. Mai befreit — exakt ein Jahr vor Kriegsende in Europa.",
+    "coordinates": [
+      33.52165,
+      44.59495
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/%D0%91%D0%BE%D0%B9%D1%86%D1%8B_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B9_%D0%90%D1%80%D0%BC%D0%B8%D0%B8_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D1%83%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D1%85_%D0%B1%D0%BE%D0%B5%D0%B2_%D0%B2_%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%B5%2C_1944_%D0%B3.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Alexander Brodski / Fotochronik TASS, 9. Mai 1944 (Straßenkämpfe in Sewastopol)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BE%D0%B9%D1%86%D1%8B_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B9_%D0%90%D1%80%D0%BC%D0%B8%D0%B8_%D0%B2%D0%BE_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F_%D1%83%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D1%85_%D0%B1%D0%BE%D0%B5%D0%B2_%D0%B2_%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%B5,_1944_%D0%B3.jpg"
+    },
+    "wikipediaSlug": "Sewastopol",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-chersones",
+    "name": "Kap Chersones",
+    "description": "Südwestliche Landspitze der Krim und letzter Rückzugsraum der deutschen 17. Armee. Vom 9. bis 12. Mai 1944 dramatischer Endkampf um die Evakuierung über See; tausende Soldaten gerieten in Gefangenschaft.",
+    "coordinates": [
+      33.3744,
+      44.5847
+    ],
+    "category": "terrain",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/%D0%98%D1%81%D1%82%D1%80%D0%B5%D0%B1%D0%B8%D1%82%D0%B5%D0%BB%D0%B8_%D0%AF%D0%BA-9%D0%94_%D0%BD%D0%B0%D0%B4_%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%B5%D0%BC.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain (PD-Russia)",
+      "credit": "Jewgeni Chaldej / Fotochronik TASS, 10. Mai 1944 (Jak-9D-Jäger über Sewastopol-Bucht)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%98%D1%81%D1%82%D1%80%D0%B5%D0%B1%D0%B8%D1%82%D0%B5%D0%BB%D0%B8_%D0%AF%D0%BA-9%D0%94_%D0%BD%D0%B0%D0%B4_%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BB%D0%B5%D0%BC.jpg"
+    },
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "crimea-44",
+    "id": "crimea-44-karkinit",
+    "name": "Karkinit-Bucht",
+    "description": "Große flache Meeresbucht im Nordwesten der Krim, zwischen Perekop-Landenge und Tarchankut-Halbinsel. Bildete die seeseitige Westflanke der deutschen Stellung und wurde nach der Befreiung Jewpatorijas am 13. April 1944 für sowjetische Marineoperationen frei.",
+    "coordinates": [
+      33.2,
+      45.7
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Karkinitbucht",
+    "coordinatesSource": "original"
+  }
+]

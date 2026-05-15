@@ -1,0 +1,333 @@
+[
+  {
+    "battleId": "budapest",
+    "id": "budapest-burgpalast",
+    "name": "Budaer Burgpalast",
+    "description": "Königliche Residenz hoch über der Donau und Kernstück der deutsch-ungarischen Festung Burgberg. Wurde in den letzten Wochen der Belagerung zum letzten Rückzugsort von SS-Obergruppenführer Pfeffer-Wildenbruch und seinem Stab und ging in heftigen Häuserkämpfen Anfang Februar 1945 weitgehend in Trümmer.",
+    "coordinates": [
+      19.0398008,
+      47.4959913
+    ],
+    "category": "building",
+    "wikipediaSlug": "Burgpalast_(Budapest)",
+    "coordinatesSource": "nominatim",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Bundesarchiv_Bild_101I-680-8282A-11A%2C_Budapest%2C_SS-M%C3%A4nner_auf_der_Burg.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-680-8282A-11A / Faupel / CC BY-SA 3.0 DE — SS-Männer auf dem Burgberg, Budapest, Oktober 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-680-8282A-11A,_Budapest,_SS-M%C3%A4nner_auf_der_Burg.jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-matthiaskirche",
+    "name": "Matthiaskirche",
+    "description": "Gotische Krönungskirche auf dem Burgberg, direkt im engsten Verteidigungsring der deutschen und ungarischen Truppen. Wurde durch Artillerie und Häuserkampf schwer beschädigt; der Wiederaufbau zog sich bis 1960 hin.",
+    "coordinates": [
+      19.03416667,
+      47.50194444
+    ],
+    "category": "building",
+    "wikipediaSlug": "Matthiaskirche_(Budapest)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Bundesarchiv_Bild_101I-680-8282A-25A%2C_Ungarn%2C_Budapest%2C_auf_der_Burg.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-680-8282A-25A / Faupel / CC BY-SA 3.0 DE — SS-Männer und Heeres-Unteroffizier auf dem Burgberg, Budapest, Oktober 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-680-8282A-25A,_Ungarn,_Budapest,_auf_der_Burg.jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-fischerbastei",
+    "name": "Fischerbastei",
+    "description": "Neuromanische Aussichtsterrasse oberhalb der Donau, an der Nordflanke des Burgbergs. Bot der Verteidigung freies Schussfeld auf die Pester Uferseite und wurde in den Endkämpfen Januar/Februar 1945 stark zerschossen.",
+    "coordinates": [
+      19.03472222,
+      47.50222222
+    ],
+    "category": "building",
+    "wikipediaSlug": "Fischerbastei",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-sandor-palais",
+    "name": "Sándor-Palais",
+    "description": "Klassizistischer Palast neben dem Burgpalast, vor dem Krieg Amtssitz des ungarischen Ministerpräsidenten. Wurde durch Luftangriffe und die Häuserkämpfe um den Burgberg im Winter 1944/45 in Ruinen gelegt.",
+    "coordinates": [
+      19.0382,
+      47.4978
+    ],
+    "category": "building",
+    "wikipediaSlug": "Sándor-Palais",
+    "coordinatesSource": "wikidata",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Bundesarchiv_Bild_101I-680-8283A-19A%2C_Budapest%2C_angetretene_Pfeilkreuzler.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 101I-680-8283A-19A / Faupel / CC BY-SA 3.0 DE — Angetretene Pfeilkreuzler vor dem Sándor-Palais, Budapest, Oktober 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-680-8283A-19A,_Budapest,_angetretene_Pfeilkreuzler.jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-felsenkrankenhaus",
+    "name": "Felsenkrankenhaus",
+    "description": "In den Sandstein unter dem Burgberg getriebener Bunker- und Lazarettkomplex, ausgelegt für 60–70 Patienten. Während der Belagerung lagen hier zeitweise rund 600 Verwundete – die zentrale geschützte Sanitätseinrichtung der eingekesselten Garnison.",
+    "coordinates": [
+      19.0314184,
+      47.5007866
+    ],
+    "category": "building",
+    "wikipediaSlug": "Felsenkrankenhaus",
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-zitadelle",
+    "name": "Zitadelle Gellért-Berg",
+    "description": "Festung aus dem 19. Jahrhundert auf dem 235 m hohen Gellért-Berg, von der Wehrmacht zur Flak- und Beobachtungsstellung ausgebaut. Beherrschte die Pester Uferzone und alle Donaubrücken; fiel am 12. Februar 1945 nach hartem Kampf an die Rote Armee.",
+    "coordinates": [
+      19.04638889,
+      47.48694444
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Zitadelle_(Budapest)",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-kettenbruecke",
+    "name": "Széchenyi-Kettenbrücke",
+    "description": "Älteste und symbolträchtigste Donaubrücke Budapests, eröffnet 1849. Am 18. Januar 1945 von abziehenden deutschen Pionieren gesprengt, ihre Pfeiler ragten jahrelang als Mahnmal aus dem Eis. Wiederaufgebaut zum 100. Jubiläum 1949.",
+    "coordinates": [
+      19.04361111,
+      47.49888889
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Széchenyi-Kettenbrücke",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Budapest%2C_a_L%C3%A1nch%C3%ADd_%C3%A9s_a_romos_Kir%C3%A1lyi_Palota._Fortepan_16247.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "FOTO:FORTEPAN / Kurutz Márton — Die gesprengte Kettenbrücke und der ausgebrannte Königliche Palast, Budapest 1945",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Budapest,_a_L%C3%A1nch%C3%ADd_%C3%A9s_a_romos_Kir%C3%A1lyi_Palota._Fortepan_16247.jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-margaretenbruecke",
+    "name": "Margaretenbrücke",
+    "description": "Donaubrücke im Norden der Stadt, über die Margaréteninsel geführt. Detonierte am 4. November 1944 vorzeitig während des Berufsverkehrs, als deutsche Sprengladungen unter ungeklärten Umständen explodierten – hunderte Zivilisten und Soldaten starben. Die Reste wurden im Januar 1945 endgültig zerstört.",
+    "coordinates": [
+      19.04361111,
+      47.51472222
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Margaretenbrücke_(Budapest)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Margit_h%C3%ADd_1944._november_4.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "Unbekannter Fotograf — Die Margaretenbrücke nach der vorzeitigen Sprengung der Pester Seite, 4. November 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Margit_h%C3%ADd_1944._november_4.jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-elisabethbruecke",
+    "name": "Elisabethbrücke",
+    "description": "Damals weltrekordhaltige Kettenbrücke (290 m Spannweite), zentrale Verbindung zwischen Pest und dem Gellért-Berg. Am 18. Januar 1945 zusammen mit der Kettenbrücke von deutschen Truppen gesprengt – die Pylonen waren so stabil, dass kein Wiederaufbau möglich war.",
+    "coordinates": [
+      19.04888889,
+      47.49083333
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Elisabethbrücke_(Budapest)",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-parlament",
+    "name": "Ungarisches Parlamentsgebäude",
+    "description": "Größtes Gebäude Ungarns am Pester Donauufer, neogotischer Prachtbau mit 268 m Länge. Schauplatz politischer Umbrüche im Oktober 1944 (Putsch der Pfeilkreuzler), später hart umkämpft beim sowjetischen Vorstoß durch Pest im Januar 1945.",
+    "coordinates": [
+      19.04555556,
+      47.50694444
+    ],
+    "category": "building",
+    "wikipediaSlug": "Ungarisches_Parlamentsgebäude",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/%D0%A4%D0%BE%D1%82%D0%BE_%22%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%84%D0%BB%D0%B0%D0%B3_%D0%BD%D0%B0_%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B8_%D0%9F%D0%B0%D1%80%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%22_%28183921_1%29.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Jewgeni Chaldej (TASS) — Sowjetische Fahne auf dem Parlamentsgebäude, Budapest, Februar 1945",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A4%D0%BE%D1%82%D0%BE_%22%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D1%84%D0%BB%D0%B0%D0%B3_%D0%BD%D0%B0_%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B8_%D0%9F%D0%B0%D1%80%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%22_(183921_1).jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-heldenplatz",
+    "name": "Heldenplatz",
+    "description": "Weiter Platz am östlichen Ende der Andrássy út mit dem Millenniumsdenkmal. Lag an der Hauptachse des sowjetischen Vorstoßes von Osten durch Pest und diente kurzzeitig als sowjetischer Aufmarschraum vor dem Sprung an die Donau.",
+    "coordinates": [
+      19.07805556,
+      47.51527778
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Heldenplatz_(Budapest)",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-keleti",
+    "name": "Ostbahnhof Keleti",
+    "description": "Wichtigster Kopfbahnhof von Pest, östliches Tor der Stadt. In den letzten Tagen vor der sowjetischen Einschließung Drehkreuz der deutsch-ungarischen Truppenverschiebungen; fiel beim Vorstoß der 2. Ukrainischen Front Anfang Januar 1945.",
+    "coordinates": [
+      19.083889,
+      47.500278
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Bahnhof_Budapest-Keleti",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Soviet_soldiers_in_Budapest_1945.jpg",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "credit": "FOTO:FORTEPAN — Sowjetische Soldaten an der Kreuzung Üllői út / József körút in Pest, 1945",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soviet_soldiers_in_Budapest_1945.jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-nyugati",
+    "name": "Westbahnhof Nyugati",
+    "description": "Von Eiffel & Comp. erbauter Stahl-Glas-Bahnhof am Ring von Pest. Lag in einem der zuletzt gehaltenen Pester Verteidigungsabschnitte und wurde Mitte Januar 1945 im sowjetischen Vorstoß zur Donau eingenommen.",
+    "coordinates": [
+      19.0575,
+      47.510833
+    ],
+    "category": "transport",
+    "wikipediaSlug": "Bahnhof_Budapest-Nyugati",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Bundesarchiv_Bild_146-1986-064-15%2C_Ungarn%2C_Stra%C3%9Fenk%C3%A4mpfe%2C_ungarische_Pak.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1986-064-15 / Keimling / CC BY-SA 3.0 DE — Ungarische Pak im Pester Straßenkampf, November 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1986-064-15,_Ungarn,_Stra%C3%9Fenk%C3%A4mpfe,_ungarische_Pak.jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-csepel-werke",
+    "name": "Csepel-Werke (Manfréd Weiss)",
+    "description": "Größter Rüstungsbetrieb Ungarns auf der Nordspitze der Donauinsel Csepel, im Krieg unter deutscher SS-Kontrolle. Produzierte Munition, Flugzeugteile und Lkw und war ab März 1944 Ziel zahlreicher alliierter Bombenangriffe; im Januar 1945 von der Roten Armee genommen.",
+    "coordinates": [
+      19.07861111,
+      47.44972222
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Csepel-Werke",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D0%B0%D0%BF%D0%B5%D1%80%D1%8B_%D1%81_%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0%D0%BC%D0%B8_%D0%BE%D0%B1%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%82_%D1%82%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8E_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D0%B0_%C2%AB%D0%92%D0%B0%D0%B9%D1%81_%D0%9C%D0%B0%D0%BD%D1%84%D1%80%D0%B5%D0%B4%C2%BB_%D0%B2_%D0%91%D1%83%D0%B4%D0%B0%D0%BF%D0%B5%D1%88%D1%82%D0%B5.jpg",
+      "source": "RIA Novosti",
+      "license": "Public Domain",
+      "credit": "Leonid Leonidow (TASS) — Sowjetische Pioniere mit Minensuchhunden auf dem Gelände der Manfréd-Weiss-Werke in Budapest, Februar 1945",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D0%B0%D0%BF%D0%B5%D1%80%D1%8B_%D1%81_%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0%D0%BC%D0%B8_%D0%BE%D0%B1%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%82_%D1%82%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8E_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D0%B0_%C2%AB%D0%92%D0%B0%D0%B9%D1%81_%D0%9C%D0%B0%D0%BD%D1%84%D1%80%D0%B5%D0%B4%C2%BB_%D0%B2_%D0%91%D1%83%D0%B4%D0%B0%D0%BF%D0%B5%D1%88%D1%82%D0%B5.jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-csepel-insel",
+    "name": "Csepel-Insel (Nordteil)",
+    "description": "48 km lange Donauinsel südlich des Stadtzentrums, deren nördlicher Industrieteil zu Budapest gehört. Mit Werften, Hafen und der Manfréd-Weiss-Industrie strategischer Brückenkopf; der Sowjetkampf um die Insel zog sich bis in den Januar 1945 hin.",
+    "coordinates": [
+      19.0833,
+      47.43
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Csepel_(Insel)",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-margitsziget",
+    "name": "Margaréteninsel (Margitsziget)",
+    "description": "2,5 km lange Donauinsel zwischen Buda und Pest, von der Margaretenbrücke aus erschlossen. Diente im Winter 1944/45 als Übergangs- und Stützpunkt im Donaubogen und geriet beim Brückeneinsturz vom November 1944 und dem späteren Häuserkampf unter heftigen Beschuss.",
+    "coordinates": [
+      19.04722222,
+      47.52638889
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Margareteninsel",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-pesterzsebet",
+    "name": "Pesterzsébet",
+    "description": "Südliches Pester Vorstadtgebiet (heute XX. Bezirk), Teil des äußeren Verteidigungsrings der Stadt. Lag an der Stoßrichtung des sowjetischen Angriffs aus Richtung Soroksár und wurde Ende Dezember 1944 / Anfang Januar 1945 überrollt.",
+    "coordinates": [
+      19.11666667,
+      47.43333333
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Pesterzsébet",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Bundesarchiv_Bild_146-1982-090-11%2C_Budapest%2C_Pak_am_Stadtrand_in_Stellung.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1982-090-11 / Faupel / CC BY-SA 3.0 DE — Deutsche Pak in Stellung am Pester Stadtrand, Dezember 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1982-090-11,_Budapest,_Pak_am_Stadtrand_in_Stellung.jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-soroksar",
+    "name": "Soroksár",
+    "description": "Vorort südlich von Pest, gegenüber der Csepel-Insel an der Kleinen Donau. Punkt im äußeren Verteidigungsgürtel („Attila-Linie\"), über den die Truppen der 46. sowjetischen Armee Ende Dezember 1944 in den Stadtraum vorstießen.",
+    "coordinates": [
+      19.1311,
+      47.3964
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Soroksár",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Bundesarchiv_Bild_146-1982-090-17%2C_Ungarn%2C_Kampf_um_Budapest%2C_Panzergraben.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 146-1982-090-17 / F. Fritsch / CC BY-SA 3.0 DE — Stellungen am Panzergraben um Budapest (Attila-Linie), November 1944",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1982-090-17,_Ungarn,_Kampf_um_Budapest,_Panzergraben.jpg"
+    }
+  },
+  {
+    "battleId": "budapest",
+    "id": "budapest-bicske",
+    "name": "Bicske (Unternehmen Konrad I)",
+    "description": "Kleinstadt rund 35 km westlich von Budapest, Hauptziel des deutschen Entsatzangriffs Konrad I am 1. Januar 1945. Das IV. SS-Panzerkorps stieß von Tata her bis kurz vor Bicske vor, blieb aber im sowjetischen Riegel stecken – der Burgkessel blieb abgeschnitten.",
+    "coordinates": [
+      18.63638889,
+      47.49055556
+    ],
+    "category": "terrain",
+    "wikipediaSlug": "Bicske",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Totenkopf_5_gennaio_1945.jpg",
+      "source": "Wikimedia Commons",
+      "license": "Public Domain",
+      "credit": "Unbekannter Fotograf — 3. SS-Panzer-Division „Totenkopf\" während Unternehmen Konrad, 5. Januar 1945",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Totenkopf_5_gennaio_1945.jpg"
+    }
+  }
+]
