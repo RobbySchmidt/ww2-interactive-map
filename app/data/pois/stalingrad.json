@@ -12,11 +12,11 @@
     "wikipediaSlug": "Mamajew-Hügel",
     "coordinatesSource": "wikipedia",
     "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Bundesarchiv_Bild_183-B22413%2C_Russland%2C_Kampf_um_Stalingrad%2C_Zerst%C3%B6rungen.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Bundesarchiv_Bild_183-B26922%2C_Russland%2C_Kampf_um_Stalingrad%2C_Infanterie.jpg",
       "source": "Bundesarchiv",
       "license": "CC BY-SA 3.0 DE",
-      "credit": "Bundesarchiv, Bild 183-B22413 / Pfreundtner / CC-BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22413,_Russland,_Kampf_um_Stalingrad,_Zerst%C3%B6rungen.jpg"
+      "credit": "Bundesarchiv, Bild 183-B26922 / Herber / CC-BY-SA 3.0 — „Infanterie und Sturmgeschütze in Stellung zum Angriff auf Höhe 102, September 1942\"",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B26922,_Russland,_Kampf_um_Stalingrad,_Infanterie.jpg"
     }
   },
   {
@@ -30,14 +30,7 @@
     ],
     "category": "building",
     "wikipediaSlug": "Pawlow-Haus",
-    "coordinatesSource": "wikipedia",
-    "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/RIAN_archive_137429_Stalingrad_soldiers_during_short_lull.jpg",
-      "source": "RIA Novosti",
-      "license": "CC BY-SA 3.0",
-      "credit": "RIA Novosti archive, image #137429 / Georgy Zelma / CC-BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_137429_Stalingrad_soldiers_during_short_lull.jpg"
-    }
+    "coordinatesSource": "wikipedia"
   },
   {
     "battleId": "stalingrad",
@@ -50,7 +43,7 @@
     ],
     "category": "symbolic",
     "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/%D0%A0%D1%83%D0%B8%D0%BD%D1%8B_%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8B_%D0%93%D0%B5%D1%80%D0%B3%D0%B0%D1%80%D0%B4%D1%82%D0%B0%2C_%D0%92%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4.jpg/960px-%D0%A0%D1%83%D0%B8%D0%BD%D1%8B_%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8B_%D0%93%D0%B5%D1%80%D0%B3%D0%B0%D1%80%D0%B4%D1%82%D0%B0%2C_%D0%92%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/%D0%A0%D1%83%D0%B8%D0%BD%D1%8B_%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8B_%D0%93%D0%B5%D1%80%D0%B3%D0%B0%D1%80%D0%B4%D1%82%D0%B0%2C_%D0%92%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4.jpg",
       "source": "Wikimedia Commons",
       "license": "CC BY-SA 4.0",
       "credit": "Яна Краснопевцева",
@@ -79,6 +72,30 @@
   },
   {
     "battleId": "stalingrad",
+    "id": "stalingrad-platz-der-gefallenen-kaempfer",
+    "name": "Platz der Gefallenen Kämpfer",
+    "description": "Zentraler Stadtplatz unmittelbar vor dem Univermag-Kaufhaus, ab Herbst 1942 Brennpunkt des deutschen Vorstoßes ins Stadtzentrum. Am 31. Januar 1943 nach Paulus' Kapitulation Schauplatz der Übergabeszene und der ersten sowjetischen Siegesfeier.",
+    "coordinates": [
+      44.517,
+      48.708
+    ],
+    "category": "symbolic",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-nkwd-gebaeude",
+    "name": "NKWD-Gebäude",
+    "description": "Massiver Verwaltungsbau des sowjetischen Innenministeriums im Sektor 9.-Januar-Platz/Univermag, Ende September 1942 von Verbänden der 13. Garde-Schützen-Division als Hochburg im Häuserkampf gehalten. Galt zusammen mit Pawlow-Haus und Haus der Eisenbahner als Anker der sowjetischen Verteidigung im Stadtzentrum.",
+    "coordinates": [
+      44.530,
+      48.715
+    ],
+    "category": "building",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "stalingrad",
     "id": "stalingrad-bahnhof-1",
     "name": "Hauptbahnhof Stalingrad-1",
     "description": "Zentraler Eisenbahnknoten der Stadt. Im September 1942 wechselte er innerhalb von Tagen mehrfach den Besitzer und war einer der härtesten Brennpunkte des Stadtkampfes.",
@@ -88,10 +105,10 @@
     ],
     "category": "transport",
     "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Bundesarchiv_Bild_183-B22194%2C_Russland%2C_Kampf_um_Stalingrad%2C_Bahnanlage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "source": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0 de",
-      "credit": "Heine",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Bundesarchiv_Bild_183-B22194%2C_Russland%2C_Kampf_um_Stalingrad%2C_Bahnanlage.jpg",
+      "source": "Bundesarchiv",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B22194 / Heine / CC-BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22194,_Russland,_Kampf_um_Stalingrad,_Bahnanlage.jpg"
     },
     "coordinatesSource": "nominatim"
@@ -125,14 +142,31 @@
       48.7766744
     ],
     "category": "industry",
-    "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Bundesarchiv_Bild_146-1987-103-28A%2C_Luftbild_Stalingrad.jpg",
-      "source": "Bundesarchiv",
-      "license": "CC BY-SA 3.0 DE",
-      "credit": "Bundesarchiv, Bild 146-1987-103-28A / CC-BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1987-103-28A,_Luftbild_Stalingrad.jpg"
-    },
     "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-ljudnikows-insel",
+    "name": "Ljudnikows Insel",
+    "description": "Schmaler sowjetischer Brückenkopf von ca. 700 m × 300 m direkt am Wolga-Hochufer hinter den Werkssiedlungen der Barrikady-Geschützfabrik, ab 11. November 1942 von der 138. Schützen-Division unter Oberst Iwan Ljudnikow gehalten. Vierzig Tage lang von drei Seiten eingeschlossen und nur über die zufrierende Wolga versorgt – ab Mitte Dezember 1942 stabilisierte sich die Lage durch Nachschub über das Eis.",
+    "coordinates": [
+      44.587,
+      48.775
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-chemiefabrik-lazur",
+    "name": "Chemiefabrik Lazur (Tennisschläger)",
+    "description": "Industrieanlage im mittleren Werksgürtel zwischen Stahlwerk Roter Oktober und Geschützfabrik Barrikady, eingefasst von einer Eisenbahnschleife, deren markante Form den deutschen Spitznamen „Tennisschläger“ prägte. Schauplatz schwerer Kämpfe im Oktober und November 1942, als deutsche Verbände die sowjetischen Stellungen an der Wolga aufzurollen versuchten.",
+    "coordinates": [
+      44.572,
+      48.762
+    ],
+    "category": "industry",
+    "coordinatesSource": "original"
   },
   {
     "battleId": "stalingrad",
@@ -146,7 +180,7 @@
     "category": "industry",
     "customImage": {
       "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/RIAN_archive_2383_The_ruins_of_Stalingrad.jpg",
-      "source": "RIA Novosti",
+      "source": "RIA Novosti / Wikimedia Commons",
       "license": "CC BY-SA 3.0",
       "credit": "RIA Novosti archive, image #2383 / Georgy Zelma / CC-BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:RIAN_archive_2383_The_ruins_of_Stalingrad.jpg"
@@ -164,11 +198,11 @@
     ],
     "category": "terrain",
     "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Bundesarchiv_Bild_183-J20503%2C_Russland%2C_Kampf_um_Stalingrad%2C_Zerst%C3%B6rungen.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Bundesarchiv_Bild_183-B28114%2C_Russland%2C_Kampf_um_Stalingrad%2C_Vormarsch.jpg",
       "source": "Bundesarchiv",
       "license": "CC BY-SA 3.0 DE",
-      "credit": "Bundesarchiv, Bild 183-J20503 / Ollig / CC-BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J20503,_Russland,_Kampf_um_Stalingrad,_Zerst%C3%B6rungen.jpg"
+      "credit": "Bundesarchiv, Bild 183-B28114 / Herber / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B28114,_Russland,_Kampf_um_Stalingrad,_Vormarsch.jpg"
     },
     "coordinatesSource": "nominatim"
   },
@@ -182,13 +216,6 @@
       48.7039046
     ],
     "category": "transport",
-    "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_76-%D0%BC%D0%BC_%D0%BF%D0%BE%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BF%D1%83%D1%88%D0%BA%D0%B8_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D0%BF%D0%BE_%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BD%D0%B8%D0%BA%D1%83_%D0%BD%D0%B0_%D0%94%D0%BE%D0%BD%D1%83.jpg",
-      "source": "Wikimedia Commons",
-      "license": "Public Domain",
-      "credit": "Yevgeny Podshivalov / TASS, 1942 (PD-Russia)",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D1%81%D1%87%D0%B5%D1%82_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9_76-%D0%BC%D0%BC_%D0%BF%D0%BE%D0%BB%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BF%D1%83%D1%88%D0%BA%D0%B8_%D0%B2%D0%B5%D0%B4%D0%B5%D1%82_%D0%BE%D0%B3%D0%BE%D0%BD%D1%8C_%D0%BF%D0%BE_%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BD%D0%B8%D0%BA%D1%83_%D0%BD%D0%B0_%D0%94%D0%BE%D0%BD%D1%83.jpg"
-    },
     "coordinatesSource": "nominatim"
   },
   {
@@ -202,10 +229,10 @@
     ],
     "category": "terrain",
     "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Bundesarchiv_Bild_183-F0316-0204-005%2C_Russland%2C_Paulus_in_Kriegsgefangenschaft.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Bundesarchiv_Bild_183-F0316-0204-005%2C_Russland%2C_Paulus_in_Kriegsgefangenschaft.jpg",
       "source": "Wikimedia Commons",
       "license": "CC BY-SA 3.0 de",
-      "credit": "unknown / probably Georgi Lipskerow (english transcription Lipskerov), 1896-1977",
+      "credit": "Bundesarchiv / Georgi Lipskerow",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-F0316-0204-005,_Russland,_Paulus_in_Kriegsgefangenschaft.jpg"
     },
     "coordinatesSource": "nominatim"
@@ -221,14 +248,7 @@
     ],
     "category": "transport",
     "wikipediaSlug": "Pitomnik",
-    "coordinatesSource": "wikidata",
-    "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Bundesarchiv_Bild_183-B29906%2C_Russland%2C_Kampf_um_Stalingrad%2C_Grenadier.jpg",
-      "source": "Bundesarchiv",
-      "license": "CC BY-SA 3.0 DE",
-      "credit": "Bundesarchiv, Bild 183-B29906 / Herber / CC-BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B29906,_Russland,_Kampf_um_Stalingrad,_Grenadier.jpg"
-    }
+    "coordinatesSource": "wikidata"
   },
   {
     "battleId": "stalingrad",
@@ -241,13 +261,26 @@
     ],
     "category": "transport",
     "wikipediaSlug": "Gumrak",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "stalingrad",
+    "id": "stalingrad-getreidesilo",
+    "name": "Getreidesilo (Elevator)",
+    "description": "Hochaufragender Betonsilo südlich des Hauptbahnhofs, ab dem 17. September 1942 von Soldaten der 35. Garde-Schützen-Division und einem Zug Marineinfanterie gegen die deutsche 94. Infanterie-Division und Teile der 14. Panzer-Division verteidigt. Nach tagelangem Beschuss mit 88-mm-Flak und Haubitzen fiel die symbolträchtige Stellung am 21./22. September 1942.",
+    "coordinates": [
+      44.48307,
+      48.6882
+    ],
+    "category": "building",
+    "wikipediaSlug": "Getreidesilo_(Wolgograd)",
     "coordinatesSource": "wikipedia",
     "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bundesarchiv_Bild_183-B22222%2C_Russland%2C_Kampf_um_Stalingrad%2C_Infanterie.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Bundesarchiv_Bild_101I-218-0529-07%2C_Russland-S%C3%BCd%2C_Stalingrad%2C_Gesch%C3%BCtzstellung.jpg",
       "source": "Bundesarchiv",
       "license": "CC BY-SA 3.0 DE",
-      "credit": "Bundesarchiv, Bild 183-B22222 / Herber / CC-BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22222,_Russland,_Kampf_um_Stalingrad,_Infanterie.jpg"
+      "credit": "Bundesarchiv, Bild 101I-218-0529-07 / Thiede / CC-BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-218-0529-07,_Russland-S%C3%BCd,_Stalingrad,_Gesch%C3%BCtzstellung.jpg"
     }
   },
   {
@@ -260,14 +293,7 @@
       49.0195317
     ],
     "category": "terrain",
-    "coordinatesSource": "original",
-    "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bundesarchiv_Bild_183-B22188%2C_Russland%2C_Kampf_um_Stalingrad%2C_Sturmgesch%C3%BCtz.jpg",
-      "source": "Bundesarchiv",
-      "license": "CC BY-SA 3.0 DE",
-      "credit": "Bundesarchiv, Bild 183-B22188 / Heine / CC-BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22188,_Russland,_Kampf_um_Stalingrad,_Sturmgesch%C3%BCtz.jpg"
-    }
+    "coordinatesSource": "original"
   },
   {
     "battleId": "stalingrad",
@@ -319,13 +345,6 @@
     ],
     "category": "symbolic",
     "wikipediaSlug": "Rossoschka",
-    "coordinatesSource": "nominatim",
-    "customImage": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Bundesarchiv_Bild_183-B22173%2C_Russland%2C_Kampf_um_Stalingrad%2C_Infanterist.jpg",
-      "source": "Bundesarchiv",
-      "license": "CC BY-SA 3.0 DE",
-      "credit": "Bundesarchiv, Bild 183-B22173 / Kaufmann / CC-BY-SA 3.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B22173,_Russland,_Kampf_um_Stalingrad,_Infanterist.jpg"
-    }
+    "coordinatesSource": "nominatim"
   }
 ]
