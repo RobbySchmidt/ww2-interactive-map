@@ -104,9 +104,11 @@ Marker werden als nativer MapLibre `circle`-Layer gerendert (kein HTML-DOM), dam
 - Chevron-Pfeilspitze als Teil der gleichen GeoJSON-Linie
 - Größe der Spitze proportional zur Schaftlänge, mit Min/Max-Clamping
 - Sub-Operationen sinnvoll terminiert (z.B. Barbarossa endet 26.09.1941, damit Taifun/Wjasma-Brjansk nicht überlagern)
+- **Pfeil-Labels entlang der Kurve** (`operations-arrows-label`, Symbol-Layer mit `symbol-placement: 'line-center'`): Befehlshaber-/Verbands-Namen aus `thrust.label` werden ab 30% Pfeilprogress angezeigt, an der vollen Bézier-Kurve verankert (Position bleibt stabil), `minzoom: 4`, `text-allow-overlap: false` lässt überlappende Labels automatisch ausgeblendet. Halo-Farbe je Seite (Achse dunkelrot, Sowjet dunkelgelb). Labels sind ebenfalls klickbar und öffnen das Operations-Detail-Panel.
+- **Fade-Out nach Operations-Ende**: Pfeile + Chevron + Label bleiben 14 Tage nach dem Operations-Ende sichtbar und blenden in dieser Zeit linear auf Opacity 0 aus. Verhindert das harte Verschwinden am Stichtag und macht Übergänge zwischen Nachfolge-Operationen weicher. Alpha wird als Feature-Property gesetzt und in den Paint-Expressions als Multiplikator auf die Layer-Default-Opacity angewandt.
 
 ### 4. Verbände (`divisions.ts`)
-~40 Heeresgruppen/Armeen/Fronten-Labels an 6 Schlüsseldaten (Barbarossa, Moskau, Stalingrad, Kursk, Bagration, Berlin). Zeigt automatisch den **nächstgelegenen** Snapshot.
+**~170 Heeresgruppen/Armeen/Fronten-Labels an 17 Schlüsseldaten** über die gesamte Kriegszeit: 1941-06-21 (Barbarossa-Vortag), 1941-07-15 (Smolensk-Kessel), 1941-09-15 (Kiewer Kessel), 1941-12-05 (Moskau-Tore), 1942-04-15 (Ende Rasputitsa, vor Fall Blau), 1942-08-15 (Höhepunkt Fall Blau), 1942-11-19 (Uranus-Beginn), 1943-02-15 (nach Stalingrad), 1943-07-05 (Kursk-Beginn), 1943-11-06 (Kiew-Befreiung), 1944-01-27 (Korsun-Kessel / Leningrad-Befreiung), 1944-06-22 (Bagration-Beginn), 1944-08-15 (Bagration-Endphase / Iasi-Kishinev-Vorabend), 1945-01-12 (Weichsel-Oder-Beginn), 1945-02-15 (Pommern-Operation / vor Plattenseeoffensive), 1945-04-16 (Berliner Operation), 1945-05-08 (Kapitulation). Zeigt automatisch den **nächstgelegenen** Snapshot. Per dediziertem Pilot-Agent (1942-08-15) und 10 parallelen Folge-Agents recherchiert, mit Stichtag-Treue auf Tagesebene für Kommando-Wechsel und Front-Umbenennungen (z.B. Schukow → Konew Westfront-Wechsel 12.09.1941, HG Don → HG Süd Umbenennung 14.02.1943, Tschernjachowski ✟ 18.02.1945).
 
 Rendering als MapLibre `symbol`-Layer (nativer WebGL-Text). Weißer Text mit dickem Halo (axis = dunkelrot, soviet = dunkelgelb), keine Pille-Hintergründe. Hover öffnet einen MapLibre-Popup mit Vollname und Befehlshaber.
 
@@ -275,13 +277,9 @@ Alle Datenmodule wurden durch dedizierte Recherche-Agenten (general-purpose) ers
 
 Aus der Brainstorm-Liste:
 
-- Pfeil-Labels (Befehlshaber-Namen entlang der Bézier-Kurve mit MapLibre Symbol-Layer)
-- Pfeil-Fade-Out am Ende einer Operation
-- Mehr Verbands-Snapshots (aktuell nur 6)
 - Westfront analog
 - Persönliche Notizen / Bookmarks (würde Supabase rechtfertigen)
 - Eisenbahn-Layer-Verfeinerungen: Hover-Tooltip mit Streckenname/Notes, evtl. importance-abhängige Sichtbarkeit pro Zoomstufe
-- Wikipedia-Bilder auch außerhalb des Battle-Modus (z.B. kleines Thumb im normalen Detail-Panel — aktuell nur Hero-Bild)
 
 ## Wie weiterarbeiten
 
@@ -333,6 +331,9 @@ Pattern:
 | `?d=1942-11-19&b=stalingrad&mode=battle` (zoomt auf Stadt) | **POIs**: Bahnhof, Mamajew, Pawlow-Haus, Roter Oktober … |
 | `?d=1944-06-30&op=bagration-op` | Bagration-Operations-Panel mit Wiki-Lead + 4 Stoßrichtungen + Schlachten-Cross-Links |
 | `?d=1945-04-20&op=berlin-op` | Berliner Operation, drei konvergierende Pfeile + Schlacht-um-Berlin-Verknüpfung |
+| `?d=1942-08-15` | Höhepunkt Fall Blau: HG A/B + 1./4. PzA + 6. Armee gegenüber Stalingrader/Südost-/Nordkaukasischer/Transkaukasischer Front |
+| `?d=1944-08-15` | Bagration-Endphase mit HG Mitte (Model) gegen vier sowj. Belorussische Fronten + Iasi-Kishinev-Vorabend |
+| `?d=1945-02-15` | Pommern/Königsberg/Plattensee — HG Weichsel (Himmler!), HG Kurland im Kessel |
 | `?d=1942-12-15&w=1&r=1` | Winter-Tint + Eisenbahn-Layer |
 | `?d=1942-04-10&w=1` | Frühjahrs-Rasputitsa-Tint |
 
@@ -354,3 +355,6 @@ Punkte 1–5 der ursprünglichen Ideen-Liste **+ Hybrid-Wikipedia-Integration + 
 12. ✅ Koordinaten-Refine-Agent: 119 POIs um >500m verbessert, 4-stufige Quellenhierarchie (Wikipedia/Wikidata/OSM/Nominatim mit lokal-sprachigen Namen)
 13. ✅ **Kriegsfoto-Refinement (2026-05-15)**: 25 parallele Agents (1 Pilot Kursk + 24 für die übrigen Schlachten) recherchierten zeitgenössische 1939–1945-Aufnahmen für jeden POI. **Ergebnis: 298 von 432 POIs (69%) mit `customImage`** — vorher waren es 54. Frontend-Logik in `WarMap.client.vue:259` umgedreht: `customImage` Vorrang vor Wikipedia-Thumb. Quellen: ~95 Bundesarchiv (CC-BY-SA 3.0 DE), ~150 Wikimedia Commons / RIA Novosti / Fortepan / NAC, Rest TASS und weitere Sowjet-Pressearchive. Lücken (134 POIs ohne `customImage`, fallen auf Wiki-Bild zurück) typischerweise: kleine Dörfer/Brückenköpfe ohne Commons-Material, Flussabschnitte ohne ortsspezifische Fotos, Holocaust-Ausschluss (Kiev/Lwow)
 14. ✅ **Operations-Detail-Panel (2026-05-16)**: Klick auf einen Operations-Pfeil öffnet `OperationDetail.vue` mit Wiki-Lead, Stoßrichtungs-Liste und Cross-Links zu Schlachten im Zeitraum. Slugs durch Recherche-Agent gegen de.wiki API verifiziert (22 von 23 Operationen haben eigenen Artikel). Mutuell exklusiv mit BattleDetail; teilbar via `?op=`.
+15. ✅ **Pfeil-Labels + Fade-Out (2026-05-16)**: Befehlshaber-/Verbands-Namen entlang der Bézier-Kurven als Symbol-Layer (`symbol-placement: 'line-center'`), erst ab 30% Pfeilprogress und ab Zoom 4. Pfeile + Labels fadet 14 Tage nach Operations-Ende linear auf 0 aus.
+16. ✅ **Verbands-Snapshots erweitert auf 17 (2026-05-16)**: Von 6 auf 17 Schlüsseldaten verdichtet — alle drei vorherigen Großlücken (Dez 1941 → Nov 1942, Jul 1943 → Jun 1944, Jun 1944 → Apr 1945) gefüllt. 1 Pilot-Agent (1942-08-15, komplexester Fall mit dt. Doppelvorstoß Stalingrad+Kaukasus) + 10 parallele Folge-Agents recherchierten ~130 zusätzliche DivisionMarker mit Stichtag-Treue auf Tagesebene (Kommando-Wechsel, Front-Umbenennungen, Front-Auflösungen). Insgesamt ~170 Marker.
+17. ✅ **Operations-Pfeil-Hover-Tooltip + Thumb-Vorschau (2026-05-16)**: Hover über Operations-Pfeil/-Label zeigt jetzt ein Popup mit Operations-Name + Stoßrichtungs-Label (z.B. „Unternehmen Barbarossa · HG Süd") — folgt dem Cursor via mousemove. BattleDetail-Panel zeigt im Nicht-Detail-Modus eine 4-Thumb-Vorschauleiste der Wiki-Galerie + „+N"-Tile, der in den Detail-Modus springt. Galerie wird jetzt eager beim Battle-Öffnen geladen (statt nur im Detail-Modus), da LocalStorage-Cache 24h.

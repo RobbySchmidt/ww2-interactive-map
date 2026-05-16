@@ -116,6 +116,34 @@
         </ul>
       </div>
 
+      <section v-if="!battleMode && gallery.length" class="detail-thumb-preview">
+        <div class="detail-thumb-preview-label">
+          Bildergalerie
+          <span class="detail-thumb-preview-count">· {{ gallery.length }} Bilder</span>
+        </div>
+        <div class="detail-thumb-preview-grid">
+          <button
+            v-for="img in previewThumbs"
+            :key="img.title"
+            type="button"
+            class="detail-thumb-preview-tile"
+            :title="img.title.replace(/^Datei:/, '').replace(/_/g, ' ')"
+            @click="lightbox = img"
+          >
+            <img :src="img.thumb" :alt="img.title" loading="lazy" />
+          </button>
+          <button
+            v-if="gallery.length > PREVIEW_COUNT"
+            type="button"
+            class="detail-thumb-preview-more"
+            :title="`Alle ${gallery.length} Bilder im Detail-Modus ansehen`"
+            @click="$emit('enter-battle-mode')"
+          >
+            +{{ gallery.length - PREVIEW_COUNT }}
+          </button>
+        </div>
+      </section>
+
       <div class="detail-mode-switch">
         <button
           v-if="!battleMode"
@@ -181,7 +209,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { computed, ref, watch } from 'vue'
 import type { Battle } from '~/data/battles'
 import { fetchWikiSummary, fetchWikiGallery, type WikiSummary, type WikiImage } from '~/lib/wikipedia'
 
@@ -210,11 +238,14 @@ const gallery = ref<WikiImage[]>([])
 const galleryLoading = ref(false)
 const lightbox = ref<WikiImage | null>(null)
 
+// Wie viele Thumbs in der Preview-Reihe im Nicht-Detail-Modus.
+const PREVIEW_COUNT = 4
+const previewThumbs = computed(() => gallery.value.slice(0, PREVIEW_COUNT))
+
 watch(
   () => props.battle?.id,
   async (id) => {
     wiki.value = null
-    gallery.value = []
     if (!id || !props.battle?.wikipediaSlug) return
     const slug = props.battle.wikipediaSlug
     const result = await fetchWikiSummary(slug)
@@ -225,18 +256,18 @@ watch(
   { immediate: true },
 )
 
-// Galerie nur laden, wenn Battle-Mode aktiv ist — sonst unnötiger Traffic
+// Galerie immer laden, sobald eine Schlacht mit Wiki-Slug ausgewählt wird —
+// dadurch können wir auch im normalen Modus eine kleine Thumb-Vorschau zeigen.
+// fetchWikiGallery cached 24h in LocalStorage, also unkritisch beim erneuten Öffnen.
 watch(
-  [() => props.battle?.id, () => props.battleMode],
-  async ([id, mode]) => {
-    if (!mode || !id || !props.battle?.wikipediaSlug) {
-      gallery.value = []
-      return
-    }
+  () => props.battle?.id,
+  async (id) => {
+    gallery.value = []
+    if (!id || !props.battle?.wikipediaSlug) return
     const slug = props.battle.wikipediaSlug
     galleryLoading.value = true
     const result = await fetchWikiGallery(slug)
-    if (props.battle?.wikipediaSlug === slug && props.battleMode) {
+    if (props.battle?.wikipediaSlug === slug) {
       gallery.value = result
     }
     galleryLoading.value = false
@@ -526,6 +557,71 @@ watch(
 
 .notable li {
   padding: 2px 0;
+}
+
+.detail-thumb-preview {
+  margin-top: 14px;
+  padding: 10px 12px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+.detail-thumb-preview-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #737373;
+  margin-bottom: 8px;
+}
+
+.detail-thumb-preview-count {
+  color: #525252;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.detail-thumb-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+}
+
+.detail-thumb-preview-tile,
+.detail-thumb-preview-more {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  aspect-ratio: 1;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.detail-thumb-preview-tile:hover,
+.detail-thumb-preview-more:hover {
+  transform: scale(1.04);
+  border-color: rgba(250, 204, 21, 0.6);
+}
+
+.detail-thumb-preview-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-thumb-preview-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #facc15;
+  background: rgba(250, 204, 21, 0.08);
+  border-color: rgba(250, 204, 21, 0.25);
 }
 
 .slide-enter-active,

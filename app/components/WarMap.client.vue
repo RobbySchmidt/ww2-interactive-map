@@ -15,13 +15,20 @@ import {
 } from '~/data/divisions'
 import { citiesForActiveBattles } from '~/data/cities'
 import {
-  activeOperationsAt,
   buildChevron,
   buildThrustPath,
-  operationProgress,
   OPERATIONS,
   type Operation,
 } from '~/data/operations'
+
+// Pfeile bleiben nach Operations-Ende noch FADE_DAYS sichtbar und werden linear
+// ausgeblendet. Verhindert das harte Verschwinden am Stichtag und macht den
+// Übergang zur Nachfolge-Operation visuell weicher.
+const OPERATION_FADE_DAYS = 14
+const OPERATION_FADE_MS = OPERATION_FADE_DAYS * 86_400_000
+// Labels erscheinen erst, sobald der Pfeil zu ≥ 30% gewachsen ist — vermeidet
+// hektisches Platz-Springen am Operations-Start.
+const OPERATION_LABEL_MIN_PROGRESS = 0.3
 import { CATEGORY_COLORS, CATEGORY_LABELS, type HistEvent } from '~/data/events'
 import { BATTLES } from '~/data/battles'
 import { RAILWAYS } from '~/data/railways'
@@ -51,6 +58,7 @@ let map: MlMap | null = null
 let eventPin: Marker | null = null
 let locationPopup: maplibregl.Popup | null = null
 let divisionPopup: maplibregl.Popup | null = null
+let operationPopup: maplibregl.Popup | null = null
 let poiPopup: maplibregl.Popup | null = null
 
 const SNAPSHOT_DATES = SNAPSHOTS.map((s) => s.date)
@@ -476,24 +484,41 @@ function updateEventPin() {
 
 function updateOperations() {
   if (!map) return
-  const active = activeOperationsAt(props.currentDate)
   const features: GeoJSON.Feature<GeoJSON.LineString>[] = []
+  const nowMs = props.currentDate.getTime()
 
-  for (const op of active) {
-    const t = operationProgress(op, props.currentDate)
-    if (t <= 0) continue
+  for (const op of OPERATIONS) {
+    const startMs = new Date(op.start).getTime()
+    const endMs = new Date(op.end).getTime()
+    if (nowMs < startMs) continue
+    if (nowMs > endMs + OPERATION_FADE_MS) continue
+
+    // Pfad-Progress: linear während [start, end], danach konstant 1.
+    // Alpha: 1 während aktiv, linear → 0 über OPERATION_FADE_DAYS nach Ende.
+    const span = Math.max(1, endMs - startMs)
+    const t = Math.min(1, (nowMs - startMs) / span)
+    const alpha =
+      nowMs <= endMs ? 1 : Math.max(0, 1 - (nowMs - endMs) / OPERATION_FADE_MS)
+
     for (let i = 0; i < op.thrusts.length; i++) {
       const thrust = op.thrusts[i]!
       const { points, tangent } = buildThrustPath(thrust, t)
-      // Schaft
       features.push({
         type: 'Feature',
-        properties: { side: op.side, opId: op.id, kind: 'shaft' },
+        properties: {
+          side: op.side,
+          opId: op.id,
+          kind: 'shaft',
+          alpha,
+          // Thrust-Label auch auf Schaft/Chevron mitnehmen, damit beim Hover über
+          // den Pfeil (nicht nur über die Textbeschriftung) der Befehlshaber-Name
+          // im Tooltip erscheint.
+          label: thrust.label ?? null,
+        },
         geometry: { type: 'LineString', coordinates: points },
       })
       // Chevron-Pfeilspitze am aktuellen Endpunkt
       const tip = points[points.length - 1]!
-      // Pfeilspitze proportional zur Pfadlänge, mit Min/Max in Grad
       const shaftLen = Math.hypot(
         thrust.end[0] - thrust.start[0],
         thrust.end[1] - thrust.start[1],
@@ -502,9 +527,32 @@ function updateOperations() {
       const chevron = buildChevron(tip, tangent, wingLen)
       features.push({
         type: 'Feature',
-        properties: { side: op.side, opId: op.id, kind: 'chevron' },
+        properties: {
+          side: op.side,
+          opId: op.id,
+          kind: 'chevron',
+          alpha,
+          label: thrust.label ?? null,
+        },
         geometry: { type: 'LineString', coordinates: chevron },
       })
+      // Label entlang der vollen Bézier-Kurve (nicht der wachsenden Linie),
+      // damit die Position über die Operation-Dauer stabil bleibt. Erst ab
+      // 30% Pfeilprogress emittieren — vermeidet Platz-Springen am Anfang.
+      if (thrust.label && t >= OPERATION_LABEL_MIN_PROGRESS) {
+        const fullPath = buildThrustPath(thrust, 1).points
+        features.push({
+          type: 'Feature',
+          properties: {
+            side: op.side,
+            opId: op.id,
+            kind: 'label',
+            alpha,
+            label: thrust.label,
+          },
+          geometry: { type: 'LineString', coordinates: fullPath },
+        })
+      }
     }
   }
 
@@ -684,11 +732,14 @@ function addLayers() {
       'line-opacity': 0.9,
     },
   })
-  // Operations: thick semi-transparent halo below, sharp line above (per side)
+  // Operations: thick semi-transparent halo below, sharp line above (per side).
+  // Label-Features (kind='label') werden ausgefiltert — sie sind nur als Träger
+  // für den Symbol-Layer da, sollen aber nicht als Linie sichtbar sein.
   map.addLayer({
     id: 'operations-arrows-halo',
     type: 'line',
     source: 'operations-arrows',
+    filter: ['!=', ['get', 'kind'], 'label'],
     layout: { 'line-cap': 'round', 'line-join': 'round' },
     paint: {
       'line-color': [
@@ -699,13 +750,14 @@ function addLayers() {
         '#666',
       ],
       'line-width': 8,
-      'line-opacity': 0.25,
+      'line-opacity': ['*', 0.25, ['coalesce', ['get', 'alpha'], 1]],
     },
   })
   map.addLayer({
     id: 'operations-arrows-line',
     type: 'line',
     source: 'operations-arrows',
+    filter: ['!=', ['get', 'kind'], 'label'],
     layout: { 'line-cap': 'round', 'line-join': 'round' },
     paint: {
       'line-color': [
@@ -716,7 +768,44 @@ function addLayers() {
         '#888',
       ],
       'line-width': 3.5,
-      'line-opacity': 0.95,
+      'line-opacity': ['*', 0.95, ['coalesce', ['get', 'alpha'], 1]],
+    },
+  })
+
+  // Pfeil-Labels (Befehlshaber/Verbands-Namen entlang der Bézier-Kurve).
+  // `symbol-placement: line-center` setzt das Label einmalig in die Mitte der
+  // Linie; MapLibre dreht den Text bei Bedarf, damit er nicht auf dem Kopf
+  // steht. `text-allow-overlap: false` lässt MapLibre überlappende Labels
+  // automatisch ausblenden — bewusst, statt zwingend alle anzuzeigen.
+  // minzoom 4 vermeidet Label-Klumpen in der Weltansicht.
+  map.addLayer({
+    id: 'operations-arrows-label',
+    type: 'symbol',
+    source: 'operations-arrows',
+    filter: ['==', ['get', 'kind'], 'label'],
+    minzoom: 4,
+    layout: {
+      'symbol-placement': 'line-center',
+      'text-field': ['get', 'label'],
+      'text-font': ['Noto Sans Bold'],
+      'text-size': 11,
+      'text-letter-spacing': 0.02,
+      'text-padding': 4,
+      'text-allow-overlap': false,
+      'text-ignore-placement': false,
+    },
+    paint: {
+      'text-color': '#ffffff',
+      'text-halo-color': [
+        'match',
+        ['get', 'side'],
+        'axis', '#7f1d1d',
+        'soviet', '#854d0e',
+        '#333',
+      ],
+      'text-halo-width': 2.5,
+      'text-halo-blur': 0.3,
+      'text-opacity': ['coalesce', ['get', 'alpha'], 1],
     },
   })
 
@@ -732,16 +821,52 @@ function addLayers() {
   }
   map.on('click', 'operations-arrows-halo', onOperationClick)
   map.on('click', 'operations-arrows-line', onOperationClick)
-  const onOperationEnter = () => {
-    if (map) map.getCanvas().style.cursor = 'pointer'
+  map.on('click', 'operations-arrows-label', onOperationClick)
+  // Hover-Tooltip auf den Pfeilen: zeigt Operations-Name + Stoßrichtungs-Label.
+  // mousemove statt nur mouseenter, damit das Popup dem Cursor folgt während
+  // man den Pfeil entlang fährt.
+  const updateOperationHoverPopup = (e: maplibregl.MapLayerMouseEvent) => {
+    if (!map) return
+    const f = e.features?.[0]
+    if (!f) return
+    const opId = f.properties?.opId as string | undefined
+    const op = OPERATIONS.find((o) => o.id === opId)
+    if (!op) return
+    const thrustLabel = f.properties?.label as string | null | undefined
+    const text = thrustLabel ? `${op.name} · ${thrustLabel}` : op.name
+    map.getCanvas().style.cursor = 'pointer'
+    if (operationPopup) {
+      operationPopup.setLngLat(e.lngLat).setText(text)
+    } else {
+      operationPopup = new maplibregl.Popup({
+        closeButton: false,
+        closeOnClick: false,
+        offset: 12,
+        // MapLibre-Default ist 240px — bei kombinierten Operations-/Thrust-Namen
+        // wie „Belgorod-Charkow-Operation · Woronesch-Front" wird das knapp.
+        maxWidth: 'none',
+        className: 'operation-popup',
+      })
+        .setLngLat(e.lngLat)
+        .setText(text)
+        .addTo(map)
+    }
   }
-  const onOperationLeave = () => {
-    if (map) map.getCanvas().style.cursor = ''
+  const clearOperationHoverPopup = () => {
+    if (!map) return
+    map.getCanvas().style.cursor = ''
+    operationPopup?.remove()
+    operationPopup = null
   }
-  map.on('mouseenter', 'operations-arrows-halo', onOperationEnter)
-  map.on('mouseleave', 'operations-arrows-halo', onOperationLeave)
-  map.on('mouseenter', 'operations-arrows-line', onOperationEnter)
-  map.on('mouseleave', 'operations-arrows-line', onOperationLeave)
+  for (const layerId of [
+    'operations-arrows-halo',
+    'operations-arrows-line',
+    'operations-arrows-label',
+  ]) {
+    map.on('mouseenter', layerId, updateOperationHoverPopup)
+    map.on('mousemove', layerId, updateOperationHoverPopup)
+    map.on('mouseleave', layerId, clearOperationHoverPopup)
+  }
 
   // Schlachten als native circle-Layer — pin-genau im WebGL-Frame der Karte
   map.addSource('battles', {
@@ -877,6 +1002,7 @@ function addLayers() {
       closeButton: false,
       closeOnClick: false,
       offset: 12,
+      maxWidth: 'none',
       className: 'division-popup',
     })
       .setLngLat(lngLat)
@@ -925,6 +1051,8 @@ onBeforeUnmount(() => {
   locationPopup = null
   divisionPopup?.remove()
   divisionPopup = null
+  operationPopup?.remove()
+  operationPopup = null
   poiPopup?.remove()
   poiPopup = null
   map?.remove()
@@ -1199,6 +1327,25 @@ defineExpose({
 }
 
 .maplibregl-popup.division-popup .maplibregl-popup-tip {
+  border-top-color: rgba(15, 15, 15, 0.94);
+  border-bottom-color: rgba(15, 15, 15, 0.94);
+}
+
+/* Tooltip-Popup für Operations-Pfeile (Hover) */
+.maplibregl-popup.operation-popup .maplibregl-popup-content {
+  background: rgba(15, 15, 15, 0.94);
+  color: #f5f5f5;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-family: 'Inter', system-ui, sans-serif;
+  white-space: nowrap;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+.maplibregl-popup.operation-popup .maplibregl-popup-tip {
   border-top-color: rgba(15, 15, 15, 0.94);
   border-bottom-color: rgba(15, 15, 15, 0.94);
 }
