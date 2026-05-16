@@ -48,6 +48,26 @@ export function pointInPolygonFC(
   return false
 }
 
+/** Liegt Punkt in irgendeinem Polygon- oder MultiPolygon-Feature der FC? */
+export function pointInPolygonOrMultiFC(
+  point: LngLat,
+  fc: GeoJSON.FeatureCollection<GeoJSON.Polygon | GeoJSON.MultiPolygon>,
+): boolean {
+  for (const feat of fc.features) {
+    const g = feat.geometry
+    if (g.type === 'Polygon') {
+      if (g.coordinates.length === 0) continue
+      if (pointInRing(point, g.coordinates[0] as LngLat[])) return true
+    } else if (g.type === 'MultiPolygon') {
+      for (const poly of g.coordinates) {
+        if (poly.length === 0) continue
+        if (pointInRing(point, poly[0] as LngLat[])) return true
+      }
+    }
+  }
+  return false
+}
+
 /** Minimaler Abstand (km) vom Punkt zu einer LineString-Polylinie. */
 export function distanceToLineKm(point: LngLat, line: LngLat[]): number {
   if (line.length === 0) return Infinity

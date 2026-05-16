@@ -6,7 +6,9 @@
 import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
 import maplibregl, { Map as MlMap, Marker } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
-import { axisFeaturesAt, frontLineAt, SNAPSHOTS } from '~/data/easternFront'
+import { frontLineAt, sovietRegionAt, SNAPSHOTS } from '~/data/easternFront'
+import { axisCountryCodesAt } from '~/data/axisControl'
+import polygonClipping, { type Geom, type MultiPolygon, type Polygon as ClipPolygon } from 'polygon-clipping'
 import { activeBattlesAt, type Battle } from '~/data/battles'
 import {
   divisionsForSnapshot,
@@ -33,7 +35,13 @@ import { CATEGORY_COLORS, CATEGORY_LABELS, type HistEvent } from '~/data/events'
 import { BATTLES } from '~/data/battles'
 import { RAILWAYS } from '~/data/railways'
 import type { BattlePOI, POICategory } from '~/data/battle-pois'
-import { distanceToLineKm, haversineKm, pointInPolygonFC, type LngLat } from '~/lib/geo'
+import {
+  distanceToLineKm,
+  haversineKm,
+  pointInPolygonFC,
+  pointInPolygonOrMultiFC,
+  type LngLat,
+} from '~/lib/geo'
 import { seasonInfo } from '~/lib/season'
 import { fetchWikiSummary } from '~/lib/wikipedia'
 
@@ -291,14 +299,75 @@ async function showPoiPopup(poi: BattlePOI) {
 
 function updateFront() {
   if (!map || !map.isStyleLoaded()) return
-  const polygon = axisFeaturesAt(props.currentDate)
   const line = frontLineAt(props.currentDate)
-
-  const polySrc = map.getSource('axis-territory') as maplibregl.GeoJSONSource | undefined
-  if (polySrc) polySrc.setData(polygon)
 
   const lineSrc = map.getSource('front-line') as maplibregl.GeoJSONSource | undefined
   if (lineSrc) lineSrc.setData(line)
+
+  updateAxisCountriesClipped()
+}
+
+// Cache der Country-Geometries: NE50m-GeoJSON wird einmal beim Map-Init geladen
+// und hier per ADM0_A3-Code abgelegt. Beim Datums-Scrub clippen wir die Geometrie
+// gegen die Sowjet-Region (Difference) — Ergebnis ist die Achsen-Seite.
+const countryGeoms = new Map<string, GeoJSON.Geometry>()
+let countryGeomsLoaded = false
+
+async function loadCountryGeoms() {
+  try {
+    const res = await fetch('/data/ne_50m_admin_0_countries.json')
+    const fc = (await res.json()) as GeoJSON.FeatureCollection
+    for (const f of fc.features) {
+      const code = (f.properties as Record<string, unknown>)?.ADM0_A3
+      if (typeof code === 'string') countryGeoms.set(code, f.geometry)
+    }
+    countryGeomsLoaded = true
+    updateAxisCountriesClipped()
+  } catch (e) {
+    console.warn('[WarMap] Konnte Country-Geometries nicht laden:', e)
+  }
+}
+
+/** Wandelt GeoJSON-Polygon/MultiPolygon in das von polygon-clipping erwartete Format. */
+function geomToClip(geom: GeoJSON.Geometry): MultiPolygon | null {
+  if (geom.type === 'Polygon') return [geom.coordinates as ClipPolygon]
+  if (geom.type === 'MultiPolygon') return geom.coordinates as MultiPolygon
+  return null
+}
+
+function buildClippedAxisCountriesFC(date: Date): GeoJSON.FeatureCollection<GeoJSON.MultiPolygon> {
+  const codes = axisCountryCodesAt(date)
+  const soviet = sovietRegionAt(date)
+  const sovietMulti: MultiPolygon = [soviet.coordinates as ClipPolygon]
+
+  const features: GeoJSON.Feature<GeoJSON.MultiPolygon>[] = []
+  for (const code of codes) {
+    const geom = countryGeoms.get(code)
+    if (!geom) continue
+    const countryMulti = geomToClip(geom)
+    if (!countryMulti) continue
+    let clipped: Geom
+    try {
+      clipped = polygonClipping.difference(countryMulti, sovietMulti)
+    } catch {
+      // Bei (sehr seltenen) numerischen Edge-Cases das Country uneinheitlich rendern
+      clipped = countryMulti
+    }
+    if (!clipped.length) continue
+    features.push({
+      type: 'Feature',
+      properties: { ADM0_A3: code },
+      geometry: { type: 'MultiPolygon', coordinates: clipped as GeoJSON.Position[][][] },
+    })
+  }
+  return { type: 'FeatureCollection', features }
+}
+
+function updateAxisCountriesClipped() {
+  if (!map || !countryGeomsLoaded) return
+  const src = map.getSource('axis-countries') as maplibregl.GeoJSONSource | undefined
+  if (!src) return
+  src.setData(buildClippedAxisCountriesFC(props.currentDate))
 }
 
 function escapeHtml(s: string): string {
@@ -311,11 +380,29 @@ function buildLocationQueryHtml(lng: number, lat: number): string {
   const point: LngLat = [lng, lat]
   const date = props.currentDate
 
-  // 1) Seite (Achse vs. Sowjet) — Punkt-in-Polygon gegen Axis-Polygone
-  const axisFC = axisFeaturesAt(date)
-  const inAxis = pointInPolygonFC(point, axisFC)
-  const sideLabel = inAxis ? 'Achsenkontrolle' : 'sowjetisches Gebiet'
-  const sideColor = inAxis ? '#b91c1c' : '#facc15'
+  // 1) Seite: Achse (rot eingefärbte Country-Fläche), Sowjet (östlich der Front),
+  //    sonst neutral/alliiert. Reihenfolge: zuerst Achse prüfen, weil die
+  //    geclippte Country-Geometrie schon korrekt ländergrenzentreu beschnitten ist.
+  const axisCountriesFC = buildClippedAxisCountriesFC(date)
+  const inAxis = pointInPolygonOrMultiFC(point, axisCountriesFC)
+  let sideLabel: string
+  let sideColor: string
+  if (inAxis) {
+    sideLabel = 'Achsenkontrolle'
+    sideColor = '#b91c1c'
+  } else {
+    const sovietFC: GeoJSON.FeatureCollection<GeoJSON.Polygon> = {
+      type: 'FeatureCollection',
+      features: [{ type: 'Feature', properties: {}, geometry: sovietRegionAt(date) }],
+    }
+    if (pointInPolygonFC(point, sovietFC)) {
+      sideLabel = 'sowjetisches Gebiet'
+      sideColor = '#facc15'
+    } else {
+      sideLabel = 'neutral / alliiert'
+      sideColor = '#737373'
+    }
+  }
 
   // 2) Entfernung zur Frontlinie
   const front = frontLineAt(date)
@@ -616,9 +703,14 @@ function updateContestedCities(activeBattles: Battle[]) {
 
 function addLayers() {
   if (!map) return
-  map.addSource('axis-territory', {
+  // Natural Earth Admin-0 — Source wird bei jedem Datums-Scrub mit Country-
+  // Polygonen befüllt, die vorher gegen die Sowjet-Region geclippt wurden
+  // (polygon-clipping difference). So zeigt das Reich 1945 nur die West-Hälfte
+  // rot, nicht das ganze Land — und Belarus/Ukraine/Russland wachsen bzw.
+  // schrumpfen ländergrenzentreu mit der Front-Bewegung.
+  map.addSource('axis-countries', {
     type: 'geojson',
-    data: axisFeaturesAt(props.currentDate),
+    data: { type: 'FeatureCollection', features: [] },
   })
   map.addSource('front-line', {
     type: 'geojson',
@@ -685,23 +777,25 @@ function addLayers() {
       'line-dasharray': [3, 2],
     },
   })
+  // Ländergrenzentreue Achsenstaaten-Färbung — Source wird dynamisch befüllt mit
+  // gegen Sowjet-Region geclippten Country-Polygonen. Kein Filter mehr nötig.
   map.addLayer({
-    id: 'axis-territory-fill',
+    id: 'axis-countries-fill',
     type: 'fill',
-    source: 'axis-territory',
+    source: 'axis-countries',
     paint: {
       'fill-color': '#8b1e1e',
       'fill-opacity': 0.35,
     },
   })
   map.addLayer({
-    id: 'axis-territory-outline',
+    id: 'axis-countries-outline',
     type: 'line',
-    source: 'axis-territory',
+    source: 'axis-countries',
     paint: {
       'line-color': '#8b1e1e',
-      'line-width': 1.5,
-      'line-opacity': 0.6,
+      'line-width': 1,
+      'line-opacity': 0.5,
     },
   })
   map.addLayer({
@@ -1041,6 +1135,9 @@ onMounted(() => {
     updateEventPin()
     await loadPoiIcons()
     updatePois()
+    // Country-Geometries lazy laden; sobald da, befüllt loadCountryGeoms()
+    // die axis-countries-Source per updateAxisCountriesClipped().
+    loadCountryGeoms()
   })
 
   // Rechtsklick: Standort-Abfrage

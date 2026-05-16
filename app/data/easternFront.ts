@@ -1,12 +1,18 @@
 /**
- * Ostfront 1941-1945 — vereinfachte Wochen-Snapshots
+ * Ostfront 1941-1945 — vereinfachte Wochen-Snapshots der Frontlinie.
  *
  * WICHTIG: Diese Daten sind eine grobe Annäherung für den Prototyp.
- * Frontverläufe und Verlustzahlen stammen aus öffentlich verfügbaren Übersichten
+ * Frontverläufe stammen aus öffentlich verfügbaren Übersichten
  * (Wikipedia, Glantz-Standardwerke). Keine historisch-präzise Forschungsarbeit.
  *
  * Jeder Snapshot hat exakt 12 Frontlinien-Punkte (Süd → Nord) an festen
  * Breitengraden, damit zwischen Snapshots linear interpoliert werden kann.
+ *
+ * Die rote Achsen-Fläche selbst wird NICHT mehr aus einem freien Polygon gebaut,
+ * sondern vom Country-Layer: jedes betroffene Land wird ländergrenzentreu
+ * gerendert und gegen die Sowjet-Region (alles östlich der Frontlinie) geclippt.
+ * Siehe `axisControl.ts` für die Land-Definitionen und `WarMap.client.vue` für
+ * die Clipping-Logik.
  */
 
 export const LAT_BANDS = [46, 47.5, 49, 50.5, 52, 53, 54, 55, 56, 57.5, 59, 60] as const
@@ -106,148 +112,54 @@ export const SNAPSHOTS: FrontSnapshot[] = [
   },
 ]
 
-/**
- * Topografisch ausgerichtete Rückseite des Axis-Polygons.
- * Folgt grob: Ostseeküste → Norddeutsche Tiefebene → Westgrenze Reich → Alpen →
- * Donau/Balkan → bulgarische Schwarzmeerküste → Donaudelta zurück Richtung Front-Anker.
- */
-const BACK_FULL: [number, number][] = [
-  // Ostseeküste west: vom Front-Anker bei 60°N nach Westen
-  [19.0, 59.0], // Finnischer Meerbusen
-  [17.0, 57.5], // offene Ostsee zwischen Schweden und Baltikum
-  [14.5, 55.5], // Bornholm-Höhe
-  [12.5, 54.5], // Lübecker Bucht
-  [10.5, 54.5], // Kieler Bucht
-  [9.0, 54.6], // Schleswig
-  // Nordseeküste & Westgrenze Reich
-  [8.5, 53.5], // Bremerhaven
-  [7.0, 53.3], // Niederländisch-deutsche Grenze
-  [6.0, 51.0], // Rheinland (Aachen-Region)
-  [6.5, 49.5], // Saarland
-  [7.5, 47.6], // Basel/Schweizer Grenze
-  // Südgrenze über Alpen und Balkan
-  [10.5, 47.4], // Bodensee
-  [13.0, 47.0], // Bayerische Alpen
-  [15.0, 46.5], // Steiermark/Slowenien
-  [16.5, 46.0], // Marburg/Maribor
-  [18.5, 45.8], // SW-Ungarn / Slawonien
-  [20.5, 45.0], // Banat/Vojvodina
-  [22.5, 44.5], // Jugoslawisch-rumänische Grenze
-  [25.0, 43.6], // Donau (Bulg./Rum. Grenze)
-  [27.0, 42.3], // Bulgarisches Hinterland
-  // Bulgarische Schwarzmeerküste
-  [27.7, 42.6], // Burgas
-  [27.95, 43.2], // Varna
-  [28.05, 43.75], // Kap Kaliakra
-  [28.65, 44.2], // Constanza
-  [29.6, 45.0], // Donaudelta / Sulina
-  [29.7, 45.5], // Bessarabische Küste
-]
+// ---------- Frontlinien-Glättung: Catmull-Rom-Spline + leichte Welligkeit ----------
 
-function buildBack(snapshot: FrontSnapshot): [number, number][] {
-  const southFront = snapshot.frontLons[0]!
+const SAMPLES_PER_SEGMENT = 10
 
-  // Spätkriegsphase: Rumänien/Balkan außerhalb der Achse → kompakte Rückseite
-  if (southFront < 22) {
-    return [
-      [19.0, 59.0],
-      [17.0, 57.5],
-      [14.5, 55.5],
-      [12.5, 54.5],
-      [10.5, 54.5],
-      [9.0, 54.6],
-      [8.5, 53.5],
-      [7.0, 53.3],
-      [6.0, 51.0],
-      [6.5, 49.5],
-      [7.5, 47.6],
-      [10.5, 47.4],
-      [13.0, 47.0],
-      [15.0, 46.5],
-      [Math.max(southFront + 1, 14), 46.3],
-    ]
-  }
-
-  // Normale Phase: volle Rückseite
-  const back = [...BACK_FULL]
-
-  // Wenn Front im Süden weit östlich (Ukraine/Krim/Kaukasus) verläuft,
-  // folgen wir der Schwarzmeerküste weiter nach Osten statt direkt zur Front zu schließen
-  if (southFront > 32) {
-    back.push([30.5, 46.5]) // Odessa-Küste
-    back.push([32.5, 46.2]) // Cherson
-  }
-  if (southFront > 35) {
-    back.push([33.5, 44.6]) // Sewastopol/Krim Süd
-    back.push([35.5, 44.7]) // Krim Süd-Ost
-    back.push([36.4, 45.3]) // Kertsch-Straße
-  }
-  if (southFront > 39) {
-    back.push([37.5, 46.7]) // Asowsches Meer Süd-Ost
-    back.push([39.0, 47.0]) // Rostow-Annäherung
-  }
-
-  return back
+/** Catmull-Rom-Interpolation (uniform — reicht für glatte Form). */
+function catmullRom(p0: number, p1: number, p2: number, p3: number, t: number): number {
+  const t2 = t * t
+  const t3 = t2 * t
+  return (
+    0.5 *
+    (2 * p1 +
+      (-p0 + p2) * t +
+      (2 * p0 - 5 * p1 + 4 * p2 - p3) * t2 +
+      (-p0 + 3 * p1 - 3 * p2 + p3) * t3)
+  )
 }
 
 /**
- * Optionale Kaukasus-„Zunge" für Snapshots mit deutschem Vorstoß südlich 46°N.
+ * Glättet die Frontlinie aus 12 Lat-Band-Stützpunkten zu einer Kurve mit
+ * ~110 Punkten — Catmull-Rom-Spline (uniform) plus zwei überlagerte
+ * Sinus-Welligkeiten auf der Lon-Achse, damit die Front nicht wie eine
+ * gerade Polyline aussieht.
  */
-const CAUCASUS_POCKETS: Record<string, GeoJSON.Polygon> = {
-  '1942-08-15': {
-    type: 'Polygon',
-    coordinates: [[
-      [37.5, 45.8],
-      [40.5, 45.8],
-      [42.5, 44.8],
-      [43.0, 44.0],
-      [42.0, 43.2],
-      [40.0, 43.7],
-      [38.0, 44.5],
-      [37.5, 45.8],
-    ]],
-  },
-  '1942-11-19': {
-    type: 'Polygon',
-    coordinates: [[
-      [37.0, 46.5],
-      [41.5, 46.5],
-      [45.0, 46.0], // Kalmückische Steppe östliches Ende
-      [45.5, 44.8],
-      [44.5, 43.7],
-      [43.5, 43.0],
-      [42.0, 43.0],
-      [40.0, 43.5],
-      [37.5, 44.5],
-      [37.0, 46.5],
-    ]],
-  },
-  '1943-02-15': {
-    type: 'Polygon',
-    // Rückzug aus Kaukasus, Kuban-Brückenkopf
-    coordinates: [[
-      [37.5, 46.3],
-      [39.5, 46.3],
-      [40.0, 45.0],
-      [38.0, 44.5],
-      [36.8, 45.5],
-      [37.5, 46.3],
-    ]],
-  },
-}
+function smoothFrontCoords(frontLons: number[]): [number, number][] {
+  const n = frontLons.length
+  const points: [number, number][] = frontLons.map((lon, i) => [lon, LAT_BANDS[i]!])
+  const out: [number, number][] = []
 
-/**
- * Baut Haupt-Polygon (Front + Rückseite) aus einem Snapshot.
- */
-export function buildAxisPolygon(snapshot: FrontSnapshot): GeoJSON.Feature<GeoJSON.Polygon> {
-  const front: [number, number][] = snapshot.frontLons.map((lon, i) => [lon, LAT_BANDS[i]!])
-  const back = buildBack(snapshot)
-  const ring: [number, number][] = [...front, ...back, front[0]!]
-  return {
-    type: 'Feature',
-    properties: { kind: 'main' },
-    geometry: { type: 'Polygon', coordinates: [ring] },
+  for (let i = 0; i < n - 1; i++) {
+    const p0 = i === 0 ? points[0]! : points[i - 1]!
+    const p1 = points[i]!
+    const p2 = points[i + 1]!
+    const p3 = i === n - 2 ? points[n - 1]! : points[i + 2]!
+
+    for (let s = 0; s < SAMPLES_PER_SEGMENT; s++) {
+      const t = s / SAMPLES_PER_SEGMENT
+      const lon = catmullRom(p0[0], p1[0], p2[0], p3[0], t)
+      const lat = catmullRom(p0[1], p1[1], p2[1], p3[1], t)
+
+      const idx = i * SAMPLES_PER_SEGMENT + s
+      const wave = Math.sin(idx * 0.71) * 0.08 + Math.sin(idx * 1.37 + 1.5) * 0.05
+
+      out.push([lon + wave, lat])
+    }
   }
+
+  out.push(points[n - 1]!)
+  return out
 }
 
 /**
@@ -277,48 +189,45 @@ export function findSnapshotBracket(date: Date): { a: FrontSnapshot; b: FrontSna
   return { a: last, b: last, t: 0 }
 }
 
-function nearestSnapshotKey(date: Date): string {
-  const ts = date.getTime()
-  let best = SNAPSHOTS[0]!.date
-  let bestDelta = Math.abs(new Date(best).getTime() - ts)
-  for (const s of SNAPSHOTS) {
-    const d = Math.abs(new Date(s.date).getTime() - ts)
-    if (d < bestDelta) {
-      bestDelta = d
-      best = s.date
-    }
-  }
-  return best
-}
-
-/**
- * Liefert eine FeatureCollection: Haupt-Polygon plus optionale Pockets
- * (Kaukasus-Salient für mittlere Kriegsjahre).
- */
-export function axisFeaturesAt(date: Date): GeoJSON.FeatureCollection<GeoJSON.Polygon> {
-  const { a, b, t } = findSnapshotBracket(date)
-  const lons = t === 0 ? a.frontLons : interpolateFront(a, b, t)
-  const snap: FrontSnapshot = { date: a.date, label: a.label, frontLons: lons }
-  const features: GeoJSON.Feature<GeoJSON.Polygon>[] = [buildAxisPolygon(snap)]
-
-  const pocketKey = nearestSnapshotKey(date)
-  const pocket = CAUCASUS_POCKETS[pocketKey]
-  if (pocket) {
-    features.push({ type: 'Feature', properties: { kind: 'caucasus' }, geometry: pocket })
-  }
-
-  return { type: 'FeatureCollection', features }
-}
-
 export function frontLineAt(date: Date): GeoJSON.Feature<GeoJSON.LineString> {
   const { a, b, t } = findSnapshotBracket(date)
   const lons = t === 0 ? a.frontLons : interpolateFront(a, b, t)
-  const coords: [number, number][] = lons.map((lon, i) => [lon, LAT_BANDS[i]!])
   return {
     type: 'Feature',
     properties: {},
-    geometry: { type: 'LineString', coordinates: coords },
+    geometry: { type: 'LineString', coordinates: smoothFrontCoords(lons) },
   }
+}
+
+/**
+ * Baut ein Polygon, das die gesamte Sowjet-erreichte Region umfasst — alles
+ * östlich der geglätteten Frontlinie, mit klaren Süd-/Nord-Grenzen. Wird zum
+ * Clippen der Country-Polygone genutzt: Difference (Country − Sowjet-Region)
+ * ergibt nur die Achsen-Seite jedes Landes.
+ *
+ * Begrenzung:
+ *  - Süden: lat 42 (südlich vom Kaukasus-Hauptkamm — schließt aber NICHT die
+ *    südliche Türkei aus, was egal ist, weil TUR nicht in den Achsen-Codes ist)
+ *  - Norden: Schrägung von Front-Nord-Anker (lat 60) nach (lon 40, lat 75) —
+ *    schließt Norwegen-Finnmark westlich davon aus
+ *  - Osten: lon 100 (jenseits des Urals)
+ */
+export function sovietRegionAt(date: Date): GeoJSON.Polygon {
+  const { a, b, t } = findSnapshotBracket(date)
+  const lons = t === 0 ? a.frontLons : interpolateFront(a, b, t)
+  const front = smoothFrontCoords(lons)
+
+  // Ring: Front (Süd→Nord, lat 46→60) → Schräge nach NO → weit nach Osten →
+  // Süden bei lat 42 → zurück zum Front-Süd-Anker
+  const ring: [number, number][] = [
+    ...front,
+    [40, 75],
+    [100, 75],
+    [100, 42],
+    [front[0]![0], 42],
+    front[0]!,
+  ]
+  return { type: 'Polygon', coordinates: [ring] }
 }
 
 export const TIMELINE_START = new Date(SNAPSHOTS[0]!.date)
