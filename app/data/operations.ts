@@ -21,6 +21,13 @@ export interface Operation {
   end: string
   thrusts: Thrust[]
   summary: string
+  /** Slug des de.wiki-Artikels (z.B. `Unternehmen_Barbarossa`). Wird vom OperationDetail-Panel zum Laden von Lead-Text + Bild verwendet. */
+  wikipediaSlug?: string
+}
+
+/** Operation per ID. */
+export function operationById(id: string): Operation | undefined {
+  return OPERATIONS.find((op) => op.id === id)
 }
 
 export const OPERATIONS: Operation[] = [
@@ -37,6 +44,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Dreigleisiger deutscher Überfall auf die Sowjetunion mit den Heeresgruppen Nord (Leningrad), Mitte (Moskau) und Süd (Kiew/Donbass).',
+    wikipediaSlug: 'Unternehmen_Barbarossa',
   },
   {
     id: 'kiev-pocket-1941',
@@ -50,6 +58,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Doppelzangenangriff Guderians (2. Panzergruppe) und Kleists (1. Panzergruppe), der bei Lochwiza die sowjetische Südwestfront einkesselte.',
+    wikipediaSlug: 'Schlacht_um_Kiew_(1941)',
   },
   {
     id: 'vyazma-bryansk',
@@ -66,6 +75,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Doppelte Kesselschlacht zur Eröffnung der Operation Taifun, in der drei sowjetische Frontverbände bei Wjasma und Brjansk vernichtet wurden.',
+    wikipediaSlug: 'Doppelschlacht_bei_Wjasma_und_Brjansk',
   },
   {
     id: 'taifun',
@@ -80,6 +90,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Konzentrische deutsche Offensive der HG Mitte mit dem Ziel Moskau, die im Dezember 1941 in den Vororten der Hauptstadt zum Stehen kam.',
+    wikipediaSlug: 'Unternehmen_Taifun',
   },
   {
     id: 'moscow-counter',
@@ -94,6 +105,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Sowjetische Gegenoffensive unter Schukow, die die Wehrmacht 100-250 km von Moskau zurückwarf und den Mythos der Unbesiegbarkeit zerstörte.',
+    // Kein eigenständiger de.wiki-Artikel; nur als Abschnitt in `Schlacht_um_Moskau` behandelt.
   },
   {
     id: 'fall-blau',
@@ -107,6 +119,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Divergierende deutsche Sommeroffensive 1942 mit der HG B Richtung Stalingrad und der HG A in den Kaukasus zu den Ölfeldern.',
+    wikipediaSlug: 'Fall_Blau',
   },
   {
     id: 'uranus',
@@ -120,6 +133,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       "Sowjetische Zangenoperation, die bei Kalatsch am Don die 6. Armee Paulus' in Stalingrad einschloss und die Wende des Krieges einleitete.",
+    wikipediaSlug: 'Operation_Uranus',
   },
   {
     id: 'kharkov-1943',
@@ -133,6 +147,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Mansteins „Rochade" — deutscher Gegenschlag aus dem Süden, der Charkow und Belgorod zurückeroberte und die Front kurzzeitig stabilisierte.',
+    wikipediaSlug: 'Schlacht_bei_Charkow_(1943)',
   },
   {
     id: 'kursk-citadel',
@@ -146,6 +161,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Gescheiterter deutscher Zangenangriff auf den Kursker Bogen — die letzte strategische Offensive der Wehrmacht im Osten.',
+    wikipediaSlug: 'Unternehmen_Zitadelle',
   },
   {
     id: 'rumyantsev',
@@ -159,6 +175,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Sowjetischer Gegenstoß aus dem Kursker Bogen heraus, der Belgorod und Charkow zurückeroberte und die deutsche Südfront aufriss.',
+    wikipediaSlug: 'Belgorod-Charkower_Operation',
   },
   {
     id: 'dnieper',
@@ -174,6 +191,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Breitfrontiger sowjetischer Vormarsch von der Smolensk-Charkow-Linie bis zum Dnepr mit Bildung mehrerer Brückenköpfe und Befreiung Kiews.',
+    wikipediaSlug: 'Schlacht_am_Dnepr',
   },
   {
     id: 'korsun-op',
@@ -187,6 +205,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Sowjetische Zangenoperation am Dnepr-Bogen, die zwei deutsche Korps („Tscherkassy-Kessel") westlich des Dnepr einschloss.',
+    wikipediaSlug: 'Kesselschlacht_von_Tscherkassy',
   },
   {
     id: 'crimea-op-1944',
@@ -200,6 +219,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Sowjetische Befreiung der Krim durch konzentrischen Angriff über Perekop und Kertsch, die mit dem Fall Sewastopols endete.',
+    wikipediaSlug: 'Schlacht_um_die_Krim',
   },
   {
     id: 'bagration-op',
@@ -215,6 +235,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Vernichtende sowjetische Sommeroffensive 1944, die die HG Mitte zerschlug und die Rote Armee vom Dnepr bis an die Weichsel vor Warschau brachte.',
+    wikipediaSlug: 'Operation_Bagration',
   },
   {
     id: 'lvov-sandomierz-op',
@@ -228,6 +249,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       '1. Ukrainische Front unter Konew stieß von Tarnopol bis zur Weichsel vor und schuf den strategisch wichtigen Brückenkopf von Sandomierz.',
+    wikipediaSlug: 'Lwiw-Sandomierz-Operation',
   },
   {
     id: 'iasi-kishinev',
@@ -242,6 +264,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Sowjetischer Zangenangriff zur Vernichtung der HG Südukraine, der Rumänien zum Seitenwechsel zwang und die Balkanfront kollabieren ließ.',
+    wikipediaSlug: 'Operation_Jassy-Kischinew',
   },
   {
     id: 'budapest-op',
@@ -255,6 +278,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Konzentrische sowjetische Umfassung von Budapest aus Norden und Süden der Donau, die nach langer Belagerung im Februar 1945 fiel.',
+    wikipediaSlug: 'Schlacht_um_Budapest',
   },
   {
     id: 'vistula-oder-op',
@@ -278,6 +302,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Massiver sowjetischer Vorstoß aus den Weichsel-Brückenköpfen bis zur Oder, der die Rote Armee auf 60 km an Berlin heranführte.',
+    wikipediaSlug: 'Weichsel-Oder-Operation',
   },
   {
     id: 'east-prussia-op',
@@ -292,6 +317,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Sowjetische Einkesselung und Zerschlagung der HG Mitte in Ostpreußen, die mit dem Sturm auf Königsberg im April 1945 endete.',
+    wikipediaSlug: 'Ostpreußische_Operation_(1945)',
   },
   {
     id: 'spring-awakening-op',
@@ -305,6 +331,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Letzte deutsche Großoffensive des Krieges am Plattensee, mit der Hitler die ungarischen Ölfelder zurückerobern wollte — schon nach 10 Tagen gescheitert.',
+    wikipediaSlug: 'Plattenseeoffensive',
   },
   {
     id: 'vienna-op',
@@ -318,6 +345,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Sowjetischer Vorstoß aus Ungarn nach Österreich, der mit der Einnahme Wiens am 13. April 1945 abgeschlossen wurde.',
+    wikipediaSlug: 'Wiener_Operation',
   },
   {
     id: 'berlin-op',
@@ -332,6 +360,7 @@ export const OPERATIONS: Operation[] = [
     ],
     summary:
       'Schlussoffensive der Roten Armee mit konzentrischer Umfassung Berlins durch die Fronten Schukows, Konews und Rokossowskis.',
+    wikipediaSlug: 'Schlacht_um_Berlin',
   },
 ]
 

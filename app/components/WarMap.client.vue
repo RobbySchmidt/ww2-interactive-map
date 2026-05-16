@@ -19,6 +19,8 @@ import {
   buildChevron,
   buildThrustPath,
   operationProgress,
+  OPERATIONS,
+  type Operation,
 } from '~/data/operations'
 import { CATEGORY_COLORS, CATEGORY_LABELS, type HistEvent } from '~/data/events'
 import { BATTLES } from '~/data/battles'
@@ -39,6 +41,7 @@ const props = defineProps<{
 
 const emit = defineEmits<{
   (e: 'battle-click', battle: Battle): void
+  (e: 'operation-click', operation: Operation): void
   (e: 'pin-focus'): void
   (e: 'pin-dismiss'): void
 }>()
@@ -716,6 +719,29 @@ function addLayers() {
       'line-opacity': 0.95,
     },
   })
+
+  // Operations-Klick: Pfeile öffnen das OperationDetail-Panel.
+  // Click-Handler liegt auf dem Halo, das einen breiteren Treffer-Bereich bietet
+  // als die schmale Linie. Beide Layer ändern den Cursor auf Pointer beim Hover.
+  const onOperationClick = (e: maplibregl.MapLayerMouseEvent) => {
+    const f = e.features?.[0]
+    if (!f) return
+    const opId = f.properties?.opId as string | undefined
+    const op = OPERATIONS.find((o) => o.id === opId)
+    if (op) emit('operation-click', op)
+  }
+  map.on('click', 'operations-arrows-halo', onOperationClick)
+  map.on('click', 'operations-arrows-line', onOperationClick)
+  const onOperationEnter = () => {
+    if (map) map.getCanvas().style.cursor = 'pointer'
+  }
+  const onOperationLeave = () => {
+    if (map) map.getCanvas().style.cursor = ''
+  }
+  map.on('mouseenter', 'operations-arrows-halo', onOperationEnter)
+  map.on('mouseleave', 'operations-arrows-halo', onOperationLeave)
+  map.on('mouseenter', 'operations-arrows-line', onOperationEnter)
+  map.on('mouseleave', 'operations-arrows-line', onOperationLeave)
 
   // Schlachten als native circle-Layer — pin-genau im WebGL-Frame der Karte
   map.addSource('battles', {

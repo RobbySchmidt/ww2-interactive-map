@@ -32,6 +32,7 @@
           :railway-enabled="railwayEnabled"
           :pois="activePois"
           @battle-click="onBattleClick"
+          @operation-click="onOperationSelect"
           @pin-focus="onPinFocus"
           @pin-dismiss="pinnedEvent = null"
         />
@@ -74,6 +75,12 @@
         @enter-battle-mode="enterBattleMode"
         @leave-battle-mode="leaveBattleMode"
       />
+
+      <OperationDetail
+        :operation="selectedOperation"
+        @close="selectedOperation = null"
+        @select-battle="onBattleClick"
+      />
     </main>
 
     <Timeline
@@ -92,6 +99,7 @@ import { ref, computed, nextTick, onMounted, onBeforeUnmount, watch } from 'vue'
 import WarMap from '~/components/WarMap.client.vue'
 import Timeline from '~/components/Timeline.vue'
 import BattleDetail from '~/components/BattleDetail.vue'
+import OperationDetail from '~/components/OperationDetail.vue'
 import EventsFeed from '~/components/EventsFeed.vue'
 import SearchBar from '~/components/SearchBar.vue'
 import CasualtyTicker from '~/components/CasualtyTicker.vue'
@@ -99,7 +107,7 @@ import StrengthChart from '~/components/StrengthChart.vue'
 import { TIMELINE_START, TIMELINE_END } from '~/data/easternFront'
 import { BATTLES, type Battle } from '~/data/battles'
 import { EVENTS, type HistEvent } from '~/data/events'
-import type { Operation } from '~/data/operations'
+import { OPERATIONS, type Operation } from '~/data/operations'
 import type { City } from '~/data/cities'
 import type { DivisionMarker } from '~/data/divisions'
 import { poisForBattle } from '~/data/battle-pois'
@@ -109,6 +117,7 @@ const baseLayer = ref<'map' | 'satellite'>('map')
 const weatherEnabled = ref(false)
 const railwayEnabled = ref(false)
 const selectedBattle = ref<Battle | null>(null)
+const selectedOperation = ref<Operation | null>(null)
 const pinnedEvent = ref<HistEvent | null>(null)
 const feedOpen = ref(true)
 const chartOpen = ref(false)
@@ -165,6 +174,7 @@ function onPinFocus() {
 }
 
 function onBattleClick(battle: Battle) {
+  selectedOperation.value = null
   selectedBattle.value = battle
   mapRef.value?.flyTo(battle.coordinates, 6)
   // Wenn aktuelles Datum außerhalb der Schlacht liegt, in die Mitte springen.
@@ -191,15 +201,21 @@ function setDateClamped(d: Date) {
 }
 
 function onOperationSelect(op: Operation) {
+  selectedBattle.value = null
+  selectedOperation.value = op
   // Mittelpunkt aller Thrust-Endpunkte als Anflugziel
   const ends = op.thrusts.map((t) => t.end)
   const cx = ends.reduce((s, p) => s + p[0], 0) / ends.length
   const cy = ends.reduce((s, p) => s + p[1], 0) / ends.length
   mapRef.value?.flyTo([cx, cy], 5)
-  // Datum auf Mitte der Operation
+  // Datum auf Mitte der Operation, nur wenn aktuelles Datum außerhalb liegt.
+  // Innerhalb beibehalten, damit der Nutzer den Fortschritt verfolgen kann.
   const start = new Date(op.start).getTime()
   const end = new Date(op.end).getTime()
-  setDateClamped(new Date((start + end) / 2))
+  const ts = currentDate.value.getTime()
+  if (ts < start || ts > end) {
+    setDateClamped(new Date((start + end) / 2))
+  }
 }
 
 function onCitySelect(city: City) {
@@ -221,10 +237,14 @@ function onDivisionSelect(div: DivisionMarker) {
   setDateClamped(new Date(div.snapshot))
 }
 
-// ESC schließt einen aktiven Event-Pin
+// ESC schließt einen aktiven Event-Pin oder das OperationDetail-Panel.
+// Pin hat Vorrang, weil leichter unbeabsichtigt zu öffnen.
 function onKeyDown(e: KeyboardEvent) {
-  if (e.key === 'Escape' && pinnedEvent.value) {
+  if (e.key !== 'Escape') return
+  if (pinnedEvent.value) {
     pinnedEvent.value = null
+  } else if (selectedOperation.value) {
+    selectedOperation.value = null
   }
 }
 
@@ -251,6 +271,14 @@ onMounted(() => {
   if (params.get('mode') === 'battle' && selectedBattle.value) {
     battleMode.value = true
   }
+  // Operation hat Vorrang über Battle nur, wenn Battle nicht gesetzt ist
+  // (BattleDetail belegt den gleichen Slot rechts — geteilte URL "?b=...&op=..."
+  // entstehen normalerweise nicht, aber falls doch: Battle gewinnt).
+  const op = params.get('op')
+  if (op && !selectedBattle.value) {
+    const operation = OPERATIONS.find((x) => x.id === op)
+    if (operation) selectedOperation.value = operation
+  }
   const e = params.get('e')
   if (e) {
     const event = EVENTS.find((x) => x.id === e)
@@ -266,6 +294,11 @@ onMounted(() => {
       mapRef.value?.flyTo(pinnedEvent.value.coordinates, 6)
     } else if (selectedBattle.value) {
       mapRef.value?.flyTo(selectedBattle.value.coordinates, 6)
+    } else if (selectedOperation.value) {
+      const ends = selectedOperation.value.thrusts.map((t) => t.end)
+      const cx = ends.reduce((s, p) => s + p[0], 0) / ends.length
+      const cy = ends.reduce((s, p) => s + p[1], 0) / ends.length
+      mapRef.value?.flyTo([cx, cy], 5)
     }
     urlSyncReady = true
   })
@@ -276,12 +309,22 @@ onBeforeUnmount(() => {
 })
 
 watch(
-  [currentDate, selectedBattle, pinnedEvent, baseLayer, weatherEnabled, railwayEnabled, battleMode],
+  [
+    currentDate,
+    selectedBattle,
+    selectedOperation,
+    pinnedEvent,
+    baseLayer,
+    weatherEnabled,
+    railwayEnabled,
+    battleMode,
+  ],
   () => {
     if (!urlSyncReady || typeof window === 'undefined') return
     const params = new URLSearchParams()
     params.set('d', currentDate.value.toISOString().slice(0, 10))
     if (selectedBattle.value) params.set('b', selectedBattle.value.id)
+    if (selectedOperation.value) params.set('op', selectedOperation.value.id)
     if (pinnedEvent.value) params.set('e', pinnedEvent.value.id)
     if (baseLayer.value === 'satellite') params.set('layer', 'satellite')
     if (weatherEnabled.value) params.set('w', '1')

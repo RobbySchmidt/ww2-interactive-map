@@ -1,6 +1,6 @@
 # Ostfront-Karte 1941–1945 — Projekt-Kontext
 
-Stand: 2026-05-15 · Sprache der UI/Daten: Deutsch
+Stand: 2026-05-16 · Sprache der UI/Daten: Deutsch
 
 ## Was die App tut
 
@@ -20,7 +20,8 @@ Interaktive Web-Karte der Ostfront im Zweiten Weltkrieg. Per Zeitstrahl scrubbt 
 - **Eisenbahn-Layer**: 19 historische Hauptstrecken als grau gestrichelte Linien — erklärt umkämpfte Knotenpunkte
 - **Wikipedia-Anreicherung** im Battle-Detail: Hero-Bild + Lead-Text + Link zum vollen Artikel (de.wiki)
 - **Schlacht-Detail-Modus**: zoomt Karte + beschränkt Zeitstrahl + filtert Events auf den Schlacht-Zeitraum + zeigt eine Bildergalerie mit Lightbox
-- **URL-State** für teilbare Links (`?d=…&b=…&e=…&layer=…&w=1&r=1&mode=battle`)
+- **Operations-Detail-Panel**: Klick auf einen Pfeil öffnet ein Panel mit Wikipedia-Lead, Bild, Stoßrichtungs-Liste und Cross-Links zu Schlachten im Operations-Zeitraum
+- **URL-State** für teilbare Links (`?d=…&b=…&op=…&e=…&layer=…&w=1&r=1&mode=battle`)
 
 ## Tech-Stack
 
@@ -48,6 +49,7 @@ app/
 │   ├── Timeline.vue            # Zeitstrahl mit konfigurierbarem Range, Play/Pause, Layer-Toggles
 │   ├── EventsFeed.vue          # Linke Sidebar: Ereignisse ±Window oder im Battle-Zeitraum
 │   ├── BattleDetail.vue        # Rechtes Detail-Panel: Wiki-Lead, Galerie, Mode-Switch, Lightbox
+│   ├── OperationDetail.vue     # Rechtes Detail-Panel für Operationen: Wiki-Lead, Stoßrichtungen, verknüpfte Schlachten
 │   ├── SearchBar.vue           # Top-mitte, Cmd/Ctrl+K-Suchfeld
 │   ├── CasualtyTicker.vue      # Bottom-mitte, Verluste live
 │   ├── StrengthChart.vue       # Bottom-rechts, Kräfteverhältnis-Charts
@@ -143,7 +145,8 @@ Popup mit:
 
 ### 11. URL-State (`pages/index.vue`)
 - `?d=YYYY-MM-DD` — Datum
-- `?b=battle-id` — geöffnetes Detail
+- `?b=battle-id` — geöffnetes Schlacht-Detail
+- `?op=operation-id` — geöffnetes Operations-Detail
 - `?e=event-id` — gepinnter Event
 - `?layer=satellite` — Satellitenansicht
 - `?w=1` — Wetter-Layer aktiviert
@@ -220,6 +223,15 @@ Geringe Coverage typischerweise weil: kleine Dörfer/Brückenköpfe ohne Commons
 - Verlassen automatisch wenn `selectedBattle` null wird oder Schlacht ohne `wikipediaSlug`
 - URL-Param `?mode=battle` macht die Ansicht teilbar
 
+### 17. Operations-Detail-Panel (`OperationDetail.vue`, `WarMap.client.vue`, `pages/index.vue`)
+- **Klick auf einen Pfeil** auf der Karte (sowohl Halo als auch Linie) öffnet ein Detail-Panel rechts. Cursor wird beim Hover auf den Pfeilen zu Pointer.
+- **Inhalt**: Side-Badge (Achse rot / Sowjet gelb), Operations-Name, Zeitraum, eigene Zusammenfassung, Wikipedia-Lead-Text + Hero-Bild (de.wiki, 24h-LocalStorage-Cache via `fetchWikiSummary`), Wikipedia-Vollartikel-Link, Liste der Stoßrichtungen (mit Befehlshaber-/Verbands-Labels), Liste verknüpfter Schlachten (Zeitraum-Überlapp UND ≤ 400 km vom nächsten Thrust-Endpunkt) als klickbare Cross-Links.
+- **22 von 23 Operationen haben einen verifizierten `wikipediaSlug`**. Slug-Verifikation erfolgte durch dedizierten Recherche-Agent gegen `de.wikipedia.org/api/rest_v1/page/summary/{slug}` (HTTP 200 + `type: standard`). Ausnahme: `moscow-counter` (sowjetische Winteroffensive 1941/42) hat keinen eigenen Artikel und wird im Sammelartikel `Schlacht_um_Moskau` behandelt — das Panel zeigt für diese Operation einfach keine Wiki-Box.
+- **Mutuelle Exklusion mit BattleDetail**: Beide Panels belegen den gleichen rechten Slot. Öffnen einer Operation schließt eine offene Schlacht und umgekehrt.
+- **URL-Param `?op=operation-id`** für teilbare Links. Beim Mount wird zur Operation geflogen (Mittelpunkt der Thrust-Endpunkte, Zoom 5), und das Datum wird auf die Operations-Mitte gesetzt, falls außerhalb.
+- **ESC schließt** das Operations-Panel (nach Event-Pin, falls einer offen ist).
+- **Cross-Link auf Schlacht** in der "Schlachten im Zeitraum"-Liste ruft `onBattleClick` auf, was die Operation schließt und das BattleDetail öffnet — der Nutzer kann nahtlos zwischen operativer und taktischer Sicht wechseln.
+
 ## Datenquellen + Recherche-Workflow
 
 Alle Datenmodule wurden durch dedizierte Recherche-Agenten (general-purpose) erstellt:
@@ -270,7 +282,6 @@ Aus der Brainstorm-Liste:
 - Persönliche Notizen / Bookmarks (würde Supabase rechtfertigen)
 - Eisenbahn-Layer-Verfeinerungen: Hover-Tooltip mit Streckenname/Notes, evtl. importance-abhängige Sichtbarkeit pro Zoomstufe
 - Wikipedia-Bilder auch außerhalb des Battle-Modus (z.B. kleines Thumb im normalen Detail-Panel — aktuell nur Hero-Bild)
-- Operationen-Detail-Panel (analog BattleDetail mit Wiki-Lead) — Operationen haben aktuell kein eigenes Panel
 
 ## Wie weiterarbeiten
 
@@ -320,6 +331,8 @@ Pattern:
 | `?d=1944-06-22&b=bagration&mode=battle` | Bagration-Detail |
 | `?d=1945-04-16&b=berlin&mode=battle` | Berlin-Detail, drei konvergierende Pfeile |
 | `?d=1942-11-19&b=stalingrad&mode=battle` (zoomt auf Stadt) | **POIs**: Bahnhof, Mamajew, Pawlow-Haus, Roter Oktober … |
+| `?d=1944-06-30&op=bagration-op` | Bagration-Operations-Panel mit Wiki-Lead + 4 Stoßrichtungen + Schlachten-Cross-Links |
+| `?d=1945-04-20&op=berlin-op` | Berliner Operation, drei konvergierende Pfeile + Schlacht-um-Berlin-Verknüpfung |
 | `?d=1942-12-15&w=1&r=1` | Winter-Tint + Eisenbahn-Layer |
 | `?d=1942-04-10&w=1` | Frühjahrs-Rasputitsa-Tint |
 
@@ -340,3 +353,4 @@ Punkte 1–5 der ursprünglichen Ideen-Liste **+ Hybrid-Wikipedia-Integration + 
 11. ✅ Commons-Bilder-Agent: 54 weitere POIs mit hand-recherchierten Wikimedia-Commons-Bildern (Bundesarchiv, CC-BY-SA), Lizenz-Credit im Popup
 12. ✅ Koordinaten-Refine-Agent: 119 POIs um >500m verbessert, 4-stufige Quellenhierarchie (Wikipedia/Wikidata/OSM/Nominatim mit lokal-sprachigen Namen)
 13. ✅ **Kriegsfoto-Refinement (2026-05-15)**: 25 parallele Agents (1 Pilot Kursk + 24 für die übrigen Schlachten) recherchierten zeitgenössische 1939–1945-Aufnahmen für jeden POI. **Ergebnis: 298 von 432 POIs (69%) mit `customImage`** — vorher waren es 54. Frontend-Logik in `WarMap.client.vue:259` umgedreht: `customImage` Vorrang vor Wikipedia-Thumb. Quellen: ~95 Bundesarchiv (CC-BY-SA 3.0 DE), ~150 Wikimedia Commons / RIA Novosti / Fortepan / NAC, Rest TASS und weitere Sowjet-Pressearchive. Lücken (134 POIs ohne `customImage`, fallen auf Wiki-Bild zurück) typischerweise: kleine Dörfer/Brückenköpfe ohne Commons-Material, Flussabschnitte ohne ortsspezifische Fotos, Holocaust-Ausschluss (Kiev/Lwow)
+14. ✅ **Operations-Detail-Panel (2026-05-16)**: Klick auf einen Operations-Pfeil öffnet `OperationDetail.vue` mit Wiki-Lead, Stoßrichtungs-Liste und Cross-Links zu Schlachten im Zeitraum. Slugs durch Recherche-Agent gegen de.wiki API verifiziert (22 von 23 Operationen haben eigenen Artikel). Mutuell exklusiv mit BattleDetail; teilbar via `?op=`.
