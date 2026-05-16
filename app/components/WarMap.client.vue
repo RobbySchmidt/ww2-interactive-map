@@ -536,11 +536,13 @@ function updateOperations() {
         },
         geometry: { type: 'LineString', coordinates: chevron },
       })
-      // Label entlang der vollen Bézier-Kurve (nicht der wachsenden Linie),
-      // damit die Position über die Operation-Dauer stabil bleibt. Erst ab
-      // 30% Pfeilprogress emittieren — vermeidet Platz-Springen am Anfang.
+      // Label entlang des AKTUELL gewachsenen Pfeil-Abschnitts (nicht des
+      // vollen Pfads) — sonst sitzt das Label am Bézier-Mittelpunkt, auch
+      // bevor der Pfeil dort angekommen ist. Mit dem gewachsenen Pfad
+      // wandert das Label sanft mit dem Pfeil mit und bleibt auf der
+      // sichtbaren Linie. Erst ab 30% Progress, um Platz-Springen ganz am
+      // Anfang (kurze Linien sind kaum sichtbar/lesbar) zu vermeiden.
       if (thrust.label && t >= OPERATION_LABEL_MIN_PROGRESS) {
-        const fullPath = buildThrustPath(thrust, 1).points
         features.push({
           type: 'Feature',
           properties: {
@@ -550,7 +552,7 @@ function updateOperations() {
             alpha,
             label: thrust.label,
           },
-          geometry: { type: 'LineString', coordinates: fullPath },
+          geometry: { type: 'LineString', coordinates: points },
         })
       }
     }
