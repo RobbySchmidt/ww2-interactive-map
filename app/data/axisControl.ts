@@ -42,8 +42,13 @@ export const AXIS_COUNTRIES: AxisCountry[] = [
   { adm0: 'CZE', name: 'Protektorat Böhmen-Mähren', phases: [{ start: '1941-06-21', end: '1945-05-08' }] },
 
   // ---------- Polen (Generalgouvernement + annektierte Gebiete) ----------
-  // Weichsel-Oder-Offensive ab 12.01.1945 — Polen bis Mitte Februar befreit.
-  { adm0: 'POL', name: 'Polen (besetzt)', phases: [{ start: '1941-06-21', end: '1945-01-17' }] },
+  // Phase deckt die deutsche militärische Präsenz ab (NICHT nur die politische
+  // Befreiung Warschaus am 17.01.1945). NE50m POL hat Nachkriegs-Grenzen bis zur
+  // Oder; deutsche Truppen wurden in Schlesien/Pommern bis Mitte April vertrieben.
+  // Wichtig damit POL während der Weichsel-Oder-Operation (12.01.–03.02.1945)
+  // gegen die Front geclippt wird und das Rot prozentual schrumpft — statt mit
+  // dem Tag der Warschau-Befreiung schlagartig zu verschwinden.
+  { adm0: 'POL', name: 'Polen (besetzt)', phases: [{ start: '1941-06-21', end: '1945-04-15' }] },
 
   // ---------- Westeuropa besetzt ----------
   { adm0: 'NLD', name: 'Niederlande', phases: [{ start: '1941-06-21', end: '1945-05-05' }] },
@@ -61,8 +66,12 @@ export const AXIS_COUNTRIES: AxisCountry[] = [
   { adm0: 'ITA', name: 'Italien', phases: [{ start: '1941-06-21', end: '1945-05-02' }] },
   { adm0: 'SVK', name: 'Slowakei (Achse)', phases: [{ start: '1941-06-21', end: '1945-04-04' }] },
   { adm0: 'HUN', name: 'Ungarn', phases: [{ start: '1941-06-21', end: '1945-04-04' }] },
-  // Rumänien: Seitenwechsel 23.08.1944 (König-Michael-Coup).
-  { adm0: 'ROU', name: 'Rumänien', phases: [{ start: '1941-06-21', end: '1944-08-23' }] },
+  // Rumänien: Politischer Seitenwechsel 23.08.1944 (König-Michael-Coup), aber
+  // deutsche Truppen wurden in den folgenden 3 Wochen aus Rumänien gedrängt
+  // (Iași-Chișinău-Operation läuft, Bukarest 31.08., ungarisch-rumänische Grenze
+  // Anfang September). Phase deckt die militärische Räumung ab — mit dem
+  // 1944-09-15-Snapshot schrumpft das Rot automatisch progressiv.
+  { adm0: 'ROU', name: 'Rumänien', phases: [{ start: '1941-06-21', end: '1944-09-15' }] },
   // Bulgarien: Sowjet-Erklärung 05.09.1944, Putsch 09.09.
   { adm0: 'BGR', name: 'Bulgarien', phases: [{ start: '1941-06-21', end: '1944-09-09' }] },
   // Finnland: Mitkriegführer ab 25.06.1941 (Kontinuationskrieg), Waffenstillstand 19.09.1944.

@@ -5,8 +5,13 @@
  * Frontverläufe stammen aus öffentlich verfügbaren Übersichten
  * (Wikipedia, Glantz-Standardwerke). Keine historisch-präzise Forschungsarbeit.
  *
- * Jeder Snapshot hat exakt 12 Frontlinien-Punkte (Süd → Nord) an festen
+ * Jeder Snapshot hat exakt 14 Frontlinien-Punkte (Süd → Nord) an festen
  * Breitengraden, damit zwischen Snapshots linear interpoliert werden kann.
+ *
+ * Lat 42 ist der südlichste Stützpunkt und wird so gesetzt, dass die Linie an
+ * einer natürlichen Geografie endet — Schwarzes Meer / Adria / Kaukasus-Kamm
+ * — statt mitten in einem Land aufzuhören. Historisch gab es bei lat 42 selten
+ * eine echte Kampflinie; der Punkt ist primär ein „visueller Anker".
  *
  * Die rote Achsen-Fläche selbst wird NICHT mehr aus einem freien Polygon gebaut,
  * sondern vom Country-Layer: jedes betroffene Land wird ländergrenzentreu
@@ -15,12 +20,12 @@
  * die Clipping-Logik.
  */
 
-export const LAT_BANDS = [46, 47.5, 49, 50.5, 52, 53, 54, 55, 56, 57.5, 59, 60] as const
+export const LAT_BANDS = [42, 44, 46, 47.5, 49, 50.5, 52, 53, 54, 55, 56, 57.5, 59, 60] as const
 
 export interface FrontSnapshot {
   date: string // ISO YYYY-MM-DD
   label: string
-  /** 12 Längengrade, entsprechen LAT_BANDS (Süd → Nord) */
+  /** 14 Längengrade, entsprechen LAT_BANDS (Süd → Nord) */
   frontLons: number[]
 }
 
@@ -28,87 +33,109 @@ export const SNAPSHOTS: FrontSnapshot[] = [
   {
     date: '1941-06-21',
     label: 'Vortag Unternehmen Barbarossa',
-    frontLons: [28.5, 27.5, 25.0, 23.7, 23.2, 23.0, 22.8, 22.5, 22.0, 22.0, 22.5, 23.5],
+    // lat 42 = Schwarzes Meer östlich der bulgarischen Küste (visueller Anker)
+    // lat 44 = Schwarzmeer-Küste östlich Constanta
+    frontLons: [28.5, 29.5, 28.5, 27.5, 25.0, 23.7, 23.2, 23.0, 22.8, 22.5, 22.0, 22.0, 22.5, 23.5],
   },
   {
     date: '1941-07-15',
     label: 'Vorstoß zur Düna · Schlacht von Smolensk beginnt',
-    frontLons: [29.0, 29.0, 28.5, 28.5, 30.0, 30.5, 28.5, 27.5, 28.5, 27.0, 26.0, 26.5],
+    frontLons: [29.0, 29.5, 29.0, 29.0, 28.5, 28.5, 30.0, 30.5, 28.5, 27.5, 28.5, 27.0, 26.0, 26.5],
   },
   {
     date: '1941-09-15',
     label: 'Kiewer Kesselschlacht · Leningrad eingeschlossen',
-    frontLons: [34.5, 33.5, 33.0, 32.5, 33.0, 33.5, 32.5, 31.5, 31.0, 30.5, 30.5, 30.5],
+    // lat 42 = Schwarzes Meer südöstlich der Krim
+    frontLons: [36.0, 34.5, 34.5, 33.5, 33.0, 32.5, 33.0, 33.5, 32.5, 31.5, 31.0, 30.5, 30.5, 30.5],
   },
   {
     date: '1941-12-05',
     label: 'Höchster Vormarsch vor Moskau · Sowjetische Gegenoffensive beginnt',
-    frontLons: [37.5, 38.5, 37.5, 37.0, 37.5, 38.5, 39.0, 37.0, 35.0, 33.0, 32.5, 32.0],
+    // lat 42 = Schwarzes Meer östlich der Krim, südwestlich Krasnodar
+    frontLons: [39.0, 39.5, 37.5, 38.5, 37.5, 37.0, 37.5, 38.5, 39.0, 37.0, 35.0, 33.0, 32.5, 32.0],
   },
   {
     date: '1942-04-15',
     label: 'Stabilisierung nach sowjetischer Winteroffensive',
-    frontLons: [37.5, 38.0, 37.5, 36.5, 35.0, 35.5, 34.5, 33.0, 32.5, 31.5, 31.0, 30.5],
+    frontLons: [39.0, 38.5, 37.5, 38.0, 37.5, 36.5, 35.0, 35.5, 34.5, 33.0, 32.5, 31.5, 31.0, 30.5],
   },
   {
     date: '1942-08-15',
     label: 'Fall Blau · Vorstoß zum Kaukasus und Stalingrad',
-    frontLons: [43.0, 43.5, 43.0, 41.5, 39.5, 36.0, 34.5, 33.0, 32.5, 31.5, 31.0, 30.5],
+    // lat 42 = Großer Kaukasus West (Sotschi-Krasnaja-Poljana-Höhe)
+    frontLons: [41.0, 41.0, 43.0, 43.5, 43.0, 41.5, 39.5, 36.0, 34.5, 33.0, 32.5, 31.5, 31.0, 30.5],
   },
   {
     date: '1942-11-19',
     label: 'Höchster Vormarsch im Süden · Beginn Operation Uranus',
-    frontLons: [46.0, 45.5, 44.5, 42.5, 39.5, 36.0, 34.5, 33.0, 32.5, 31.5, 31.0, 30.5],
+    // lat 42 = Großer Kaukasus-Hauptkamm (natürliche Barriere, deutsche Vorrückung endet dort)
+    frontLons: [43.0, 45.0, 46.0, 45.5, 44.5, 42.5, 39.5, 36.0, 34.5, 33.0, 32.5, 31.5, 31.0, 30.5],
   },
   {
     date: '1943-02-15',
     label: 'Nach Kapitulation Stalingrads · Charkow zurückerobert',
-    frontLons: [39.0, 38.5, 36.5, 35.5, 35.5, 34.5, 33.5, 33.0, 32.5, 31.5, 31.0, 30.5],
+    frontLons: [41.0, 40.0, 39.0, 38.5, 36.5, 35.5, 35.5, 34.5, 33.5, 33.0, 32.5, 31.5, 31.0, 30.5],
   },
   {
     date: '1943-07-05',
     label: 'Beginn Schlacht bei Kursk (Unternehmen Zitadelle)',
-    frontLons: [39.0, 38.5, 37.0, 33.5, 35.5, 38.0, 35.5, 34.0, 32.5, 31.5, 31.0, 30.5],
+    frontLons: [40.0, 38.5, 39.0, 38.5, 37.0, 33.5, 35.5, 38.0, 35.5, 34.0, 32.5, 31.5, 31.0, 30.5],
   },
   {
     date: '1943-11-06',
     label: 'Befreiung Kiews · Front am Dnepr',
-    frontLons: [34.5, 34.0, 33.0, 30.5, 31.5, 32.5, 32.5, 32.0, 31.5, 30.5, 30.0, 29.5],
+    // lat 42 = Schwarzes Meer südlich der Krim
+    frontLons: [35.0, 35.0, 34.5, 34.0, 33.0, 30.5, 31.5, 32.5, 32.5, 32.0, 31.5, 30.5, 30.0, 29.5],
   },
   {
     date: '1944-01-27',
     label: 'Aufhebung der Blockade Leningrads',
-    frontLons: [33.0, 32.5, 31.5, 28.5, 29.0, 30.0, 30.5, 30.0, 29.5, 28.5, 28.0, 27.5],
+    frontLons: [33.0, 33.5, 33.0, 32.5, 31.5, 28.5, 29.0, 30.0, 30.5, 30.0, 29.5, 28.5, 28.0, 27.5],
   },
   {
     date: '1944-06-22',
     label: 'Beginn Operation Bagration',
-    frontLons: [29.5, 28.5, 27.0, 25.5, 27.5, 29.0, 30.5, 28.5, 27.5, 27.0, 27.5, 28.0],
+    // lat 42 = Schwarzes Meer westlich Krim (Krim Mai 1944 befreit)
+    frontLons: [29.0, 29.5, 29.5, 28.5, 27.0, 25.5, 27.5, 29.0, 30.5, 28.5, 27.5, 27.0, 27.5, 28.0],
   },
   {
     date: '1944-08-15',
     label: 'Heeresgruppe Mitte vernichtet · Weichsel erreicht',
-    frontLons: [26.5, 25.0, 24.0, 22.0, 21.5, 22.5, 23.0, 23.5, 24.0, 25.5, 27.0, 27.5],
+    frontLons: [28.0, 29.0, 26.5, 25.0, 24.0, 22.0, 21.5, 22.5, 23.0, 23.5, 24.0, 25.5, 27.0, 27.5],
+  },
+  {
+    date: '1944-09-15',
+    label: 'Balkanwende · Rumänien befreit, Karpaten-Bogen erreicht',
+    // Bulgarien wechselt 8./9.9., Rumänien-Front kollabiert nach König-Coup (23.8.).
+    // Front am Karpaten-Hauptkamm und entlang der Weichsel; im Norden vor Tallinn/Riga.
+    // lat 42 = Griechisch-bulgarische Berge (Bulgarien jetzt sowjet-alliiert)
+    // lat 44 = Yugoslawisch-bulgarische Grenze
+    // lat 46-49 = Karpaten-Bogen (Hauptkamm)
+    // lat 50.5-53 = Weichsel-Front bei Warschau
+    // lat 54-59 = baltische Front vor Tallinn/Riga
+    frontLons: [23.0, 22.5, 22.5, 22.5, 22.5, 22.0, 22.5, 23.0, 23.5, 24.5, 25.5, 26.5, 27.0, 27.5],
   },
   {
     date: '1945-01-12',
     label: 'Beginn Weichsel-Oder-Operation',
-    frontLons: [20.5, 19.5, 20.5, 20.0, 21.0, 21.0, 21.0, 21.5, 21.5, 22.5, 24.0, 24.5],
+    // lat 42 = Adria-Küste an der albanischen/montenegrinischen Küste
+    frontLons: [19.0, 20.0, 20.5, 19.5, 20.5, 20.0, 21.0, 21.0, 21.0, 21.5, 21.5, 22.5, 24.0, 24.5],
   },
   {
     date: '1945-02-15',
     label: 'Sowjetische Truppen erreichen die Oder',
-    frontLons: [17.5, 16.5, 18.0, 15.5, 14.8, 14.5, 15.5, 18.5, 19.5, 22.0, 23.5, 23.5],
+    frontLons: [18.0, 18.5, 17.5, 16.5, 18.0, 15.5, 14.8, 14.5, 15.5, 18.5, 19.5, 22.0, 23.5, 23.5],
   },
   {
     date: '1945-04-16',
     label: 'Beginn Berliner Operation',
-    frontLons: [15.5, 14.5, 16.0, 14.7, 14.5, 14.0, 13.5, 17.0, 18.0, 21.5, 23.5, 23.5],
+    frontLons: [17.0, 16.5, 15.5, 14.5, 16.0, 14.7, 14.5, 14.0, 13.5, 17.0, 18.0, 21.5, 23.5, 23.5],
   },
   {
     date: '1945-05-08',
     label: 'Bedingungslose Kapitulation des Deutschen Reiches',
-    frontLons: [13.5, 13.5, 13.0, 12.0, 11.7, 11.2, 11.0, 11.5, 13.0, 21.0, 23.5, 23.5],
+    // lat 42 = Adria-Küste an Süd-Dalmatien/Albanien
+    frontLons: [16.0, 14.5, 13.5, 13.5, 13.0, 12.0, 11.7, 11.2, 11.0, 11.5, 13.0, 21.0, 23.5, 23.5],
   },
 ]
 
@@ -130,8 +157,8 @@ function catmullRom(p0: number, p1: number, p2: number, p3: number, t: number): 
 }
 
 /**
- * Glättet die Frontlinie aus 12 Lat-Band-Stützpunkten zu einer Kurve mit
- * ~110 Punkten — Catmull-Rom-Spline (uniform) plus zwei überlagerte
+ * Glättet die Frontlinie aus 14 Lat-Band-Stützpunkten zu einer Kurve mit
+ * ~130 Punkten — Catmull-Rom-Spline (uniform) plus zwei überlagerte
  * Sinus-Welligkeiten auf der Lon-Achse, damit die Front nicht wie eine
  * gerade Polyline aussieht.
  */
@@ -189,36 +216,62 @@ export function findSnapshotBracket(date: Date): { a: FrontSnapshot; b: FrontSna
   return { a: last, b: last, t: 0 }
 }
 
+/**
+ * Hängt das Nord-Anhängsel (Karelische Front, finnisch-sowjetisch von Ladoga
+ * über Karelien bis Petsamo) an, wenn die finnisch-sowjetische Front noch
+ * aktiv war — also Sommer 1941 bis zum finnischen Waffenstillstand 19.09.1944.
+ *
+ * Die Stützpunkte sind statisch — die Front war über drei Jahre weitgehend
+ * stabil und für die grobe Visualisierung reicht eine Approximation.
+ *
+ * Süd-Anhängsel ist nicht mehr nötig: lat 44 ist Teil der Hauptfront-Daten.
+ */
+const KARELIAN_FRONT_END_TS = new Date('1944-09-19').getTime()
+const BARBAROSSA_START_TS = new Date('1941-06-25').getTime()
+
+function extendFrontEnds(front: [number, number][], date: Date): [number, number][] {
+  const ts = date.getTime()
+  const result: [number, number][] = [...front]
+
+  if (ts >= BARBAROSSA_START_TS && ts <= KARELIAN_FRONT_END_TS) {
+    result.push([32.0, 62.0]) // Swir / Ladoga-Nord
+    result.push([33.0, 65.0]) // Weißmeer-Karelien
+    result.push([30.0, 69.0]) // Petsamo / Polarmeer
+  }
+
+  return result
+}
+
 export function frontLineAt(date: Date): GeoJSON.Feature<GeoJSON.LineString> {
   const { a, b, t } = findSnapshotBracket(date)
   const lons = t === 0 ? a.frontLons : interpolateFront(a, b, t)
   return {
     type: 'Feature',
     properties: {},
-    geometry: { type: 'LineString', coordinates: smoothFrontCoords(lons) },
+    geometry: {
+      type: 'LineString',
+      coordinates: extendFrontEnds(smoothFrontCoords(lons), date),
+    },
   }
 }
 
 /**
  * Baut ein Polygon, das die gesamte Sowjet-erreichte Region umfasst — alles
- * östlich der geglätteten Frontlinie, mit klaren Süd-/Nord-Grenzen. Wird zum
- * Clippen der Country-Polygone genutzt: Difference (Country − Sowjet-Region)
- * ergibt nur die Achsen-Seite jedes Landes.
+ * östlich der (ggf. um Karelien verlängerten) Frontlinie, mit klaren Süd-/
+ * Nord-Grenzen. Wird zum Clippen der Country-Polygone genutzt: Difference
+ * (Country − Sowjet-Region) ergibt nur die Achsen-Seite jedes Landes.
  *
  * Begrenzung:
- *  - Süden: lat 42 (südlich vom Kaukasus-Hauptkamm — schließt aber NICHT die
- *    südliche Türkei aus, was egal ist, weil TUR nicht in den Achsen-Codes ist)
- *  - Norden: Schrägung von Front-Nord-Anker (lat 60) nach (lon 40, lat 75) —
+ *  - Süden: lat 42 (südlich vom Kaukasus-Hauptkamm)
+ *  - Norden: Schrägung vom nördlichsten Front-Punkt nach (lon 40, lat 75) —
  *    schließt Norwegen-Finnmark westlich davon aus
  *  - Osten: lon 100 (jenseits des Urals)
  */
 export function sovietRegionAt(date: Date): GeoJSON.Polygon {
   const { a, b, t } = findSnapshotBracket(date)
   const lons = t === 0 ? a.frontLons : interpolateFront(a, b, t)
-  const front = smoothFrontCoords(lons)
+  const front = extendFrontEnds(smoothFrontCoords(lons), date)
 
-  // Ring: Front (Süd→Nord, lat 46→60) → Schräge nach NO → weit nach Osten →
-  // Süden bei lat 42 → zurück zum Front-Süd-Anker
   const ring: [number, number][] = [
     ...front,
     [40, 75],
