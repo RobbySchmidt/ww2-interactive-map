@@ -336,7 +336,7 @@ export const BATTLES: Battle[] = [
   },
   {
     id: 'uman',
-    wikipediaSlug: 'Kesselschlacht_von_Uman',
+    wikipediaSlug: 'Kesselschlacht_bei_Uman',
     name: 'Schlacht um Uman',
     start: '1941-07-15',
     end: '1941-08-08',
