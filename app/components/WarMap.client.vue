@@ -328,6 +328,28 @@ async function loadCountryGeoms() {
   }
 }
 
+// Cache der City-Geometries: detaillierte OSM-Boundaries (admin_level 8) aus
+// `public/data/cities_boundaries.json`. Wenn geladen, überschreiben sie die
+// hand-traced Polygone aus `cities.ts` (Fallback bei Lade-/Daten-Fehler).
+// Per App-City-ID gekeyt (`berlin`, `stalingrad`, …).
+const cityGeoms = new Map<string, GeoJSON.Geometry>()
+
+async function loadCityGeoms() {
+  try {
+    const res = await fetch('/data/cities_boundaries.json')
+    if (!res.ok) return
+    const fc = (await res.json()) as GeoJSON.FeatureCollection
+    for (const f of fc.features) {
+      const id = (f.properties as Record<string, unknown>)?.id
+      if (typeof id === 'string') cityGeoms.set(id, f.geometry)
+    }
+    // Refresh sodass die geladenen Boundaries sofort die hand-traced Polygone ersetzen.
+    updateBattles()
+  } catch (e) {
+    console.warn('[WarMap] Konnte City-Geometries nicht laden:', e)
+  }
+}
+
 /** Wandelt GeoJSON-Polygon/MultiPolygon in das von polygon-clipping erwartete Format. */
 function geomToClip(geom: GeoJSON.Geometry): MultiPolygon | null {
   if (geom.type === 'Polygon') return [geom.coordinates as ClipPolygon]
@@ -689,12 +711,12 @@ function updateBattles() {
 function updateContestedCities(activeBattles: Battle[]) {
   if (!map) return
   const cities = citiesForActiveBattles(activeBattles.map((b) => b.id))
-  const fc: GeoJSON.FeatureCollection<GeoJSON.Polygon> = {
+  const fc: GeoJSON.FeatureCollection<GeoJSON.Polygon | GeoJSON.MultiPolygon> = {
     type: 'FeatureCollection',
     features: cities.map((c) => ({
       type: 'Feature',
       properties: { name: c.name },
-      geometry: c.geometry,
+      geometry: (cityGeoms.get(c.id) as GeoJSON.Polygon | GeoJSON.MultiPolygon | undefined) ?? c.geometry,
     })),
   }
   const src = map.getSource('contested-cities') as maplibregl.GeoJSONSource | undefined
@@ -1138,6 +1160,9 @@ onMounted(() => {
     // Country-Geometries lazy laden; sobald da, befüllt loadCountryGeoms()
     // die axis-countries-Source per updateAxisCountriesClipped().
     loadCountryGeoms()
+    // City-Geometries (detaillierte OSM-Boundaries) lazy laden; ersetzen dann
+    // die hand-traced Polygone aus `cities.ts` im contested-cities-Layer.
+    loadCityGeoms()
   })
 
   // Rechtsklick: Standort-Abfrage
