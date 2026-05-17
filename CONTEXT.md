@@ -1,6 +1,6 @@
 # Ostfront-Karte 1941–1945 — Projekt-Kontext
 
-Stand: 2026-05-17 · Sprache der UI/Daten: Deutsch
+Stand: 2026-05-17 (Charkow-Erweiterung) · Sprache der UI/Daten: Deutsch
 
 ## Was die App tut
 
@@ -57,7 +57,7 @@ app/
 │   └── DarkSelect.vue          # Custom Dropdown (statt native select)
 ├── data/
 │   ├── easternFront.ts         # Frontlinien-Snapshots (17×12 Lons) + Polygon-Builder
-│   ├── battles.ts              # 25 Schlachten mit Details + wikipediaSlug
+│   ├── battles.ts              # 26 Schlachten mit Details + wikipediaSlug
 │   ├── operations.ts           # 23 Operationen mit Bézier-Pfeilen
 │   ├── divisions.ts            # ~40 Verband-Marker für 6 Snapshots
 │   ├── cities.ts               # 15 OSM-Stadtgrenzen + Battle→City-Mapping
@@ -65,10 +65,13 @@ app/
 │   ├── strength.ts             # 16 Quartals-Snapshots Stärke/Produktion
 │   ├── railways.ts             # 19 historische Eisenbahn-Hauptstrecken
 │   ├── battle-pois.ts          # POI-Aggregator (Interface + Vite-Glob)
-│   └── pois/                   # POI-JSON pro Schlacht (25 Dateien, ~432 POIs)
-│       ├── stalingrad.json     #   17 POIs
+│   └── pois/                   # POI-JSON pro Schlacht (26 Dateien, ~469 POIs)
+│       ├── stalingrad.json     #   22 POIs
 │       ├── berlin.json         #   23 POIs
-│       ├── ...                 #   (alle 25 Schlachten)
+│       ├── kharkov-1.json      #   16 POIs (Okt 1941)
+│       ├── kharkov-2.json      #   25 POIs (Mai 1942, +8 Stadt-POIs)
+│       ├── kharkov-3.json      #   24 POIs (Feb/März 1943, +8 Stadt-POIs)
+│       ├── ...                 #   (alle 26 Schlachten)
 public/
 └── data/
     ├── ne_50m_admin_0_countries.json  # Natural Earth admin-0, lazy geladen für Länder-Färbung
@@ -95,7 +98,7 @@ public/
 - **Frontlinie zusätzlich geclippt**: Per Sample-Filtering (`clipFrontToEastern()`) wird die LineString-Frontlinie in MultiLineString-Segmente aufgeteilt, sodass nur Teile sichtbar bleiben, die durch Eastern-Tier-Länder verlaufen. So endet die rote Linie z.B. bei der Balkanwende sauber an den Karpaten statt durch SRB/BGR/GRC zu führen.
 
 ### 2. Schlachten (`battles.ts`)
-25 Großschlachten mit jeweils:
+26 Schlachten (24 Großschlachten + 2 kleinere — `brest` und `kharkov-1` haben `major: false`) mit jeweils:
 - ISO-Start/Ende, Koordinaten, `major: boolean`
 - 1–2 Sätze Zusammenfassung
 - Pro Seite (axis/soviet): Befehlshaber, Truppen, Verbände, Panzer/Flugzeuge, Verluste
@@ -193,10 +196,10 @@ Popup mit:
 - LocalStorage-Cache mit 24h TTL (Key: `wiki:de:{slug}`); 404 und Disambiguation-Seiten werden als `null` gecached
 - BattleDetail-Panel zeigt: Hero-Bild (180px hoch, Klick → Original in voller Auflösung), Wikipedia-Lead in eigener Box, „Vollständigen Artikel öffnen"-Link
 - Race-Condition-Schutz: Battle-Wechsel während Fetch verwirft das alte Ergebnis
-- 25 Schlachten haben verifizierte de.wiki-Slugs (Sonderfälle: Kursk → `Unternehmen_Zitadelle`, Brest → `Brester_Festung`, Sewastopol mit en-dash `1941–1942`)
+- 26 Schlachten haben verifizierte de.wiki-Slugs (Sonderfälle: Kursk → `Unternehmen_Zitadelle`, Brest → `Brester_Festung`, Sewastopol mit en-dash `1941–1942`, alle drei Charkow-Schlachten → `Schlacht_bei_Charkow_(1941/1942/1943)`)
 
 ### 16. POIs in der Schlacht (`data/battle-pois.ts`, `data/pois/*.json`, `WarMap.client.vue`)
-- **437 POIs über alle 25 Schlachten**, ~17 pro Schlacht (16–23, Stalingrad mit 22). 358 (82%) haben einen Wikipedia-Slug für Lead-Text/Fallback-Bild, **292 (67%) haben ein `customImage` mit zeitgenössischem Kriegsfoto (1939–1945)** aus Wikimedia Commons (Bundesarchiv, RIA Novosti, Fortepan, NAC, TASS); die restlichen 145 fallen auf das Wikipedia-Bild zurück (oft modernes Foto vom Ort heute).
+- **~469 POIs über alle 26 Schlachten**, ~18 pro Schlacht (16–25 — Stadtkampf-Schlachten Charkow-2/-3 jetzt mit deutlich mehr POIs innerhalb der Stadt-Boundary). Mehrheit hat einen Wikipedia-Slug für Lead-Text/Fallback-Bild, ein großer Teil hat ein `customImage` mit zeitgenössischem Kriegsfoto (1939–1945) aus Wikimedia Commons (Bundesarchiv, RIA Novosti, Fortepan, NAC, TASS); die übrigen fallen auf das Wikipedia-Bild zurück (oft modernes Foto vom Ort heute).
 - **Koordinaten-Refine-Pass** verbesserte 119 POIs um >500m. Verteilung der Quellen: 310 `wikipedia`, 7 `wikidata`, 21 `nominatim` (lokal-sprachig: russisch/ukrainisch/polnisch/usw), 94 `original` (Gebietspunkte wie Steppen/Flüsse/Stellungen — bewusst kein Punktstandort).
 - Pro Schlacht liegt ein JSON unter `app/data/pois/{battleId}.json`. `battle-pois.ts` aggregiert sie via Vite-Glob-Import — neue Schlacht-POI-Dateien werden automatisch eingelesen.
 - Daten wurden durch **25 parallele Recherche-Agents** + 1 Bilder-Agent + 1 Refine-Agent + 1 Pilot + 24 parallele Kriegsfoto-Agents erstellt:
@@ -345,6 +348,9 @@ Pattern:
 
 | URL-Suffix | Zeigt |
 |---|---|
+| `?d=1941-10-22&b=kharkov-1` | Erste Schlacht um Charkow (Stadteinnahme durch Reichenau) |
+| `?d=1942-05-17&b=kharkov-2&mode=battle` | Zweite Schlacht (sowj. Mai-Offensive), Stadt-POIs + Kessel-POIs |
+| `?d=1943-03-14&b=kharkov-3&mode=battle` | Dritte Schlacht (SS-Häuserkampf), Sumska-Straße + Freiheitsplatz |
 | `?d=1942-11-19&b=stalingrad` | Stalingrad am Tag von Uranus, Detail-Panel offen |
 | `?d=1942-11-19&b=stalingrad&mode=battle` | Stalingrad im Detail-Modus mit Galerie + lokalem Zeitstrahl |
 | `?d=1943-07-05&b=kursk&mode=battle` | Kursk-Detail (Wiki-Slug: Unternehmen Zitadelle) |
@@ -371,7 +377,7 @@ Punkte 1–5 der ursprünglichen Ideen-Liste **+ Hybrid-Wikipedia-Integration + 
 6. ✅ Native WebGL-Marker (Schlachten als circle-Layer, Verbands-Labels als symbol-Layer mit Halo + Hover-Popup)
 7. ✅ Wikipedia-Hybrid: Lead-Text + Hero-Bild im Detail-Panel (de.wiki, 24h-Cache)
 8. ✅ Schlacht-Detail-Modus: Welt → Schlacht-Switch mit zoomed Karte, lokalem Zeitstrahl, Battle-Events, Wikipedia-Bildergalerie, Lightbox, teilbare URL
-9. ✅ POIs in der Schlacht — **432 POIs über alle 25 Schlachten** (83% mit Wiki-Bild, weitere 12% mit Commons-Bild); Kategorie-Icons + Labels via Symbol-Layer; Klick öffnet Popup mit Bild + Beschreibung + Lizenz-Credit
+9. ✅ POIs in der Schlacht — **~469 POIs über alle 26 Schlachten** (~18 pro Schlacht); Kategorie-Icons + Labels via Symbol-Layer; Klick öffnet Popup mit Bild + Beschreibung + Lizenz-Credit + Google-Maps-Link
 10. ✅ Autonomes Recherche-Pattern: 25 parallele Agents recherchieren pro Schlacht 12–20 Schauplätze
 11. ✅ Commons-Bilder-Agent: 54 weitere POIs mit hand-recherchierten Wikimedia-Commons-Bildern (Bundesarchiv, CC-BY-SA), Lizenz-Credit im Popup
 12. ✅ Koordinaten-Refine-Agent: 119 POIs um >500m verbessert, 4-stufige Quellenhierarchie (Wikipedia/Wikidata/OSM/Nominatim mit lokal-sprachigen Namen)
@@ -389,4 +395,6 @@ Punkte 1–5 der ursprünglichen Ideen-Liste **+ Hybrid-Wikipedia-Integration + 
     - **BattleDetail-Reopen**: BattleDetail folgt jetzt dem EventsFeed-Pattern — X schließt nur das Panel, Reopen-Tab unten rechts (bottom 62px, über dem StrengthChart-Toggle, vermeidet MapLibre-Zoom-Control-Kollision oben). Selektion bleibt erhalten, andere Battle klicken öffnet das Panel automatisch wieder.
     - **DarkSelect-Layout-Fix**: Menu landete früher unter dem BattleDetail-Panel (z-index/Stacking) und ragte rechts aus dem Trigger raus. Umgebaut auf `<Teleport to="body">` + `position: fixed` mit Rect-basierter rechtsbündiger Positionierung; reagiert auf resize/scroll.
 22. ✅ **Two-Tier-Achsen-Färbung + Front-Linien-Clipping (2026-05-17)**: `axisControl.ts` mit `tier: 'eastern' | 'rear'`. 15 eastern (Reich + Achsenpartner + eroberte Sowjet-Republiken) bleiben rot und werden weiter gegen die Sowjet-Region geclippt. 16 rear (Westeuropa, ITA, Bulgarien, Balkan) werden dezent grau (#4a4a4a, opacity 0.22) gezeichnet — diese Länder waren Achsen-Hinterland, hatten mit der Ostfront nichts zu tun. Frontlinie wird per Sample-Filtering (`clipFrontToEastern()`) auf die Eastern-Tier-Region beschränkt → MultiLineString. So endet die rote Linie sauber an Land-Grenzen statt durch Mittelmeer, Adria, Bulgarien oder Balkan zu führen. Rechtsklick-Abfrage unterscheidet jetzt vier Zustände (Achse-Ostfront / Achse-Hinterland / Sowjet / neutral). Bug-Fix dazu: Sowjet-Region Süd-Grenze auf lat 40 erweitert, vorher ragte Dagestan-Dreieck (Derbent → Aserbaidschan) immer rot aus der Region heraus.
-23. ✅ **POI-Popup: Google-Maps-Link (2026-05-17)**: Bei jedem POI-Popup unten ein zweiter Action-Link „Heute auf Google Maps ansehen ↗" (zusätzlich zum Wiki-Link, wo vorhanden). Öffnet `https://www.google.com/maps?q=lat,lng&z=18` in neuem Tab mit Pin auf den exakten POI-Koordinaten — User kann von dort per Pegman in Street View wechseln, wo Coverage existiert. Funktioniert für alle 437 POIs, auch ohne Wikipedia-Slug.
+23. ✅ **POI-Popup: Google-Maps-Link (2026-05-17)**: Bei jedem POI-Popup unten ein zweiter Action-Link „Heute auf Google Maps ansehen ↗" (zusätzlich zum Wiki-Link, wo vorhanden). Öffnet `https://www.google.com/maps?q=lat,lng&z=18` in neuem Tab mit Pin auf den exakten POI-Koordinaten — User kann von dort per Pegman in Street View wechseln, wo Coverage existiert. Funktioniert für alle POIs, auch ohne Wikipedia-Slug.
+24. ✅ **Charkow-Stadt-POI-Verdichtung (2026-05-17)**: Audit ergab, dass bei `kharkov-2` nur 3 von 17 POIs und bei `kharkov-3` nur 2 von 16 POIs INNERHALB der Stadt-Boundary lagen — der Rest war Umland (Isjum, Barwenkowo, Belgorod etc.). Recherche-Agent ergänzte je 8 zusätzliche Stadt-POIs: Freiheitsplatz (mit Schlacht-spezifischen Narrativen — 1942 „Platz der Wehrmacht", 1943 „Platz der Leibstandarte SS"), Derschprom/Gosprom, Hotel International, Maljschew-Lokomotivwerk (KhPZ — T-34-Wiege), Konstitutionsplatz, Mariä-Entschlafens-Kathedrale, plus spezifisch in kharkov-2 die Mariä-Verkündigungs-Kathedrale + Bahnhofs-Barrikadenviertel und in kharkov-3 die Sumska-Straße (SS-Vormarschachse) + Hauptbahnhof-Zerstörungsbild. Coverage Kriegsfotos 75–87%, Volltreffer u.a. TASS-Luftbild Dzerzhinsky-Platz 1943 und Mittelstaedt-Februar-1943-Zivilistenfoto. Neue Counts: kharkov-2 25 POIs (vorher 17), kharkov-3 24 POIs (vorher 16).
+25. ✅ **Erste Schlacht um Charkow ergänzt (2026-05-17)**: Bisher fehlte `kharkov-1` (20.–24. Oktober 1941) — Auslassung in der ursprünglichen Battle-Recherche, weil "nur Stadteinnahme nach Verzögerungsgefechten" (`major: false`). Neuer Battle-Datensatz in `battles.ts`: 6. Armee Reichenau / LV. AK Vierow (57. ID, 100./101. leichte, 239. ID, StuG-Abt. 197) vs. sowj. 38. Armee Zyganow (216. SchD, 57. NKWD-Brigade); ~1.000–1.500 dt. vs. ~10–15.000 sowj. Verluste; Wiki-Slug `Schlacht_bei_Charkow_(1941)` (NICHT `_um_Charkiw_`-Variante, war 404). Neue POI-Datei `kharkov-1.json` mit 16 Schauplätzen — 81% mit Bundesarchiv-/NAC-/Commons-Kriegsfoto (Oktober-1941-Volltreffer wie Hähle „Einmarsch deutsche Truppen", Reindl „zerstörter Bahnhof", Herber „Barrikaden in Charkow"), 63% mit verifiziertem Wiki-Slug. Mix Stadt (Stadt-Marker, Freiheitsplatz, Derschprom, Hauptbahnhof, Lopan-Brücken, Sumska-Straße, Straßenkampf-Zentrum) + Industrie (alle bereits evakuiert: KhPZ/Malyschew, KhTZ-Traktorenwerk, Flugzeugwerk Nr. 135) + Vorfeld (Bohoduchiw, Sumy, Krasnohrad, Tschuhujiw, Stary Saltow, Nowo Bavaria). `BATTLE_TO_CITY` in `cities.ts` ergänzt: `kharkov-1` nutzt das gleiche Stadt-Polygon. Damit sind jetzt alle drei Charkow-Schlachten konsistent in der App.

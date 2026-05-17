@@ -288,5 +288,139 @@
     ],
     "category": "symbolic",
     "coordinatesSource": "original"
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-freiheitsplatz",
+    "name": "Freiheitsplatz (Platz der Wehrmacht)",
+    "description": "Mit rund 12 Hektar einer der größten Stadtplätze Europas und 1942 vom Besatzer in \"Platz der Wehrmacht\" umbenannt. Im Mai 1942 zentraler Aufmarsch- und Paradeplatz des AOK 6 unter Generaloberst Paulus, der hier seine zur Donez-Front rollenden Verbände versammelte, bevor sie zur Abwehr der sowjetischen Mai-Offensive aus dem Isjumer Brückenkopf nach Süden abrückten.",
+    "coordinates": [
+      36.23125,
+      50.004889
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Freiheitsplatz_(Charkiw)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Bundesarchiv_Bild_183-B26472%2C_Charkow%2C_Soldat_rasiert_sich_auf_dem_%22Roten_Platz%22.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B26472 / Janz, Juni 1942 — deutscher Soldat im besetzten Charkow, im Hintergrund das Derschprom-Hochhaus am damaligen \"Platz der Wehrmacht\"",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B26472,_Charkow,_Soldat_rasiert_sich_auf_dem_%22Roten_Platz%22.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-derschprom",
+    "name": "Derschprom (Gosprom-Hochhaus)",
+    "description": "Konstruktivistischer Wolkenkratzer aus den späten 1920er-Jahren am Freiheitsplatz, mit 63 Metern Wahrzeichen Charkows und 1942 deutscher Behördensitz. Im Mai 1942 nutzten Stäbe der 6. Armee und der Ortskommandantur das weitläufige Bauwerk als Verwaltungszentrum, von dem aus die Verteidigung der Stadt gegen die nördliche Stoßgruppe der 28. Armee Rjabyschew koordiniert wurde.",
+    "coordinates": [
+      36.227083,
+      50.006667
+    ],
+    "category": "building",
+    "wikipediaSlug": "Derschprom",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Bundesarchiv_Bild_183-J19029%2C_Im_besetzten_Charkow%2C_Tr%C3%B6delmarkt.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-J19029 / Weber, Oktober 1942 — Trödelmarkt im besetzten Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J19029,_Im_besetzten_Charkow,_Tr%C3%B6delmarkt.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-hotel-international",
+    "name": "Hotel International (Hotel Charkiw)",
+    "description": "1936 fertiggestellter Konstruktivismus-Bau am Nordrand des Freiheitsplatzes mit damals 495 Zimmern, 1937 Goldmedaille der Pariser Weltausstellung. Während der deutschen Besatzung Quartier für Offiziere und Stäbe des AOK 6; im Mai 1942 logierten hier Verbindungsoffiziere zum südlichen Frontabschnitt, wo gerade die Operation \"Fridericus\" anlief.",
+    "coordinates": [
+      36.2333,
+      50.0058
+    ],
+    "category": "building",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-malyschew-werk",
+    "name": "Charkiwer Lokomotivwerk Maljschew (KhPZ)",
+    "description": "Vor 1941 weltgrößtes Panzerwerk und Geburtsstätte des T-34, dessen Serienfertigung hier im Juni 1940 anlief. Im Oktober 1941 wurden Anlagen und Konstruktionsbüro nach Nischni Tagil evakuiert und mit dem dortigen Werk zum \"Uraltankwerk Nr. 183\" verschmolzen; im Mai 1942 fertigte die Wehrmacht in den verbliebenen Hallen Munition und reparierte Beutepanzer für den bevorstehenden Sommerfeldzug.",
+    "coordinates": [
+      36.2808,
+      49.9697
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Malyschew-Werk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Bundesarchiv_Bild_183-B13132%2C_Charkow%2C_Sturmgesch%C3%BCtz_und_Sch%C3%BCtzenpanzer.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B13132 / Mittelstaedt, Heinz, Oktober 1941 — Sturmgeschütz III und Sd.Kfz. 250 in den Straßen Charkows nach der Eroberung",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B13132,_Charkow,_Sturmgesch%C3%BCtz_und_Sch%C3%BCtzenpanzer.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-konstitutionsplatz",
+    "name": "Konstitutionsplatz (Roter Platz)",
+    "description": "Historisches Stadtzentrum Charkows am Übergang zwischen Altstadt und sowjetischem Verwaltungsviertel, vom Besatzer 1942 als \"Roter Platz\" geführt. Hier konzentrierten sich im Mai 1942 die Wehrmachts-Stadtkommandantur, das Soldatenheim und der zentrale Umschlagplatz für Nachschub aus dem rückwärtigen Heeresgebiet — neuralgischer Punkt bei der Sicherung der Stadt gegen einen befürchteten sowjetischen Durchbruch von Norden.",
+    "coordinates": [
+      36.231114,
+      49.992369
+    ],
+    "category": "symbolic",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bundesarchiv_Bild_183-B23862%2C_Zivilisten_in_den_Strassen_von_Charkow.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B23862 / Mittelstaedt, Heinz, Februar 1943 — Zivilisten im besetzten Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B23862,_Zivilisten_in_den_Strassen_von_Charkow.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-dormition-kathedrale",
+    "name": "Mariä-Entschlafens-Kathedrale (Uspenski Sobor)",
+    "description": "1780 vollendeter ukrainisch-barocker Kuppelbau auf dem Universitätshügel über der Lopan, mit 90 Meter hohem Glockenturm bis ins 21. Jahrhundert höchstes Gebäude der Stadt und weithin sichtbares Wahrzeichen. Im Mai 1942 deutsche Beobachtungsstelle und Orientierungspunkt für die Luftverteidigung über den Lopan-Brücken, die Charkows Westufer mit dem Bahnhofsviertel verbinden.",
+    "coordinates": [
+      36.2306,
+      49.9911
+    ],
+    "category": "building",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-verkuendigungs-kathedrale",
+    "name": "Mariä-Verkündigungs-Kathedrale (Blagoweschtschenski Sobor)",
+    "description": "1888–1901 errichtete neobyzantinische Kathedrale mit 80 Meter hohem Glockenturm und charakteristisch rot-weiß gestreifter Fassade, größtes orthodoxes Gotteshaus Charkows. 1930 von den Sowjets geschlossen und im Mai 1942 noch profanisiert; erst während der Besatzungszeit 1943 erneut für Gottesdienste geöffnet, blieb sie 1942 als markantes Wahrzeichen am Westufer der Lopan eine zentrale Orientierungsmarke der deutschen Stadtkommandantur.",
+    "coordinates": [
+      36.2242,
+      49.9903
+    ],
+    "category": "building",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kharkov-2",
+    "id": "kharkov2-bahnhof-barrikaden",
+    "name": "Bahnhofsvorfeld (Barrikadenviertel)",
+    "description": "Straßenzug am Aufstieg von der Klotschkiwska zum Derschprom, im Oktober 1941 letzter Verteidigungsabschnitt der Roten Armee mit Barrikaden aus Trambahnschienen und Sandsäcken. Im Mai 1942 lag das Viertel im Sicherungsbereich der deutschen Feldgendarmerie; die instand gesetzten Lopan-Brücken trugen den gesamten Nachschub vom Hauptbahnhof zur Donez-Front und waren das wichtigste Räumungsziel sowjetischer Luftangriffe während der Mai-Offensive.",
+    "coordinates": [
+      36.2245,
+      50.0015
+    ],
+    "category": "transport",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Bundesarchiv_Bild_183-B12885%2C_Barrikaden_in_Charkow.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B12885 / Herber, Oktober 1941 — Barrikaden an der Klotschkiwska, Blick Richtung Derschprom",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B12885,_Barrikaden_in_Charkow.jpg"
+    }
   }
 ]

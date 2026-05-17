@@ -304,5 +304,146 @@
     "category": "terrain",
     "wikipediaSlug": "Mscha_(Donez)",
     "coordinatesSource": "original"
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-freiheitsplatz",
+    "name": "Freiheitsplatz (Platz der Leibstandarte SS)",
+    "description": "Riesiger Zentralplatz Charkows, im Februar 1943 erst sowjetisch zurückerobert, dann im März vom II. SS-Panzerkorps erstürmt und von Ende März bis 23. August 1943 in \"Platz der Leibstandarte SS\" umbenannt. Hier traf am 13./14. März die Kampfgruppe Peiper mit dem II. Bataillon der Leibstandarte zusammen und stieß von hier südwärts über den Charkiw-Fluss vor — der symbolische Höhepunkt der Rückeroberung.",
+    "coordinates": [
+      36.23125,
+      50.004889
+    ],
+    "category": "symbolic",
+    "wikipediaSlug": "Freiheitsplatz_(Charkiw)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kharkov_Dzerzhinsky_Square_%281943%29.jpg",
+      "source": "Wikimedia Commons (Fotochronika TASS)",
+      "license": "Public Domain (Russland)",
+      "credit": "Fotochronika TASS, 1943 — Luftaufnahme des Dzerzhinsky-Platzes (heute Freiheitsplatz) in Charkow mit zerstörtem Gebietsparteikomitee",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kharkov_Dzerzhinsky_Square_(1943).jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-derschprom",
+    "name": "Derschprom (Gosprom-Hochhaus)",
+    "description": "Konstruktivistisches Wahrzeichen am Freiheitsplatz, in den Häuserkämpfen vom 13.–15. März 1943 mehrfach umkämpft und durch Sprengungen und Brände im Inneren schwer beschädigt. Die Sowjets versuchten beim Rückzug aus der Stadt, das prestigeträchtige Bauwerk zu sprengen — die Ladungen verfehlten ihre Wirkung, sodass der Bau das einzige Sowjet-Wolkenkratzer-Symbol blieb, das beide Schlachten überstand.",
+    "coordinates": [
+      36.227083,
+      50.006667
+    ],
+    "category": "building",
+    "wikipediaSlug": "Derschprom",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Gosprom1943.JPG",
+      "source": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0 / GFDL",
+      "credit": "Unbekannter Fotograf, Januar 1943 — Derschprom im Winter, kurz vor der vorübergehenden sowjetischen Rückeroberung Charkows",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gosprom1943.JPG"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-konstitutionsplatz",
+    "name": "Konstitutionsplatz (Roter Platz)",
+    "description": "Historischer Mittelpunkt der Charkower Altstadt, am 14. März 1943 von der SS-Division Das Reich nach erbitterten Häuserkämpfen entlang der Sumska-Straße erreicht. Die Vereinigung mit der von Norden über den Freiheitsplatz vorstoßenden Leibstandarte am Konstitutionsplatz schloss den sowjetischen Verteidigungsbereich in der Innenstadt ein und entschied den Sturm auf Charkow.",
+    "coordinates": [
+      36.231114,
+      49.992369
+    ],
+    "category": "symbolic",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bundesarchiv_Bild_183-B23862%2C_Zivilisten_in_den_Strassen_von_Charkow.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B23862 / Mittelstaedt, Heinz, Februar 1943 — Zivilisten in den Straßen Charkows nach den Februarkämpfen, mit deutlichen Spuren der \"erbitterten Kämpfe\"",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B23862,_Zivilisten_in_den_Strassen_von_Charkow.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-malyschew-werk",
+    "name": "Charkiwer Lokomotivwerk Maljschew (KhPZ)",
+    "description": "Vor 1941 weltgrößtes Panzerwerk und Geburtsstätte des T-34, nach der Evakuierung nach Nischni Tagil im Februar/März 1943 sowjetisches Widerstandsnest in den ausgebrannten Hallen. Beim Sturm vom 13.–15. März kämpften sich Grenadiere der Leibstandarte und der Das Reich durch das ausgedehnte Werksgelände im Südosten der Stadt — eine der zähesten Stellungen der dritten Schlacht um Charkow.",
+    "coordinates": [
+      36.2808,
+      49.9697
+    ],
+    "category": "industry",
+    "wikipediaSlug": "Malyschew-Werk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Bundesarchiv_Bild_183-L20721%2C_Charkow%2C_deutscher_Einmarsch.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-L20721 / Herber, November 1941 — deutsche Truppen im brennenden Industrieviertel Charkows (Wiederveröffentlichung 1943)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-L20721,_Charkow,_deutscher_Einmarsch.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-hotel-international",
+    "name": "Hotel International (Hotel Charkiw)",
+    "description": "Konstruktivismus-Hotel am Nordrand des Freiheitsplatzes, im Februar 1943 von der Roten Armee als Kommando- und Versorgungsstützpunkt genutzt. Während des SS-Sturms auf den Freiheitsplatz am 13./14. März 1943 wurde der Gebäudekomplex durch Beschuss und Brände schwer beschädigt; nach der Rückeroberung diente er erneut als Quartier für Stäbe des II. SS-Panzerkorps unter Hausser.",
+    "coordinates": [
+      36.2333,
+      50.0058
+    ],
+    "category": "building",
+    "coordinatesSource": "original"
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-bahnhof-zerstoerung",
+    "name": "Hauptbahnhof Charkow (Zerstörungsbild 1943)",
+    "description": "Zentraler Eisenbahnknoten der Ukraine, in den Kämpfen zwischen Oktober 1941, Februar 1943 und März 1943 mehrfach umkämpft und systematisch gesprengt. Während des SS-Gegenangriffs Mitte März 1943 lag der Bahnhof im Vormarschstreifen der Leibstandarte aus dem Westen; nach der Rückeroberung war die rasche Wiederherstellung der Strecken nach Poltawa, Belgorod und Losowaja Mansteins logistische Hauptaufgabe vor der Sommeroffensive \"Zitadelle\".",
+    "coordinates": [
+      36.2044643,
+      49.9892591
+    ],
+    "category": "transport",
+    "coordinatesSource": "nominatim",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Bundesarchiv_Bild_183-B16515%2C_Russland%2C_zerst%C3%B6rter_Bahnhof_von_Charkow.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B16515 / Reindl, Oktober 1941 — zerstörter Bahnhof von Charkow, Zustand nach den Vorkämpfen, der sich im März 1943 wiederholte",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B16515,_Russland,_zerst%C3%B6rter_Bahnhof_von_Charkow.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-sumska-strasse",
+    "name": "Sumska-Straße (SS-Vormarschachse)",
+    "description": "Hauptboulevard zwischen Freiheitsplatz und Konstitutionsplatz, im März 1943 die zentrale Vormarschachse der SS-Division Das Reich beim Sturm auf das Stadtzentrum. Vom 13. bis 15. März trieben SS-Grenadiere unterstützt durch Sturmgeschütze und Panzer IV jedes Gebäude einzeln vor; sowjetische Heckenschützen und MG-Nester verlangsamten den Vorstoß auf 200 bis 400 Meter pro Tag.",
+    "coordinates": [
+      36.2316,
+      49.9985
+    ],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Bundesarchiv_Bild_183-B13548%2C_Charkow%2C_Einmarsch_deutsche_Truppen.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B13548 / Hähle, Johannes, Oktober 1941 — deutsche Truppen marschieren in die Charkower Innenstadt ein (vergleichbare Szene wie März 1943)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B13548,_Charkow,_Einmarsch_deutsche_Truppen.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-3",
+    "id": "kharkov-3-dormition-kathedrale",
+    "name": "Mariä-Entschlafens-Kathedrale (Uspenski Sobor)",
+    "description": "Barocker Kuppelbau auf dem Universitätshügel über der Lopan, mit 90 Meter hohem Glockenturm bis ins 21. Jahrhundert höchstes Gebäude der Stadt und damit zentraler Beobachtungs- und Orientierungspunkt während der März-Kämpfe 1943. SS-Artilleriebeobachter der Leibstandarte koordinierten von hier aus den Feuerschlag auf den letzten sowjetischen Widerstandsabschnitt im Bahnhofsviertel auf dem Westufer der Lopan.",
+    "coordinates": [
+      36.2306,
+      49.9911
+    ],
+    "category": "building",
+    "coordinatesSource": "original"
   }
 ]

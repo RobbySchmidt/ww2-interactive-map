@@ -1,0 +1,247 @@
+[
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-charkow-stadt",
+    "name": "Charkow (Stadt)",
+    "description": "Zweitgrößte Stadt der Ukrainischen SSR, kritischer Eisenbahnknoten und Industriezentrum des Donezbeckens. Vor der Schlacht durch Evakuierte auf 1,5 Millionen Einwohner angeschwollen. Erstes Kriegsziel der HG Süd nach der Kesselschlacht von Kiew; vom 24. Oktober 1941 bis 16. Februar 1943 unter deutscher Besatzung.",
+    "coordinates": [36.2304, 49.9935],
+    "category": "terrain",
+    "wikipediaSlug": "Charkiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Kharkov_air_overview_%281941%29.jpg",
+      "source": "Wikimedia Commons / Deutsche Fotochronik",
+      "license": "Public Domain",
+      "credit": "Deutsche Luftaufnahme Charkows 1941 mit Lopan-, Kupechesky-, Bursatsky- und Rogatinsky-Brücke",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kharkov_air_overview_(1941).jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-freiheitsplatz",
+    "name": "Freiheitsplatz (Ploschtscha Swobody)",
+    "description": "Damals zweitgrößter Platz Europas und Verwaltungszentrum Charkows. Schauplatz des deutschen Einmarsches am 24. Oktober 1941 — Propaganda-Aufnahmen der einrückenden 57. ID entstanden hier, dominiert vom Derschprom-Hochhaus. Nach der Besatzung Aufmarschplatz der Wehrmacht.",
+    "coordinates": [36.2304, 50.0046],
+    "category": "symbolic",
+    "wikipediaSlug": "Freiheitsplatz_(Charkiw)",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Bundesarchiv_Bild_183-B13548%2C_Charkow%2C_Einmarsch_deutsche_Truppen.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B13548 / Hähle, Oktober 1941 — Einmarsch deutscher Truppen in Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B13548,_Charkow,_Einmarsch_deutsche_Truppen.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-derschprom",
+    "name": "Derschprom (Haus der staatlichen Industrie)",
+    "description": "13-stöckiges konstruktivistisches Wahrzeichen am Nordrand des Freiheitsplatzes (1928, erstes Hochhaus der UdSSR). Bei den Straßenkämpfen vom 23./24. Oktober kaum beschädigt; diente nach der Eroberung dem AOK 6 und der LV-Korps-Kommandantur als Stadtkommandantur-Sitz.",
+    "coordinates": [36.2294, 50.0046],
+    "category": "building",
+    "wikipediaSlug": "Derschprom",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/CharkowVonReichenau.JPG",
+      "source": "Wikimedia Commons / Charkiwer Historisches Museum",
+      "license": "Public Domain",
+      "credit": "Brief des Generalfeldmarschalls Walter von Reichenau aus Charkow, 1941 — Charkiv Historical Museum",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CharkowVonReichenau.JPG"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-hauptbahnhof",
+    "name": "Hauptbahnhof Charkow (Charkiw-Pasaschyrskyj)",
+    "description": "Zentraler Eisenbahnknoten Ostukrainas und logistische Drehscheibe Süd–Nord/West–Ost. Bis 20. Oktober 1941 verkehrten von hier 320 Sonderzüge mit dem demontierten Industrie-Inventar Richtung Ural. Die nachrückenden deutschen Truppen fanden den Komplex von der NKWD-Brigade gesprengt vor.",
+    "coordinates": [36.1875, 49.9817],
+    "category": "transport",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Bundesarchiv_Bild_183-B16515%2C_Russland%2C_zerst%C3%B6rter_Bahnhof_von_Charkow.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B16515, Oktober/November 1941 — zerstörter Bahnhof von Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B16515,_Russland,_zerst%C3%B6rter_Bahnhof_von_Charkow.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-malyschew-werk",
+    "name": "Charkower Lokomotivwerk (KhPZ / Malyschew-Werk)",
+    "description": "Wichtigster Produktionsort des sowjetischen T-34 vor dem Krieg. Ab 19. September 1941 lief die Verlagerung von Konstruktionsbüro Nr. 520 und Werkzeugmaschinen nach Nischni Tagil (Werk Nr. 183 \"Uralwagonsawod\"); letzte Züge verließen die Stadt Mitte Oktober. Bei der deutschen Eroberung standen leere Hallen.",
+    "coordinates": [36.2864, 49.9558],
+    "category": "industry",
+    "wikipediaSlug": "Malyschew-Werk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bundesarchiv_Bild_183-B12978%2C_Charkow%2C_Sch%C3%BCtzenpanzer_und_Sturmgesch%C3%BCtze_in_Stra%C3%9Fen.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B12978, Oktober 1941 — Schützenpanzer und Sturmgeschütze in Charkower Straßen",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B12978,_Charkow,_Sch%C3%BCtzenpanzer_und_Sturmgesch%C3%BCtze_in_Stra%C3%9Fen.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-traktorenwerk",
+    "name": "Charkower Traktorenwerk (KhTZ)",
+    "description": "1931 errichtet, vor dem Krieg größtes Traktorenwerk der UdSSR und Vorgänger der KhPZ-T-34-Produktion. Im September/Oktober 1941 nach Stalingrad und Rubzowsk verlagert (Altajskij Traktorenwerk). Lag rund 7 km östlich des Stadtzentrums in der Vorstadt Losewe.",
+    "coordinates": [36.3683, 49.9772],
+    "category": "industry",
+    "wikipediaSlug": "Charkiwer_Traktorenwerk",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bundesarchiv_Bild_183-B13933%2C_Charkow%2C_Landung_eines_Fieseler_Storch.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B13933 / Hähle, Oktober 1941 — Landung eines Fieseler Storch in Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B13933,_Charkow,_Landung_eines_Fieseler_Storch.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-flugzeugwerk",
+    "name": "Charkower Flugzeugwerk Nr. 135",
+    "description": "Hauptproduzent des sowjetischen Suchoi Su-2-Erdkampfflugzeugs. Im September 1941 nach Molotow (Perm) verlagert, wo die Endmontage bis 1942 weiterlief. Lag im Nordosten der Stadt nahe dem alten Flugfeld; war Zwischenstation für die Sturmgeschütz-Abteilung 197 nach der Eroberung.",
+    "coordinates": [36.2906, 50.0408],
+    "category": "industry",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Bundesarchiv_Bild_183-B16174%2C_Charkow%2C_Sowjetische_Sandsackstellung.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B16174 / Hähle, Oktober 1941 — verlassene sowjetische Sandsackstellung in Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B16174,_Charkow,_Sowjetische_Sandsackstellung.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-lopan-bruecken",
+    "name": "Lopan-Brücken",
+    "description": "Vier Flussbrücken im Stadtzentrum (Lopan-, Kupechesky-, Bursatsky-, Rogatinsky-Brücke), die Charkows Nord- und Südteil verbinden. Vor dem Rückzug von der 57. NKWD-Brigade teilgesprengt; das Infanterieregiment 217 der 57. ID nahm bereits am 21. Oktober eine wichtige Udy-Brücke nördlich Guki kampflos.",
+    "coordinates": [36.2275, 49.9941],
+    "category": "transport",
+    "wikipediaSlug": "Lopan",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Bundesarchiv_Bild_183-B12885%2C_Barrikaden_in_Charkow.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B12885 / Hähle, Oktober 1941 — Barrikaden in Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B12885,_Barrikaden_in_Charkow.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-strassenkampf-zentrum",
+    "name": "Straßenkampf-Zone Stadtzentrum",
+    "description": "Westlicher und nordöstlicher Stadtrand sowie der Wald von Grigorowka waren von der 216. SchD und der 57. NKWD-Brigade mit MG-Nestern, Mörsergruben und Minenfeldern ausgebaut. Vom 22. bis 24. Oktober kämpften sich die 57. ID (von Süden) und die 101. leichte Division (von Norden) mit StuG-Abt. 197 durch die Vororte ins Zentrum.",
+    "coordinates": [36.2330, 49.9978],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Bundesarchiv_Bild_183-L20582%2C_Charkow%2C_Strassenk%C3%A4mpfe.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-L20582, Oktober 1941 — Straßenkämpfe in Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-L20582,_Charkow,_Strassenk%C3%A4mpfe.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-sumska-strasse",
+    "name": "Sumska-Straße",
+    "description": "Hauptachse von Norden ins Zentrum, benannt nach der Vormarschrichtung Sumy. Über sie führte die 101. leichte Division (Brauner von Haydringen) den Vorstoß von Nordwesten in die City, vorbei am Schewtschenko-Park und der Oper bis zum Freiheitsplatz.",
+    "coordinates": [36.2317, 50.0011],
+    "category": "transport",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Bundesarchiv_Bild_183-B13132%2C_Charkow%2C_Sturmgesch%C3%BCtz_und_Sch%C3%BCtzenpanzer.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-B13132 / Hähle, Oktober 1941 — Sturmgeschütz und Schützenpanzer in Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-B13132,_Charkow,_Sturmgesch%C3%BCtz_und_Sch%C3%BCtzenpanzer.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-nowo-bavaria",
+    "name": "Vorort Nowa Bawarija (Süd-Anmarschachse)",
+    "description": "Südwestlicher Vorort Charkows, am 22./23. Oktober von der 100. leichten Division (Sanne) genommen. Lag in der Vormarschachse Poltawa – Krasnograd – Charkow rechts neben der Hauptstoßrichtung der 57. ID; flankierte deren Vorstoß auf den Südteil der Stadt.",
+    "coordinates": [36.1611, 49.9658],
+    "category": "terrain",
+    "coordinatesSource": "original",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Walki_uliczne_w_Charkowie_%282-724%29.jpg",
+      "source": "Wikimedia Commons / NAC Polnisches Nationalarchiv",
+      "license": "Public Domain",
+      "credit": "Schmidt / Narodowe Archiwum Cyfrowe, Oktober 1941 — Soldaten des Infanterieregiments 89 mit Pak 35/36 auf einer Charkower Straße",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walki_uliczne_w_Charkowie_(2-724).jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-bohoduchiw",
+    "name": "Bohoduchiw (Aufmarschraum)",
+    "description": "Kreisstadt ~80 km nordwestlich Charkows, ab Mitte Oktober 1941 Versammlungs- und Bereitstellungsraum des LV. AK für den Angriff. Die 57. und 101. Division stießen von hier über Bohoduchiw – Wysokyj nach Charkow vor, behindert durch die einsetzende Herbst-Rasputitsa.",
+    "coordinates": [35.5256, 50.1639],
+    "category": "terrain",
+    "wikipediaSlug": "Bohoduchiw",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Bundesarchiv_Bild_183-L20721%2C_Charkow%2C_deutscher_Einmarsch.jpg",
+      "source": "Bundesarchiv (Wikimedia Commons)",
+      "license": "CC BY-SA 3.0 DE",
+      "credit": "Bundesarchiv, Bild 183-L20721, Oktober/November 1941 — deutscher Einmarsch in Charkow",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-L20721,_Charkow,_deutscher_Einmarsch.jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-sumy",
+    "name": "Sumy (Vormarschachse von Norden)",
+    "description": "Gebietshauptstadt rund 165 km nordwestlich Charkows. Über Sumy und Ochtyrka begann am 6. Oktober 1941 die Offensive der 6. Armee in Richtung Belgorod und Charkow. Sumy fiel am 10. Oktober — von hier aus rückten Teile des LV. und XVII. AK weiter nach Südosten vor.",
+    "coordinates": [34.8000, 50.9170],
+    "category": "terrain",
+    "wikipediaSlug": "Sumy",
+    "coordinatesSource": "wikipedia",
+    "customImage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Wojska_niemieckie_po_zaj%C4%99ciu_Charkowa._%282-722%29.jpg",
+      "source": "Wikimedia Commons / NAC Polnisches Nationalarchiv",
+      "license": "Public Domain",
+      "credit": "Schmidt / Narodowe Archiwum Cyfrowe, Oktober 1941 — Artilleriekolonne nach der Eroberung Charkows",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wojska_niemieckie_po_zaj%C4%99ciu_Charkowa._(2-722).jpg"
+    }
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-krasnohrad",
+    "name": "Krasnohrad (südwestliches Vorfeld)",
+    "description": "Eisenbahnknoten ~95 km südwestlich Charkows an der Strecke Poltawa–Lozowa. Stützpunkt der 17. Armee (Stülpnagel) während der parallelen Süd-Offensive auf Losowaja/Isjum. Krasnohrad war Etappenort zur Flankendeckung des AOK 6 nach Süden.",
+    "coordinates": [35.4494, 49.3741],
+    "category": "terrain",
+    "wikipediaSlug": "Krasnohrad",
+    "coordinatesSource": "nominatim"
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-tschuhujiw",
+    "name": "Tschuhujiw (östliches Vorfeld)",
+    "description": "Garnisonsstadt am Sewerski Donez, ~36 km östlich Charkows. Diente der sowjetischen 38. Armee als Rückzugslinie hinter den Donez. Nach der Eroberung Charkows zog sich die 216. SchD über Tschuhujiw zurück; das XVII. AK schloss die Verfolgung am 29. Oktober mit dem Brückenkopf bei Stary Saltow ab.",
+    "coordinates": [36.6850, 49.8369],
+    "category": "terrain",
+    "wikipediaSlug": "Tschuhujiw",
+    "coordinatesSource": "wikipedia"
+  },
+  {
+    "battleId": "kharkov-1",
+    "id": "kharkov-1-stary-saltow",
+    "name": "Brückenkopf Stary Saltow am Donez",
+    "description": "Dorf am Westufer des Sewerski Donez, ~40 km nordöstlich Charkows. Am 29. Oktober 1941 schlug das XVII. AK (Kienitz) hier einen Brückenkopf über den Donez — der östlichste Punkt der deutschen Herbstoffensive in der Region und das offizielle Ende der ersten Schlacht-Phase.",
+    "coordinates": [36.7806, 50.0814],
+    "category": "terrain",
+    "coordinatesSource": "original"
+  }
+]

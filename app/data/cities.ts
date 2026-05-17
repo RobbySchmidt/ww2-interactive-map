@@ -804,6 +804,7 @@ export const BATTLE_TO_CITY: Record<string, string> = {
   'sevastopol-42': 'sevastopol',
   'crimea-44': 'sevastopol',
   stalingrad: 'stalingrad',
+  'kharkov-1': 'kharkov',
   'kharkov-2': 'kharkov',
   'kharkov-3': 'kharkov',
   kursk: 'kursk',
