@@ -32,6 +32,7 @@ const OPERATION_FADE_MS = OPERATION_FADE_DAYS * 86_400_000
 // hektisches Platz-Springen am Operations-Start.
 const OPERATION_LABEL_MIN_PROGRESS = 0.3
 import { CATEGORY_COLORS, CATEGORY_LABELS, type HistEvent } from '~/data/events'
+import type { SearchPin } from '~/components/SearchBar.vue'
 import { BATTLES } from '~/data/battles'
 import { RAILWAYS } from '~/data/railways'
 import type { BattlePOI, POICategory } from '~/data/battle-pois'
@@ -52,6 +53,10 @@ const props = defineProps<{
   weatherEnabled: boolean
   railwayEnabled: boolean
   pois: BattlePOI[]
+  /** Rotes Stadt-Polygon im Schlacht-Detail-Modus togglebar. */
+  cityOverlayVisible: boolean
+  /** Pin aus der Suche — wird in Kategoriefarbe gerendert. */
+  searchPin: SearchPin | null
 }>()
 
 const emit = defineEmits<{
@@ -59,11 +64,13 @@ const emit = defineEmits<{
   (e: 'operation-click', operation: Operation): void
   (e: 'pin-focus'): void
   (e: 'pin-dismiss'): void
+  (e: 'search-pin-dismiss'): void
 }>()
 
 const container = ref<HTMLDivElement>()
 let map: MlMap | null = null
 let eventPin: Marker | null = null
+let searchPinMarker: Marker | null = null
 let locationPopup: maplibregl.Popup | null = null
 let divisionPopup: maplibregl.Popup | null = null
 let operationPopup: maplibregl.Popup | null = null
@@ -244,6 +251,14 @@ function buildCustomImageHtml(poi: BattlePOI): string {
     <img src="${safeUrl}" alt="${alt}" loading="lazy"/>${credit}</div>`
 }
 
+/** Google-Maps-URL mit Pin auf den POI-Koordinaten — von dort kann der User
+ *  selbst auf Street View / Pegman wechseln (verlässlicher als ein
+ *  Direkt-Streetview-Link, der bei fehlender Coverage leer wäre). */
+function googleMapsUrl(coords: [number, number]): string {
+  const [lng, lat] = coords
+  return `https://www.google.com/maps?q=${lat},${lng}&z=18`
+}
+
 async function showPoiPopup(poi: BattlePOI) {
   if (!map) return
   poiPopup?.remove()
@@ -251,6 +266,7 @@ async function showPoiPopup(poi: BattlePOI) {
   const color = POI_ICONS[poi.category].color
   const customImgHtml = buildCustomImageHtml(poi)
   const placeholderImg = customImgHtml || '<div class="poi-pop-img poi-pop-img--placeholder"></div>'
+  const gmapsHtml = `<a class="poi-pop-link" href="${googleMapsUrl(poi.coordinates)}" target="_blank" rel="noopener noreferrer">Heute auf Google Maps ansehen ↗</a>`
   const initialHtml = `
     <div class="poi-pop">
       ${placeholderImg}
@@ -258,6 +274,7 @@ async function showPoiPopup(poi: BattlePOI) {
         <div class="poi-pop-badge" style="color:${color};border-color:${color}">${badge}</div>
         <div class="poi-pop-title">${escapePopupHtml(poi.name)}</div>
         <div class="poi-pop-desc">${escapePopupHtml(poi.description)}</div>
+        <div class="poi-pop-actions">${gmapsHtml}</div>
       </div>
     </div>`
   poiPopup = new maplibregl.Popup({
@@ -284,7 +301,7 @@ async function showPoiPopup(poi: BattlePOI) {
            <img src="${wiki.thumbnail.source}" alt="${escapePopupHtml(wiki.title)}" loading="lazy"/>
          </a>`
       : ''
-  const linkHtml = `<a class="poi-pop-link" href="${wiki.url}" target="_blank" rel="noopener noreferrer">Auf Wikipedia weiterlesen ↗</a>`
+  const wikiLinkHtml = `<a class="poi-pop-link" href="${wiki.url}" target="_blank" rel="noopener noreferrer">Auf Wikipedia weiterlesen ↗</a>`
   poiPopup.setHTML(`
     <div class="poi-pop">
       ${imgHtml}
@@ -292,7 +309,7 @@ async function showPoiPopup(poi: BattlePOI) {
         <div class="poi-pop-badge" style="color:${color};border-color:${color}">${badge}</div>
         <div class="poi-pop-title">${escapePopupHtml(poi.name)}</div>
         <div class="poi-pop-desc">${escapePopupHtml(poi.description)}</div>
-        ${linkHtml}
+        <div class="poi-pop-actions">${wikiLinkHtml}${gmapsHtml}</div>
       </div>
     </div>`)
 }
@@ -588,6 +605,62 @@ function updateEventPin() {
   // anchor: 'bottom' — Spitze der Nadel sitzt am genauen Punkt
   eventPin = new maplibregl.Marker({ element: wrap, anchor: 'bottom' })
     .setLngLat(ev.coordinates)
+    .addTo(map)
+}
+
+function clearSearchPin() {
+  if (searchPinMarker) {
+    searchPinMarker.remove()
+    searchPinMarker = null
+  }
+}
+
+function updateSearchPin() {
+  if (!map) return
+  clearSearchPin()
+  const p = props.searchPin
+  if (!p) return
+
+  const wrap = document.createElement('div')
+  wrap.className = 'event-pin-wrap'
+
+  const label = document.createElement('div')
+  label.className = 'event-pin-label'
+  label.title = `${p.title} — Stecknadel schließen mit X`
+  const safeTitle = p.title.replace(/</g, '&lt;')
+  const safeSub = p.sub ? p.sub.replace(/</g, '&lt;') : ''
+  label.innerHTML = `
+    <button class="event-pin-close" aria-label="Stecknadel schließen" title="Schließen">
+      <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor" aria-hidden="true">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
+    </button>
+    <div class="event-pin-cat" style="color: ${p.color}">${p.type.toUpperCase()}</div>
+    <div class="event-pin-title">${safeTitle}</div>
+    ${safeSub ? `<div class="event-pin-sub">${safeSub}</div>` : ''}
+  `
+  const closeBtn = label.querySelector<HTMLButtonElement>('.event-pin-close')
+  closeBtn?.addEventListener('click', (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+    emit('search-pin-dismiss')
+  })
+  wrap.appendChild(label)
+
+  const pin = document.createElement('div')
+  pin.className = 'event-pin'
+  pin.style.color = p.color
+  pin.innerHTML = `
+    <svg viewBox="0 0 24 32" width="28" height="36" aria-hidden="true">
+      <path d="M12 0 C 5 0, 0 5, 0 12 C 0 21, 12 32, 12 32 C 12 32, 24 21, 24 12 C 24 5, 19 0, 12 0 Z"
+            fill="currentColor" stroke="rgba(0,0,0,0.6)" stroke-width="1.5"/>
+      <circle cx="12" cy="11" r="4.5" fill="rgba(0,0,0,0.6)"/>
+    </svg>
+  `
+  wrap.appendChild(pin)
+
+  searchPinMarker = new maplibregl.Marker({ element: wrap, anchor: 'bottom' })
+    .setLngLat(p.coordinates)
     .addTo(map)
 }
 
@@ -1155,6 +1228,7 @@ onMounted(() => {
     updateDivisions()
     updateOperations()
     updateEventPin()
+    updateSearchPin()
     await loadPoiIcons()
     updatePois()
     // Country-Geometries lazy laden; sobald da, befüllt loadCountryGeoms()
@@ -1171,6 +1245,7 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   clearEventPin()
+  clearSearchPin()
   locationPopup?.remove()
   locationPopup = null
   divisionPopup?.remove()
@@ -1192,11 +1267,23 @@ watch(() => props.currentDate, () => {
 })
 
 watch(() => props.pinnedEvent, () => updateEventPin())
+watch(() => props.searchPin, () => updateSearchPin())
 
 watch(() => props.baseLayer, (mode) => setBaseLayer(mode))
 
 watch(() => props.weatherEnabled, () => updateWeather())
 watch(() => props.railwayEnabled, () => updateRailways())
+watch(() => props.cityOverlayVisible, (v) => {
+  if (!map) return
+  const fillOp = v ? 0.55 : 0
+  const lineOp = v ? 0.9 : 0
+  if (map.getLayer('contested-cities-fill')) {
+    map.setPaintProperty('contested-cities-fill', 'fill-opacity', fillOp)
+  }
+  if (map.getLayer('contested-cities-outline')) {
+    map.setPaintProperty('contested-cities-outline', 'line-opacity', lineOp)
+  }
+})
 watch(() => props.pois, () => {
   poiPopup?.remove()
   poiPopup = null
@@ -1279,6 +1366,13 @@ defineExpose({
   font-weight: 600;
   color: #f5f5f5;
   line-height: 1.25;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.event-pin-sub {
+  font-size: 10px;
+  color: #a3a3a3;
+  margin-top: 2px;
   font-family: 'Inter', system-ui, sans-serif;
 }
 
@@ -1421,9 +1515,16 @@ defineExpose({
   color: #c4c4c4;
 }
 
+.poi-pop-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 8px;
+}
+
 .poi-pop-link {
   display: inline-block;
-  margin-top: 8px;
   font-size: 11px;
   color: #facc15;
   text-decoration: none;

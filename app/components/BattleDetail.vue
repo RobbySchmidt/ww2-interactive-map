@@ -1,6 +1,19 @@
 <template>
-  <Transition name="slide">
-    <aside v-if="battle" class="detail-panel">
+  <div v-if="battle" class="detail-root" :class="{ 'detail-root--closed': !isOpen }">
+    <button
+      class="detail-toggle"
+      :aria-label="isOpen ? 'Schlacht-Panel schließen' : 'Schlacht-Panel öffnen'"
+      :title="isOpen ? 'Schließen' : `Schlacht-Panel öffnen — ${battle.name}`"
+      @click="$emit('toggle')"
+    >
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+        <path v-if="isOpen" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+        <path v-else d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+      </svg>
+    </button>
+
+    <Transition name="slide">
+      <aside v-if="isOpen" class="detail-panel">
       <figure v-if="wiki?.thumbnail" class="detail-hero">
         <a
           v-if="wiki.originalImage"
@@ -192,8 +205,9 @@
           </button>
         </div>
       </section>
-    </aside>
-  </Transition>
+      </aside>
+    </Transition>
+  </div>
 
   <Teleport to="body">
     <div v-if="lightbox" class="lightbox" @click="lightbox = null">
@@ -216,9 +230,11 @@ import { fetchWikiSummary, fetchWikiGallery, type WikiSummary, type WikiImage } 
 const props = defineProps<{
   battle: Battle | null
   battleMode: boolean
+  isOpen: boolean
 }>()
 defineEmits<{
   (e: 'close'): void
+  (e: 'toggle'): void
   (e: 'enter-battle-mode'): void
   (e: 'leave-battle-mode'): void
 }>()
@@ -277,12 +293,36 @@ watch(
 </script>
 
 <style scoped>
+.detail-toggle {
+  position: absolute;
+  /* Direkt über dem StrengthChart-Toggle (bottom 16 + 36 + 10 gap) — vermeidet
+     Kollision mit den MapLibre-Zoom-Controls oben rechts. */
+  bottom: 62px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 15, 15, 0.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.detail-toggle:hover {
+  background: rgba(40, 40, 40, 0.92);
+}
+
 .detail-panel {
   position: absolute;
   top: 16px;
   right: 16px;
   width: 420px;
-  max-width: calc(100vw - 32px);
+  max-width: calc(100vw - 90px);
   max-height: calc(100vh - 200px);
   overflow-y: auto;
   background: rgba(15, 15, 15, 0.96);

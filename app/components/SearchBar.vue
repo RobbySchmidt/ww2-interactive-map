@@ -104,13 +104,38 @@ interface SearchResult {
     | { kind: 'person'; person: string; battles: Battle[]; divisions: DivisionMarker[] }
 }
 
+export interface SearchPin {
+  coordinates: [number, number]
+  color: string
+  type: ResultType
+  title: string
+  sub?: string
+}
+
 const emit = defineEmits<{
   (e: 'select-battle', battle: Battle): void
   (e: 'select-operation', op: Operation): void
   (e: 'select-city', city: City): void
   (e: 'select-event', event: HistEvent): void
   (e: 'select-division', division: DivisionMarker): void
+  (e: 'drop-pin', pin: SearchPin): void
 }>()
+
+/** Geometrischer Mittelpunkt des ersten Rings eines City-Polygons. */
+function cityCenter(city: City): [number, number] {
+  const ring = city.geometry.coordinates[0]!
+  let sx = 0, sy = 0
+  for (const [x, y] of ring) { sx += x; sy += y }
+  return [sx / ring.length, sy / ring.length]
+}
+
+/** Mittelpunkt der Stoßrichtungs-Endpunkte einer Operation. */
+function operationCenter(op: Operation): [number, number] {
+  const ends = op.thrusts.map((t) => t.end)
+  const cx = ends.reduce((s, p) => s + p[0], 0) / ends.length
+  const cy = ends.reduce((s, p) => s + p[1], 0) / ends.length
+  return [cx, cy]
+}
 
 const root = ref<HTMLDivElement>()
 const inputEl = ref<HTMLInputElement>()
@@ -393,6 +418,19 @@ function togglePersonExpand(key: string) {
   expandedPersons.value = next
 }
 
+function dropPin(type: ResultType, title: string, coords: [number, number], sub?: string) {
+  emit('drop-pin', {
+    coordinates: coords,
+    color: TYPE_COLORS[type],
+    type,
+    title,
+    sub: sub || undefined,
+  })
+}
+function dropPinFor(r: SearchResult, coords: [number, number]) {
+  dropPin(r.type, r.title, coords, r.sub)
+}
+
 function handleItemSelect(item: VisibleItem) {
   if (item.kind === 'top') {
     const r = item.result
@@ -404,31 +442,44 @@ function handleItemSelect(item: VisibleItem) {
     }
     switch (d.kind) {
       case 'battle':
+        dropPinFor(r, d.battle.coordinates)
         emit('select-battle', d.battle)
         break
       case 'operation':
+        dropPinFor(r, operationCenter(d.op))
         emit('select-operation', d.op)
         break
       case 'city':
+        dropPinFor(r, cityCenter(d.city))
         emit('select-city', d.city)
         break
       case 'event':
+        // Event hat schon den dedizierten pinnedEvent-Pfad (mit X-Button etc.),
+        // ein zusätzlicher Search-Pin wäre Doppelung.
         emit('select-event', d.event)
         break
       case 'division':
+        dropPinFor(r, d.division.coordinates)
         emit('select-division', d.division)
         break
       case 'person':
-        // Person mit genau einer Position → direkt navigieren
-        if (d.battles.length > 0) emit('select-battle', d.battles[0]!)
-        else if (d.divisions.length > 0) emit('select-division', d.divisions[0]!)
+        // Person mit genau einer Position → direkt navigieren + Pin auf die Position
+        if (d.battles.length > 0) {
+          dropPinFor(r, d.battles[0]!.coordinates)
+          emit('select-battle', d.battles[0]!)
+        } else if (d.divisions.length > 0) {
+          dropPinFor(r, d.divisions[0]!.coordinates)
+          emit('select-division', d.divisions[0]!)
+        }
         break
     }
     closeSearch()
   } else if (item.kind === 'sub-battle') {
+    dropPin('battle', item.battle.name, item.battle.coordinates, item.sub)
     emit('select-battle', item.battle)
     closeSearch()
   } else if (item.kind === 'sub-division') {
+    dropPin('division', item.division.fullName, item.division.coordinates, item.sub)
     emit('select-division', item.division)
     closeSearch()
   }

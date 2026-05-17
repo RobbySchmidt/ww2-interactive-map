@@ -1,6 +1,7 @@
 <template>
   <div ref="root" class="dsel" :class="{ 'dsel--open': open }">
     <button
+      ref="triggerEl"
       type="button"
       class="dsel-trigger"
       :aria-haspopup="'listbox'"
@@ -15,24 +16,31 @@
       </svg>
     </button>
 
-    <ul v-if="open" class="dsel-menu" role="listbox">
-      <li
-        v-for="opt in options"
-        :key="String(opt.value)"
-        class="dsel-option"
-        :class="{ 'dsel-option--active': isSelected(opt.value) }"
-        role="option"
-        :aria-selected="isSelected(opt.value)"
-        @click="pick(opt.value)"
+    <Teleport to="body">
+      <ul
+        v-if="open"
+        class="dsel-menu"
+        role="listbox"
+        :style="menuStyle"
       >
-        {{ opt.label }}
-      </li>
-    </ul>
+        <li
+          v-for="opt in options"
+          :key="String(opt.value)"
+          class="dsel-option"
+          :class="{ 'dsel-option--active': isSelected(opt.value) }"
+          role="option"
+          :aria-selected="isSelected(opt.value)"
+          @click="pick(opt.value)"
+        >
+          {{ opt.label }}
+        </li>
+      </ul>
+    </Teleport>
   </div>
 </template>
 
 <script setup lang="ts" generic="V extends string | number">
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 interface Option {
   value: V
@@ -48,6 +56,10 @@ const emit = defineEmits<{ (e: 'update:modelValue', value: V): void }>()
 
 const open = ref(false)
 const root = ref<HTMLDivElement>()
+const triggerEl = ref<HTMLButtonElement>()
+// Menu liegt via <Teleport to="body"> außerhalb des Stacking-Contextes vom
+// BattleDetail/Header — Position berechnen wir aus dem Trigger-BoundingRect.
+const menuStyle = ref<Record<string, string>>({})
 
 const selectedLabel = computed(
   () => props.options.find((o) => o.value === props.modelValue)?.label ?? '',
@@ -57,12 +69,31 @@ function isSelected(v: V) {
   return v === props.modelValue
 }
 
+async function recalcMenuPosition() {
+  await nextTick()
+  const t = triggerEl.value
+  if (!t) return
+  const r = t.getBoundingClientRect()
+  menuStyle.value = {
+    // Öffnet nach oben (Timeline liegt unten am Viewport-Rand), rechtsbündig
+    // zum Trigger damit es nie nach rechts aus dem Viewport rausragt.
+    bottom: `${window.innerHeight - r.top + 4}px`,
+    right: `${window.innerWidth - r.right}px`,
+    minWidth: `${r.width}px`,
+  }
+}
+
 function toggle() {
-  open.value = !open.value
+  if (open.value) {
+    open.value = false
+  } else {
+    openMenu()
+  }
 }
 
 function openMenu() {
   open.value = true
+  recalcMenuPosition()
 }
 
 function pick(v: V) {
@@ -71,22 +102,35 @@ function pick(v: V) {
 }
 
 function onDocClick(e: MouseEvent) {
-  if (!open.value || !root.value) return
-  if (!root.value.contains(e.target as Node)) open.value = false
+  if (!open.value) return
+  const target = e.target as Node
+  if (root.value?.contains(target)) return
+  // Klick im teleporteten Menu nicht als "outside" werten.
+  const menu = document.querySelector('.dsel-menu')
+  if (menu?.contains(target)) return
+  open.value = false
 }
 
 function onKeydown(e: KeyboardEvent) {
   if (e.key === 'Escape' && open.value) open.value = false
 }
 
+function onWindowChange() {
+  if (open.value) recalcMenuPosition()
+}
+
 onMounted(() => {
   document.addEventListener('click', onDocClick)
   document.addEventListener('keydown', onKeydown)
+  window.addEventListener('resize', onWindowChange)
+  window.addEventListener('scroll', onWindowChange, true)
 })
 
 onBeforeUnmount(() => {
   document.removeEventListener('click', onDocClick)
   document.removeEventListener('keydown', onKeydown)
+  window.removeEventListener('resize', onWindowChange)
+  window.removeEventListener('scroll', onWindowChange, true)
 })
 </script>
 
@@ -135,12 +179,13 @@ onBeforeUnmount(() => {
 .dsel--open .dsel-chevron {
   transform: rotate(180deg);
 }
+</style>
 
+<style>
+/* Unscoped, weil das Menu per Teleport im <body> landet — scoped styles
+   würden mit data-v-Attributen nicht greifen. */
 .dsel-menu {
-  position: absolute;
-  bottom: calc(100% + 4px);
-  left: 0;
-  right: 0;
+  position: fixed;
   margin: 0;
   padding: 4px;
   list-style: none;
@@ -149,8 +194,8 @@ onBeforeUnmount(() => {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 6px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-  z-index: 50;
-  min-width: 100%;
+  z-index: 200;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 .dsel-option {

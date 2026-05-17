@@ -11,6 +11,21 @@
       <div v-if="activeBattle" class="header-mode">
         <span class="header-mode-label">Schlacht-Detail</span>
         <span class="header-mode-name">{{ activeBattle.name }}</span>
+        <button
+          class="header-mode-overlay"
+          type="button"
+          :class="{ 'header-mode-overlay--off': !cityOverlayVisible }"
+          :title="cityOverlayVisible ? 'Rotes Stadt-Overlay ausblenden' : 'Rotes Stadt-Overlay einblenden'"
+          :aria-pressed="!cityOverlayVisible"
+          @click="cityOverlayVisible = !cityOverlayVisible"
+        >
+          <svg v-if="cityOverlayVisible" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5C21.27 7.61 17 4.5 12 4.5zm0 12.5c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8a3 3 0 100 6 3 3 0 000-6z" />
+          </svg>
+          <svg v-else viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+            <path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z" />
+          </svg>
+        </button>
         <button class="header-mode-leave" type="button" @click="leaveBattleMode">
           <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
             <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
@@ -31,10 +46,13 @@
           :weather-enabled="weatherEnabled"
           :railway-enabled="railwayEnabled"
           :pois="activePois"
+          :city-overlay-visible="cityOverlayVisible"
+          :search-pin="searchPin"
           @battle-click="onBattleClick"
           @operation-click="onOperationSelect"
           @pin-focus="onPinFocus"
           @pin-dismiss="pinnedEvent = null"
+          @search-pin-dismiss="searchPin = null"
         />
         <template #fallback>
           <div class="map-loading">Karte wird geladen …</div>
@@ -58,6 +76,7 @@
         @select-city="onCitySelect"
         @select-event="onEventClick"
         @select-division="onDivisionSelect"
+        @drop-pin="searchPin = $event"
       />
 
       <CasualtyTicker :current-date="currentDate" @select-battle="onBattleClick" />
@@ -71,7 +90,9 @@
       <BattleDetail
         :battle="selectedBattle"
         :battle-mode="battleMode"
-        @close="selectedBattle = null"
+        :is-open="battlePanelOpen"
+        @close="battlePanelOpen = false"
+        @toggle="battlePanelOpen = !battlePanelOpen"
         @enter-battle-mode="enterBattleMode"
         @leave-battle-mode="leaveBattleMode"
       />
@@ -101,7 +122,7 @@ import Timeline from '~/components/Timeline.vue'
 import BattleDetail from '~/components/BattleDetail.vue'
 import OperationDetail from '~/components/OperationDetail.vue'
 import EventsFeed from '~/components/EventsFeed.vue'
-import SearchBar from '~/components/SearchBar.vue'
+import SearchBar, { type SearchPin } from '~/components/SearchBar.vue'
 import CasualtyTicker from '~/components/CasualtyTicker.vue'
 import StrengthChart from '~/components/StrengthChart.vue'
 import { TIMELINE_START, TIMELINE_END } from '~/data/easternFront'
@@ -122,6 +143,9 @@ const pinnedEvent = ref<HistEvent | null>(null)
 const feedOpen = ref(true)
 const chartOpen = ref(false)
 const battleMode = ref(false)
+const battlePanelOpen = ref(true)
+const cityOverlayVisible = ref(true)
+const searchPin = ref<SearchPin | null>(null)
 const mapRef = ref<InstanceType<typeof WarMap> | null>(null)
 const feedRef = ref<InstanceType<typeof EventsFeed> | null>(null)
 
@@ -176,6 +200,9 @@ function onPinFocus() {
 function onBattleClick(battle: Battle) {
   selectedOperation.value = null
   selectedBattle.value = battle
+  // Wenn der User das Panel via X geschlossen hatte, beim Klick auf eine neue
+  // Schlacht wieder aufmachen — sonst denkt er, der Klick hat nichts bewirkt.
+  battlePanelOpen.value = true
   mapRef.value?.flyTo(battle.coordinates, 6)
   // Wenn aktuelles Datum außerhalb der Schlacht liegt, in die Mitte springen.
   // Sonst Position des Nutzers innerhalb der Schlacht beibehalten.
@@ -243,6 +270,8 @@ function onKeyDown(e: KeyboardEvent) {
   if (e.key !== 'Escape') return
   if (pinnedEvent.value) {
     pinnedEvent.value = null
+  } else if (searchPin.value) {
+    searchPin.value = null
   } else if (selectedOperation.value) {
     selectedOperation.value = null
   }
@@ -420,6 +449,37 @@ watch(
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.header-mode-overlay {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 22px;
+  background: rgba(239, 68, 68, 0.18);
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  color: #fca5a5;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+
+.header-mode-overlay:hover {
+  background: rgba(239, 68, 68, 0.28);
+  color: #fecaca;
+}
+
+.header-mode-overlay--off {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #737373;
+}
+
+.header-mode-overlay--off:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #a3a3a3;
 }
 
 .header-mode-leave {
