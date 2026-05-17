@@ -1,21 +1,22 @@
 # Ostfront-Karte 1941–1945 — Projekt-Kontext
 
-Stand: 2026-05-16 · Sprache der UI/Daten: Deutsch
+Stand: 2026-05-17 · Sprache der UI/Daten: Deutsch
 
 ## Was die App tut
 
 Interaktive Web-Karte der Ostfront im Zweiten Weltkrieg. Per Zeitstrahl scrubbt der Nutzer durch den Zeitraum 21.06.1941 – 08.05.1945 und sieht:
 
-- **Frontverlauf** als rote Polygonfläche (Achsenkontrolle) plus separate Kaukasus-Pocket-Polygone für 1942–43
+- **Frontverlauf** ländergrenzentreu: Ostfront-aktive Länder (DEU/AUT/CZE/POL/SVK/HUN/ROU/FIN + eroberte Sowjet-Republiken) rot, gegen Sowjet-Region geclippt; Achse-Hinterland (Westeuropa/Balkan/ITA/BGR) dezent grau, ungeclippt. Rote Frontlinie wird zusätzlich auf die Eastern-Tier-Länder geclippt — endet sauber an den Karpaten/Weichsel statt durch Bulgarien/Balkan zu laufen.
 - **Großschlachten** als Punkt-Marker (rot = Großschlacht, gelb = Gefecht), klickbar → Detail-Panel mit Truppenstärken / Verlusten / Verbänden
 - **Operative Stoßrichtungs-Pfeile** (Bézier-Kurven) für 23 Großoperationen
-- **Großverband-Labels** (HG, Armeen, Fronten) für 6 Schlüsselzeitpunkte mit Hover-Tooltip
-- **Umkämpfte Städte** rot eingefärbt (OSM-Stadtgrenzen) während aktiver Schlachten
+- **Großverband-Labels** (HG, Armeen, Fronten) für 17 Schlüsselzeitpunkte mit Hover-Tooltip
+- **Umkämpfte Städte** rot eingefärbt während aktiver Schlachten — detaillierte OSM-admin_level=8-Boundaries (131–1844 Vertices/Stadt) lazy aus `cities_boundaries.json` geladen, mit hand-traced Polygonen aus `cities.ts` als Fallback. Im Battle-Mode per Toggle ausblendbar (Eye-Icon im Header), damit man Satellit/POIs darunter sieht.
 - **„An diesem Tag"-Feed** mit ~80 historischen Ereignissen ±N Tage um das aktuelle Datum
 - **Verluste-Ticker** für die intensivste aktive Großschlacht
 - **Kräfteverhältnis-Chart** (Personalstärke + Panzerproduktion) mit Now-Linie
 - **Volltext-Suche** über alle Datenquellen (Cmd/Ctrl+K)
-- **Klick-überall-Abfrage** (Rechtsklick): Seite, Frontentfernung, nächste Schlacht
+- **Klick-überall-Abfrage** (Rechtsklick): Seite (Achsenkontrolle Ostfront / Achse-Hinterland / sowjetisches Gebiet / neutral), Frontentfernung, nächste Schlacht
+- **Such-Pin in Kategoriefarbe**: Klick auf ein Sucheintrag (battle/operation/city/division/person) droppt einen kategoriefarbigen Pin auf der Map; Event hat dafür schon den eigenen Event-Pin-Pfad
 - **Wetter/Rasputitsa-Layer**: saisonaler Tint über der Karte (Winter weiß, Frühjahrs-/Herbst-Schlammperiode braun, Sommer klar) — Toggle in der Timeline, Icon spiegelt aktuelle Saison
 - **Eisenbahn-Layer**: 19 historische Hauptstrecken als grau gestrichelte Linien — erklärt umkämpfte Knotenpunkte
 - **Wikipedia-Anreicherung** im Battle-Detail: Hero-Bild + Lead-Text + Link zum vollen Artikel (de.wiki)
@@ -68,6 +69,10 @@ app/
 │       ├── stalingrad.json     #   17 POIs
 │       ├── berlin.json         #   23 POIs
 │       ├── ...                 #   (alle 25 Schlachten)
+public/
+└── data/
+    ├── ne_50m_admin_0_countries.json  # Natural Earth admin-0, lazy geladen für Länder-Färbung
+    └── cities_boundaries.json         # OSM admin_level=8 City-Boundaries (15 Städte, 168 KB)
 ├── lib/
 │   ├── geo.ts                  # Haversine, Point-in-Polygon, Distance-to-Line
 │   ├── casualties.ts           # Casualty-Parser, Schätzung, Battle-Picker
@@ -79,13 +84,15 @@ app/
 
 ## Implementierte Features im Detail
 
-### 1. Frontverlauf (`easternFront.ts`)
-- 17 hand-kalibrierte Snapshots zwischen 21.06.1941 und 08.05.1945
-- Jeder Snapshot: 12 Längengrade an festen Breitengraden (46° N → 60° N)
-- Linear interpoliert für tagesgenaues Scrubbing
-- Polygon-Rückseite topografisch (Ostsee → Reich-West → Alpen → Balkan → Schwarzes Meer)
-- Dynamische Anpassung: Krim/Asow-Coast wenn Front weit östlich; Kompakt-Variante ab Spät-1944 (Rumänien wechselt Seiten)
-- **Kaukasus-Pockets** als separate Polygon-Features für 1942-08-15, 1942-11-19, 1943-02-15
+### 1. Frontverlauf (`easternFront.ts`, `axisControl.ts`)
+- 18 hand-kalibrierte Snapshots zwischen 21.06.1941 und 08.05.1945, 14 Stützpunkte/Snapshot (lat 42 → 60 N)
+- Linear zwischen Snapshots interpoliert für tagesgenaues Scrubbing
+- Frontlinie geglättet via Catmull-Rom-Spline + zwei überlagerte Sinus-Welligkeiten (~130 Punkte/Frame); im Nord-Anhängsel Karelische Front (Sommer 1941 – 19.09.1944)
+- **Sowjet-Region** = Polygon östlich der Frontlinie, Süd-Begrenzung lat 40 (deckt Dagestan ab), Nord-Schrägung Richtung lon 40/lat 75 (schließt Norwegen aus), Ost-Begrenzung lon 100 (jenseits Ural)
+- **Ländergrenzentreue Achsen-Färbung mit Two-Tier-System** (`axisControl.ts`):
+  - **`eastern` Tier** (15 Länder, rot, geclippt): Reich-Kerngebiet + Achsenpartner mit Ostfront-Truppen + Mitkriegführer + eroberte Sowjet-Republiken. Jedes Country-Polygon wird per `polygonClipping.difference(country, sovietRegion)` auf die Achsen-Seite reduziert — wächst und schrumpft ländergrenzentreu mit dem Frontverlauf.
+  - **`rear` Tier** (16 Länder, grau, ungeclippt): Achsen-Hinterland ohne Ostfront-Beteiligung (Westeuropa, Italien-Kerngebiet, Bulgarien, Balkan). Wird in dezentem `#4a4a4a` opacity 0.22 gerendert.
+- **Frontlinie zusätzlich geclippt**: Per Sample-Filtering (`clipFrontToEastern()`) wird die LineString-Frontlinie in MultiLineString-Segmente aufgeteilt, sodass nur Teile sichtbar bleiben, die durch Eastern-Tier-Länder verlaufen. So endet die rote Linie z.B. bei der Balkanwende sauber an den Karpaten statt durch SRB/BGR/GRC zu führen.
 
 ### 2. Schlachten (`battles.ts`)
 25 Großschlachten mit jeweils:
@@ -112,8 +119,14 @@ Marker werden als nativer MapLibre `circle`-Layer gerendert (kein HTML-DOM), dam
 
 Rendering als MapLibre `symbol`-Layer (nativer WebGL-Text). Weißer Text mit dickem Halo (axis = dunkelrot, soviet = dunkelgelb), keine Pille-Hintergründe. Hover öffnet einen MapLibre-Popup mit Vollname und Befehlshaber.
 
-### 5. Städte (`cities.ts`)
-15 OSM-Stadtgrenzen (via Nominatim geholt, vereinfacht auf ~40 Vertices). Rot eingefärbt (55% Opacity) während zugehörige Schlachten aktiv sind.
+### 5. Städte (`cities.ts` + `public/data/cities_boundaries.json`)
+15 Städte mit Battle→City-Mapping. Geometrie aus zwei Quellen:
+- **Primär**: detaillierte OSM admin_level=8 Boundaries aus `public/data/cities_boundaries.json` (168 KB, 131–1844 Vertices/Stadt, 6905 Vertices total) — lazy beim Map-Init via `loadCityGeoms()` geladen
+- **Fallback**: hand-traced ~40-Vertex-Polygone in `cities.ts` (greift wenn JSON-Fetch fehlschlägt oder eine ID fehlt)
+
+Rot eingefärbt (55% Opacity) während zugehörige Schlachten aktiv sind. Im Battle-Detail-Modus per Toggle (Eye-Icon im Header-Mode-Indikator) ein-/ausblendbar — Map+Satellit+POIs darunter werden besser lesbar.
+
+Anachronismus-Hinweis: OSM-Boundaries sind heutige Grenzen (Wolgograd 2026 ≫ Stalingrad 1942). Trade-off bewusst akzeptiert, alternativ wären nur historische Karten möglich (sehr aufwendig).
 
 ### 6. Ereignisse + Feed (`events.ts`, `EventsFeed.vue`)
 ~80 Ereignisse (Politik, Diplomatie, Befehl, Technik, Partisan, Logistik, Symbol, Meilenstein) mit Kategoriefarben. Sidebar zeigt Ereignisse ±3/7/30 Tage.
@@ -129,6 +142,8 @@ EventsFeed exposed `scrollToEvent(id)` für externes Anspringen. Im Battle-Modus
 ### 7. Suche (`SearchBar.vue`)
 Globale Volltextsuche über Städte, Schlachten, Operationen, Ereignisse, Verbände, **Personen** (Befehlshaber aus Battles/Divisions abgeleitet). Cmd/Ctrl+K als Shortcut. Sortierung: Wortanfang-Match > Substring-Titel > Type-Priorität > Alpha. Max 10 Treffer.
 
+**Such-Pin**: Jeder Klick auf einen Such-Eintrag (battle/operation/city/division/person) emittiert zusätzlich ein `drop-pin`-Event und droppt einen kategoriefarbigen Pin auf die Karte — `pages/index.vue` hält den Pin im `searchPin`-State, WarMap rendert ihn analog zum Event-Pin mit X-Button und ESC-Close. Events nutzen weiter den bestehenden `pinnedEvent`-Pfad (eigener UI-Pfad mit Feed-Sync).
+
 ### 8. Verluste-Ticker (`CasualtyTicker.vue`)
 Bei aktiver `major`-Schlacht: Floating-Panel bottom-mitte mit Tag X/Y, Σ Verluste, pro Tag. Wählt die **intensivste** (Verluste/Tag) aktive Großschlacht — vermeidet, dass Leningrad-Belagerung dauerhaft dominiert.
 
@@ -141,7 +156,7 @@ Vertikale Now-Linie, interpolierte Live-Werte in der Legende.
 ### 10. Klick-überall (Rechtsklick in `WarMap.client.vue`)
 Popup mit:
 - Koordinaten + Datum
-- Seite (Achse/Sowjet) via Point-in-Polygon
+- Seite via Point-in-Polygon, vier Zustände: **Achsenkontrolle (Ostfront)** (rot), **Achse-Hinterland** (grau, dezent), **sowjetisches Gebiet** (gelb), **neutral / alliiert**
 - Distanz zur Frontlinie (Haversine)
 - Aktive oder nächste Schlacht (klickbarer Link → öffnet BattleDetail)
 
@@ -196,7 +211,8 @@ Popup mit:
 - Klick auf POI öffnet ein styled MapLibre-Popup mit:
   - **Bild-Priorität: `customImage` (zeitgetreues Kriegsfoto) ZUERST, Wikipedia-Thumb (oft modern) nur als Fallback** — Logik in `WarMap.client.vue:259`
   - Hero-Bild (160px) lazy geladen
-  - Kategorie-Badge in Icon-Farbe, Titel, 1–2-Sätze-Beschreibung, „Auf Wikipedia weiterlesen"-Link wenn Slug vorhanden
+  - Kategorie-Badge in Icon-Farbe, Titel, 1–2-Sätze-Beschreibung
+  - Action-Links untereinander: „Auf Wikipedia weiterlesen ↗" (wenn Slug vorhanden) + **„Heute auf Google Maps ansehen ↗"** (immer, mit Pin auf POI-Koords, Zoom 18 — von dort kann der User via Pegman in Street View wechseln)
 - Zoom-Verhalten im Battle-Mode ist POI-abhängig: bei vorhandenen POIs Zoom **12** (Stadt-Maßstab), sonst Zoom **7** (operativ)
 
 #### Coverage zeitgenössischer Kriegsfotos pro Schlacht (Stand 2026-05-15)
@@ -262,6 +278,12 @@ Alle Datenmodule wurden durch dedizierte Recherche-Agenten (general-purpose) ers
 10. **Event-Pin: zwei Aktionen, nicht eine**: Pin-Click öffnet Feed (statt zu schließen), separater X-Button schließt. Nutzer-Feedback: "ein Pin der sich nur durch Klick selbst zerstört ist unintuitiv".
 11. **POI-Popup-Bild: `customImage` vor Wikipedia-Thumb**: Ursprünglich hatte das Wikipedia-Bild Vorrang — das lieferte oft eine moderne Stadt-Aufnahme (z.B. Bahnhof heute renoviert). Seit dem Kriegsfoto-Refinement vom 2026-05-15 gewinnt das `customImage` (zeitgenössisches Bundesarchiv-/Sowjet-Pressefoto 1939–1945); Wikipedia-Thumb nur Fallback wenn kein `customImage` gesetzt. Zeitgetreuer Look statt visuellem Bruch zwischen Karten-Marker und 2020er-Foto.
 12. **Wikimedia-Thumb-Größen-Falle (gelernt im Pilot)**: `upload.wikimedia.org` antwortet mit HTTP 400 ("Use thumbnail sizes listed on..."), wenn die angeforderte Thumb-Größe nicht in der Whitelist ist oder das Originalbild kleiner als die Anforderung. Sichere Größen: `220`/`320`/`500`. **Bewährter Default für `customImage.url`**: Original-URL ohne `/thumb/`-Segment (`https://upload.wikimedia.org/wikipedia/commons/{h1}/{h2}/{filename}`) — funktioniert unabhängig von der Originalgröße und liefert das volle Bild. Browser-Layout skaliert es ohnehin via CSS auf 160px Popup-Höhe.
+13. **Two-Tier-Achsen-Färbung statt einheitlich rot**: Bis 2026-05-17 wurden ALLE Achsen-besetzten Länder einheitlich rot eingefärbt — auch Frankreich, Norwegen, Italien, Balkan, Bulgarien, die mit der Ostfront militärisch nichts zu tun hatten. Das suggerierte "alles ist Ostfront-Geschehen". Lösung: zwei Tiers (`eastern` rot/geclippt, `rear` grau/ungeclippt). Der rote Block zeigt jetzt visuell tatsächlich nur die Ostfront-Zone. Bulgarien geht ins Rear-Tier weil nie aktiv gegen UdSSR im Einsatz.
+14. **Frontlinie sample-basiert auf Eastern-Tier geclippt**: Statt Edge-Interpolation an Country-Boundaries (komplex, bräuchte `turf`) wird die ~130-Punkte-Linie pro Sample per `pointInPolygonOrMultiFC` geprüft. Übergänge sind dadurch leicht eckig (springen am nächsten Sample-Punkt), aber visuell akzeptabel bei der gegebenen Auflösung. Ergebnis ist MultiLineString wenn die Linie durch mehrere getrennte Eastern-Regionen verläuft.
+15. **Sowjet-Region Süd-Grenze lat 40 statt lat 42**: Dagestan (russischer Süd-Kaukasus) reicht bis ~41° N. Bei lat=42 ragte das südliche Dreieck zwischen Derbent und Aserbaidschan-Grenze aus der Sowjet-Region heraus → wurde fälschlich als Achse-rot dargestellt. lat=40 deckt alles ab.
+16. **Stadt-Boundaries: OSM-Detail + hand-traced Fallback**: Hand-traced ~40-Vertex-Polygone wirkten zu eckig. Lösung: OSM admin_level=8 Boundaries via Nominatim als externes JSON in `public/data`, lazy beim Map-Init geladen, ersetzt die hand-traced Polygone pro ID. Hand-traced bleibt komplett unverändert in `cities.ts` als Sicherheitsnetz — wenn OSM-Fetch fehlschlägt oder eine ID fehlt, fällt das Frontend automatisch zurück.
+17. **DarkSelect-Menu via `<Teleport to="body">`**: Das Menu lag früher im Stacking-Context der Timeline und wurde vom BattleDetail-Panel verdeckt; zusätzlich verschob `min-width: 100%` die Box nach rechts aus dem Trigger. Lösung: Menu landet per Teleport im `<body>`, Positionierung via `position: fixed` + Trigger-BoundingRect (rechtsbündig, exakt Trigger-Breite). Reagiert auf `resize`/`scroll`. z-index 200 dominiert alle anderen UI-Elemente.
+18. **BattleDetail-Toggle-Pattern wie EventsFeed**: X-Button schließt nur das Panel (`battlePanelOpen = false`), Selektion (`selectedBattle`) bleibt erhalten. Reopen-Tab unten rechts über dem StrengthChart-Toggle (`bottom: 62px`) — vermeidet Kollision mit MapLibre-Zoom-Controls oben rechts. Klick auf eine andere Battle öffnet das Panel automatisch wieder.
 
 ## Bekannte Trade-offs
 
@@ -360,3 +382,11 @@ Punkte 1–5 der ursprünglichen Ideen-Liste **+ Hybrid-Wikipedia-Integration + 
 17. ✅ **Operations-Pfeil-Hover-Tooltip + Thumb-Vorschau (2026-05-16)**: Hover über Operations-Pfeil/-Label zeigt jetzt ein Popup mit Operations-Name + Stoßrichtungs-Label (z.B. „Unternehmen Barbarossa · HG Süd") — folgt dem Cursor via mousemove. BattleDetail-Panel zeigt im Nicht-Detail-Modus eine 4-Thumb-Vorschauleiste der Wiki-Galerie + „+N"-Tile, der in den Detail-Modus springt. Galerie wird jetzt eager beim Battle-Öffnen geladen (statt nur im Detail-Modus), da LocalStorage-Cache 24h.
 18. ✅ **SearchBar Person-Expand + Stalingrad-POI-Audit (2026-05-16)**: In der globalen Suche werden Personen mit mehreren Positionen (z.B. Guderian) jetzt mit einem auffälligen grünen Chevron-Icon angezeigt — Klick klappt eine chronologisch sortierte Liste aller Schlachten/Verbands-Snapshots inline auf, Sub-Items sind direkt anwählbar. **Stalingrad-POI-Audit**: 10 irreführende Custom-Bilder (generische „Kampf um Stalingrad"-Soldatenfotos ohne Ortsbezug) entfernt, 4 neue POIs hinzugefügt (Getreidesilo/Elevator, Ljudnikows Insel, Platz der Gefallenen Kämpfer, NKWD-Gebäude, Chemiefabrik Lazur „Tennisschläger"), Mamajew-Hügel mit ortsspezifischem Bundesarchiv-Foto „Höhe 102" (Sept. 1942) versorgt. Stalingrad jetzt mit 22 POIs.
 19. ✅ **App-Audit (2026-05-16)**: Umfassender Test-Sweep durch dedizierten Audit-Agent — TypeScript clean (vue-tsc 0 Fehler), alle 25 POI-JSONs valid, 437 POIs / 17 Snapshot-Daten konsistent mit easternFront.ts, Battle↔POI/City Cross-Refs ok, Koordinaten alle in [10,50]×[40,65]. Einziger Bug: `uman` hatte falschen Wiki-Slug `Kesselschlacht_von_Uman` (404) — korrigiert auf `Kesselschlacht_bei_Uman`. Wikimedia-Bild-URLs stichprobenartig 200 (gelegentliche 429-Rate-Limits beim parallelen Test, beim Retry OK).
+20. ✅ **Detaillierte OSM-Stadtgrenzen (2026-05-17)**: Hand-traced ~40-Vertex-Polygone in `cities.ts` wirkten zu eckig. Sub-Agent hat per Nominatim für alle 15 Städte die admin_level=8 Boundaries gezogen und nach `public/data/cities_boundaries.json` (168 KB, 6905 Vertices total, 131 bei Wjasma bis 1844 bei Moskau) geschrieben. Lazy beim Map-Init geladen, ersetzt die hand-traced Polygone pro ID; hand-traced bleibt als Fallback in `cities.ts`. Zwei Städte brauchten manuelle Fixes: Sewastopol (erster Treffer war "Sevastopol, Wisconsin"), Stalingrad (russische Query nötig für City-Boundary statt Oblast). Anachronismus akzeptiert (heutige Grenzen ≠ 1942er Stadt).
+21. ✅ **UI-Polish-Sweep (2026-05-17)**: Vier Punkte in einem Rutsch:
+    - **Search-Pin in allen Kategorien**: bisher hatten nur Events einen Pin beim Klick auf einen Such-Eintrag. Jetzt droppt jeder Klick (battle/operation/city/division/person) einen kategoriefarbigen Pin via neuer `drop-pin`-Emit + zentralem `searchPin`-State in `pages/index.vue`. X-Button am Pin oder ESC zum Schließen.
+    - **Stadt-Overlay-Toggle**: Eye-Icon-Button im Header-Mode-Indikator (nur sichtbar im Battle-Detail-Modus) togglet `fill-opacity` von `contested-cities-fill` zwischen 0.55 und 0. Macht POIs + Satellit unter der roten Stadtfläche sichtbar.
+    - **BattleDetail-Reopen**: BattleDetail folgt jetzt dem EventsFeed-Pattern — X schließt nur das Panel, Reopen-Tab unten rechts (bottom 62px, über dem StrengthChart-Toggle, vermeidet MapLibre-Zoom-Control-Kollision oben). Selektion bleibt erhalten, andere Battle klicken öffnet das Panel automatisch wieder.
+    - **DarkSelect-Layout-Fix**: Menu landete früher unter dem BattleDetail-Panel (z-index/Stacking) und ragte rechts aus dem Trigger raus. Umgebaut auf `<Teleport to="body">` + `position: fixed` mit Rect-basierter rechtsbündiger Positionierung; reagiert auf resize/scroll.
+22. ✅ **Two-Tier-Achsen-Färbung + Front-Linien-Clipping (2026-05-17)**: `axisControl.ts` mit `tier: 'eastern' | 'rear'`. 15 eastern (Reich + Achsenpartner + eroberte Sowjet-Republiken) bleiben rot und werden weiter gegen die Sowjet-Region geclippt. 16 rear (Westeuropa, ITA, Bulgarien, Balkan) werden dezent grau (#4a4a4a, opacity 0.22) gezeichnet — diese Länder waren Achsen-Hinterland, hatten mit der Ostfront nichts zu tun. Frontlinie wird per Sample-Filtering (`clipFrontToEastern()`) auf die Eastern-Tier-Region beschränkt → MultiLineString. So endet die rote Linie sauber an Land-Grenzen statt durch Mittelmeer, Adria, Bulgarien oder Balkan zu führen. Rechtsklick-Abfrage unterscheidet jetzt vier Zustände (Achse-Ostfront / Achse-Hinterland / Sowjet / neutral). Bug-Fix dazu: Sowjet-Region Süd-Grenze auf lat 40 erweitert, vorher ragte Dagestan-Dreieck (Derbent → Aserbaidschan) immer rot aus der Region heraus.
+23. ✅ **POI-Popup: Google-Maps-Link (2026-05-17)**: Bei jedem POI-Popup unten ein zweiter Action-Link „Heute auf Google Maps ansehen ↗" (zusätzlich zum Wiki-Link, wo vorhanden). Öffnet `https://www.google.com/maps?q=lat,lng&z=18` in neuem Tab mit Pin auf den exakten POI-Koordinaten — User kann von dort per Pegman in Street View wechseln, wo Coverage existiert. Funktioniert für alle 437 POIs, auch ohne Wikipedia-Slug.

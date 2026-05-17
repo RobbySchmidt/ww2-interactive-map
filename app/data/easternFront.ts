@@ -262,7 +262,8 @@ export function frontLineAt(date: Date): GeoJSON.Feature<GeoJSON.LineString> {
  * (Country − Sowjet-Region) ergibt nur die Achsen-Seite jedes Landes.
  *
  * Begrenzung:
- *  - Süden: lat 42 (südlich vom Kaukasus-Hauptkamm)
+ *  - Süden: lat 40 (deckt die Kaukasus-Südflanke von RUS bis zur aserbaidschan.
+ *    Grenze ab — Dagestan reicht bis ~41° N. lat 42 reichte nicht weit genug.)
  *  - Norden: Schrägung vom nördlichsten Front-Punkt nach (lon 40, lat 75) —
  *    schließt Norwegen-Finnmark westlich davon aus
  *  - Osten: lon 100 (jenseits des Urals)
@@ -276,8 +277,8 @@ export function sovietRegionAt(date: Date): GeoJSON.Polygon {
     ...front,
     [40, 75],
     [100, 75],
-    [100, 42],
-    [front[0]![0], 42],
+    [100, 40],
+    [front[0]![0], 40],
     front[0]!,
   ]
   return { type: 'Polygon', coordinates: [ring] }
