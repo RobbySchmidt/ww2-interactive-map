@@ -41,7 +41,6 @@
         <WarMap
           ref="mapRef"
           :current-date="currentDate"
-          :base-layer="baseLayer"
           :pinned-event="pinnedEvent"
           :weather-enabled="weatherEnabled"
           :railway-enabled="railwayEnabled"
@@ -106,7 +105,6 @@
 
     <Timeline
       v-model="currentDate"
-      v-model:base-layer="baseLayer"
       v-model:weather-enabled="weatherEnabled"
       v-model:railway-enabled="railwayEnabled"
       :range-min="timelineRange.min"
@@ -134,7 +132,6 @@ import type { DivisionMarker } from '~/data/divisions'
 import { poisForBattle } from '~/data/battle-pois'
 
 const currentDate = ref<Date>(new Date(TIMELINE_START))
-const baseLayer = ref<'map' | 'satellite'>('map')
 const weatherEnabled = ref(false)
 const railwayEnabled = ref(false)
 const selectedBattle = ref<Battle | null>(null)
@@ -302,8 +299,6 @@ onMounted(() => {
     const date = new Date(d)
     if (!isNaN(date.getTime())) setDateClamped(date)
   }
-  const layer = params.get('layer')
-  if (layer === 'satellite' || layer === 'map') baseLayer.value = layer
   if (params.get('w') === '1') weatherEnabled.value = true
   if (params.get('r') === '1') railwayEnabled.value = true
   const b = params.get('b')
@@ -356,7 +351,6 @@ watch(
     selectedBattle,
     selectedOperation,
     pinnedEvent,
-    baseLayer,
     weatherEnabled,
     railwayEnabled,
     battleMode,
@@ -368,7 +362,6 @@ watch(
     if (selectedBattle.value) params.set('b', selectedBattle.value.id)
     if (selectedOperation.value) params.set('op', selectedOperation.value.id)
     if (pinnedEvent.value) params.set('e', pinnedEvent.value.id)
-    if (baseLayer.value === 'satellite') params.set('layer', 'satellite')
     if (weatherEnabled.value) params.set('w', '1')
     if (railwayEnabled.value) params.set('r', '1')
     if (battleMode.value) params.set('mode', 'battle')

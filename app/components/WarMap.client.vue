@@ -39,7 +39,6 @@ import type { BattlePOI, POICategory } from '~/data/battle-pois'
 import {
   distanceToLineKm,
   haversineKm,
-  pointInPolygonFC,
   pointInPolygonOrMultiFC,
   type LngLat,
 } from '~/lib/geo'
@@ -48,7 +47,6 @@ import { fetchWikiSummary } from '~/lib/wikipedia'
 
 const props = defineProps<{
   currentDate: Date
-  baseLayer: 'map' | 'satellite'
   pinnedEvent: HistEvent | null
   weatherEnabled: boolean
   railwayEnabled: boolean
@@ -95,19 +93,9 @@ const OSM_STYLE: maplibregl.StyleSpecification = {
       maxzoom: 18,
       attribution: '© OpenStreetMap-Mitwirkende · Stil openstreetmap.de',
     },
-    satellite: {
-      type: 'raster',
-      tiles: [
-        'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-      ],
-      tileSize: 256,
-      maxzoom: 19,
-      attribution: 'Tiles © Esri',
-    },
   },
   layers: [
     { id: 'osm', type: 'raster', source: 'osm', layout: { visibility: 'visible' } },
-    { id: 'satellite', type: 'raster', source: 'satellite', layout: { visibility: 'none' } },
     {
       id: 'desaturate-overlay',
       type: 'background',
@@ -119,12 +107,6 @@ const OSM_STYLE: maplibregl.StyleSpecification = {
       paint: { 'background-color': '#ffffff', 'background-opacity': 0 },
     },
   ],
-}
-
-function setBaseLayer(mode: 'map' | 'satellite') {
-  if (!map) return
-  map.setLayoutProperty('osm', 'visibility', mode === 'map' ? 'visible' : 'none')
-  map.setLayoutProperty('satellite', 'visibility', mode === 'satellite' ? 'visible' : 'none')
 }
 
 function updateWeather() {
@@ -470,8 +452,7 @@ const KURLAND_POCKET: ClipPolygon = [
 
 function buildEasternAxisFC(date: Date): GeoJSON.FeatureCollection<GeoJSON.MultiPolygon> {
   const { eastern } = axisCountriesByTierAt(date)
-  const soviet = sovietRegionAt(date)
-  const sovietMulti: MultiPolygon = [soviet.coordinates as ClipPolygon]
+  const sovietMulti: MultiPolygon = sovietRegionAt(date).coordinates as ClipPolygon[]
   const kurlandPocket = date.getTime() >= KURLAND_POCKET_START_TS
 
   const features: GeoJSON.Feature<GeoJSON.MultiPolygon>[] = []
@@ -555,11 +536,11 @@ function buildLocationQueryHtml(lng: number, lat: number): string {
     sideLabel = 'Achse-Hinterland'
     sideColor = '#737373'
   } else {
-    const sovietFC: GeoJSON.FeatureCollection<GeoJSON.Polygon> = {
+    const sovietFC: GeoJSON.FeatureCollection<GeoJSON.MultiPolygon> = {
       type: 'FeatureCollection',
       features: [{ type: 'Feature', properties: {}, geometry: sovietRegionAt(date) }],
     }
-    if (pointInPolygonFC(point, sovietFC)) {
+    if (pointInPolygonOrMultiFC(point, sovietFC)) {
       sideLabel = 'sowjetisches Gebiet'
       sideColor = '#facc15'
     } else {
@@ -1370,7 +1351,6 @@ onMounted(() => {
 
   map.on('load', async () => {
     addLayers()
-    setBaseLayer(props.baseLayer)
     updateWeather()
     updateRailways()
     updateBattles()
@@ -1417,8 +1397,6 @@ watch(() => props.currentDate, () => {
 
 watch(() => props.pinnedEvent, () => updateEventPin())
 watch(() => props.searchPin, () => updateSearchPin())
-
-watch(() => props.baseLayer, (mode) => setBaseLayer(mode))
 
 watch(() => props.weatherEnabled, () => updateWeather())
 watch(() => props.railwayEnabled, () => updateRailways())

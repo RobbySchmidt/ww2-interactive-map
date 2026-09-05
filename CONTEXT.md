@@ -10,7 +10,7 @@ Interaktive Web-Karte der Ostfront im Zweiten Weltkrieg. Per Zeitstrahl scrubbt 
 - **Großschlachten** als Punkt-Marker (rot = Großschlacht, gelb = Gefecht), klickbar → Detail-Panel mit Truppenstärken / Verlusten / Verbänden
 - **Operative Stoßrichtungs-Pfeile** (Bézier-Kurven) für 23 Großoperationen
 - **Großverband-Labels** (HG, Armeen, Fronten) für 17 Schlüsselzeitpunkte mit Hover-Tooltip
-- **Umkämpfte Städte** rot eingefärbt während aktiver Schlachten — detaillierte OSM-admin_level=8-Boundaries (131–1844 Vertices/Stadt) lazy aus `cities_boundaries.json` geladen, mit hand-traced Polygonen aus `cities.ts` als Fallback. Im Battle-Mode per Toggle ausblendbar (Eye-Icon im Header), damit man Satellit/POIs darunter sieht.
+- **Umkämpfte Städte** rot eingefärbt während aktiver Schlachten — detaillierte OSM-admin_level=8-Boundaries (131–1844 Vertices/Stadt) lazy aus `cities_boundaries.json` geladen, mit hand-traced Polygonen aus `cities.ts` als Fallback. Im Battle-Mode per Toggle ausblendbar (Eye-Icon im Header), damit man Karte/POIs darunter sieht.
 - **„An diesem Tag"-Feed** mit ~80 historischen Ereignissen ±N Tage um das aktuelle Datum
 - **Verluste-Ticker** für die intensivste aktive Großschlacht
 - **Kräfteverhältnis-Chart** (Personalstärke + Panzerproduktion) mit Now-Linie
@@ -30,11 +30,11 @@ Interaktive Web-Karte der Ostfront im Zweiten Weltkrieg. Per Zeitstrahl scrubbt 
 |---|---|
 | Framework | Nuxt 4 (^4.4.5), Vue 3.5, TypeScript 6 |
 | Karte | MapLibre GL JS (frei, ohne API-Key) |
-| Tiles | Straßenkarte: `tile.openstreetmap.de` (deutsche Exonyme) · Satellit: ESRI World Imagery |
-| Styling | Tailwind CSS v4 + Custom-CSS, dark-mode-by-default |
+| Tiles | Straßenkarte: `tile.openstreetmap.de` (deutsche Exonyme). Satellit (Esri World Imagery) am 2026-09-05 entfernt — lizenzrechtlich ohne API-Key nicht sauber und ohne Ortsnamen/Grenzen nicht hilfreich |
+| Styling | Tailwind CSS v4 + Custom-CSS, dark-mode-by-default. Schrift Inter (OFL) selbst gehostet aus `public/fonts` (variable woff2, latin + latin-ext), kein Google-Fonts-Remote-Load |
 | UI-Komponenten | shadcn-nuxt installiert aber nicht genutzt — alles handgemacht |
 | Datenhaltung | **Statisch in `app/data/*.ts`-Dateien**, keine Datenbank |
-| Live-Daten | Wikipedia REST API (de.wikipedia.org) für Battle-Lead-Text + Bildergalerie, LocalStorage-Cache 24h |
+| Live-Daten | Wikipedia REST API (de.wikipedia.org) für Battle-Lead-Text + Bildergalerie, MediaWiki-API (`prop=imageinfo`, extmetadata) für Bildnachweise (Urheber + Lizenz), LocalStorage-Cache 24h |
 | Dev-Server | `npm run dev` (oder `yarn dev`), Standard-Port 3000 |
 | Installation | Node mit `NODE_OPTIONS=--use-system-ca` falls Cert-Probleme |
 
@@ -91,7 +91,7 @@ public/
 - 18 hand-kalibrierte Snapshots zwischen 21.06.1941 und 08.05.1945, 15 Stützpunkte/Snapshot (lat 42 → 60 N). Lat 59.5 ist die „Leningrad-Kerbe“: während der Blockade steht lat 59.5 auf ~31.5 (Tosno–Ljuban) und lat 60 auf 29.7 (Peterhof), damit die Stadt und die Karelische Landenge östlich der Linie, also sowjetisch, bleiben
 - Linear zwischen Snapshots interpoliert für tagesgenaues Scrubbing
 - Frontlinie geglättet via Catmull-Rom-Spline + zwei überlagerte Sinus-Welligkeiten (~130 Punkte/Frame); im Nord-Anhängsel Karelische Front (25.06.1941 – 19.09.1944) mit zwei Keyframes — Grenze 1940 (Sommer 1941, ab Aug. 1944) und Swir/Onega-Stellung mit finnisch besetztem Petrosawodsk (Dez. 1941 – Juni 1944), dazwischen linear interpoliert
-- **Sowjet-Region** = Polygon östlich der Frontlinie, Süd-Begrenzung lat 40 (deckt Dagestan ab), Nord-Schrägung Richtung lon 40/lat 75 (schließt Norwegen aus), Ost-Begrenzung lon 100 (jenseits Ural)
+- **Sowjet-Region** = Polygon östlich der Frontlinie, Süd-Begrenzung lat 40 (deckt Dagestan ab), Nord-Schrägung Richtung lon 40/lat 85 (schließt Norwegen aus, deckt die arktischen Inseln ab), Ost-Begrenzung lon 180 plus Zusatzpolygon für Tschukotka westlich der Datumsgrenze. Bis 2026-09-05 endete die Region bei lon 100, dadurch waren Sibirien und der Ferne Osten bis Sep 1944 als Achse rot
 - **Ländergrenzentreue Achsen-Färbung mit Two-Tier-System** (`axisControl.ts`):
   - **`eastern` Tier** (15 Länder, rot, geclippt): Reich-Kerngebiet + Achsenpartner mit Ostfront-Truppen + Mitkriegführer + eroberte Sowjet-Republiken. Jedes Country-Polygon wird per `polygonClipping.difference(country, sovietRegion)` auf die Achsen-Seite reduziert — wächst und schrumpft ländergrenzentreu mit dem Frontverlauf.
   - **`rear` Tier** (16 Länder, grau, ungeclippt): Achsen-Hinterland ohne Ostfront-Beteiligung (Westeuropa, Italien-Kerngebiet, Bulgarien, Balkan). Wird in dezentem `#4a4a4a` opacity 0.22 gerendert.
@@ -127,7 +127,7 @@ Rendering als MapLibre `symbol`-Layer (nativer WebGL-Text). Weißer Text mit dic
 - **Primär**: detaillierte OSM admin_level=8 Boundaries aus `public/data/cities_boundaries.json` (168 KB, 131–1844 Vertices/Stadt, 6905 Vertices total) — lazy beim Map-Init via `loadCityGeoms()` geladen
 - **Fallback**: hand-traced ~40-Vertex-Polygone in `cities.ts` (greift wenn JSON-Fetch fehlschlägt oder eine ID fehlt)
 
-Rot eingefärbt (55% Opacity) während zugehörige Schlachten aktiv sind. Im Battle-Detail-Modus per Toggle (Eye-Icon im Header-Mode-Indikator) ein-/ausblendbar — Map+Satellit+POIs darunter werden besser lesbar.
+Rot eingefärbt (55% Opacity) während zugehörige Schlachten aktiv sind. Im Battle-Detail-Modus per Toggle (Eye-Icon im Header-Mode-Indikator) ein-/ausblendbar — Karte+POIs darunter werden besser lesbar.
 
 Anachronismus-Hinweis: OSM-Boundaries sind heutige Grenzen (Wolgograd 2026 ≫ Stalingrad 1942). Trade-off bewusst akzeptiert, alternativ wären nur historische Karten möglich (sehr aufwendig).
 
@@ -168,7 +168,6 @@ Popup mit:
 - `?b=battle-id` — geöffnetes Schlacht-Detail
 - `?op=operation-id` — geöffnetes Operations-Detail
 - `?e=event-id` — gepinnter Event
-- `?layer=satellite` — Satellitenansicht
 - `?w=1` — Wetter-Layer aktiviert
 - `?r=1` — Eisenbahn-Layer aktiviert
 - `?mode=battle` — Schlacht-Detail-Modus
@@ -407,4 +406,7 @@ Punkte 1–5 der ursprünglichen Ideen-Liste **+ Hybrid-Wikipedia-Integration + 
     - **Kurland-Kessel** fehlte: LVA wurde gegen die Sowjet-Region geclippt, die 1945 weit westlich liegt. Ab 10.10.1944 wird LVA stattdessen mit `KURLAND_POCKET` geschnitten (`polygonClipping.intersection`).
     - **Rear-Tier-Grau** war praktisch unsichtbar (Pixeldifferenz Norwegen/Schweden ~5 Stufen): Fill 0.22 → 0.38, Outline 0.4 → 0.6.
     - **Schlacht-Modus-Zoom** fittet jetzt die POI-Bounding-Box (`WarMap.fitPoints`, max. Zoom 12, rechtes Padding für das Detail-Panel) statt Zoom 12 auf den Marker — Weichsel-Oder (POIs Warschau bis Küstrin) zoomte vorher auf freies Feld bei Łask.
+    - **Google Fonts entfernt** (DSGVO): Inter lag als `@import` von fonts.googleapis.com in `tailwind.css`, jetzt `@font-face` auf `public/fonts/inter-latin*.woff2` (Gewichte 400–700, gleiche Optik).
+    - **Satellitenansicht entfernt**: Esri-Tiles ohne API-Key verstießen gegen Esris Nutzungsbedingungen, und die Ansicht war ohne Ortsnamen/Grenzen nicht hilfreich. Weg sind Source/Layer in WarMap, die „Karte"-Auswahl in der Timeline, `baseLayer`-State und `?layer=`-URL-Param.
+    - **Lizenzhinweise für Wikipedia-Inhalte** (CC BY-SA 4.0 verlangt Namensnennung + Lizenznennung): Unter jedem Lead-Text steht „Text: Wikipedia-Autoren, Lizenz CC BY-SA 4.0" mit Links. Hero-Bild und Galerie-Lightbox zeigen Urheber + Lizenz + Link auf die Commons-Beschreibungsseite; die Daten kommen aus `fetchImageCredits()` in `wikipedia.ts` (MediaWiki-API `prop=imageinfo&iiprop=extmetadata`, Batches à 50, Cache 24h). Bundesarchiv-Attributionen enthalten die Lizenz schon, dann wird sie nicht doppelt angehängt. Hero-Dateiname wird aus der Summary-Bild-URL abgeleitet (`fileTitleFromUrl`).
     - Nicht gefixt (vorher vorhanden): vier `TS18048`-Typecheck-Fehler in `SearchBar.vue:128` und `index.vue` (Zentroid-Schleife), Label-Überlappungen (z. B. „2. Armee“/„2. Bel. Fr.“ Mai 1945).

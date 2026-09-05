@@ -28,10 +28,6 @@
           <span class="control-label">Tempo</span>
           <DarkSelect v-model="speedMs" :options="speedOptions" />
         </div>
-        <div class="control-group">
-          <span class="control-label">Karte</span>
-          <DarkSelect v-model="baseLayerLocal" :options="baseLayerOptions" />
-        </div>
 
         <div class="layer-toggles" role="group" aria-label="Zusatzlayer">
           <button
@@ -100,7 +96,6 @@ import { seasonInfo } from '~/lib/season'
 import DarkSelect from './DarkSelect.vue'
 
 type Interval = 'day' | 'week' | 'month'
-type BaseLayer = 'map' | 'satellite'
 
 const intervalOptions = [
   { value: 'day' as Interval, label: 'Tag' },
@@ -112,14 +107,9 @@ const speedOptions = [
   { value: 200, label: 'normal' },
   { value: 80, label: 'schnell' },
 ]
-const baseLayerOptions = [
-  { value: 'map' as BaseLayer, label: 'Straßenkarte' },
-  { value: 'satellite' as BaseLayer, label: 'Satellit' },
-]
 
 const props = defineProps<{
   modelValue: Date
-  baseLayer: BaseLayer
   weatherEnabled: boolean
   railwayEnabled: boolean
   /** Optionaler Min-Bound (z.B. Schlacht-Start im Battle-Modus). */
@@ -130,7 +120,6 @@ const props = defineProps<{
 
 const emit = defineEmits<{
   (e: 'update:modelValue', date: Date): void
-  (e: 'update:baseLayer', mode: BaseLayer): void
   (e: 'update:weatherEnabled', v: boolean): void
   (e: 'update:railwayEnabled', v: boolean): void
 }>()
@@ -138,10 +127,6 @@ const emit = defineEmits<{
 const interval = ref<Interval>('week')
 const speedMs = ref(200)
 const isPlaying = ref(false)
-const baseLayerLocal = ref<BaseLayer>(props.baseLayer)
-
-watch(baseLayerLocal, (v) => emit('update:baseLayer', v))
-watch(() => props.baseLayer, (v) => (baseLayerLocal.value = v))
 
 const currentSeason = computed(() => seasonInfo(props.modelValue))
 

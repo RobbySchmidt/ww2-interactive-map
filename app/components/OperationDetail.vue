@@ -25,7 +25,16 @@
           :height="wiki.thumbnail.height"
           loading="lazy"
         />
-        <figcaption class="detail-hero-credit">Bild: Wikimedia Commons</figcaption>
+        <figcaption class="detail-hero-credit">
+          <a
+            v-if="heroCredit?.descriptionUrl"
+            :href="heroCredit.descriptionUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Bildbeschreibung und Lizenz auf Wikimedia Commons"
+          >Bild: {{ formatCredit(heroCredit) }}</a>
+          <span v-else>Bild: Wikimedia Commons</span>
+        </figcaption>
       </figure>
 
       <header class="detail-header">
@@ -68,6 +77,12 @@
             <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zM19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7z" />
           </svg>
         </a>
+        <div class="detail-wiki-license">
+          Text:
+          <a :href="wiki.url" target="_blank" rel="noopener noreferrer">Wikipedia-Autoren</a>,
+          Lizenz
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+        </div>
       </section>
 
       <section v-if="labeledThrusts.length" class="thrusts">
@@ -113,7 +128,14 @@ import { ref, watch, computed } from 'vue'
 import type { Operation } from '~/data/operations'
 import { BATTLES, type Battle } from '~/data/battles'
 import { haversineKm } from '~/lib/geo'
-import { fetchWikiSummary, type WikiSummary } from '~/lib/wikipedia'
+import {
+  fetchWikiSummary,
+  fetchImageCredits,
+  fileTitleFromUrl,
+  formatCredit,
+  type WikiSummary,
+  type WikiImageCredit,
+} from '~/lib/wikipedia'
 
 const props = defineProps<{
   operation: Operation | null
@@ -143,6 +165,8 @@ function formatShort(d: string) {
 
 const wiki = ref<WikiSummary | null>(null)
 const wikiLoading = ref(false)
+/** Urheber/Lizenz des Hero-Bilds (aus der Summary-Bild-URL abgeleitet). */
+const heroCredit = ref<WikiImageCredit | null>(null)
 
 const labeledThrusts = computed(() =>
   props.operation ? props.operation.thrusts.filter((t) => t.label) : [],
@@ -173,6 +197,7 @@ watch(
   () => props.operation?.id,
   async (id) => {
     wiki.value = null
+    heroCredit.value = null
     wikiLoading.value = false
     if (!id || !props.operation?.wikipediaSlug) return
     const slug = props.operation.wikipediaSlug
@@ -182,6 +207,11 @@ watch(
       wiki.value = result
     }
     wikiLoading.value = false
+    const heroUrl = result?.originalImage?.source ?? result?.thumbnail?.source
+    const heroTitle = heroUrl ? fileTitleFromUrl(heroUrl) : null
+    if (!heroTitle) return
+    const found = await fetchImageCredits([heroTitle])
+    if (props.operation?.wikipediaSlug === slug) heroCredit.value = found[heroTitle] ?? null
   },
   { immediate: true },
 )
@@ -231,13 +261,42 @@ watch(
   position: absolute;
   bottom: 6px;
   right: 8px;
+  max-width: calc(100% - 16px);
+  text-align: right;
   font-size: 9px;
+  line-height: 1.35;
   color: rgba(255, 255, 255, 0.7);
   background: rgba(0, 0, 0, 0.55);
   padding: 2px 6px;
   border-radius: 3px;
   letter-spacing: 0.04em;
-  pointer-events: none;
+}
+
+.detail-hero-credit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.detail-hero-credit a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.detail-wiki-license {
+  margin-top: 8px;
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.02em;
+}
+
+.detail-wiki-license a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.25);
+}
+
+.detail-wiki-license a:hover {
+  color: #facc15;
 }
 
 .detail-header {

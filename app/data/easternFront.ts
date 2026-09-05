@@ -317,24 +317,35 @@ export function frontLineAt(date: Date): GeoJSON.Feature<GeoJSON.LineString> {
  * Begrenzung:
  *  - Süden: lat 40 (deckt die Kaukasus-Südflanke von RUS bis zur aserbaidschan.
  *    Grenze ab — Dagestan reicht bis ~41° N. lat 42 reichte nicht weit genug.)
- *  - Norden: Schrägung vom nördlichsten Front-Punkt nach (lon 40, lat 75) —
- *    schließt Norwegen-Finnmark westlich davon aus
- *  - Osten: lon 100 (jenseits des Urals)
+ *  - Norden: Schrägung vom nördlichsten Front-Punkt nach (lon 40, lat 85) —
+ *    schließt Norwegen-Finnmark westlich davon aus, deckt aber Nowaja Semlja,
+ *    Sewernaja Semlja und Franz-Josef-Land (bis ~82° N) ab
+ *  - Osten: lon 180 plus ein zweites Polygon für Tschukotka westlich der
+ *    Datumsgrenze (NE-Geometrie von RUS reicht bis lon -169). Vorher endete die
+ *    Region bei lon 100, dadurch blieben Sibirien und der Ferne Osten als
+ *    „Achse" rot stehen.
  */
-export function sovietRegionAt(date: Date): GeoJSON.Polygon {
+export function sovietRegionAt(date: Date): GeoJSON.MultiPolygon {
   const { a, b, t } = findSnapshotBracket(date)
   const lons = t === 0 ? a.frontLons : interpolateFront(a, b, t)
   const front = extendFrontEnds(smoothFrontCoords(lons), date)
 
   const ring: [number, number][] = [
     ...front,
-    [40, 75],
-    [100, 75],
-    [100, 40],
+    [40, 85],
+    [180, 85],
+    [180, 40],
     [front[0]![0], 40],
     front[0]!,
   ]
-  return { type: 'Polygon', coordinates: [ring] }
+  const farEast: [number, number][] = [
+    [-180, 40],
+    [-165, 40],
+    [-165, 85],
+    [-180, 85],
+    [-180, 40],
+  ]
+  return { type: 'MultiPolygon', coordinates: [[ring], [farEast]] }
 }
 
 export const TIMELINE_START = new Date(SNAPSHOTS[0]!.date)
