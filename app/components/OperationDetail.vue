@@ -27,8 +27,8 @@
         />
         <figcaption class="detail-hero-credit">
           <a
-            v-if="heroCredit?.descriptionUrl"
-            :href="heroCredit.descriptionUrl"
+            v-if="heroCreditUrl"
+            :href="heroCreditUrl"
             target="_blank"
             rel="noopener noreferrer"
             title="Bildbeschreibung und Lizenz auf Wikimedia Commons"
@@ -133,6 +133,7 @@ import {
   fetchImageCredits,
   fileTitleFromUrl,
   formatCredit,
+  commonsFileUrl,
   type WikiSummary,
   type WikiImageCredit,
 } from '~/lib/wikipedia'
@@ -167,6 +168,13 @@ const wiki = ref<WikiSummary | null>(null)
 const wikiLoading = ref(false)
 /** Urheber/Lizenz des Hero-Bilds (aus der Summary-Bild-URL abgeleitet). */
 const heroCredit = ref<WikiImageCredit | null>(null)
+/** Link des Hero-Credits: Commons-Beschreibungsseite, notfalls aus der Bild-URL abgeleitet. */
+const heroCreditUrl = computed(() => {
+  if (heroCredit.value?.descriptionUrl) return heroCredit.value.descriptionUrl
+  const src = wiki.value?.originalImage?.source ?? wiki.value?.thumbnail?.source
+  const title = src ? fileTitleFromUrl(src) : null
+  return title ? commonsFileUrl(title) : null
+})
 
 const labeledThrusts = computed(() =>
   props.operation ? props.operation.thrusts.filter((t) => t.label) : [],

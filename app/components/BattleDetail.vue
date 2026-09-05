@@ -40,8 +40,8 @@
         />
         <figcaption class="detail-hero-credit">
           <a
-            v-if="heroCredit?.descriptionUrl"
-            :href="heroCredit.descriptionUrl"
+            v-if="heroCreditUrl"
+            :href="heroCreditUrl"
             target="_blank"
             rel="noopener noreferrer"
             title="Bildbeschreibung und Lizenz auf Wikimedia Commons"
@@ -236,10 +236,12 @@
         <div>{{ lightbox.title.replace(/^Datei:/, '').replace(/_/g, ' ') }}</div>
         <div class="lightbox-credit">
           {{ formatCredit(lightboxCredit) }}
-          <template v-if="lightboxCredit?.descriptionUrl">
-            ·
-            <a :href="lightboxCredit.descriptionUrl" target="_blank" rel="noopener noreferrer">Quelle &amp; Lizenz</a>
-          </template>
+          ·
+          <a
+            :href="lightboxCredit?.descriptionUrl ?? commonsFileUrl(lightbox.title)"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Quelle &amp; Lizenz</a>
         </div>
       </div>
     </div>
@@ -255,6 +257,7 @@ import {
   fetchImageCredits,
   fileTitleFromUrl,
   formatCredit,
+  commonsFileUrl,
   type WikiSummary,
   type WikiImage,
   type WikiImageCredit,
@@ -293,6 +296,13 @@ const credits = ref<Record<string, WikiImageCredit>>({})
 const lightboxCredit = computed(() =>
   lightbox.value ? credits.value[lightbox.value.title] ?? null : null,
 )
+/** Link des Hero-Credits: Commons-Beschreibungsseite, notfalls aus der Bild-URL abgeleitet. */
+const heroCreditUrl = computed(() => {
+  if (heroCredit.value?.descriptionUrl) return heroCredit.value.descriptionUrl
+  const src = wiki.value?.originalImage?.source ?? wiki.value?.thumbnail?.source
+  const title = src ? fileTitleFromUrl(src) : null
+  return title ? commonsFileUrl(title) : null
+})
 
 // Wie viele Thumbs in der Preview-Reihe im Nicht-Detail-Modus.
 const PREVIEW_COUNT = 4

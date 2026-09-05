@@ -264,6 +264,17 @@ export function fileTitleFromUrl(url: string): string | null {
   }
 }
 
+/**
+ * Beschreibungsseite auf Commons aus einem Datei-Titel ("Datei:Foo.jpg").
+ * Fallback-Link, falls die Credit-Daten (noch) nicht geladen sind — die
+ * Beschreibungsseite trägt Urheber und Lizenz, damit ist die Namensnennung
+ * auch ohne unseren Text erreichbar.
+ */
+export function commonsFileUrl(title: string): string {
+  const name = title.replace(/^(Datei|File):/i, '')
+  return `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(name.replace(/ /g, '_'))}`
+}
+
 /** "Urheber · Lizenz" — was in Bildunterschrift/Credit-Badge angezeigt wird. */
 export function formatCredit(c: WikiImageCredit | null | undefined): string {
   if (!c) return 'Wikimedia Commons'

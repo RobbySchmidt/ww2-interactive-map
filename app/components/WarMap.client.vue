@@ -91,7 +91,9 @@ const OSM_STYLE: maplibregl.StyleSpecification = {
       tiles: ['https://tile.openstreetmap.de/{z}/{x}/{y}.png'],
       tileSize: 256,
       maxzoom: 18,
-      attribution: '© OpenStreetMap-Mitwirkende · Stil openstreetmap.de',
+      // ODbL verlangt einen Verweis auf openstreetmap.org/copyright — als Link.
+      attribution:
+        '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>-Mitwirkende · Stil <a href="https://www.openstreetmap.de/" target="_blank" rel="noopener noreferrer">openstreetmap.de</a>',
     },
   },
   layers: [
