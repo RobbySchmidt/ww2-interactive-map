@@ -173,9 +173,23 @@ function enterBattleMode() {
   if (ts < start || ts > end) {
     currentDate.value = new Date((start + end) / 2)
   }
-  // Wenn POIs vorhanden, näher rein (Stadt-Maßstab) — sonst operativer Zoom
-  const hasPois = poisForBattle(battle.id).length > 0
-  mapRef.value?.flyTo(battle.coordinates, hasPois ? 12 : 7)
+  flyToBattleScope(battle)
+}
+
+/**
+ * Zoom für den Schlacht-Modus: gibt es POIs, wird auf deren Bounding-Box
+ * gezoomt (max. Zoom 12 = Stadt-Maßstab). Damit landen auch weiträumige
+ * Operationen wie Weichsel-Oder (POIs von Warschau bis Küstrin, 500 km) im
+ * Bild, statt bei Zoom 12 auf dem geometrischen Mittelpunkt im freien Feld.
+ * Ohne POIs bleibt der operative Zoom 7 auf den Schlacht-Marker.
+ */
+function flyToBattleScope(battle: Battle) {
+  const pois = poisForBattle(battle.id)
+  if (pois.length > 0) {
+    mapRef.value?.fitPoints(pois.map((p) => p.coordinates), 12, 440)
+  } else {
+    mapRef.value?.flyTo(battle.coordinates, 7)
+  }
 }
 
 function leaveBattleMode() {
@@ -317,8 +331,7 @@ onMounted(() => {
   // Auf nächsten Tick: zur passenden Position fliegen (mapRef ist dann verfügbar)
   nextTick(() => {
     if (battleMode.value && selectedBattle.value) {
-      const hasPois = poisForBattle(selectedBattle.value.id).length > 0
-      mapRef.value?.flyTo(selectedBattle.value.coordinates, hasPois ? 12 : 7)
+      flyToBattleScope(selectedBattle.value)
     } else if (pinnedEvent.value?.coordinates) {
       mapRef.value?.flyTo(pinnedEvent.value.coordinates, 6)
     } else if (selectedBattle.value) {

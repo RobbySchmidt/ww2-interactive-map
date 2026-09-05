@@ -1,6 +1,6 @@
 # Ostfront-Karte 1941–1945 — Projekt-Kontext
 
-Stand: 2026-05-17 (Charkow-Erweiterung) · Sprache der UI/Daten: Deutsch
+Stand: 2026-09-05 (Visuelle Prüfung + Frontlinien-Fixes) · Sprache der UI/Daten: Deutsch
 
 ## Was die App tut
 
@@ -35,7 +35,7 @@ Interaktive Web-Karte der Ostfront im Zweiten Weltkrieg. Per Zeitstrahl scrubbt 
 | UI-Komponenten | shadcn-nuxt installiert aber nicht genutzt — alles handgemacht |
 | Datenhaltung | **Statisch in `app/data/*.ts`-Dateien**, keine Datenbank |
 | Live-Daten | Wikipedia REST API (de.wikipedia.org) für Battle-Lead-Text + Bildergalerie, LocalStorage-Cache 24h |
-| Dev-Server | `npm run dev` (oder `yarn dev`) auf Port 3030 (`npx nuxt dev --port 3030`) |
+| Dev-Server | `npm run dev` (oder `yarn dev`), Standard-Port 3000 |
 | Installation | Node mit `NODE_OPTIONS=--use-system-ca` falls Cert-Probleme |
 
 ## Verzeichnisstruktur
@@ -56,7 +56,7 @@ app/
 │   ├── StrengthChart.vue       # Bottom-rechts, Kräfteverhältnis-Charts
 │   └── DarkSelect.vue          # Custom Dropdown (statt native select)
 ├── data/
-│   ├── easternFront.ts         # Frontlinien-Snapshots (17×12 Lons) + Polygon-Builder
+│   ├── easternFront.ts         # Frontlinien-Snapshots (18×15 Lons) + Karelien-Keyframes + Polygon-Builder
 │   ├── battles.ts              # 26 Schlachten mit Details + wikipediaSlug
 │   ├── operations.ts           # 23 Operationen mit Bézier-Pfeilen
 │   ├── divisions.ts            # ~40 Verband-Marker für 6 Snapshots
@@ -88,9 +88,9 @@ public/
 ## Implementierte Features im Detail
 
 ### 1. Frontverlauf (`easternFront.ts`, `axisControl.ts`)
-- 18 hand-kalibrierte Snapshots zwischen 21.06.1941 und 08.05.1945, 14 Stützpunkte/Snapshot (lat 42 → 60 N)
+- 18 hand-kalibrierte Snapshots zwischen 21.06.1941 und 08.05.1945, 15 Stützpunkte/Snapshot (lat 42 → 60 N). Lat 59.5 ist die „Leningrad-Kerbe“: während der Blockade steht lat 59.5 auf ~31.5 (Tosno–Ljuban) und lat 60 auf 29.7 (Peterhof), damit die Stadt und die Karelische Landenge östlich der Linie, also sowjetisch, bleiben
 - Linear zwischen Snapshots interpoliert für tagesgenaues Scrubbing
-- Frontlinie geglättet via Catmull-Rom-Spline + zwei überlagerte Sinus-Welligkeiten (~130 Punkte/Frame); im Nord-Anhängsel Karelische Front (Sommer 1941 – 19.09.1944)
+- Frontlinie geglättet via Catmull-Rom-Spline + zwei überlagerte Sinus-Welligkeiten (~130 Punkte/Frame); im Nord-Anhängsel Karelische Front (25.06.1941 – 19.09.1944) mit zwei Keyframes — Grenze 1940 (Sommer 1941, ab Aug. 1944) und Swir/Onega-Stellung mit finnisch besetztem Petrosawodsk (Dez. 1941 – Juni 1944), dazwischen linear interpoliert
 - **Sowjet-Region** = Polygon östlich der Frontlinie, Süd-Begrenzung lat 40 (deckt Dagestan ab), Nord-Schrägung Richtung lon 40/lat 75 (schließt Norwegen aus), Ost-Begrenzung lon 100 (jenseits Ural)
 - **Ländergrenzentreue Achsen-Färbung mit Two-Tier-System** (`axisControl.ts`):
   - **`eastern` Tier** (15 Länder, rot, geclippt): Reich-Kerngebiet + Achsenpartner mit Ostfront-Truppen + Mitkriegführer + eroberte Sowjet-Republiken. Jedes Country-Polygon wird per `polygonClipping.difference(country, sovietRegion)` auf die Achsen-Seite reduziert — wächst und schrumpft ländergrenzentreu mit dem Frontverlauf.
@@ -293,6 +293,8 @@ Alle Datenmodule wurden durch dedizierte Recherche-Agenten (general-purpose) ers
 - **Frontlinien sind Annäherungen** — kein historisch präziser Datensatz, sondern Schätzungen aus Standardwerken
 - **Stadtgrenzen sind MODERN** (OSM 2026), nicht historisch — Wolgograd 2026 ist viel größer als Stalingrad 1942
 - **Kaukasus-Pocket „springt"** beim Scrubben (zeigt sich nur am nächstgelegenen Snapshot)
+- **Kurland-Kessel ist ein statisches Polygon** (Tukums–Dobele–Auce–Priekule–Küste) ab 10.10.1944, keine Verkleinerung über die sechs Kurland-Schlachten
+- **Oranienbaumer Brückenkopf** liegt in der Achsen-Fläche (mit einer Linie pro Breitengrad nicht darstellbar), ebenso die deutsche Newa-Stellung Mga/Sinjawino als sowjetisch
 - **Zeitstrahl-Bereich 21.06.1941 – 08.05.1945** — Ereignisse außerhalb (Hitler-Weisung Nr. 21 Dez 1940, Potsdam Juli 1945) werden geclamped beim Anzeigen
 - **Stärke-Daten quartalsweise** — Quartalsgranularität der Panzerproduktion ist ±10 %
 - **Verlustzahlen** stark quellenabhängig, Mittelwerte verwendet
@@ -310,11 +312,11 @@ Aus der Brainstorm-Liste:
 
 ```bash
 # Dev-Server starten
-cd "c:\Users\WildC\OneDrive\Desktop\map"
-NODE_OPTIONS=--use-system-ca npx nuxt dev --port 3030
+cd "c:\Users\WildC\OneDrive\Dokumente\GitHub\ww2-interactive-map"
+NODE_OPTIONS=--use-system-ca npm run dev
 
 # Im Browser
-http://localhost:3030
+http://localhost:3000
 ```
 
 ### Häufige Edits
@@ -398,3 +400,11 @@ Punkte 1–5 der ursprünglichen Ideen-Liste **+ Hybrid-Wikipedia-Integration + 
 23. ✅ **POI-Popup: Google-Maps-Link (2026-05-17)**: Bei jedem POI-Popup unten ein zweiter Action-Link „Heute auf Google Maps ansehen ↗" (zusätzlich zum Wiki-Link, wo vorhanden). Öffnet `https://www.google.com/maps?q=lat,lng&z=18` in neuem Tab mit Pin auf den exakten POI-Koordinaten — User kann von dort per Pegman in Street View wechseln, wo Coverage existiert. Funktioniert für alle POIs, auch ohne Wikipedia-Slug.
 24. ✅ **Charkow-Stadt-POI-Verdichtung (2026-05-17)**: Audit ergab, dass bei `kharkov-2` nur 3 von 17 POIs und bei `kharkov-3` nur 2 von 16 POIs INNERHALB der Stadt-Boundary lagen — der Rest war Umland (Isjum, Barwenkowo, Belgorod etc.). Recherche-Agent ergänzte je 8 zusätzliche Stadt-POIs: Freiheitsplatz (mit Schlacht-spezifischen Narrativen — 1942 „Platz der Wehrmacht", 1943 „Platz der Leibstandarte SS"), Derschprom/Gosprom, Hotel International, Maljschew-Lokomotivwerk (KhPZ — T-34-Wiege), Konstitutionsplatz, Mariä-Entschlafens-Kathedrale, plus spezifisch in kharkov-2 die Mariä-Verkündigungs-Kathedrale + Bahnhofs-Barrikadenviertel und in kharkov-3 die Sumska-Straße (SS-Vormarschachse) + Hauptbahnhof-Zerstörungsbild. Coverage Kriegsfotos 75–87%, Volltreffer u.a. TASS-Luftbild Dzerzhinsky-Platz 1943 und Mittelstaedt-Februar-1943-Zivilistenfoto. Neue Counts: kharkov-2 25 POIs (vorher 17), kharkov-3 24 POIs (vorher 16).
 25. ✅ **Erste Schlacht um Charkow ergänzt (2026-05-17)**: Bisher fehlte `kharkov-1` (20.–24. Oktober 1941) — Auslassung in der ursprünglichen Battle-Recherche, weil "nur Stadteinnahme nach Verzögerungsgefechten" (`major: false`). Neuer Battle-Datensatz in `battles.ts`: 6. Armee Reichenau / LV. AK Vierow (57. ID, 100./101. leichte, 239. ID, StuG-Abt. 197) vs. sowj. 38. Armee Zyganow (216. SchD, 57. NKWD-Brigade); ~1.000–1.500 dt. vs. ~10–15.000 sowj. Verluste; Wiki-Slug `Schlacht_bei_Charkow_(1941)` (NICHT `_um_Charkiw_`-Variante, war 404). Neue POI-Datei `kharkov-1.json` mit 16 Schauplätzen — 81% mit Bundesarchiv-/NAC-/Commons-Kriegsfoto (Oktober-1941-Volltreffer wie Hähle „Einmarsch deutsche Truppen", Reindl „zerstörter Bahnhof", Herber „Barrikaden in Charkow"), 63% mit verifiziertem Wiki-Slug. Mix Stadt (Stadt-Marker, Freiheitsplatz, Derschprom, Hauptbahnhof, Lopan-Brücken, Sumska-Straße, Straßenkampf-Zentrum) + Industrie (alle bereits evakuiert: KhPZ/Malyschew, KhTZ-Traktorenwerk, Flugzeugwerk Nr. 135) + Vorfeld (Bohoduchiw, Sumy, Krasnohrad, Tschuhujiw, Stary Saltow, Nowo Bavaria). `BATTLE_TO_CITY` in `cities.ts` ergänzt: `kharkov-1` nutzt das gleiche Stadt-Polygon. Damit sind jetzt alle drei Charkow-Schlachten konsistent in der App.
+26. ✅ **Visuelle Prüfung + Frontlinien-Fixes (2026-09-05)**: Headless-Sweep (Playwright-Core + Edge/SwiftShader) über alle 18 Snapshots, 17 Zwischenpunkte und 15 Stadt-Zooms. Ergebnis und Fixes:
+    - **Race beim Erst-Laden**: `updateFront()` brach bei `!map.isStyleLoaded()` ab, was während des Tile-Ladens nach `loadCountryGeoms()` immer der Fall war — die ungeclippte Linie (über Ostsee bis Helsinki, ins Schwarze Meer, 1945 bis an die Adria) blieb bis zum ersten Datumswechsel stehen. Guard ist jetzt `map.getSource('front-line')`.
+    - **Leningrad lag in der Achsen-Fläche** (lat-60-Punkt 30.5 °E, Stadtzentrum 30.3 °E). Neuer Stützpunkt lat 59.5 in allen Snapshots (bei Nicht-Blockade-Snapshots Mittelwert der Nachbarn), Blockade-Snapshots mit Kerbe 31.5/29.7.
+    - **Ostkarelien**: `extendFrontEnds` war statisch (Petrosawodsk sowjetisch). Jetzt `karelianExtensionAt()` mit Keyframes BORDER/ONEGA.
+    - **Kurland-Kessel** fehlte: LVA wurde gegen die Sowjet-Region geclippt, die 1945 weit westlich liegt. Ab 10.10.1944 wird LVA stattdessen mit `KURLAND_POCKET` geschnitten (`polygonClipping.intersection`).
+    - **Rear-Tier-Grau** war praktisch unsichtbar (Pixeldifferenz Norwegen/Schweden ~5 Stufen): Fill 0.22 → 0.38, Outline 0.4 → 0.6.
+    - **Schlacht-Modus-Zoom** fittet jetzt die POI-Bounding-Box (`WarMap.fitPoints`, max. Zoom 12, rechtes Padding für das Detail-Panel) statt Zoom 12 auf den Marker — Weichsel-Oder (POIs Warschau bis Küstrin) zoomte vorher auf freies Feld bei Łask.
+    - Nicht gefixt (vorher vorhanden): vier `TS18048`-Typecheck-Fehler in `SearchBar.vue:128` und `index.vue` (Zentroid-Schleife), Label-Überlappungen (z. B. „2. Armee“/„2. Bel. Fr.“ Mai 1945).

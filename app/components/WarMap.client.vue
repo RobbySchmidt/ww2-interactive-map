@@ -374,7 +374,11 @@ function clipFrontToEastern(
 }
 
 function updateFront() {
-  if (!map || !map.isStyleLoaded()) return
+  // Bewusst NICHT map.isStyleLoaded(): das ist während des Tile-Ladens false und
+  // hat den Clip-Aufruf nach loadCountryGeoms() verschluckt — die ungeclippte
+  // Linie blieb dann bis zum nächsten Datumswechsel stehen. Die Source existiert
+  // ab addLayers() (im 'load'-Handler), das reicht als Guard.
+  if (!map || !map.getSource('front-line')) return
   const line = clipFrontToEastern(props.currentDate)
 
   const lineSrc = map.getSource('front-line') as maplibregl.GeoJSONSource | undefined
@@ -440,10 +444,35 @@ function geomToClip(geom: GeoJSON.Geometry): MultiPolygon | null {
  * Eastern-Tier: ländergrenzentreu rendern UND gegen die Sowjet-Region clippen,
  * sodass der rote Bereich genau die von der Achse kontrollierte Seite zeigt.
  */
+/**
+ * Kurland-Kessel: ab 10.10.1944 (Riga fällt 13.10., Verbindung zur HG Mitte
+ * abgeschnitten) wird Lettland nicht mehr gegen die Sowjet-Region geclippt —
+ * die Hauptfront liegt dann weit westlich, Lettland wäre komplett weg — sondern
+ * auf ein statisches Kessel-Polygon (Linie Tukums – Dobele – Auce – Priekule –
+ * Küste südlich Liepāja) geschnitten. Der Kessel hielt bis zur Kapitulation.
+ */
+const KURLAND_POCKET_START_TS = new Date('1944-10-10').getTime()
+const KURLAND_POCKET: ClipPolygon = [
+  [
+    [20.3, 58.0],
+    [23.6, 57.9],
+    [23.6, 57.05],
+    [23.15, 56.95],
+    [22.95, 56.65],
+    [22.7, 56.45],
+    [22.0, 56.4],
+    [21.6, 56.45],
+    [21.05, 56.35],
+    [20.3, 56.3],
+    [20.3, 58.0],
+  ],
+]
+
 function buildEasternAxisFC(date: Date): GeoJSON.FeatureCollection<GeoJSON.MultiPolygon> {
   const { eastern } = axisCountriesByTierAt(date)
   const soviet = sovietRegionAt(date)
   const sovietMulti: MultiPolygon = [soviet.coordinates as ClipPolygon]
+  const kurlandPocket = date.getTime() >= KURLAND_POCKET_START_TS
 
   const features: GeoJSON.Feature<GeoJSON.MultiPolygon>[] = []
   for (const code of eastern) {
@@ -453,7 +482,10 @@ function buildEasternAxisFC(date: Date): GeoJSON.FeatureCollection<GeoJSON.Multi
     if (!countryMulti) continue
     let clipped: Geom
     try {
-      clipped = polygonClipping.difference(countryMulti, sovietMulti)
+      clipped =
+        code === 'LVA' && kurlandPocket
+          ? polygonClipping.intersection(countryMulti, [KURLAND_POCKET])
+          : polygonClipping.difference(countryMulti, sovietMulti)
     } catch {
       // Bei (sehr seltenen) numerischen Edge-Cases das Country uneinheitlich rendern
       clipped = countryMulti
@@ -976,8 +1008,8 @@ function addLayers() {
     type: 'fill',
     source: 'axis-rear',
     paint: {
-      'fill-color': '#4a4a4a',
-      'fill-opacity': 0.22,
+      'fill-color': '#3a3a3a',
+      'fill-opacity': 0.38,
     },
   })
   map.addLayer({
@@ -987,7 +1019,7 @@ function addLayers() {
     paint: {
       'line-color': '#6a6a6a',
       'line-width': 0.8,
-      'line-opacity': 0.4,
+      'line-opacity': 0.6,
     },
   })
   // Eastern-Tier (Ostfront): rot, gegen Sowjet-Region geclippt.
@@ -1410,6 +1442,22 @@ watch(() => props.pois, () => {
 defineExpose({
   flyTo: (coordinates: [number, number], zoom = 6) => {
     map?.flyTo({ center: coordinates, zoom, duration: 1400 })
+  },
+  /**
+   * Fliegt so, dass alle Punkte sichtbar sind — Zoom nach oben gedeckelt.
+   * `rightPanelPx` reserviert Platz für das rechte Detail-Panel, damit die
+   * östlichsten Punkte nicht dahinter verschwinden (auf schmalen Viewports
+   * auf ein Drittel der Kartenbreite begrenzt, sonst wirft fitBounds).
+   */
+  fitPoints: (points: [number, number][], maxZoom = 12, rightPanelPx = 0) => {
+    if (!map || points.length === 0) return
+    const bounds = points.reduce(
+      (b, p) => b.extend(p),
+      new maplibregl.LngLatBounds(points[0]!, points[0]!),
+    )
+    const width = map.getContainer().clientWidth
+    const right = 60 + Math.min(rightPanelPx, Math.floor(width / 3))
+    map.fitBounds(bounds, { padding: { top: 60, bottom: 60, left: 60, right }, maxZoom, duration: 1400 })
   },
 })
 </script>
