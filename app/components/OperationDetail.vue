@@ -230,7 +230,7 @@ watch(
   position: absolute;
   top: 16px;
   right: 16px;
-  width: 420px;
+  width: 480px;
   max-width: calc(100vw - 32px);
   max-height: calc(100vh - 200px);
   overflow-y: auto;

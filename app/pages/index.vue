@@ -183,7 +183,7 @@ function enterBattleMode() {
 function flyToBattleScope(battle: Battle) {
   const pois = poisForBattle(battle.id)
   if (pois.length > 0) {
-    mapRef.value?.fitPoints(pois.map((p) => p.coordinates), 12, 440)
+    mapRef.value?.fitPoints(pois.map((p) => p.coordinates), 12, 500)
   } else {
     mapRef.value?.flyTo(battle.coordinates, 7)
   }
@@ -433,6 +433,12 @@ watch(
   display: flex;
   align-items: center;
   gap: 10px;
+  /* Gleiche Breite und rechte Kante wie das Detail-Panel darunter (480px,
+     right: 16px in .map-area) — Header-Padding ist 20px, daher -4px. */
+  width: 480px;
+  max-width: calc(100vw - 90px);
+  box-sizing: border-box;
+  margin-right: -4px;
   background: rgba(250, 204, 21, 0.1);
   border: 1px solid rgba(250, 204, 21, 0.35);
   border-radius: 6px;
@@ -448,10 +454,11 @@ watch(
 }
 
 .header-mode-name {
+  flex: 0 1 auto;
+  min-width: 0;
   font-size: 12px;
   color: #f5f5f5;
   font-weight: 600;
-  max-width: 240px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -489,6 +496,7 @@ watch(
 }
 
 .header-mode-leave {
+  margin-left: auto;
   display: inline-flex;
   align-items: center;
   gap: 4px;

@@ -67,6 +67,35 @@
         </button>
       </header>
 
+      <div class="detail-mode-switch">
+        <button
+          v-if="!battleMode"
+          type="button"
+          class="mode-btn mode-btn--enter"
+          :disabled="!battle.wikipediaSlug"
+          @click="$emit('enter-battle-mode')"
+        >
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+            <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 5 1.49-1.49-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z" />
+          </svg>
+          Schlacht-Detail öffnen
+        </button>
+        <div v-if="!battleMode" class="mode-hint">
+          Zoomt aufs Schlachtfeld · Orte &amp; Ereignisse · Zeitstrahl auf die Schlacht begrenzt · Bildergalerie
+        </div>
+        <button
+          v-else
+          type="button"
+          class="mode-btn mode-btn--leave"
+          @click="$emit('leave-battle-mode')"
+        >
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+          </svg>
+          Zurück zur Welt-Ansicht
+        </button>
+      </div>
+
       <p class="detail-summary">{{ battle.summary }}</p>
 
       <section v-if="wiki" class="detail-wiki">
@@ -171,32 +200,6 @@
           </button>
         </div>
       </section>
-
-      <div class="detail-mode-switch">
-        <button
-          v-if="!battleMode"
-          type="button"
-          class="mode-btn mode-btn--enter"
-          :disabled="!battle.wikipediaSlug"
-          @click="$emit('enter-battle-mode')"
-        >
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
-            <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 5 1.49-1.49-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z" />
-          </svg>
-          In Schlacht-Detail wechseln
-        </button>
-        <button
-          v-else
-          type="button"
-          class="mode-btn mode-btn--leave"
-          @click="$emit('leave-battle-mode')"
-        >
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
-            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
-          </svg>
-          Zurück zur Welt-Ansicht
-        </button>
-      </div>
 
       <section v-if="battleMode" class="detail-gallery">
         <div class="detail-gallery-label">
@@ -383,7 +386,7 @@ watch(
   position: absolute;
   top: 16px;
   right: 16px;
-  width: 420px;
+  width: 480px;
   max-width: calc(100vw - 90px);
   max-height: calc(100vh - 200px);
   overflow-y: auto;
@@ -392,14 +395,14 @@ watch(
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   color: #f5f5f5;
-  padding: 20px;
+  padding: 24px;
   z-index: 10;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .detail-hero {
   position: relative;
-  margin: -20px -20px 14px;
+  margin: -24px -24px 20px;
   border-radius: 12px 12px 0 0;
   overflow: hidden;
   background: #000;
@@ -464,7 +467,7 @@ watch(
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
 .detail-badge {
@@ -494,7 +497,7 @@ watch(
 .detail-period {
   font-size: 13px;
   color: #a3a3a3;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .close-btn {
@@ -517,17 +520,17 @@ watch(
 
 .detail-summary {
   font-size: 14px;
-  line-height: 1.55;
+  line-height: 1.6;
   color: #d4d4d4;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
 .detail-wiki {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
-  padding: 10px 12px 12px;
-  margin-bottom: 16px;
+  padding: 14px 14px 16px;
+  margin-bottom: 22px;
 }
 
 .detail-wiki-label {
@@ -542,7 +545,7 @@ watch(
   font-size: 13px;
   line-height: 1.5;
   color: #c4c4c4;
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 }
 
 .detail-wiki-link {
@@ -564,9 +567,9 @@ watch(
 .detail-outcome {
   background: rgba(255, 255, 255, 0.04);
   border-left: 3px solid #facc15;
-  padding: 10px 12px;
+  padding: 14px 14px;
   border-radius: 0 6px 6px 0;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 .outcome-label {
@@ -586,15 +589,15 @@ watch(
 .forces-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 16px;
+  gap: 12px;
+  margin-bottom: 22px;
 }
 
 .force-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
-  padding: 12px;
+  padding: 14px;
 }
 
 .force-card--axis {
@@ -648,7 +651,7 @@ watch(
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #737373;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .force-units ul {
@@ -667,7 +670,7 @@ watch(
   background: rgba(250, 204, 21, 0.05);
   border: 1px solid rgba(250, 204, 21, 0.2);
   border-radius: 8px;
-  padding: 10px 12px;
+  padding: 14px 14px;
 }
 
 .notable-label {
@@ -691,7 +694,7 @@ watch(
 }
 
 .detail-thumb-preview {
-  margin-top: 14px;
+  margin-top: 20px;
   padding: 10px 12px 12px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -767,9 +770,15 @@ watch(
 }
 
 .detail-mode-switch {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 0 0 22px;
+}
+
+.mode-hint {
+  margin-top: 8px;
+  font-size: 10.5px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
 }
 
 .mode-btn {
@@ -793,14 +802,15 @@ watch(
 }
 
 .mode-btn--enter {
-  background: rgba(250, 204, 21, 0.12);
-  color: #facc15;
-  border-color: rgba(250, 204, 21, 0.4);
+  background: #facc15;
+  color: #1a1a1a;
+  border-color: #facc15;
+  box-shadow: 0 2px 10px rgba(250, 204, 21, 0.25);
 }
 
 .mode-btn--enter:hover:not(:disabled) {
-  background: rgba(250, 204, 21, 0.22);
-  border-color: rgba(250, 204, 21, 0.6);
+  background: #fde047;
+  border-color: #fde047;
 }
 
 .mode-btn--leave {
@@ -815,8 +825,8 @@ watch(
 }
 
 .detail-gallery {
-  margin-top: 18px;
-  padding-top: 14px;
+  margin-top: 24px;
+  padding-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -825,7 +835,7 @@ watch(
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #737373;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .detail-gallery-count {
