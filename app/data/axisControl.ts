@@ -106,7 +106,10 @@ export const AXIS_COUNTRIES: AxisCountry[] = [
   { adm0: 'BLR', name: 'Belorussische SSR', tier: 'eastern', phases: [{ start: '1941-06-22', end: '1944-07-28' }] },
   // Russland (RSFSR): Vorstoß ab 22.06.1941, letzte russische Gebiete (Pskow) befreit
   // bis September 1944. Front-Clipping schneidet den europäischen Teil entsprechend zu.
-  { adm0: 'RUS', name: 'Russische SFSR (besetzter Teil)', tier: 'eastern', phases: [{ start: '1941-06-22', end: '1944-09-08' }] },
+  // Start bewusst 21.06. (Timeline-Start): Das Kaliningrader Gebiet gehört in den
+  // NE-Daten zu RUS, war 1941 aber Ostpreußen — ohne RUS am Tag 0 fehlte dort
+  // die rote Fläche und die Frontlinie wurde weggeclippt.
+  { adm0: 'RUS', name: 'Russische SFSR (besetzter Teil)', tier: 'eastern', phases: [{ start: '1941-06-21', end: '1944-09-08' }] },
 
   // ===========================================================================
   // REAR-TIER: Achsen-Hinterland ohne militärische Ostfront-Beteiligung.
